@@ -10,7 +10,6 @@ tags:
 - project
 categories:
 - project
-
 image:
   url: https://github.com/11000011/Smart-Mirror/raw/gh-pages/img/sample.png
 summary: "It displays

@@ -12,7 +12,6 @@ tags:
 - git
 categories:
 - tutorial
-
 image:
   url: https://i.ytimg.com/vi/aGujPFCKgdU/hqdefault.jpg
 
