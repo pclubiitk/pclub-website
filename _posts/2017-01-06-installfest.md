@@ -6,6 +6,7 @@ author: Coordinators
 website: pclub.in
 category: installfest17
 section: installfest17
+hidden: true
 tags:
 - linux
 ---
