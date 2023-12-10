@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sanskritorakshanam
+title: "Sanskritorakshanam"
 date: 2023-12-10 12:30:00 +0530
 categories: events
 tags: - Natural Language Processing 
