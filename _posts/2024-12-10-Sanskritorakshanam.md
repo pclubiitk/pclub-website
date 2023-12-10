@@ -1,3 +1,15 @@
+---
+layout: post
+title: "Sanskritorakshanam
+date: 2023-12-10 12:30:00 +0530
+categories: events
+tags: - Natural Language Processing 
+      - Machine Learning
+author: Abhijit Singh Jowhari, Rudradeep Dutta
+---
+
+
+
 # <p style="text-align: center;">*संस्कृतोरक्षनम्</p> <p style="text-align: center;">(Sanskritorakshanam)*</p>
 
 ## *Preserving Sanskrit Texts - Introduction* 
