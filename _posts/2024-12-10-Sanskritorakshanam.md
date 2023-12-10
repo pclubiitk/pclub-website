@@ -4,8 +4,8 @@ title: "Sanskritorakshanam"
 date: 2023-12-10 12:30:00 +0530
 categories: events
 tags: 
-	- Natural Language Processing 
-	- Machine Learning
+- Natural Language Processing 
+- Machine Learning
 author: Abhijit Singh Jowhari, Rudradeep Dutta
 ---
 
