@@ -10,6 +10,8 @@ categories:
 - project
 hidden: true
 summary: "The project aimed to familiarize mentees with hacking concepts, including past vulnerabilities and exploits."
+image:
+  url: "https://imgs.search.brave.com/pUdhAFJfeNTKa0agA-9DqxIVGwMccuUdzChHEjy1NwU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdDMu/ZGVwb3NpdHBob3Rv/cy5jb20vNDIxMTIy/Ny8xODYyOS9pLzQ1/MC9kZXBvc2l0cGhv/dG9zXzE4NjI5Nzgy/Ni1zdG9jay1waG90/by1pbmZvcm1hdGlv/bi1zZWN1cml0eS1j/b25jZXB0LmpwZw"
 ---
 
 # Intro to Infosec
