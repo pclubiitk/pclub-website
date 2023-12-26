@@ -11,6 +11,8 @@ categories:
 - project
 hidden: true
 summary: "The project was meant to introduce the mentees to the world of Competitive Programming and teach various algorithms and techniques."
+image:
+  url: "https://cdn.openart.ai/stable_diffusion/d96bee71ea4660085c7d342719bd397feddf3541_2000x2000.webp"
 ---
 
 # AlgoArena 

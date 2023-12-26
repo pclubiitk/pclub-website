@@ -13,6 +13,8 @@ categories:
 hidden: true
 summary:
 - The project aimed at introducing Web3 to the campus junta along with developing a Web3 ecosystem at IIT Kanpur.
+image:
+  url: "https://media.istockphoto.com/id/1390600542/photo/web-3-0-on-futuristic-electronic-board-background-technology-of-decentralized-social-network.jpg?s=612x612&w=0&k=20&c=yCdlN3JwukdmGYM9ncUE16wTSiQYuNpSVCD6dxBIkYE="
 ---
 
 # Mastering Web3.0

@@ -11,8 +11,8 @@ tags:
 categories:
 - project
 
-# image:
-#   url: https://scontent.fixc2-2.fna.fbcdn.net/v/t39.30808-1/277179005_5288947584470370_4327901670099926534_n.jpg?stp=dst-jpg_p148x148&_nc_cat=100&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=ZaPnsEplpmIAX_DCN-x&_nc_ht=scontent.fixc2-2.fna&oh=00_AfCJCeBdlAMkclIycxPGuyTHFuBDZlQDBb2hT9nSs0rqBg&oe=63B0F5C7
+image:
+  url: https://yt3.googleusercontent.com/hzDlK0ORdc8Hrk46qOQ05ilQ5rTDQcaQpLWpEfnS4mfBX6IkgW6I9fX4Xhcs4eoybg17IH2D2Q=s900-c-k-c0x00ffffff-no-rj
 
 summary: "The objective of this project was to update the android app Antaragni-App 15 making it more dynamic and user-friendly for the Antaragni-16"
 ---

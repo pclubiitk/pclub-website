@@ -12,6 +12,8 @@ categories:
 hidden: true
 summary:
 - This project seamlessly integrated theoretical and practical aspects to comprehensively explore deep learning concepts offline.
+image:
+  url: "https://www.mouser.in/blog/Portals/11/Dongang_Machine%20Learning_Theme%20Image-min_1.jpg"
 ---
 
 # Sumarizzing

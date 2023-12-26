@@ -12,6 +12,8 @@ categories:
 hidden: true
 summary:
 - This project aimed to introduce 20 mentees to machine learning and explore natural language processing.
+image:
+  url: "https://t3.ftcdn.net/jpg/02/80/04/54/360_F_280045451_if6YKR6yBF4X2xHIcn5opbNgY3noerDC.jpg"
 ---
 
 # Sumarizzing

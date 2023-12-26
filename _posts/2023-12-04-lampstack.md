@@ -12,6 +12,8 @@ categories:
 hidden: true
 summary:
 - The project aimed at teaching various aspects of web development and server management.
+image:
+  url: "https://png.pngtree.com/thumb_back/fh260/background/20220607/pngtree-server-isometric-3d-connection-communication-data-image_1407027.jpg"
 ---
 
 # Sumarizzing
