@@ -11,7 +11,7 @@ tags:
 categories:
 - wocproject
 image:
-  url: /images/blog.jpg
+  url: /pclub-website/images/blog.jpg
 ---
 
 #### Description

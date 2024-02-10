@@ -11,7 +11,7 @@ tags:
 categories:
 - wocproject
 image:
-  url: /images/mess.png
+  url: /pclub-website/images/mess.png
 ---
 
 # [Life@IITK](https://github.com/life-iitk)

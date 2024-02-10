@@ -12,7 +12,7 @@ categories:
 - tutorial
 
 image:
-  url: /images/globe.jpeg
+  url: /pclub-website/images/globe.jpeg
 
 ---
 

@@ -11,7 +11,7 @@ categories:
 - events
 
 image:
-  url: /images/linux.webp
+  url: /pclub-website/images/linux.webp
 ---
 
 > Linux Demystified is a blog series by Programming Club IIT Kanpur, covering all the major components of a Linux distribution. This series is not an introduction on how to install/use Linux, nor a comparison between various Linux distributions, rather an explainer on what makes Linux so customizable and powerful. At the end of this series one would be able to customize their own OS, appreciate the differences and pick from the options available at every small level of an Operating System.  
@@ -23,7 +23,7 @@ Linus Torvalds (the creator of LINUX) had already considered the name Linux but 
 
 Here we will talk about the origins, versions, and predecessors of present-day Linux systems. Our story begins way back in 1969 with the development of UNIX.
 
-{% include lazyload.html image_src="/images/0__vEtTa__8X__cTHNIF3.png" %}
+{% include lazyload.html image_src="/pclub-website/images/0__vEtTa__8X__cTHNIF3.png" %}
 
 ### UNIX v0.0
 

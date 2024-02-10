@@ -2,7 +2,7 @@
 layout: page
 title: Archive
 permalink: /archive/
-image: "/images/bg.jpg"
+image: "/pclub-website/images/bg.jpg"
 ---
 <style>
 .grid-container {
@@ -72,7 +72,7 @@ img {
         {% if post.image %}
         <img data-src="{{ post.image.url }}" alt="Post Image" class="blur-up lazyload">
         {% else %}
-        <img data-src="/images/bg.jpg" alt="Default Image" class="blur-up lazyload">
+        <img data-src="/pclub-website/images/bg.jpg" alt="Default Image" class="blur-up lazyload">
         {% endif %}
         <div class="overlay">{{ post.date | date: '%B %Y' }}</div>
       </div>

@@ -12,7 +12,7 @@ categories:
 - project
 
 image:
-  url: /images/mnist_100_digits.png
+  url: /pclub-website/images/mnist_100_digits.png
 
 summary: "Using neural networks and optimization the model learns the similarities of the training datasets which have a common result"
 
@@ -22,7 +22,7 @@ summary: "Using neural networks and optimization the model learns the similariti
 
 Handwriting recognition (or HWR[1]) is the ability of a computer to receive and interpret intelligible handwritten input from sources such as paper documents, photographs, touch-screens and other devices. Machine Learning is incorporated to solve this interesting problem. Using neural networks and optimization the model learns the similarities of the training datasets which have a common result. Spell corrector is also incorporated to increase accuracy upto 97%.
 
-![image](http://neuralnetworksanddeeplearning.com/images/mnist_100_digits.png)
+![image](http://neuralnetworksanddeeplearning.com/pclub-website/images/mnist_100_digits.png)
 
 
  The program was developed on Lua using Torch libraries like image, nn, optim, etc to detect Handwritten text. Given image of a paragraph as input it can segment various lines and then further each line into individual alphabets including spaces and further recognize them. To increase the accuracy of the output, a spell corrector was incorporated in the program. Using a million words from Sir. Arthur Conan Doyle ’s novel and words from dictionary, a database was created, through which recognized words were compared by applying methods like Bayes’ Theorem the correct word was replaced.

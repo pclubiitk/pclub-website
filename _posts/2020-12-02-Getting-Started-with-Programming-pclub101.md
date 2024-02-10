@@ -11,7 +11,7 @@ categories:
 - events
 
 image:
-  url: /images/pclublogo.png
+  url: /pclub-website/images/pclublogo.png
 ---
 
 ### Programming 101
@@ -58,7 +58,7 @@ That being said, these are our recommendations:
 
 Prerequisites to understand this section: Some idea about what a computer program is, input, output, variables, etc.
 
-{% include lazyload.html image_src="/images/1__Y0ppgbdAbGkF88YlLDR__CA.png" %}
+{% include lazyload.html image_src="/pclub-website/images/1__Y0ppgbdAbGkF88YlLDR__CA.png" %}
 
 As you explore the world of coding, you see people who can come up with ideas quickly and type a piece of the script right away to solve a given puzzle or problem.
 
@@ -68,7 +68,7 @@ As all major companies all over the world need people with good problem-solving 
 
 Let us take a simple problem from [Codeforces](https://codeforces.com) —
 
-{% include lazyload.html image_src="/images/1__HoJx9DEE3qqNhY553jtodA.png" %}
+{% include lazyload.html image_src="/pclub-website/images/1__HoJx9DEE3qqNhY553jtodA.png" %}
 
 See the above problem, for instance. There is a problem statement, and there is a prescribed input and output format. Your program must follow the specified formats. Try working out the problem for the sample input. Basically, for all possible input in the range given, your program should generate some output.
 
@@ -82,7 +82,7 @@ When you put your logic or solution into code, you have _implemented_ an _algori
 
 As for **algorithms,** they are basically the steps to reach your goal. Suppose you want the biggest number from a list of numbers — You go through each number in the list and ask yourself if it is the biggest number you have seen till now? If so, remember it. And go on. In the end, you will have the biggest number on the list.
 
-{% include lazyload.html image_src="/images/1__xolj9Zsil49u4VUPRTVZNQ.png" %}
+{% include lazyload.html image_src="/pclub-website/images/1__xolj9Zsil49u4VUPRTVZNQ.png" %}
 
 Assuming your basics are good enough, to get started, you can create accounts on various _online judges._ **Online judges** are the websites that have problems and checkers, which will run your program on their servers. They have specially designed test cases to check whether your program gives the correct output!
 
@@ -114,7 +114,7 @@ Some terminology in the example above — The original message is referred t
 
 With the advent of digital computing and availability of GHz processors, lots of manual computation can now be done in under a second. Suppose, you didn’t know that how much the message is shifted with, but, you know that the algorithm used to convert the message to a _cipher_ is by some constant shift, you need to check just 25 possible cases, which is absolutely easy to check with the help of a computer (and manually too!). Checking every possible case is known as the **_brute-force_** technique in computer science.
 
-{% include lazyload.html image_src="/images/0__jZwIQPktdsgDhHI6.png" %}
+{% include lazyload.html image_src="/pclub-website/images/0__jZwIQPktdsgDhHI6.png" %}
 
 Nowadays, we are surrounded by a lot of devices, and we use them for a greater part of our day. Naturally, there is a lot of information that is being collected by apps and devices to deliver better service. But, we don’t want that information to be public or readily accessible by anyone! It can range from our private photos to our nation’s nuke codes!
 
@@ -122,7 +122,7 @@ Cybersecurity can be broadly classified into two divisions — Theoretical a
 
 Come on, if your crush asks you for the name of your first teacher during a conversation, you are likely to not think anything about it. But, if you have set the answer to that as your security question somewhere? People can impersonate someone else on Facebook and other social media and gain sensitive information by such a **_social-engineering_** attack.
 
-{% include lazyload.html image_src="/images/0__DHDVJE7GcN6KIW2Y.jpg" %}
+{% include lazyload.html image_src="/pclub-website/images/0__DHDVJE7GcN6KIW2Y.jpg" %}
 
 Some websites may have _expressed disapproval_ when creating a weak password — because such passwords are common and easily broken by _dictionary-attacks_!
 
@@ -142,11 +142,11 @@ A simple task for you: (_Hint: learn how to use Google_)— YjQ1MzY0XzE1X24wN183
 
 ### **Web Development: Beginner’s Roadmap**
 
-{% include lazyload.html image_src="/images/1__xgtoIMef757C5RBnLXjhEA.gif" %}
+{% include lazyload.html image_src="/pclub-website/images/1__xgtoIMef757C5RBnLXjhEA.gif" %}
 
 Web development is the work involved in developing a web portal/ software for Internet users. Web-dev can range from developing a simple single static page of plain text(that’s how you kickstart things) to complex web-based internet applications (web apps), electronic businesses, and social network services.
 
-{% include lazyload.html image_src="/images/1__V__Jp13LvtVc2IiY2fp4qYw.jpeg" %}
+{% include lazyload.html image_src="/pclub-website/images/1__V__Jp13LvtVc2IiY2fp4qYw.jpeg" %}
 
 Now, keeping the intro part aside, talking about some real stuff.  
 Web-dev has two subdivisions: Frontend and Backend. Frontend revolves around building the User Interface (UI) and everything you’ll see on different applications or software, and constructing the interface between the user and the machine.  
@@ -155,7 +155,7 @@ Let’s explore a bit about the two fields:
 
 **Frontend Development:** The most basic technologies you’ll need to have a grip on are HTML, CSS, and JavaScript. HTML (Hypertext Markup Language) will define the skeletal structure for your application. CSS(Cascading Style Sheet) describes the presentation of Web pages, including colors, layout, and fonts. Finally, JavaScript adds the logic part to the application and is responsible for establishing connections between the frontend and backend (somewhat).
 
-{% include lazyload.html image_src="/images/1__KRq7jQOUdQsHNsZa72XcDw.jpeg" %}
+{% include lazyload.html image_src="/pclub-website/images/1__KRq7jQOUdQsHNsZa72XcDw.jpeg" %}
 
 To get started with things, you can refer to these amazing resources:
 
@@ -176,7 +176,7 @@ For NodeJS, MDN docs are again pretty good! You can check them out [here](https:
 
 Well, if you think things were that simple, you might want to have a look at the flowchart below. It might scare you but believe me, it’s really cool!
 
-{% include lazyload.html image_src="/images/1__M7Wup__29RMUssCSuxKOSSQ.jpeg" %}
+{% include lazyload.html image_src="/pclub-website/images/1__M7Wup__29RMUssCSuxKOSSQ.jpeg" %}
 
 **_Where to test all this stuff you’ve learned?  
 _**Open Source! Honestly, contributing to open source organizations was my motivation for learning web-Dev. Almost every organization has a minimum of two projects running, which involves web development. You can choose your organizations and start to work on the relevant issues!
@@ -193,7 +193,7 @@ We shall first answer the main question in the first place — What is Machi
 
 Machine Learning is a branch of Computer Science that recently emerged, which helps humans in doing human tasks, the simplest of them being the identification of objects. The list is quite endless; modern-day Machine Learning models can predict, classify, and even generate new data.
 
-{% include lazyload.html image_src="/images/1__q5Jj7MkR__1COI7AhAnO6lA.png" %}
+{% include lazyload.html image_src="/pclub-website/images/1__q5Jj7MkR__1COI7AhAnO6lA.png" %}
 
 Machine Learning models are mathematical models. Research in this field has occurred for a long time. Linear Regression was performed by Gauss (1809) to predict planetary movement. The field requires high computational power since millions of mathematical calculations take place before giving a useful output. Graphical Processing Units (GPUs), popularly known as Graphic cards emerged in the 21st century and were capable of handling calculations parallelly. This helped the field to prosper, and since then, there has been no stopping for groundbreaking research in ML.
 
@@ -203,7 +203,7 @@ For this, you will need Numpy and Matplotlib. Numpy is a matrix handling library
 
 Linear Regression data is available in plenty on the internet. If you are smart enough, you can make your own data (Hint:Use np.linspace, and introduce some randomness in the data). Use the ordinary least-squares loss function to optimize your model, and write a code for gradient descent which will minimize the least-squares loss function. Then create random data points (or linearly spaced data points :) ) and test how well your model has predicted using Matplotlib.
 
-{% include lazyload.html image_src="/images/1__QiU6DcP__r9qWLznMw0__M__Q.png" %}
+{% include lazyload.html image_src="/pclub-website/images/1__QiU6DcP__r9qWLznMw0__M__Q.png" %}
 
 Here is a bonus task for you. Try to figure out how this method of Linear Regression can be manipulated to solve for a polynomial of degree ’n’.
 

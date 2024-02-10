@@ -23,7 +23,7 @@ image:
 Vim is one of the two widely known text-based Text Editor cum IDEs, the other one being, ahem, Emacs.
 For people new to Vim, it might have be a big leap, it is markedely different from the usual text editors, it being modal (implying that the same keys do differnt things in different modes. Don't worry, modes are awesome.)
 
-{% include lazyload.html image_src="https://realpython.com/images/blog_images/vim/vim-ide.png" %}
+{% include lazyload.html image_src="https://realpython.com/pclub-website/images/blog_images/vim/vim-ide.png" %}
 
 This article has been taken from the blog at [acehack.org](http://www.acehack.org/posts/2015-06-15-vim.html). Please note that it assumes a bit of familiarity with Vim, and thus, you should first start off by reading about it, getting an installation of it, and learning how to type things in it (yes, you need to learn that too). It's fun, I promise :smile:
 
