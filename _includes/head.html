@@ -15,10 +15,11 @@
   <!-- Ionicons -->
   <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
 
-  <style>
-  {% capture include_to_scssify %}
-    {% include main.scss %}
+  {% capture styles %}
+  {% include styles.css %}
   {% endcapture %}
-  {{ include_to_scssify | scssify }}
+
+  <style>
+  {{ styles | scssify }}
   </style>
 </head>
