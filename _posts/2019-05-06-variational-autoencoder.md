@@ -81,7 +81,7 @@ Hence,the mean vector controls where the encoding of an input should be centered
 ![image](https://cdn-images-1.medium.com/max/1600/1*xCjoga9IPyNUSiz9E7ao7A.png)  
 We want our encodings to be as close as possible while still being distinct to make smooth interpolation, but sometimes we might end up making our latent space similar to the right picture shown above as there are no limits on what values vectors μ and σ can take on, so to avoid this , we introduce KL divergence in the loss function . 
 The following image shows the calculation of the log of the data likelihood  
-![image](https://github.com/namanbiyani/images/blob/master/Screenshot%20from%202019-04-16%2010-30-17.png?raw=true)  
+![image](https://github.com/namanbiyani/pclub-website/images/blob/master/Screenshot%20from%202019-04-16%2010-30-17.png?raw=true)  
 
 Although the third term in intractable, by Gibbs inequality , we know that KL divergence of two distributions is always non-negative . Hence, the first two terms can be a tractable lower bound to the log data likelihood which we can easily differentiate (P(X|Z) is mostly a simple distribution like Guassian and KL term is also differntiable ) and hence optimize .The combination of first two terms is also known as Variational Lower Bound ("ELBO") . The first term here is responsible for reconstructing the original input data and the second term is responsible for making approximate distribution close to input distribution .
 

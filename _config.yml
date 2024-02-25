@@ -1,7 +1,7 @@
 #-------------------------------
 # General Site Settings
 title: Programming Club | IITK
-logo: '/images/pclub.png' # You can add own logo. For example '/images/logo.png'.
+logo: '/pclub-website/images/pclub.png' # You can add own logo. For example '/pclub-website/images/logo.png'.
 description: The Programming Club, IIT Kanpur
 baseurl: "" # The subpath of your site, e.g. /blog
 url: "" # The base hostname & protocol for your site, e.g. http://example.com
@@ -13,7 +13,7 @@ collections:
 # Author Settings
 author:
   name: Programming Club IITK
-  avatar: '/images/pclub.png'
+  avatar: '/pclub-website/images/pclub.png'
 
 
 #-------------------------------
@@ -21,7 +21,7 @@ author:
 hero:
   title: Programming Club IIT Kanpur
   description: Talk is cheap, Show us the code.
-  image: '/images/bg.jpg'
+  image: '/pclub-website/images/bg.jpg'
 
 
 #-------------------------------

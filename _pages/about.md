@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 <p align="center">
-<img data-src="/images/pclub_logo.png" style="width:50%; height:50%;"/>
+<img data-src="/pclub-website/images/pclub_logo.png" style="width:50%; height:50%;"/>
 </p>
 
 

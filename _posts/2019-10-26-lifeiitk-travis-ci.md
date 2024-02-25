@@ -11,7 +11,7 @@ tags:
 categories:
 - wocproject
 image:
-  url: /images/travis.png
+  url: /pclub-website/images/travis.png
 ---
 
 #### Description

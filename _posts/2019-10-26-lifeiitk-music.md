@@ -11,7 +11,7 @@ tags:
 categories:
 - wocproject
 image:
-  url: /images/music.png
+  url: /pclub-website/images/music.png
 ---
 
 #### Description

@@ -11,7 +11,7 @@ tags:
 categories:
 - wocproject
 image:
-  url: /images/election.png
+  url: /pclub-website/images/election.png
 ---
 
 # [Life@IITK](https://github.com/life-iitk)

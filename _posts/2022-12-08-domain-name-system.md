@@ -11,7 +11,7 @@ categories:
 - events
 
 image:
-  url: /images/dns.png
+  url: /pclub-website/images/dns.png
 ---
 
 Have you ever wondered what happens when you type in a website on a web browser? And you must have observed that most websites end with .com, .in, .gov, .org, etc. What do these signify? To answer these questions, we need to understand the Domain Name System (or DNS). Let’s start with understanding how domain names are built.
@@ -20,7 +20,7 @@ Have you ever wondered what happens when you type in a website on a web browser?
 
 Every domain, like google.com or medium.com, is built hierarchically. Let’s have a look at how it’s done.
 
-{% include lazyload.html image_src="/images/0__mlJc1336f9UTM9vg.jpg" %}
+{% include lazyload.html image_src="/pclub-website/images/0__mlJc1336f9UTM9vg.jpg" %}
 
 The **Root Domain** is an empty string, and the (.) is generally omitted while searching for a website on a browser. DNS doesn’t require this terminating (.), i.e., (google.com.) is the same as (google.com).
 
@@ -39,7 +39,7 @@ A **Subdomain** sits on the left-hand side of the Second-Level Domain, using a p
 
 Every device on the internet has its unique address, called an IP address. An IP address consists of 4 sets of digits (hence also called IPv4) ranging from 0–255(each set is formed by 8 bits), separated by a period(.), and is represented as 204.56.10.259.
 
-{% include lazyload.html image_src="/images/0__EB1hoH6gfMLSby__M.jpg" %}
+{% include lazyload.html image_src="/pclub-website/images/0__EB1hoH6gfMLSby__M.jpg" %}
 
 Every URL you visit on the internet is mapped to a similar IP address. In fact, the internet does not understand URLs like google.com or nwm.iitk.ac.in; what it understands are only IP addresses. Try putting [https://202.3.77.93](https://202.3.77.93) in your URL bar and see where it takes you. Despite this, we all know that we are not expected to remember any IP address; then, who does this bookkeeping?
 
@@ -49,7 +49,7 @@ Now, Let’s say you want to visit some website **xyz.com** that is hosted on so
 
 Before going ahead, let’s understand about nameservers. A **nameserver** is a server where DNS software is installed and works as a directory that translates domain names into IP addresses.
 
-{% include lazyload.html image_src="/images/0__WwFt8IQNIL2PGdCW.jpg" %}
+{% include lazyload.html image_src="/pclub-website/images/0__WwFt8IQNIL2PGdCW.jpg" %}
 
 When a DNS request is made, the computer first checks its local cache to see if it has the website already stored. Frequently visited websites are stored in the computer’s local caches to reduce loading times. Similarly, multiple such caches are maintained at different levels to reduce the loading time as much as possible. If not, a request to a **Recursive DNS server** (also known as a **recursive resolver**) is made (step 1), which is usually provided by your ISP(Internet Service Provider). The Recursive DNS server also has a set of cached websites where your website might be found. If not, an expansive search begins to find the website with the help of root servers (step 2), and they redirect the search to the respective **TLD server** (steps 3 and 4), which stores the location of the **authoritative servers** of all websites with a given TLD (steps 5 and 6). Authoritative servers contain the website in its original form, with all original files and records being stored there; any server containing a cached version of a webpage is called a non-authoritative server. The search finally reaches its conclusion at the authoritative server, and the query returns to your browser (steps 7 and 8).
 
@@ -63,7 +63,7 @@ You can view the local DNS cache stored in your computer by using the following 
 2.  **Mac:** Open the Terminal app, enter the command “_sudo discoveryutil udnscachestats_” or “_sudo discoveryutil mdnscachestats_” and input your password.
 3.  **Linux:** Unfortunately for Linux users, Linux does not store the DNS cache automatically.
 
-{% include lazyload.html image_src="/images/0__m6CDVBdtfirGBo8Z.jpg" %}
+{% include lazyload.html image_src="/pclub-website/images/0__m6CDVBdtfirGBo8Z.jpg" %}
 
 ### Proxy Server
 
@@ -71,7 +71,7 @@ Sometimes requests sent to an authoritative server are intercepted by other serv
 
 A **proxy server** is an intermediary between a server providing a resource and a server that contains the resource and has a large number of applications in networking. Proxy servers are used from the user side to bypass firewalls and content restriction and on the server side to balance loads among many servers in a network, encrypt/decrypt data before processing, and to protect against OS-based attacks.
 
-{% include lazyload.html image_src="/images/0__yztqJsSHOIcItBUx.jpg" %}
+{% include lazyload.html image_src="/pclub-website/images/0__yztqJsSHOIcItBUx.jpg" %}
 
 ### Conclusion
 
