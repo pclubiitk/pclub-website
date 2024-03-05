@@ -4,7 +4,7 @@ title: Programming Club | IITK
 logo: '/images/pclub.png' # You can add own logo. For example '/images/logo.png'.
 description: The Programming Club, IIT Kanpur
 baseurl: "" # The subpath of your site, e.g. /blog
-url: "" # The base hostname & protocol for your site, e.g. http://example.com
+url: "pclub.in" # The base hostname & protocol for your site, e.g. http://example.com
 
 collections:
   - medium_posts
