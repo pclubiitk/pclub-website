@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Linux Demystified: Strap-On! (Part2)"
+title: "Linux Demystified: Strap-On! (Part 2)"
 date: 2024-03-24 22:30:00 +0530
 authors: Abhishek Shree, B Anshuman, Pratyush Gupta, Akhil Agrawal, Shivam Mishra, Naman Gupta
 category: events
@@ -112,3 +112,7 @@ This is where the power of Linux can be seen. Although bootloaders are present i
 > Note that, a bootloader (like grub) can be used to boot any Operating System if there are multiple installed. This simply does not work with the Windows bootloader, infact, Windows notoriously removes the grub directory from the EFI partition if you install it after installing a Linux Distro.
 
 P.S. Don’t worry about other terms in the above image — *filesystem*, swap and sectors, we will hopefully cover them in upcoming blogs
+
+_Authors: Abhishek Shree, B Anshuman, Pratyush Gupta, Akhil Agrawal, Shivam Mishra, Naman Gupta  
+Editor: Naman Gupta  
+Design: Aditya Subramanian_
