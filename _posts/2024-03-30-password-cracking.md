@@ -2,7 +2,7 @@
 layout: post
 title: "Password Cracking"
 date: 2024-03-30 22:30:00 +0530
-authors: Aman Singh Gill, Pratham Sahu, Divyansh Garg
+authors: Aman Singh Gill, Pratham Sahu
 category: events
 tags:
 - Cyber Security
