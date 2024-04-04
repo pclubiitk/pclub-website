@@ -277,3 +277,5 @@ Broken hashing algorithms refer to cryptographic hash functions that have been c
 It's essential to use modern and secure hashing algorithms, such as SHA-256, SHA-3, or bcrypt, for cryptographic purposes to ensure data integrity and security. Additionally, algorithms should be regularly evaluated for potential weaknesses, and older algorithms should be replaced as needed to maintain security standards.
 ### Note
 We've only discussed Offline Password Cracking because Online Password cracking by Brute Forcing Login Services would be infeasible in today's scenario. After all, IPs would get blocked after a certain number of times. The process would be too slow even if we try to log in with proxies (different IPs).      
+
+_Authors: Aman Singh Gill, Pratham Sahu
