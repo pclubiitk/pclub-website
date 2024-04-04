@@ -2,7 +2,7 @@
 layout: post
 title: "Password Cracking"
 date: 2024-03-30 22:30:00 +0530
-authors: Aman Singh Gill, Pratham Sahu
+authors: Aman Singh Gill
 category: events
 tags:
 - Cyber Security
@@ -278,4 +278,5 @@ It's essential to use modern and secure hashing algorithms, such as SHA-256, SHA
 ### Note
 We've only discussed Offline Password Cracking because Online Password cracking by Brute Forcing Login Services would be infeasible in today's scenario. After all, IPs would get blocked after a certain number of times. The process would be too slow even if we try to log in with proxies (different IPs).      
 
-_Authors: Aman Singh Gill, Pratham Sahu
+_Authors: Aman Singh Gill
+Editor: Pratham Sahu
