@@ -37,6 +37,7 @@ Some common hashing Algorithms are:
 * **Whirlpool**: A cryptographic hash function producing a 512-bit (64-byte) hash value, designed by Vincent Rijmen and Paulo S. L. M. Barreto
 * **RIPEMD-160**: A cryptographic hash function developed as an improvement of RIPEMD, producing a 160-bit (20-byte) hash value
 * **Tiger**: A cryptographic hash function known for its speed and cryptographic strength, producing a 192-bit (24-byte) hash value
+<!-- --><br />
 ## Why Passwords are Hashed
 Passwords are hashed primarily for security reasons. When a user creates an account or sets a password, the system does not store it. Instead, it computes the password's hash value using a hashing algorithm and stores the hash value in its database.<br />
 Here are the main reasons why passwords are hashed:
@@ -44,12 +45,14 @@ Here are the main reasons why passwords are hashed:
 * User Privacy: Shield passwords from unauthorized access
 * Preventing Password Reuse: Encourage unique passwords
 * Compliance with Security Standards: PCI DSS, GDPR, and other standards mandate password hashing for user data protection
+<!-- --><br />
 ## Salting in Hashes
 {% include lazyload.html image_src="/images/salting.jpg" %}<br />
 Salting in hashes is a technique used to enhance the security of hashed passwords or data by adding a random or unique value, called a *salt*, before hashing. This salt is typically a random string of characters or bits generated separately for each password or piece of data being hashed. Here's an explanation of how salting works and why it's important:
 * Adding Randomness: Salting introduces randomness by appending a unique value to each password before hashing
 * Preventing Precomputed Attacks: Salting thwarts precomputed attacks like rainbow tables(explained later) by ensuring each password has a distinct hash
 * Enhancing Security: Salting significantly boosts security by mitigating various types of attacks, including brute force and dictionary attacks
+<!-- --><br />
 ## Password Protected Files and Drives
 {% include lazyload.html image_src="/images/file_encryptions.jpg" %}<br />
 Password-protected files, such as ZIP archives and PDF documents, are digital files encrypted with a password to prevent unauthorized access. ZIP files, compressed archives containing multiple files and folders, can be password-protected to encrypt their contents, requiring the correct password for extraction. Similarly, PDF files, commonly used for document sharing, can be secured with password protection to encrypt the document's contents and restrict access or actions like printing and editing without the correct password. Encrypted files and drives use encryption algorithms to encode data, making it unreadable without the corresponding decryption key or password. This encryption ensures the confidentiality and security of sensitive information stored within the files or drives, reinforcing protection against unauthorized access and data breaches.
@@ -62,18 +65,22 @@ There are 4 methods to crack a Hash Protected Password
 * In a brute force attack, the attacker systematically tries every possible combination of characters until the correct password is found
 * This method starts with trying the simplest passwords, such as single characters or common words, and gradually progresses to more complex combinations
 * Brute force attacks can be resource-intensive and time-consuming, especially for longer and more complex passwords, but they are generally effective against weak passwords
+<!-- --><br />
 ### Dictionary Attack
 * A dictionary attack involves using a predefined list of words, phrases, or commonly used passwords to guess the password
 * Unlike brute force, which tries every possible combination, a dictionary attack focuses on likely passwords first, potentially speeding up the process
 * The dictionary used in this attack may include common words, phrases, names, and variations thereof, making it more efficient than brute force for many scenarios
+<!-- --><br />
 ### Rainbow Table Attack
 * Rainbow table attacks exploit weaknesses in password storage mechanisms, particularly when passwords are hashed without salting
 * A rainbow table is a precomputed table of password hashes and their corresponding plaintext passwords
 * Instead of recalculating hashes for each attempted password, the attacker compares the hash of the target password with entries in the rainbow table to find a match
 * This method can be faster than brute force or dictionary attacks, especially for large datasets, but it requires significant computational resources to generate and store the rainbow table initially
+<!-- --><br />
 ### Collision Attack
 * A collision attack is a type of cryptographic attack where an attacker tries to find two different inputs (messages) that produce the same hash value when processed by a hashing algorithm. In other words, the attacker seeks to find a collision—a situation where two distinct inputs generate identical hash outputs.
 * Collision attacks can have serious security implications, especially in cryptographic systems where hash functions are used for ensuring data integrity, authentication, and other security purposes. A successful collision attack undermines the fundamental security properties of the hash function, leading to potential vulnerabilities and compromises in the overall security of the system.
+<!-- --><br />
 ### Collision Attack Proof of Concept
 Collision attacks against MD5 are not only theoretically possible but have also been demonstrated in practice. In fact, MD5 is considered highly vulnerable to collision attacks due to its design flaws and weaknesses. <br />
 In 2004, researchers Xiaoyun Wang and Hongbo Yu published a paper titled *Collisions for Hash Functions MD4, MD5, HAVAL-128 and RIPEMD* where they presented practical collision attacks against several cryptographic hash functions, including MD5. They demonstrated that it was possible to find two different inputs that produce the same MD5 hash value, effectively breaking the collision resistance property of MD5. <br />
@@ -92,12 +99,14 @@ Due to these vulnerabilities, MD5 is no longer considered secure for cryptograph
 * [HashcatGUI](https://hashcat.net/forum/thread-9151.html): A graphical user interface for Hashcat, providing an easier and more user-friendly way to perform hash cracking tasks.
 * [Pyrit](https://github.com/Azure/PyRIT): Another tool for cracking Wi-Fi passwords, Pyrit specializes in attacking WPA/WPA2-PSK authentication.
 * [fcrackzip](https://www.kali.org/tools/fcrackzip/): fcrackzip is a fast password cracker partly written in assembler. It is able to crack password protected zip files with brute force or dictionary based attacks, optionally testing with unzip its results. It can also crack cpmask’ed images.
+<!-- --><br />
 ## Websites for Hash Cracking
 * [OnlineHashCrack](https://www.onlinehashcrack.com/)
 * [Crack Station](https://crackstation.net/)
 * [Hashes.com](https://hashes.com/en/decrypt/hash)
 * [MD5 Hashing](https://md5hashing.net/)
 * [Ntirxgen](https://nitrxgen.net/)
+<!-- --><br />
 ## Wordlists
 {% include lazyload.html image_src="/images/wordlists.png" %}<br />
 Most of the time Wordlists that contain commonly used passwords and words are used for this puspose. Wordlists like this typically originate from data breaches, leaks, or public disclosures of passwords used by individuals on various online platforms. Several famous wordlists are widely used in password cracking, security testing, and research. Here are some of the most notable ones:
@@ -107,13 +116,14 @@ Most of the time Wordlists that contain commonly used passwords and words are us
 * CrackStation: A collection of wordlists generated from leaked password databases, providing a comprehensive dataset for password cracking purposes.
 * Hashes.org: An online repository of hashed passwords and associated wordlists, allowing researchers and security professionals to collaborate on password cracking projects.
 * WPA/WPA2 Wordlists: Specialized wordlists containing common passwords and phrases used in Wi-Fi networks protected by WPA/WPA2 encryption, often used for cracking wireless network passwords.
-<!-- -->
+<!-- --><br />
 More Lists of Wordlists can be found on [WeakPass](https://weakpass.com/)
 ## Custom Wordlists
 Several tools are available for generating wordlists, which are essential for password cracking and security testing. Here are some popular ones:
 * [Crunch](https://github.com/jim3ma/crunch): A powerful wordlist generator that allows users to specify custom character sets, lengths, and patterns for generating wordlists.
 * [CUPP](https://github.com/Mebus/cupp) (Common User Passwords Profiler): A simple tool that generates custom wordlists based on personal information such as names, dates, and common passwords.
 * [CeWL](https://github.com/digininja/CeWL) (Custom Word List generator): A tool that spiders a target website to create custom wordlists based on the content found in the web pages.
+<!-- --><br />
 ## CPU vs GPU
 {% include lazyload.html image_src="/images/cpu-vs-gpu.jpg" %}<br />
 The choice between using CPU (Central Processing Unit) and GPU (Graphics Processing Unit) for hash cracking can significantly impact the speed and efficiency of the cracking process.
@@ -123,12 +133,14 @@ The choice between using CPU (Central Processing Unit) and GPU (Graphics Process
 * Hash cracking on CPU relies heavily on the CPU's processing power and its ability to handle sequential tasks efficiently
 * CPUs are well-suited for tasks that require complex logic, branching, and sequential processing, which are often found in password cracking algorithms
 * However, CPU hash cracking tends to be slower compared to GPU cracking, especially when dealing with large datasets or complex hashing algorithms
+<!-- --><br />
 ### GPU Hash Cracking
 * GPUs are highly parallelized processors designed to handle large amounts of data simultaneously, making them well-suited for hash cracking.
 * Modern GPUs contain thousands of cores optimized for parallel processing, allowing them to perform many calculations simultaneously
 * Hash cracking on GPU can leverage the massive parallel processing power of GPUs to accelerate the cracking process significantly
 * GPUs are particularly effective at tasks that involve simple, repetitive calculations, such as those commonly encountered in cryptographic algorithms used for hashing
 * As a result, GPU hash cracking can achieve much higher speeds compared to CPU cracking, especially for algorithms that can be easily parallelized
+<!-- --><br />
 ## Types of Passwords
 It is also possible to classify passwords into certain sets. These sets can make the password cracking process more efficient, especially if we have some information about the targetted individual or group of individuals.<br />
 Here are a few sets:
@@ -163,6 +175,7 @@ Here are a few sets:
 * Leet Speak Substitution
     * Leet Speak involves replacing letters with similar-looking characters or symbols. While it can increase complexity, it's still vulnerable to dictionary-based attacks unless combined with other techniques.
     * Example: "p@ssw0rd" (for "password"), "l33t" (for "leet"), "h4ck3r" (for "hacker").
+<!-- --><br />
 ## Password Distortion Rules
 Distortion rules in password cracking refer to various strategies and techniques attackers use to modify or manipulate passwords to crack them more effectively. These rules are applied during brute-force or dictionary attacks to generate a more extensive set of potential passwords by systematically altering known patterns, words, or phrases.<br />
 Here are some common distortion rules used in password cracking:
@@ -187,6 +200,7 @@ Here are some common distortion rules used in password cracking:
 * L33t Speak
    * This type of Character Substitution replaces letters with visually similar numbers or symbols; in Character Substitution, the characters don't have to be identical in any form. This rule capitalizes on common substitutions used by users to make their passwords more complex. For example, 'e' might be replaced with '3', 'a' might be replaced with '@', and 'o' might be replaced with '0'.
    * Example: "Password" might be distorted to "P@$$w0rd".
+<!-- --><br />
 ## Password Strength
 {% include lazyload.html image_src="/images/password-strength.jpg" %}<br />
 It is not always possible to crack a Hash and Obtain a password (in our lifetime). <br />
@@ -194,11 +208,11 @@ Let us take an example, suppose we have the following information:
 * Hash
 * Hashing Algorithm
 * Length of the Password
-<!-- -->
+<!-- --><br />
 For the sake of example, let us assume:
 * Rate of calculating the hashes = 100 Million Hashes / second
 * Length of the Password = 8
-<!-- -->
+<!-- --><br />
 ### Character Set 0 - Numbers
 Characters Available = 10<br />
 Number of Possible Passwords = 10^8 = 100000000 Passwords<br />
@@ -230,7 +244,7 @@ That's why you should keep a complex password that uses all of the following Cha
 * Uppercase ASCII Characters
 * Numbers
 * Special Characters
-<!-- -->
+<!-- --><br />
 Below is the table that shows how much time it would take to crack a hash with certain conditions
 {% include lazyload.html image_src="/images/password_cracking_time.webp" %}<br />
 This table is just an example and not indicative of the actual time taken for hash cracking. A good understanding of multithreading and CUDA programming can even accelerate this by a factor.
@@ -246,6 +260,7 @@ So, to enhance the Security of your password, here are a few points to keep in m
 * Keep All Passwords Different: An attacker could access another asset using a password cracked from somewhere else. We surf the Internet, and we all have to put passwords for various websites that can't be trusted, so keeping different passwords would make sure that a breach from any of these websites won't affect our significant assets (like Google Account, etc.)
 * Enable Double Factor Authentication: Even if all of the above methods fail or your password was compromised by some other means (Phishing, etc), you would be secure if you've enabled double-factor authentication correctly. You would be notified by anyone trying to access your account with the correct password and would need your action to continue further
 * Change your Passwords after specific periods: We don't know how our data is being used because it's not always possible to tell how things work under the hood. Whether our passwords are hashed at the backend (with/without salts) or stored as plain text, if that's not what you think, then there won't be any wordlists like rockyou. It is impossible to check whether someone else has your password. Even if someone targets you, you can enhance your Security and privacy by changing your password regularly (after six months).
+<!-- --><br />
 ### Note
 The above points do not Guarantee 100% Protection; they only enhance Security.
 ## Checking Leaked Passwords
@@ -258,7 +273,7 @@ There are several websites you can use to check whether your password has been l
 * [HashKiller](https://hashkiller.io/listmanager): Pre-cracked Hashes, easily searchable
 * [LeakedPassword](https://leakedpassword.com/): Search across multiple data breaches to see if your pass has been compromised
 * [BugMeNot](https://bugmenot.com/): Find and share logins
-<!-- -->
+<!-- --><br />
 Source: [edoardottt/awesome-hacker-search-engines](https://github.com/edoardottt/awesome-hacker-search-engines)
 ## Broken Hashing Algorithms
 {% include lazyload.html image_src="/images/weak_crypto_algo.png" %}<br />
@@ -267,11 +282,10 @@ Broken hashing algorithms refer to cryptographic hash functions that have been c
 * sha1: SHA-1 is another widely used hashing algorithm that has been demonstrated to have vulnerabilities. Collision attacks against SHA-1 have been demonstrated, making it insecure for many cryptographic applications.
 * sha0: An earlier version of the SHA algorithm, SHA-0, was quickly replaced by SHA-1 due to vulnerabilities found in it.
 * RIPEMD-160 (RACE Integrity Primitives Evaluation Message Digest 160): Although not as widely used as MD5 or SHA-1, RIPEMD-160 has also been found to have vulnerabilities and is considered broken.
-<!-- -->
+<!-- --><br />
 It's essential to use modern and secure hashing algorithms, such as SHA-256, SHA-3, or bcrypt, for cryptographic purposes to ensure data integrity and security. Additionally, algorithms should be regularly evaluated for potential weaknesses, and older algorithms should be replaced as needed to maintain security standards.
 ### Note
 We've only discussed Offline Password Cracking because Online Password cracking by Brute Forcing Login Services would be infeasible in today's scenario. After all, IPs would get blocked after a certain number of times. The process would be too slow even if we try to log in with proxies (different IPs).      
 
 _Authors: Aman Singh Gill
-
-Editor: Pratham Sahu
+Editor: Pratham Sahu_
