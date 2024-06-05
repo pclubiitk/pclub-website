@@ -40,6 +40,7 @@ GEM
       nuggets
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    json (2.7.2)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -53,7 +54,6 @@ GEM
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (5.0.3)
-    rake (13.0.6)
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -62,7 +62,6 @@ GEM
     safe_yaml (1.0.5)
     sass-embedded (1.64.2)
       google-protobuf (~> 3.23)
-      rake (>= 13.0.0)
     sassc (2.1.0-x86_64-linux)
       ffi (~> 1.9)
     terminal-table (3.0.2)
@@ -79,6 +78,7 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-sitemap
   jekyll-tagging
+  json
   sassc (~> 2.1.0)
   webrick (~> 1.7)
 
