@@ -15,3 +15,8 @@ To run the theme locally
 - You can preview the site at `localhost:4000` or `127.0.0.1:4000`
 
 It is recommended to check out the official [step-by-step tutorial](https://jekyllrb.com/docs/step-by-step/) which does an excellent job explaining the workings of Jekyll
+
+## Structure of the project
+The structure of this project is like any normal jekyll project, with an exception of the `updating-scripts` folder which contains custom scripts to make the task of updating the site every year easier and have nothing to do with the actual site served.
+
+The general structure of a jekyll project is comprihensively explained in [their docs](https://jekyllrb.com/docs/structure/)
