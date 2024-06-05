@@ -1,4 +1,4 @@
-# The current pclub website
+# Pclub Website
 Pclub's website is a jekyll based static pages website with a custom theme.
 
 ### Dependencies
