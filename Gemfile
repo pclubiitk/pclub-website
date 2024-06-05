@@ -7,3 +7,4 @@ gem 'jekyll-tagging'
 gem "jekyll-sitemap"
 gem "webrick", "~> 1.7"
 gem "json"
+gem "rake"
