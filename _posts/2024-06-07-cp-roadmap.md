@@ -1,8 +1,18 @@
 ---
 layout: post
-title: Competitive Programming Roadmap
-permalink: /roadmaps/cp/
-category: roadmaps
+title: "Competitive Programming Roadmap"
+date: 2024-06-7 02:00:00 +0530
+author: Pclub
+website: https://github.com/life-iitk
+category: Roadmap
+tags:
+- roadmap
+- competitive
+- cp
+categories:
+- roadmap
+image:
+  url: 
 ---
 
 # Competitive Programming Roadmap
@@ -29,3 +39,4 @@ Competitive programming is a sport where participants solve complex coding probl
 - Online Judges (Codeforces, LeetCode, HackerRank)
 - Books (Introduction to Algorithms by Cormen, The Art of Computer Programming by Knuth)
 
+# In Progress....
