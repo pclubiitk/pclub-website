@@ -6,16 +6,15 @@ author: Pclub
 website: https://github.com/life-iitk
 category: Roadmap
 tags:
-- roadmap
-- machine learning
-- ml
+  - roadmap
+  - machine learning
+  - ml
 categories:
-- roadmap
+  - roadmap
+hidden: true
 image:
-  url: 
+  url:
 ---
-
-
 
 # Roadmap to Machine Learning (ML)
 
@@ -32,6 +31,7 @@ provided before asking your queries is expected :)
 
 We hope that by the end of the roadmap you are able to understand memes
 like:!<br/><br/>
+
 <div align="center">
 <img src="/images/ml-roadmap/image9.png" alt="Image 9" width="390" height="507" />
 <img src="/images/ml-roadmap/image2.png" alt="Image 2" width="371" height="431" />
@@ -41,11 +41,13 @@ like:!<br/><br/>
 ## Week 1 (Reviewing Python, introduction to numpy, pandas and matplotlib)
 
 #### Day 1 -- Get to know a bit about Machine Learning (A literature survey)
+
 <div align="center">
 <img src="/images/ml-roadmap/image4.png" alt="Image 4" width="300" height="300" />
 
-*You sure will be able to make better <br/> ML algos after tech trek!*
+_You sure will be able to make better <br/> ML algos after tech trek!_
 <br/>
+
 </div>
 
 One must have a broad understanding of what the subject is at hand. Machine learning is a wide field with various domains. It would be really helpful if one goes through a couple of YouTube videos and/or blogs to get a brief hang of it, and its importance.
@@ -85,12 +87,13 @@ documentation](https://docs.python.org/3/) is the best way
 to resolve the issues!
 
 #### Day 4 - Start to get a hang of some of the inbuilt libraries like NumPy
+
 <div align="center">
 <img src="/images/ml-roadmap/image8.png" alt="Image 8" width="520" height="300" />
 </div>
 
 Mathematics is the heart of Machine Learning. You will get a taste of
-this statement from *Week 2*. Implementing various ML models, loss
+this statement from _Week 2_. Implementing various ML models, loss
 functions, and confusion matrix need math.
 
 Mathematics is thus the foundation of machine learning. Most of the
@@ -127,8 +130,9 @@ are as follows:-
 <div align="center">
 <img src="/images/ml-roadmap/image.png" alt="Image 1" width="520" height="300" />
 
-*The average annual temperature above the industrial era around the
-globe*
+_The average annual temperature above the industrial era around the
+globe_
+
 </div>
 
 Both of the above figures show the same data. However, it is easier to
@@ -144,8 +148,8 @@ in case of discrepancies.
 Below are the links to some valuable resources covering the basics of
 Matplotlib:-
 
--   [Code With Harry](https://www.youtube.com/watch?v=VFsRLjSc8GA)
--   [Free Code Camp](https://www.youtube.com/watch?v=3Xc3CA655Y4)
+- [Code With Harry](https://www.youtube.com/watch?v=VFsRLjSc8GA)
+- [Free Code Camp](https://www.youtube.com/watch?v=3Xc3CA655Y4)
 
 #### Day 7 - Play around in Kaggle
 
@@ -161,17 +165,17 @@ trends in different data sets.<br/> Here is a brief walkthrough of the UI.
 
 One must be comfortable with processing data using Python libraries. Before going further, let us recall some basic concepts of Maths and Statistics. Follow these resources:
 
-- Mean, Variance, Standard Deviation -- Read theory from the book, *Statistics, 11th Edition* by Robert S. Witte, sections 4.1 - 4.6.
+- Mean, Variance, Standard Deviation -- Read theory from the book, _Statistics, 11th Edition_ by Robert S. Witte, sections 4.1 - 4.6.
 
 - Gaussian Distribution -- Read [this](https://medium.com/analytics-vidhya/normal-distribution-and-machine-learning-ec9d3ca05070) blog.
 
-- Correlation in Variables -- Read theory from the book, *Statistics, 11th Edition* by Robert S. Witte, Chapter 6.
+- Correlation in Variables -- Read theory from the book, _Statistics, 11th Edition_ by Robert S. Witte, Chapter 6.
 
 #### Day 2 - Regression Problems
 
 The common problems you would attempt to solve using supervised machine learning can be categorized into either a regression or a classification one. For example, predicting the price of a house is a regression problem, while classifying an image as a dog or cat is a classification problem. When you are outputting a value (real number), it is a regression problem, while predicting a category (class) is a classification problem.
 
-Go through [this](https://towardsdatascience.com/linear-regression-detailed-view-ea73175f6e86) article on linear regression. For a deeper intuition, watch [this](https://www.youtube.com/watch?v=1-OGRohmH2s) video. Follow [this](https://www.dataspoof.info/post/everything-that-you-should-know-about-linear-regression-in-python/) article to understand the implementation using various libraries. If you are further interested, you may see *Statistics, 11th Edition* by Robert S. Witte, Chapter 7.
+Go through [this](https://towardsdatascience.com/linear-regression-detailed-view-ea73175f6e86) article on linear regression. For a deeper intuition, watch [this](https://www.youtube.com/watch?v=1-OGRohmH2s) video. Follow [this](https://www.dataspoof.info/post/everything-that-you-should-know-about-linear-regression-in-python/) article to understand the implementation using various libraries. If you are further interested, you may see _Statistics, 11th Edition_ by Robert S. Witte, Chapter 7.
 
 #### Day 3 - Classification using KNNs
 
@@ -179,11 +183,11 @@ KNNs are one of the first classification algorithms. Watch the first 5 videos of
 
 #### Day 4 - Probability and Inferential Statistics
 
-Knowledge of probability is always useful in ML algorithms. It might sound a bit of an overkill, but for the next two days, we will revise some concepts in probability. You can use your JEE Notes or cover theory from the book, *Statistics, 11th Edition* by Robert S. Witte, sections 8.7 - 8.10. Go through important theorems like Bayes' Theorem and Conditional Probability. Audit the Coursera Inferential Statistics [Course](https://www.coursera.org/learn/inferential-statistics-intro) for free and complete Week 1 up to CLT and Sampling.
+Knowledge of probability is always useful in ML algorithms. It might sound a bit of an overkill, but for the next two days, we will revise some concepts in probability. You can use your JEE Notes or cover theory from the book, _Statistics, 11th Edition_ by Robert S. Witte, sections 8.7 - 8.10. Go through important theorems like Bayes' Theorem and Conditional Probability. Audit the Coursera Inferential Statistics [Course](https://www.coursera.org/learn/inferential-statistics-intro) for free and complete Week 1 up to CLT and Sampling.
 
 #### Day 5 - Inferential Statistics Continued
 
-Complete the remaining portion of Week 1 and Week 2 of the Inferential Statistics course. You can also use the book, *Statistics, 11th Edition* by Robert S. Witte, as a reference.
+Complete the remaining portion of Week 1 and Week 2 of the Inferential Statistics course. You can also use the book, _Statistics, 11th Edition_ by Robert S. Witte, as a reference.
 
 #### Day 6 - Naïve Bayes Classifier (Both Multinomial and Gaussian)
 
@@ -269,7 +273,8 @@ In case you aren't familiar with what a tree is have a look at [https://www.prog
 <div align="center">
 <img src="/images/ml-roadmap/image3.png" alt="Image 3" width="550" height="410" />
 
-*Above is a decision tree someone might use to decide whether or not to buy a specific car*
+_Above is a decision tree someone might use to decide whether or not to buy a specific car_
+
 </div>
 
 Let's have a look at a few mathematical considerations before developing further:
@@ -286,7 +291,7 @@ Moving on to how to build a decision tree, refer to the following:
 For a more visual understanding you can refer to the following video:
 [https://youtu.be/ZVR2Way4nwQ](https://youtu.be/ZVR2Way4nwQ)
 
-#### Day 7 - Implementing a Decision Tree**
+#### Day 7 - Implementing a Decision Tree\*\*
 
 So far we have not really looked into much code. But as always no concept is complete without implementation.
 
@@ -304,7 +309,7 @@ Finally, solve the Titanic challenge on Kaggle:
 
 ## Week 4 (Perceptrons, Neural Networks, and an introduction to Tensorflow)
 
-*The last 3 weeks of this roadmap will be devoted to Neural Networks and their applications.*
+_The last 3 weeks of this roadmap will be devoted to Neural Networks and their applications._
 
 **Day 1 - The perceptron and Neural Networks**
 
@@ -488,11 +493,11 @@ Let's see some common methods used to generate word embeddings which are broadly
 
 i) **Frequency Based--**
 
--   [Bag of Words or CountVectorizer()](https://www.enjoyalgorithms.com/blog/word-vector-encoding-in-nlp)
+- [Bag of Words or CountVectorizer()](https://www.enjoyalgorithms.com/blog/word-vector-encoding-in-nlp)
 
--   [Hashing Vectorizer](https://kavita-ganesan.com/hashingvectorizer-vs-countvectorizer/#.Y5GyuuxBy3I)
+- [Hashing Vectorizer](https://kavita-ganesan.com/hashingvectorizer-vs-countvectorizer/#.Y5GyuuxBy3I)
 
--   [TFIDF or TfidfVectorizer()](https://www.geeksforgeeks.org/understanding-tf-idf-term-frequency-inverse-document-frequency/)
+- [TFIDF or TfidfVectorizer()](https://www.geeksforgeeks.org/understanding-tf-idf-term-frequency-inverse-document-frequency/)
 
 One thing that can be easily made out by frequency-based methods is that while training your corpus needs to be extremely large to achieve effective performance. But what if we had only a relatively small dataset? That's where pretrained embeddings shine!
 
@@ -500,17 +505,17 @@ One thing that can be easily made out by frequency-based methods is that while t
 
 ii) **Pretrained Embeddings--** Word embeddings can be learned from text data and reused among projects.
 
--   An introduction to [Word2Vec](https://www.youtube.com/watch?v=UqRCEmrv1gQ&t=5s) Also you might want to get familiar with the [working of word2vec](https://www.youtube.com/watch?v=8rXD5-xhemo).
+- An introduction to [Word2Vec](https://www.youtube.com/watch?v=UqRCEmrv1gQ&t=5s) Also you might want to get familiar with the [working of word2vec](https://www.youtube.com/watch?v=8rXD5-xhemo).
 
--   GloVe--[Read here](https://towardsdatascience.com/light-on-math-ml-intuitive-guide-to-understanding-glove-embeddings-b13b4f19c010)
+- GloVe--[Read here](https://towardsdatascience.com/light-on-math-ml-intuitive-guide-to-understanding-glove-embeddings-b13b4f19c010)
 
 Also read [this](https://jonathan-hui.medium.com/nlp-word-embedding-glove-5e7f523999f6). Since we know now how to make our language accessible to computers, let's move on to neural nets!
 
--   Models using Deep learning -- Get familiar with [Sequential Learning](https://analyticsindiamag.com/a-tutorial-on-sequential-machine-learning) [or read this](https://towardsdatascience.com/introduction-to-sequence-modeling-problems-665817b7e583).
+- Models using Deep learning -- Get familiar with [Sequential Learning](https://analyticsindiamag.com/a-tutorial-on-sequential-machine-learning) [or read this](https://towardsdatascience.com/introduction-to-sequence-modeling-problems-665817b7e583).
 
 **Day 3**
 
-1) [Recurrent Neural Networks](https://www.youtube.com/watch?v=AsNTP8Kwu80)
+1. [Recurrent Neural Networks](https://www.youtube.com/watch?v=AsNTP8Kwu80)
 
 By learning RNN, your journey of NLP with deep learning truly starts here. RNNs by themselves are of little use, but they form the building blocks of many bigger models.
 
@@ -518,35 +523,35 @@ The key to completely understanding RNN is to implement an RNN model from scratc
 
 **Day 4**
 
-2) Get introduced to [LSTM RNNs](https://www.youtube.com/watch?v=WCUNPb-5EYI).
+2. Get introduced to [LSTM RNNs](https://www.youtube.com/watch?v=WCUNPb-5EYI).
 
 This [article](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) is recommended as it provides an in-depth understanding of usually hard-to-understand LSTMs.
 
-3) [GRUs](https://www.geeksforgeeks.org/gated-recurrent-unit-networks/)
+3. [GRUs](https://www.geeksforgeeks.org/gated-recurrent-unit-networks/)
 
 [RNN vs LSTM vs GRU](https://arxiv.org/pdf/1412.3555v1.pdf) -- This paper evaluates and compares the performance of the three models over different datasets.
 
-4) [Bi-RNNs](https://www.youtube.com/watch?v=bTXGpATdKRY&t=3s)
+4. [Bi-RNNs](https://www.youtube.com/watch?v=bTXGpATdKRY&t=3s)
 
-5) [Deep RNNs](https://d2l.ai/chapter_recurrent-modern/deep-rnn.html)
+5. [Deep RNNs](https://d2l.ai/chapter_recurrent-modern/deep-rnn.html)
 
 **Day 5**
 
 Here are some topics for you to go through. We will first learn about Sequence to sequence models. Then we will use it as an example to study the Attention Mechanism.
 
-6) [Seq2Seq](https://www.youtube.com/watch?v=XXtpJxZBa2c)
+6. [Seq2Seq](https://www.youtube.com/watch?v=XXtpJxZBa2c)
 
-7) [Attention-Mechanism](https://blog.floydhub.com/attention-mechanism/)
+7. [Attention-Mechanism](https://blog.floydhub.com/attention-mechanism/)
 
 Now, we will cover Encoders and Decoders part of the LSTM model. These will help you better understand time series models.
 
-8) [Encoder-Decoder](https://www.youtube.com/watch?v=j9AcEI98C0o), also read [this](https://medium.com/analytics-vidhya/machine-translation-encoder-decoder-model-7e4867377161).
+8. [Encoder-Decoder](https://www.youtube.com/watch?v=j9AcEI98C0o), also read [this](https://medium.com/analytics-vidhya/machine-translation-encoder-decoder-model-7e4867377161).
 
-9) [Autoencoders](https://cs224d.stanford.edu/reports/OshriBarak.pdf)
+9. [Autoencoders](https://cs224d.stanford.edu/reports/OshriBarak.pdf)
 
 **Day 6**
 
-10) [Transformers](https://www.youtube.com/watch?v=S27pHKBEp30)
+10. [Transformers](https://www.youtube.com/watch?v=S27pHKBEp30)
 
 Now coming to the state-of-the-art models--
 
@@ -568,11 +573,11 @@ Text preprocessing involves transforming text into a clean and consistent format
 
 ### Further resources
 
--   <https://sgfin.github.io/files/notes/CS229_Lecture_Notes.pdf>
--   <https://www.coursera.org/specializations/deep-learning>
--   <https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU>
--   <http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf>
--   <https://drive.google.com/file/d/1hFPxorU1AMDXE_02HBwM0hAfcwsdOCeo/view?usp=sharing>
+- <https://sgfin.github.io/files/notes/CS229_Lecture_Notes.pdf>
+- <https://www.coursera.org/specializations/deep-learning>
+- <https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU>
+- <http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf>
+- <https://drive.google.com/file/d/1hFPxorU1AMDXE_02HBwM0hAfcwsdOCeo/view?usp=sharing>
 
 <br/>
 
