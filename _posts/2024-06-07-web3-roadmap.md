@@ -13,7 +13,7 @@ categories:
   - roadmap
 hidden: true
 image:
-  url:
+  url: /images/ml-roadmap/web3-roadmap.jpg
 ---
 
 ## Roadmap to Web3 and Blockchains

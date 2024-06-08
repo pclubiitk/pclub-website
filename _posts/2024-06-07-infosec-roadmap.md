@@ -13,7 +13,7 @@ categories:
   - roadmap
 hidden: true
 image:
-  url:
+  url: /images/ml-roadmap/infosec-roadmap.jpg
 ---
 
 # Roadmap to Information Security

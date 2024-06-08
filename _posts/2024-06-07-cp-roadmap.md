@@ -13,7 +13,7 @@ categories:
   - roadmap
 hidden: true
 image:
-  url:
+  url: /images/ml-roadmap/cp-roadmap.jpg
 ---
 
 # Competitive Programming Roadmap

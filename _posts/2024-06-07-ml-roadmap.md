@@ -13,7 +13,7 @@ categories:
   - roadmap
 hidden: true
 image:
-  url:
+  url: /images/ml-roadmap/ml-roadmap.jpg
 ---
 
 # Roadmap to Machine Learning (ML)
