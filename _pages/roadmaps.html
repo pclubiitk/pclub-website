@@ -5,199 +5,102 @@ permalink: /roadmaps
 image:
 ---
 
+<div class="roadmap-container">
+  <div class="grid">
+    {% for post in site.posts %} {% if post.categories contains 'roadmap' %}
+    <a
+      class="cardContainer"
+      href="{{ post.url | prepend: site.baseurl }}"
+    >
+      <div
+        class="image"
+        style="background-image: url({{ post.image.url }});"
+      ></div>
+      <h4>{{ post.title }}</h4>
+      <p>{{ post.summary }}</p>
+    </a>
+    {% endif %} {% endfor %}
+  </div>
+</div>
+
 <style>
-  .page {
-    max-width: max-content;
-  }
+  .content .container {
+    max-width: unset;
+    padding: 0;
 
-  .roadmap-container {
-    position: relative;
-    padding-left: 20px;
-    margin-top: 50px; 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .roadmap-line {
-    position: absolute;
-    left: 20px;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background-color: #ff7b7b;
-    box-shadow: 0 0 10px #ff7b7b; /* Adds glow effect */
-    z-index: 1;
+    article {
+      max-width: unset;
+    }
   }
 
   .grid {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    z-index: 2;
-    padding-left: 40px;
-    width: 100%;
+    display: grid;
+    gap: 6rem;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    margin: 10rem clamp(5rem, 7rem, 50vw);
+    grid-auto-rows: 1fr;
+
+    .cardContainer {
+      display: grid;
+      border-radius: 0.75rem;
+      height: 100%;
+      min-height: 24rem;
+      width: 100%;
+      max-width: 30rem;
+      text-align: left;
+      /* grid-template-rows: 12fr auto auto 1fr; */
+      /* grid-template-rows: subgrid; */
+      align-items: center;
+      /* grid-row: 1/5; */
+      /* background-color: #111; */
+      box-shadow: 0px 0px 20px 1px rgba(255, 123, 123, 0.9);
+      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      overflow: hidden;
+    }
+
+    .cardContainer:hover {
+      background-color: #ff7b7b;
+      color: #09080f;
+      box-shadow: 0px 0px 70px 10px rgba(255, 123, 123, 0.7);
+		transform: scale(1.2);
+      h4 {
+        color: #09080f;
+      }
+    }
+
+    .image {
+      border-radius: 0.75rem;
+      margin: 1rem;
+      height: 18rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      align-self: normal;
+    }
+
+    p {
+      align-self: baseline;
+      font-size: 1rem;
+      margin: 0 1.5rem;
+    }
+
+    h4 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin: 0.5rem 1.5rem 1.5rem;
+    }
+
+    p, h4 {
+      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
   }
 
-  .card {
-    background-color: #18181b;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05), 0px 8px 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(194, 125, 125, 0.425);
-    padding: 56px 16px 16px 16px;
-    border-radius: 15px;
-    cursor: pointer;
-    position: relative;
-    transition: box-shadow 0.25s;
-    margin-bottom: 32px;
-    width: 60vw; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.015);
-  }
-
-  .card::after {
-    content: "";
-    position: absolute;
-    left: -33px; 
-    top: 50%;
-    width: 30px; /* Length of the branching line */
-    height: 2px;
-    background-color: #ff7b7b;
-    box-shadow: 0 0 8px #ff7b7b; 
-    z-index: 1;
-    transform: translateY(-50%);
-  }
-
-  .card h4 {
-    z-index: 2;
-    position: relative;
-    margin: 12px 0 4px 0;
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 2;
-    color: #ffffff;
-  }
-
-  .card p {
-    z-index: 2;
-    position: relative;
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.7;
-    color: #a1a1aa;
-  }
-
-  .card .arrow {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    font-size: 24px;
-    color: #a1a1aa;
-    transition: color 0.25s, transform 0.25s;
-  }
-
-  .card:hover .arrow {
-    color: #34d399;
-    transform: translateY(-50%) translateX(6px);
-  }
-
-  .card .shine {
-    border-radius: inherit;
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    overflow: hidden;
-    opacity: 0;
-    transition: opacity 0.5s;
-  }
-
-  .card .shine:before {
-    content: "";
-    width: 150%;
-    padding-bottom: 150%;
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    bottom: 55%;
-    filter: blur(35px);
-    opacity: 0.1;
-    transform: translateX(-50%);
-    background-image: conic-gradient(from 205deg at 50% 50%,
-        rgba(16, 185, 129, 0) 0deg,
-        #b91010 25deg,
-        rgba(52, 211, 153, 0.18) 295deg,
-        rgba(16, 185, 129, 0) 360deg);
-  }
-
-  .card .background {
-    border-radius: inherit;
-    position: absolute;
-    inset: 0;
-    overflow: hidden;
-    -webkit-mask-image: radial-gradient(circle at 60% 5%, black 0%, black 15%, transparent 60%);
-    mask-image: radial-gradient(circle at 60% 5%, black 0%, black 15%, transparent 60%);
-  }
-
-  .card .background .tiles {
-    opacity: 0;
-    transition: opacity 0.25s;
-  }
-
-  .card .background .tiles .tile {
-    position: absolute;
-    background-color: rgba(16, 185, 129, 0.05);
-    -webkit-animation-duration: 8s;
-    animation-duration: 8s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    opacity: 0;
-  }
-
-  .card:hover {
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04), 0px 15px 25px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.2);
-
-  }
-
-  .card:hover .shine {
-    opacity: 1;
-  }
-
-  .shine {
-    opacity: 1;
+  @media (max-width:540px) {      /* Those effin phones */
+    .grid {
+      gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    margin: 7rem clamp(1rem, 2rem, 30vw);
+    }
   }
 </style>
-
-<div class="roadmap-container">
-  <div class="roadmap-line"></div>
-  <div class="grid">
-    {% for post in site.posts %}
-    {% if post.categories contains 'roadmap' %}
-    <div class="card">
-      <a id="route" href="{{ post.url | prepend: site.baseurl }}">
-        <h4>{{ post.title }}</h4>
-      </a>
-      <a id="route" href="{{ post.url | prepend: site.baseurl }}">
-        <p>{{ post.summary }}</p>
-      </a>
-      <span class="arrow">&rarr;</span>
-      <div class="shine"></div>
-      <div class="background">
-        <div class="line line-1"></div>
-        <div class="line line-2"></div>
-        <div class="line line-3"></div>
-      </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-  </div>
-</div>
