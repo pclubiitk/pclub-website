@@ -39,8 +39,9 @@ A typical CTF flag would look something like : **pclub{CTFs_ar3_fun!}**
 
 A very good video that will help in understanding the deep relation between infosec and CTFs is probably this [Infosec Intro ](https://www.youtube.com/watch?v=8ev9ZX9J45A). A great website to keep a look on old, ongoing and upcoming CTFs is [ctftime.org](http://ctftime.org). Do bookmark it !
 
-A nice video to get even more motivated towards this domain is probably the [Mr.Robot TV Series](https://www.youtube.com/watch?v=6MrQ-mN8HM8) (ignore the Dark Army part xD) .
-![Screenshot from 2024-07-04 16-38-15](https://hackmd.io/_uploads/BkeaPGVPC.png)
+A nice video to get even more motivated towards this domain is probably the [Mr.Robot TV Series](https://www.youtube.com/watch?v=6MrQ-mN8HM8) (ignore the Dark Army part xD).
+
+![CTF Meme](/images/ml-roadmap/infosec_chad_meme.png)
 
 Do not worry if you don’t understand the technical terms in the meme above right now, you will surely understand most of it after completing this roadmap !
 

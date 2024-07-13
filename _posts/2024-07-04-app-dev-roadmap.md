@@ -11,7 +11,7 @@ tags:
   - dev
   - app
   - android
-  -ios
+  - ios
 categories:
   - roadmap
 hidden: true
@@ -203,7 +203,7 @@ First get introduced to the very basic stateless and stateful widgets. Even befo
 
 Wanna chill a bit? Check out Google's this playlist—because who doesn't love binge-watching UI components? It's like a Netflix series but with excitement about buttons and sliders. You really don’t need to go through all the videos and mug up the code. Just get to know a few of them and use them when you build your app:
 
-- <a href="https://www.youtube.com/playlist?list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG" style="text-decoration: none; color: #FF0000;">
+- <a href="https://www.youtube.com/playlist?l    <h3>Karan Keer</h3>ist=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG" style="text-decoration: none; color: #FF0000;">
      <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube Icon" width="20" height="20" >
       Widget of the Week 
   </a>
@@ -866,16 +866,7 @@ Hats off on completing this journey into app development! While our journey toge
 We tried to keep the roadmap as interesting as possible. We hope you liked it.
 Happy Coding :\)
 
- <div style="flex: 1; text-align: center;">
-    <h1> Contributors</h1>
-</div>
-<div style="display: flex; justify-content: space-between;">
-    <div style="flex: 1; text-align: center;">
-        <h3>Karan Keer</h3>
-        <p>+91 93581 52408</p>
-    </div>
-    <div style="flex: 1; text-align: center;">
-        <h3>Saksham Agarwal</h3>
-        <p>+91 91180 52439</p>
-    </div>
-</div>
+### Contributors
+
+- Karan Keer (+91 93581 52408)
+- Saksham Agarwal (+91 91180 52439)
