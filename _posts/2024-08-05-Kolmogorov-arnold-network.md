@@ -1,4 +1,18 @@
-
+---
+layout: post
+title: "Kolmogorov–Arnold Networks"
+date: 2024-08-05 23:00:00 +0530
+authors: Anirudh Singh, Himanshu Sharma
+category: events
+tags:
+- Machine Learning
+- Neural Networks
+- Deep Learning
+categories:
+- events
+image:
+  url: /images/kan_or_kant.png
+---
 # Kolmogorov–Arnold Networks
 
 Neural Networks are largely seen as backboxes which magically provide the required output for a particular input, highlighting that they are not really interpretable and the whole process of training and tracking the learning of any neural network is unintuitive. That is, even if a Neural Network can provide correct answers, we cannot understand the reasons why it makes these decisions. When I say "neural networks", I primarily refer to a class of networks called "Multi Layered Perceptron" (MLPs), which are modelled on the basis of the "Universal Approximation Theorem" (UAT), and use linear weight and bias matrices as trainable parameters. All the learning algorithms today are mostly based on MLPs and the UAT.
@@ -165,3 +179,6 @@ Given how promising KANs are, it should not be very surprising that it has seen 
 ### 3.6| Do It Yourself
 
 We have talked a lot about splines and KANs and their architecture so how about getting some hands-on experience with them. Follow the given [**colab notebook**](https://colab.research.google.com/drive/1p1-hn83rW1CTmNeavK-UJf-gXtmu9T1r?usp=sharing) to try KANs out and see for yourself how they fare against MLPs.
+
+
+_Authors: Anirudh Singh, Himanshu Sharma
