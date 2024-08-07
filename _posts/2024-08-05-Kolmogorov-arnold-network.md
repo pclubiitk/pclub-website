@@ -55,7 +55,10 @@ $$
 $$
 here, $\phi _p (x_p)$ is just an arbitrary univariate function (called the inner function) in $x_p$ and we are summing $n$ such univariate functions in $n$ different variables.
 
-$\Phi_{q}$ is also a univariate function, taking  $\sum_{p=1}^{n} \phi _{q,p} (x_p)$ as a whole as a single variable. Note that when we apply $\Phi_{q}$ on the inner function, we achieve a mixing a variables. That is, we can have terms line $x_{1}^{a}x_{2}^{b}$ or $(x_3)^{3}cos(x_2)sin(x_1)$ or $e^{x_{2}^2 + x_{3}^{3}}sin(x_{1})$ as our in our output. This allows for a wide variety and forms of terms which might be very similar to the final function. Note, that we might not be able to achieve the $f(X)$ in a single iterations, so we superimpose $2n+1$ such functions in order to obtain  $f(X)$. 
+$\Phi_{q}$ is also a univariate function, taking 
+$$
+\sum_{p=1}^{n} \phi _{q,p}(x_p)
+$$  as a whole as a single variable. Note that when we apply $\Phi_{q}$ on the inner function, we achieve a mixing a variables. That is, we can have terms line $x_{1}^{a}x_{2}^{b}$ or $(x_3)^{3}cos(x_2)sin(x_1)$ or $ e^{x_{2}^2 + x_{3}^{3}}sin(x_{1})$ as our in our output. This allows for a wide variety and forms of terms which might be very similar to the final function. Note, that we might not be able to achieve the $f(X)$ in a single iterations, so we superimpose 2n+1 such functions in order to obtain  $f(X)$ . 
 
 The proof as to why we will necessarily be able to decompose $f(X)$ into such a superposition and why we need $2n+1$ functions in the outer summation is beyond the scope of this blog. Moreover, there exist variations of the KART, for instance replacement of the outer functions $\Phi_{q}$ with a single outer function $\Phi$ by George Lorentz, replacement of the inner functions $\phi_{q,p}$ by one single inner function with an appropriate shift in its argument  by David Sprecher and generalization of KART by Phillip A. Ostrand via compact metric spaces. Again, these variations are not really important for understanding KANs, but present pretty interesting manipulations and applications (might cover the proofs, variations and results in another blog later 🥰)
 
