@@ -106,7 +106,7 @@ For Flutter Packages, refer to pub official site
 The crucial first step in our journey is to set up our development environment. So go ahead and install Flutter SDK using the guide [Install Flutter](https://docs.flutter.dev/get-started/install).
 After installation, you need to test the setup. So follow these steps to Test a Sample App.You don’t need to worry about the files and the code, you will grasp it soon.
 
-- [Test drive | Flutter](https://flutter.dev/docs/get-started/test-drive)
+- [Test drive - Flutter](https://flutter.dev/docs/get-started/test-drive)
 
 Let’s learn about Hot Reload and Restart—the dynamic duo of Flutter development. Hot Reload is the magical button that instantly fixes your app's mess-ups while Hot Restart is for when you’ve really messed up and need a fresh start. Watch this to know more:
 
@@ -115,7 +115,7 @@ Let’s learn about Hot Reload and Restart—the dynamic duo of Flutter developm
     Flutter Tutorial - How To Use Hot Reload & Hot Restart In 4 Minutes
   </a>
 
-- [Hot Reload | Flutter](https://docs.flutter.dev/tools/hot-reload)
+- [Hot Reload - Flutter](https://docs.flutter.dev/tools/hot-reload)
 
 Till now you must have known that Flutter uses Dart as its language. We can think of Flutter as Iron Man's stunning suit attracting all the attention whereas Dart's the arc reactor, the hidden power core that keeps him going. Read [this](https://hackernoon.com/why-flutter-uses-dart-dd635a054ebf) blog to know more about why Flutter uses Dart.
 
@@ -157,7 +157,7 @@ Now if you are familiar with Classes and Objects in some other language, just go
 
 After grasping the basics, go through any one of these docs to learn particularly about OOP in Dart:
 
-- [Classes | Dart](https://dart.dev/language/classes)
+- [Classes - Dart](https://dart.dev/language/classes)
 - [Dart Object-Oriented Concepts - Javatpoint](https://www.javatpoint.com/dart-object-oriented-concepts)
 
 Learning is incomplete without Application of Concepts. Try to solve the problem 1 and 2 given in this document [DART ASSIGNMENT](https://docs.google.com/document/d/1Q8FRvTydVIBgR7lptIuR_Xt6J_H49ld7rVjOudCNgwM/edit).
@@ -238,7 +238,7 @@ Welcome to Day 1, where your app will navigate like navigating a dream within a 
   <p> </p>
 
 Alternatively, check out this blog [Navigation and Routing](https://www.javatpoint.com/flutter-navigation-and-routing)  
-Or refer to the docs [Navigation and routing | Flutter](https://docs.flutter.dev/ui/navigation)
+Or refer to the docs [Navigation and routing - Flutter](https://docs.flutter.dev/ui/navigation)
 
 Let us make our app interactive now. Check out these widgets first:
 
@@ -261,7 +261,7 @@ Further, if you are interested in the workings of these widgets, check this out.
 
 - <a href="https://www.youtube.com/watch?v=Q85LBtBdi0U" style="text-decoration: none; color: #FF0000;">
      <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube Icon" width="20" height="20" >
-      GestureArena | Decoding Flutter
+      GestureArena - Decoding Flutter
   </a>
 
 Check out these blogs to learn about snackbars and text fields:
@@ -285,7 +285,7 @@ Also, check out this video
 
 - <a href="https://www.youtube.com/watch?v=Ct9CrMegezQ&list=PL5jb9EteFAOAusKTSuJ5eRl1BapQmMDT6&index=3" style="text-decoration: none; color: #FF0000;">
      <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube Icon" width="20" height="20" >
-      Professional Setup of a Theme in Flutter | Light and Dark theme Flutter
+      Professional Setup of a Theme in Flutter - Light and Dark theme Flutter
   </a>
 
 Refer to the [docs](https://docs.flutter.dev/cookbook/design/themes) for font styles and more. Use themes to share colors and font styles.
@@ -294,7 +294,7 @@ Now, let us make our app shine with carefully curated images, videos, and icons.
 
 - <a href="https://www.youtube.com/watch?v=sDS4c1C-Fdg&pp=ygUuYXNzZXRzIGFuZCBtZWRpYSBpbiBmbHV0dGVyIGhleSBmbHV0dGVyIGltYWdlcw%3D%3D" style="text-decoration: none; color: #FF0000;">
      <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube Icon" width="20" height="20" >
-      Flutter Tutorial - Set Screen Background Image | Asset Image & Network Image
+      Flutter Tutorial - Set Screen Background Image - Asset Image & Network Image
   </a>
 
 - <a href="https://www.youtube.com/watch?v=uz4xRnE-UIw&t=833s&pp=ygUuYXNzZXRzIGFuZCBtZWRpYSBpbiBmbHV0dGVyIGhleSBmbHV0dGVyIGltYWdlcw%3D%3D" style="text-decoration: none; color: #FF0000;">
@@ -315,7 +315,7 @@ Let’s get along with Day 3 & 4, where we're about to turn our app so responsiv
 
 First learn about responsiveness:
 
-- [Responsive design techniques - Apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/apps/design/layout/responsive-design)
+- [Responsive design techniques - Apps - Microsoft Learn](https://learn.microsoft.com/en-us/windows/apps/design/layout/responsive-design)
 - <a href="https://www.youtube.com/watch?v=LeKLGzpsz9I" style="text-decoration: none; color: #FF0000;">
      <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube Icon" width="20" height="20" >
       How to build Adaptive UI with Flutter
@@ -378,7 +378,7 @@ Welcome to Day 5, where we dive into state management, and fear not because by m
       Managing State in Flutter - Introducing Flutter
   </a>
 
-Now if you are thinking of the state management solutions Flutter provides, then you are welcome to the great Flutter state management debate—the coding world’s version of arguing whether tea or coffee is better. Provider, Riverpod, Bloc, Getx... it's like choosing the best book genre. Actually there's no perfect answer, just endless discussions! To get an overview, checkout [Flutter state management tips | Medium](https://medium.com/@erns70b/flutter-state-management-tips-e011f48b4b2c)
+Now if you are thinking of the state management solutions Flutter provides, then you are welcome to the great Flutter state management debate—the coding world’s version of arguing whether tea or coffee is better. Provider, Riverpod, Bloc, Getx... it's like choosing the best book genre. Actually there's no perfect answer, just endless discussions! To get an overview, checkout [Flutter state management tips - Medium](https://medium.com/@erns70b/flutter-state-management-tips-e011f48b4b2c)
 
 You can explore as per your wish but we’ll move on with using providers for state management in our roadmap.Checkout any one of this video to get basic understanding
 
@@ -389,7 +389,7 @@ You can explore as per your wish but we’ll move on with using providers for st
 
 - <a href="https://www.youtube.com/watch?v=m2hWRdTBLQ8" style="text-decoration: none; color: #FF0000;">
      <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube Icon" width="20" height="20" >
-      Introduction To Provider | Flutter Provider
+      Introduction To Provider - Flutter Provider
   </a>
 
 Check out this blog too [Flutter Provider: What is it, what is it for, and how to use it?](https://medium.com/bancolombia-tech/flutter-provider-what-is-it-what-is-it-for-and-how-to-use-it-47d6941860d7)
@@ -408,7 +408,7 @@ If you want to dive deep into state management, you can watch this (Not necessar
       Pragmatic State Management in Flutter (Google I/O'19)
   </a>
 
-Also, check out this example [Simple app state management | Flutter](https://docs.flutter.dev/data-and-backend/state-mgmt/simple)
+Also, check out this example [Simple app state management - Flutter](https://docs.flutter.dev/data-and-backend/state-mgmt/simple)
 
 ### Day - 6 & 7 Project - Building an E-Commerce App
 
@@ -422,14 +422,14 @@ There’s not much design constraint but it will be great if you keep it as beau
 <div>
 Also, here is the video tutorial to follow along <a href="https://www.youtube.com/watch?v=UHUSqJDKe-Q" style="text-decoration: none; color: #FF0000;">
    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube Icon" width="20" height="20" >
-    Complete Flutter E-commerce App With provider | Flutter e commerce app
+    Complete Flutter E-commerce App With provider - Flutter e commerce app
 </a>
 </div>
 
 Note: Watching this tutorial is highly discouraged, this is for reference purpose only. Try to write the code yourself and refer to this only when it's really needed.
 
-<div style="float: right; margin-left: 10px;">
-  <img src="https://i.pinimg.com/originals/07/a4/70/07a4705a62ab21afe7d0efcd4ab059f6.jpg"alt="OOP in Dart" width="350px">
+<div style="float: right; margin-left: 10px">
+  <img src="https://i.pinimg.com/originals/07/a4/70/07a4705a62ab21afe7d0efcd4ab059f6.jpg" alt="OOP in Dart" width="350px">
 </div>
 
 Wait, what? Are you exhausted already? Brace yourself, because after this, “Winter Is Coming”. We're going to dive into storage, networking, backend integration, testing, debugging, deployment… The White Walkers of app development. Get ready to wield your coding skills like Valyrian steel, because this is where the real battle begins!
@@ -445,7 +445,7 @@ Get to know about protocols [here](https://medium.com/@asqprotocol/what-is-a-pro
 
 <div>
 Video explanation:<a href="https://www.youtube.com/watch?v=BnWn18qUYyA" style="text-decoration: none; color: #FF0000;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube Icon" width="20" height="20" "> Network protocols
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube Icon" width="20" height="20"> Network protocols
 </a>
 </div>
 
@@ -453,7 +453,7 @@ Now you might be getting a hang of how computers "communicate".
 
 <div>
 Let us dive deep into http now <a href="https://www.youtube.com/watch?v=zm0-cm5u2ak&t=408s" style="text-decoration: none; color: #FF0000;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube Icon" width="20" height="20" ">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube Icon" width="20" height="20">
   What are HTTP servers?
 </a>
 
@@ -503,12 +503,12 @@ Learn how to put up the data you recieve onto your application in these videos.
 
 - <a href="https://www.youtube.com/watch?v=9i86-zRePQs&list=PLlzmAWV2yTgCt-BD-7aZSNzKfvkgLge4G&index=4" style="text-decoration: none; color: #FF0000;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube Icon" width="20" height="20"> 
-    Dart Futures Explained | Flutter | Async Await | Flutter Basics
+    Dart Futures Explained - Flutter - Async Await - Flutter Basics
   </a>
 
 - <a href="https://www.youtube.com/watch?v=yLzNIcO-6x8&list=PLlzmAWV2yTgCt-BD-7aZSNzKfvkgLge4G&index=4" style="text-decoration: none; color: #FF0000;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube Icon" width="20" height="20">
-    FutureBuilder in Flutter Tutorial | Dart | Flutter Basics
+    FutureBuilder in Flutter Tutorial - Dart - Flutter Basics
   </a>
 
 Take a look at this [Medium article](https://medium.com/flutter-community/working-with-apis-in-flutter-8745968103e9), that dives into the integration of api in flutter.
@@ -809,7 +809,7 @@ Now you must have found Flutter Dev Tools as a gamechanger. So lets learn about 
 <div>
 For UI debugging, have a look at this: <a href="https://www.youtube.com/watch?v=DnC7eT-vh1k" style="text-decoration: none; color: #FF0000;">
   <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube Icon" width="20" height="20" >
-  Debug properties | Decoding Flutter
+  Debug properties - Decoding Flutter
 </a>
 </div>
 
