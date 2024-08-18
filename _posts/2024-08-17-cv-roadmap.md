@@ -72,7 +72,7 @@ Throughout the Roadmap, we'll be constantly referring to a few course websites a
 	- [Fall 2017 Assignment Solutions](https://github.com/Hugstar/Solutions-Stanford-cs131-Computer-Vision-Foundations-and-Application)
 
 
-2. **OpenCV Course:**  This is an instructive hands on course on OpenCV which consists of a series of notebooks which guide you through how to implement various Computer Vision and Image Processing methods via OpenCV library of Python.  [This GitHub Repository](https://github.com/Safe-bet/OpenCV_course consists of all the resources of the course. This course is divided into two parts:
+2. **OpenCV Course:**  This is an instructive hands on course on OpenCV which consists of a series of notebooks which guide you through how to implement various Computer Vision and Image Processing methods via OpenCV library of Python.  [This GitHub Repository](https://github.com/Safe-bet/OpenCV_course) consists of all the resources of the course. This course is divided into two parts:
 	   - *OpenCV:* Starts off by introducing how digital images and color spaces work and goes on to explain various transformation, filters and methods like Convolutions, Thresholding, Moments etc. Then it has notebooks which cover practical applications like detection, recognition, tracking, style transfer etc. 
 	   - *Deep Learning CV:* As the name suggests, this section provides a hands on learning approach to Deep Learning using PyTorch, Keras and TensorFlow. This also contains various projects which shall help you to apply this knowledge to real life.
 	
@@ -459,7 +459,7 @@ For implementation of binary processing methods, go through the following articl
 
 <br>
 <p align="center">
-<img src="https://media5.datahacker.rs/2020/05/image_005-2-1024x683.jpg" width="400"/>
+<img src="https://buffml.com/wp-content/uploads/2022/12/morphological_operations.png" width="400"/>
 <br>
 <em>Morphological transformations</em>
 </p>
