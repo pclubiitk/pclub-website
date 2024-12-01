@@ -1,9 +1,21 @@
 ---
-title: Winter Of Code
-
+layout: post
+title: Winter of Code
+date: 2024-12-01 00:50:21 +530
+author: Himesh Singh
+website: http://acehack.org
+category: Beginner
+tags:
+- winterofcode
+- winter
+categories:
+- tutorial
+image:
+  url: https://cdn.hashnode.com/res/hashnode/image/upload/v1732863459678/2c8efaf0-3add-4f54-afdc-81a07f9fd97a.webp?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp
 ---
 
-# PClub IITK : Winter of Code :snowflake: :snowflake:
+
+# PClub IITK : Winter of Code ❄️❄️
 The Programming Club at IITK is thrilled to let the campus junta know that starting from the 6th of December, you can apply to be part of something amazing - the Winter of Code, a program in partnership with Godspeed Systems, designed to empower innovators and coding enthusiasts to build impactful projects ([PROJECT LIST](https://godspeedsystems-my.sharepoint.com/:x:/g/personal/dharuv_godspeed_systems/EVb8U24Dfv9Pjx5FA3nG8Y4ByPwQlLiFpFCmXdeZEx6G5Q?rtime=bGSHQ3IQ3Ug)) while receiving grants and professional growth - and possibility of sponsored long term maintainership. This isn’t just another program—it’s an immersive journey into the world of producing solutions to some challenging real world problems.
 
 Whether you want to refine your skills, tackle meaningful challenges, or bring your own groundbreaking ideas to life, Winter of Code provides the tools, mentorship, and the ultimate platform to make it happen.
