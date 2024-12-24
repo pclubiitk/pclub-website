@@ -68,14 +68,6 @@ Now that we know the piece overlap problem, the obvious way to overcome it is to
 
 Let's say you are a new entrant to a BitTorrent swarm looking to download stuff. What do you download? You have multiple options. One is to download any random piece, rare or not; rare doesn't matter and get going, but you also have the option to download the rarest piece from your peers. What do you do? Downloading the rarest piece can help improve download speeds across the network as the number of peers holding that rare piece increases, and it becomes not so rare, but from the point of view of the new entrant, if it requests only the rare piece initially, it is possible that the download may stretch for longer as it has started the process itself with a piece with the least availability. Hence, a new peer gets a piece randomly, **this is the random first piece policy of the algorithm**  and after the download of the first piece, the **rarest first policy** of the BitTorrent architecture kicks in. Apart from all these, finally, let's say most of the pieces have been downloaded, but there are, say, a couple of pieces left that have a slow transfer rate due to some reason; this is where the **endgame mode** comes into the picture which helps to get the last chunk of the file as quickly as possibly by broadcasting a request to all the peers. Once a sub-piece arrives, we send a cancel message indicating that we have obtained it, and the peers can disregard the request. Some bandwidth is wasted by this broadcasting, but in practice, this is not very much because of the short period of the endgame mode. 
 
-# Part 3: Why share? Understanding the BitTorrent economics.
-
-All the peer connections are symmetric, i.e. data flow is not one-way, and each peer can download and upload data simultaneously.  
-But why should I contribute to the swarm and increase my data usage? Why shouldn't I maintain a faster download speed?  
-Womp, Womp. If you don't share data chunks, you won't receive any. BitTorrent uses a **tit for tat exchange scheme .**  
-Peers choose those peers to share data with who reciprocate the same. As a BitTorrent peer, you will only have a limited number of upload slots to allocate to other peers.   
-So if you are uploading data to a peer who, in return, is not uploading any data to the network, then BitTorrent will choke the connection with this peer and try to allocate this upload slot to a more cooperative peer.
-
 # Part 3: Why share? Understanding the BitTorrent economics. 
 
 All the peer connections are symmetric, i.e. data flow is not one-way, and each peer can download and upload data simultaneously. 
