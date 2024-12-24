@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Technical Deep Dive into BitTorrent"
-date: 2024-12-25 23:00:00 +0530
+date: 2024-12-24 
 authors: Aryan Mahesh Gupta, Rishi Divyakirti
 category: events
 tags:
