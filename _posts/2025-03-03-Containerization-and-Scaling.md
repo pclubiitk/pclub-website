@@ -76,7 +76,7 @@ Docker’s functionality on Windows highlights the importance of kernel sharing.
   <img src="/images/containerization-blog/containerization-02.png" alt="Spikes">
 </div>
 
-Here the "Guest Linux" Represents the WSL that emulates the linux kernel for Docker to function properly.
+Here, "Guest Linux" represents the WSL that emulates the linux kernel for Docker to function properly.
 
 
 
