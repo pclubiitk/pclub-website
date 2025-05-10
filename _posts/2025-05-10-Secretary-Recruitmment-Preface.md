@@ -1,3 +1,16 @@
+---
+layout: post
+title: "Secretary Recruitment: Preface"
+date: 2025-05-10 17:20:00 +0530
+authors: Himanshu Sharma
+category: events
+tags:
+- Secretary Recruitment
+categories:
+- events
+image:
+  url: /images/secy-rec-1.png
+---
 
 # Secretary Recruitment
 ## Part 1: Preface
