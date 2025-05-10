@@ -57,7 +57,5 @@ Lastly, cherish the learning experience provided by the process. Not becoming a 
 
 Sit Vis Vobiscum
 
-BlakkTyger
-
 
 Author: Himanshu Sharma
