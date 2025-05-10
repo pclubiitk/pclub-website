@@ -9,7 +9,7 @@ tags:
 categories:
 - events
 image:
-  url: /images/secy-rec-1.png
+  url: /images/secy-rec-new.jpg
 ---
 
 # Secretary Recruitment
@@ -19,12 +19,12 @@ I explicitly wanted this to be a concise piece, with targeted information about 
 
 This shall be a two-part series - in the first part, I shall talk about what a club is, what it means to become the secretary of a club, what the responsibilities of a secretary are, what is expected out of them, and what the task-attempting process looks like. The second part, which I will try to release just before the interview round, will be more about how one should prepare for interviews, what kind of questions you can expect, and what things should be clear in your mind before entering the room for your interview. 
 
-#### The Meta
+### The Meta
 Firstly, on the motivation. I feel that going into the interview process, most of the freshers only have a superficial idea about the workings of a particular entity, and that is also largely technical in nature. The sensitization about the "managerial" aspects of the role is sparse, resulting in unrealistic expectations about the workload and the nature of work. Moreover, there exists a deterrence against applying due to multiple reasons, one of them being not being familiar with the tech stack or technology required to accomplish the task. I shall be addressing some of these important points in this manuscript. I've seen a lot of freshers apply for the post just because it is a phenomenon to apply for the same, without giving much thought to it. To deal with this, I'll try to paint a faint image of what the tenure might look like for you guys and what the primary objectives shall be. The application and interview process for the applicants would be way smoother if this information were available to them beforehand, and they could make decisions and think about the same from a more nuanced perspective. 
 
 Secondly, who will find value in this piece? Obviously, those who are interested in applying for the position of secretary of the Programming Club must read this, but I feel this shall also be beneficial for those applying to other SnT entities. I won't claim that every piece of information shall generalize and scale well to application to other entities, but I feel some general information about the managerial aspect of SnT clubs, my experience with attempting tasks, etc, is largely transferable to other entities as well.
 
-#### The Philosophy
+### The Philosophy
 The Programming Club's objective is twofold: promoting programming culture on the campus and building cool stuff in order to learn new technologies. 
 
 The mechanism for the prior is to conduct various sessions, workshops, hackathons, and have an active web and social media presence. This allows us to reach all the people who are interested in programming and wish to skill up or build interesting stuff. A majority of the work under this objective is non-programming based, but requires an in-depth understanding of your domain, for to preach, you must have a better understanding of the nuances of the topic. Along with being an expert on the topic, one must also be able to present the ideas in an interpretable and intuitive manner, to gauge attention. Teaching and communication are skills in and of themselves and must be learned via iterative correction. This iterative correction requires devoting time to your piece and presentation for it to come off as even half-decent. The same process could be contextualized to not only taking sessions, but also other outreach activities like writing blogs, making social media posts, etc.
@@ -33,7 +33,7 @@ Fulfillment of the second objective will likely be more interesting and engaging
 
 A key operating principle of the club shall also be to provide maximum intellectual space to the members to grow in a direction they wish to, and to be able to propose activities and initiatives, for the club is nothing but its members. Hence, even though we as the coordinators shall have a framework for various mechanisms and initiatives in mind, we would want the secretaries to come up with new ideas and initiatives, and pitch in during decision-making to add their valuable inputs.      
 
-#### The Act
+### The Act
 I shall try to explain the responsibilities of the position by the two-fold objectives of the club to better contextualize the same. To summarize this section in a very obvious sense, you shall be completely responsible for the back-end processes and implementation of all the activities you see the Programming club conduct throughout the year; be it sessions, programming contests, workshops, summer projects, spring camp, etc. These processes at the moment are black boxed for you, but as you read this blog and talk to people (YES! you must talk to seniors who were or are involved with the club before even thinking to apply for the position. Will cover more on this in the next section), you'll learn more about the internal workings of the club and understand your responsibilities better.
 
 Keep one thing in mind - nothing is impromptu, everything is planned. I'll explain this via the example of a session - try to extrapolate it for other activities as well. Let's say we are planning a session on Machine Learning for the Freshers. Do we just make a presentation out of our whims and fancies and present it in a lecture hall filled with clueless kids? NO. To decide the contents and flow of the session, we try to place it in our overall blueprint of Machine Learning. It will likely be the first session of the domain, so we will look at the next few events of the domain and analyze what the prerequisites are for the same. We would likely want to cover those prerequisites, or explain to the kids how to cover those prerequisites on their own. We'll look into the recent industry trends, upcoming competitions, and opportunities, and craft the content to enable the kids to be able to participate in the same. Obviously, I do not mean we'll make them understand everything, because it takes months to even understand the basics of Machine Learning, but we'd have to enable them to understand the general intuition. We'd want to fit this content in a logically sequential order, adding important topics and tying one section to the other to ensure a smooth flow. Then, for specific content curation (ie, what is to be delivered and written on the slides), we must understand the background of the audience rather than trying to aimlessly explain the topic to them. The content should not seem overwhelming, but at the same time, should be dense and should provide some value addition so that their time is not wasted. Hence, there should be a perfect balance of intuition, implementation, hands-on activities, interaction, and core mathematics. The delivery should not be overtly convoluted, and simple to understand and absorb. How will this be achieved? Via constant iterative correction, practice, and rehearsals. This would likely be my thought process while planning such a session. Your responsibility, next year, would be to plan these activities out and implement them. We would be present to supervise you and ensure that the sanctity of the process is maintained, but the processes need to be carried out by you, for we'd not want to micromanage you. Once this is done, there's the administrative part, ie, lecture hall booking, filling out the form for the same, and getting signs, etc. It is sometimes a tedious process, but you need not be aware of the specific details at the moment. 
@@ -42,7 +42,7 @@ A similar level of planning will also go into other activities and I'll quickly 
 
 Talking about upskilling and learning, the current mechanisms for the same are Interest Groups (currently, only the Machine Learning Interest Group is active and we are planning to expand to other domain as well), participating in Kaggle Competitions and Hackathons, internal projects for building utilities for the campus (Campus Compass shall be one micro service of the campus utility application Campus Nexus which we will be releasing in parts throughout the tenure) and other internal projects. I feel that much elaboration on the same is not required, as it is mostly self-explanatory.
 
-#### The Process
+### The Process
 Monotony is overpowering me, and I'm getting multiple texts from potential secretaries to explain the application process, so I'll keep this brief. Hence, I'll resort to the classic "bullet pointer" format. Works beautifully.
 
 1. Try to rationalize "WHY" you want to be involved with the club? Because everyone's doing it? Because you'll look "cool" being called the secretary of XYZ club/soc? Because you like the domains covered by the entity? Because it will provide you with internal catharsis and reaffirmation of your abilities? Think about it deeply. A lot of people skip this step.
@@ -56,4 +56,8 @@ I think I've covered most of the points I wanted to address in this piece, but o
 Lastly, cherish the learning experience provided by the process. Not becoming a secretary does not mean that you won't be able to participate in club projects. We shall be opening most of our club projects to the campus junta and people who have been connected with the club and shown potential and interest. I hate myself for concluding at such a cliche note, but it is what it is - the truth which we shall uphold for the entirety of the next tenure (and hopefully for tenures to come!)
 
 Sit Vis Vobiscum
+
 BlakkTyger
+
+
+Author: Himanshu Sharma
