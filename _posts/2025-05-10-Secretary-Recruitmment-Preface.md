@@ -9,7 +9,7 @@ tags:
 categories:
 - events
 image:
-  url: /images/secy-rec-new.jpg
+  url: /images/secy-rec.jpg
 ---
 
 # Secretary Recruitment
