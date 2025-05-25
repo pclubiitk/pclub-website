@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Secretary Recruitment: Interviews"
-date: 2025-05-25 23:00:00 +0530
+date: 2025-05-25 18:30:00 +0530
 authors: Himanshu Sharma
 category: events
 tags:
