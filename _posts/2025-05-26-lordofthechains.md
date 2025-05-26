@@ -10,8 +10,8 @@ tags:
 categories:
 - project
 hidden: true
-summary: This eight-week project provides a structured introduction to Web3 focusing on blockchain, covering topics from fundamentals to real-world applications. Participants will engage in theoretical learning and hands-on development, culminating in the creation of a fully functional decentralized application(DApp).
-- 
+summary: 
+- This eight-week project provides a structured introduction to Web3 focusing on blockchain, covering topics from fundamentals to real-world applications. Participants will engage in theoretical learning and hands-on development, culminating in the creation of a fully functional decentralized application(DApp).
 image:
   url: "https://online.stanford.edu/sites/default/files/inline-images/1600X900-How-does-blockchain-work.jpg"
 ---
