@@ -11,7 +11,7 @@ categories:
 - project
 hidden: true
 summary:
-- This seven-week project offers a deep dive into machine learning (ML) with a focus on audio applications. Starting with foundational ML concepts, it progresses to audio-specific techniques like denoising, super-resolution, and style transfer. Combining theory with hands-on practice, participants will learn to tackle real-world audio challenges using ML.
+- Deep dive into ML with a focus on audio applications. Covers audio-specific techniques like denoising, super-resolution, and style transfer. 
 
 image:
   url: "https://sloanreview.mit.edu/wp-content/uploads/2023/09/Purdy-1290x860-1.jpg"

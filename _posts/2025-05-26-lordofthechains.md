@@ -11,7 +11,7 @@ categories:
 - project
 hidden: true
 summary: 
-- This eight-week project provides a structured introduction to Web3 focusing on blockchain, covering topics from fundamentals to real-world applications. Participants will engage in theoretical learning and hands-on development, culminating in the creation of a fully functional decentralized application(DApp).
+- Provides a structured introduction to Web3 focusing on blockchain. At the end, mentees will create a functional decentralized application(DApp).
 image:
   url: "https://online.stanford.edu/sites/default/files/inline-images/1600X900-How-does-blockchain-work.jpg"
 ---
@@ -36,15 +36,11 @@ This eight-week project provides a structured introduction to Web3 focusing on b
 - [Why Decentralization Matters (cdixon.org)](https://cdixon.org/2018/02/18/why-decentralization-matters)  
   _We suggest reading this at the end of Week 1. Gives a gist of the possibilities decentralizations opens up._
 
----
-
 ### 🔐 Public and Private Key Cryptography 
 Basic cryptography concepts to understand how identity verification methods like passwords can be eliminated.
 - [Asymmetric and Symmetric Encryption (YouTube)](https://www.youtube.com/watch?v=o_g-M7UBqI8)
 - [Private and Public Key Cryptography (YouTube)](https://www.youtube.com/watch?v=_zyKvPvh808)
 - [Hashing and Hashing Algorithms (YouTube)](https://www.youtube.com/watch?v=HHQ2QP_upGM)
-
----
 
 ### ⛓️ Blockchain, Bitcoin, and Ethereum
 
@@ -55,27 +51,19 @@ Basic cryptography concepts to understand how identity verification methods like
   _Very important as we will be working on ethereum testnets primarily for our DApp._
 - [Types of Blockchain (GeeksforGeeks)](https://www.geeksforgeeks.org/types-of-blockchain/)
 
----
-
 ### ⚖️ Consensus Mechanisms: PoW and PoS
 
 - [What is Proof of Work? (Binance Academy)](https://academy.binance.com/en/articles/proof-of-work-explained)
 - [What is Proof of Stake? (Ethereum.org)](https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/)
 - [51% Attack (YouTube)](https://www.youtube.com/watch?v=BuTj9raHQOU&t=15s)
 
----
-
 ### 🌳 Merkle Trees
 
 - [Merkle Trees (GeeksforGeeks)](https://www.geeksforgeeks.org/blockchain-merkle-trees/)
 
----
-
 ### 🕵️ Zero-Knowledge Proofs
 
 - [Zero-Knowledge Proofs (YouTube)](https://www.youtube.com/watch?v=_MYpZQVZdiM)
-
----
 
 ### 🧩 Interactive Learning Tool
 

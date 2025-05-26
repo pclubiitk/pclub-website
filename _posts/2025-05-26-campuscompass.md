@@ -11,7 +11,7 @@ categories:
 - project
 hidden: true
 summary:
-- This seven-week project where mentees will learn the basics of software development workflow, and build a maps platform to route to the unexplored places of IITK in a fun way.
+- Mentees will learn the basics of software development workflow, and build a maps platform to route to the unexplored places of IITK in a fun way.
 image:
   url: "https://www.google.com/maps/about/images/mymaps/mymaps-desktop-16x9.png"
 ---

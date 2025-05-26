@@ -11,7 +11,7 @@ categories:
 - project
 hidden: true
 summary:
-- The project progresses from basics of memory exploitation to advanced kernel level anti-cheat bypasses. For hands-on, we will be exploiting the Pwnie Island game (a deliberately vulnerable MMORPG).
+- The project progresses from basics of memory exploitation to advanced kernel level anti-cheat bypasses. We will be exploiting the Pwnie Island game (a deliberately vulnerable MMORPG).
 
 image:
   url: "https://i.ytimg.com/vi/RDZnlcnmPUA/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLANoeYWna49fV7Gv7zC9lWWtyzUug"
