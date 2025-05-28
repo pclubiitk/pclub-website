@@ -23,5 +23,5 @@ We try to answer what are Low level functions of a system, how data is stored, r
 1. Build a Strong Foundation: Cover essential database internals, including C programming, file systems, B-Trees, and process management.
 2. Develop a rudimentary database with indexing, storage, and basic ACID properties while exploring SQL parsing and query execution.
 
-
 # Resources
+
