@@ -34,7 +34,7 @@ Introduction to Quantum Computing and building some Quantum Machine Learning Alg
 ## Relevant Sections of Nielsen Chuang
 Link to the book can be found [here](https://github.com/Himanshu2909/EE798V-2025-Spring/blob/main/Resources/Nielsen-Chuang.pdf)
 1. Start off with Stern-Gerlach (1.5.1). Provides a good understanding of some non-intuitive parts of QM
-2. [Highly Recommended for everyone] Cover the results of 2.1| Linear Algebra. Proofs not important for the project but having an understanding of the results will really help
+2. Cover the results of 2.1-Linear Algebra. Proofs not important for the project but having an understanding of the results will really help
 3. Post that, you can read the first 3 sub sections of 2.2. Anything beyond that would be a it too complex for now.
 4. Then, cover 4.1 and 4.2.
 
@@ -49,5 +49,3 @@ Link to the book can be found [here](https://github.com/Himanshu2909/EE798V-2025
 8. [Python virtualenv](https://virtualenv.pypa.io/en/latest/)
 9. [PyEnv](https://github.com/pyenv/pyenv) for Python Version Management
 10. [Git](https://learngitbranching.js.org/?locale=en_US)
-
-## Week 2
