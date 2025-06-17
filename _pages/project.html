@@ -57,6 +57,10 @@ image:
     position: relative;
     z-index: 1;
   }
+.grid-wrapper {
+  overflow-x: auto;
+  padding-bottom: 10px; 
+}
 
   .card {
     background-color: #18181b;
@@ -514,6 +518,7 @@ image:
   }
 </style>
 
+<div class="grid-wrapper">
 <div class="grid">
   {% for post in site.posts %}
   {% if post.categories contains 'project' %}
@@ -558,7 +563,7 @@ image:
   {% endif %}
   {% endfor %}
 </div>
-
+</div>
 
 <!-- <div style="margin: 1rem auto;">
 
