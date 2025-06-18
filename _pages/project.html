@@ -50,17 +50,15 @@ image:
     transition-duration: 0s !important;
   } */
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(4, 240px);
-    grid-gap: 32px;
-    position: relative;
-    z-index: 1;
-  }
-.grid-wrapper {
-  overflow-x: auto;
-  padding-bottom: 10px; 
+ .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 32px;
+  position: relative;
+  z-index: 1;
 }
+
+
 
   .card {
     background-color: #18181b;
@@ -518,7 +516,7 @@ image:
   }
 </style>
 
-<div class="grid-wrapper">
+
 <div class="grid">
   {% for post in site.posts %}
   {% if post.categories contains 'project' %}
@@ -562,7 +560,6 @@ image:
   </div>
   {% endif %}
   {% endfor %}
-</div>
 </div>
 
 <!-- <div style="margin: 1rem auto;">
