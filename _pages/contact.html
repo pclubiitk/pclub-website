@@ -39,6 +39,52 @@ coordies:
     image: manas-jain-kuniya.jpg
     fb: ""
     linkedin: this_is_mjk
+  
+LSTMs:
+  "Aarush Singh Kushwaha":
+    number: 96432 16563
+    mail:  aasikucoding@gmail.com
+    insta_id: _aarush.01_
+    github: AaSiKu
+    image: aarush.jpg
+    fb: ""
+    linkedin: aasiku
+
+  "Anirudh Singh":
+    number: 6397561276
+    mail: sanirudh23@iitk.ac.in
+    insta_id: basalt_802
+    github: anirudh802
+    image: anirudh.png
+    fb: ""
+    linkedin: anirudh-singh-57b82a286?
+
+  "Medha Agarwal":
+    number: 8924885144
+    mail: medhaagarwal603@gmail.com
+    insta_id: medhaagarwal__
+    github: medhaa09
+    image: Medha.jpg
+    fb: ""
+    linkedin: medha-agarwal-a11b7027a?
+
+  "Sohom Chakraborty":
+    number: 95730 68071
+    mail: sohomc23@iitk.ac.in
+    insta_id: solus.dot
+    github: Solus-dot
+    image: sohom.jpg
+    fb: ""
+    linkedin: sohom-chakraborty-5698622a0
+
+  "Soham Panchal":
+    number: 98251 65377
+    mail: sohamgp23@iitk.ac.in
+    insta_id: starvis_05
+    github: Sohamp05
+    image: soham.jpg
+    fb: ""
+    linkedin: soham-panchal-94725727b?  
 
 secys:
   "Abhinav Raj":
@@ -165,7 +211,7 @@ secys:
     mail: shreyanshr24@iitk.ac.in
     number: 7459094300
     insta_id: shreyanshrastogi23
-    github: Shreyansh120
+    github: Shreyansh1206
 
   "Sujal Satish Motagi":
     hall: 12
@@ -865,36 +911,54 @@ excoordies:
       max-width: 1140px;
     }
   }
-  .secyTable {
-    width: 100%;
-  }
+ 
 
-  .secyTable tr {
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-  }
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
 
+
+.secyTable {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  padding-bottom: 10px;
+}
+
+.secyTable tr {
+  transition: all 0.5s ease;
+}
+
+
+.secyTable tr:hover {
+  background-color: #26293a;
+  transform: scale(1.05);
+}
+
+
+.secyTable tr:nth-child(even) {
+  background-color: #2f4f4f;
+}
+
+
+.secyRow {
+  display: table-cell;
+  padding: 8px;
+  text-align: center;
+}
+
+
+.secyRow b {
+  color: #33dddd;
+}
+
+
+@media screen and (max-width: 600px) {
   .secyTable tr:hover {
-    background-color: #26293a;
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
+    transform: none;
   }
-
-  .secyRow {
-    display: table-cell;
-  }
-  .secyRow b {
-    color: #33dddd;
-  }
-  .secyTable tr:nth-child(even) {
-    background-color: #2f4f4f;
-  }
+}
 
   .social-media-logo {
     margin-bottom: 10px !important;
@@ -970,12 +1034,78 @@ excoordies:
   </div>
 </div>
 
+<div class="container">
+  <div class="section-title">
+    <h1>Current LSTMs</h1>
+  </div>
+
+  <div class="row1">
+    {% for LSTM in page.LSTMs %}
+    <div class="column">
+      <div class="team">
+        <div class="team-img">
+          <img
+            data-src="/images/{{ LSTM[1].image }}"
+            alt="Team Image"
+            class="blur-up lazyload"
+          />
+        </div>
+        <div class="team-content">
+          <h2>{{ LSTM[0] }}</h2>
+          <h3>{{ LSTM[1].number }}</h3>
+          <h4>{{ LSTM[1].mail }}</h4>
+        </div>
+        <div class="team-social">
+          <a
+            href="https://github.com/{{ LSTM[1].github }}"
+            target="_blank"
+            class="social-tw"
+          >
+            <i
+              class="fa fa-github"
+              style="font-size: 24px; margin-bottom: 0px"
+            ></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/{{ LSTM[1].linkedin }}/"
+            target="_blank"
+            class="social-li"
+          >
+            <i
+              class="fa fa-linkedin"
+              style="font-size: 24px; margin-bottom: 0px"
+            ></i>
+          </a>
+          <a
+            href="https://www.instagram.com/{{ LSTM[1].insta_id }}/"
+            target="_blank"
+            class="social-in"
+          >
+            <i
+              class="fa fa-instagram"
+              style="font-size: 24px; margin-bottom: 0px"
+            ></i>
+          </a>
+          <a href="mailto:{{ LSTM[1].mail }}" class="social-ml">
+            <i
+              class="fa fa-envelope"
+              style="font-size: 24px; margin-bottom: 0px"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
 {% comment %} current secys {% endcomment %}
 
 <div class="container">
   <div class="section-title">
     <h1>Current Secretaries</h1>
   </div>
+<div class="table-wrapper">
   <table class="secyTable" cellpadding="5">
     <tr>
       <th>Name</th>
@@ -1008,6 +1138,7 @@ excoordies:
     </tr>
     {% endfor %}
   </table>
+</div>
 </div>
 
 {% comment %} ex-coordis {% endcomment %} {% for year in page.excoordies %}
