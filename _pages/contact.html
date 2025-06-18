@@ -912,38 +912,53 @@ excoordies:
     }
   }
  
-  .secyTable {
-     width: 100%;
-     overflow-x: auto;
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+
+.secyTable {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
   padding-bottom: 10px;
-  }
+}
 
-  .secyTable tr {
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-  }
+.secyTable tr {
+  transition: all 0.5s ease;
+}
 
+
+.secyTable tr:hover {
+  background-color: #26293a;
+  transform: scale(1.05);
+}
+
+
+.secyTable tr:nth-child(even) {
+  background-color: #2f4f4f;
+}
+
+
+.secyRow {
+  display: table-cell;
+  padding: 8px;
+  text-align: center;
+}
+
+
+.secyRow b {
+  color: #33dddd;
+}
+
+
+@media screen and (max-width: 600px) {
   .secyTable tr:hover {
-    background-color: #26293a;
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
+    transform: none;
   }
-
-  .secyRow {
-    display: table-cell;
-  }
-  .secyRow b {
-    color: #33dddd;
-  }
-  .secyTable tr:nth-child(even) {
-    background-color: #2f4f4f;
-  }
+}
 
   .social-media-logo {
     margin-bottom: 10px !important;
@@ -1090,7 +1105,7 @@ excoordies:
   <div class="section-title">
     <h1>Current Secretaries</h1>
   </div>
-
+<div class="table-wrapper">
   <table class="secyTable" cellpadding="5">
     <tr>
       <th>Name</th>
@@ -1123,7 +1138,7 @@ excoordies:
     </tr>
     {% endfor %}
   </table>
-
+</div>
 </div>
 
 {% comment %} ex-coordis {% endcomment %} {% for year in page.excoordies %}
