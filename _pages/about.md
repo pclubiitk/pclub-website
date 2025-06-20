@@ -12,7 +12,7 @@ Programming Club (or PClub) is a community of students highly enthusiastic about
 
 Our Instagram [page](https://www.instagram.com/pclubiitk/) boasts around 3.4K followers and is a hub for programming-related posts and information. We use it to share exciting updates, promote events, engage with our community, and put out informative posts that keep our followers up-to-date on the latest in the programming world.
 
-We organize activities related to Development (Web Development, Open Source, Game/App Development), programming contests, hackathons, Capture The Flag contests, Matchine Learning and many more. Lecture series are regularly taken on algorithms, web hijacking, development, among other things.
+We organize activities related to Development (Web Development, Open Source, Game/App Development), programming contests, hackathons, Capture The Flag contests, Machine Learning and many more. Lecture series are regularly taken on algorithms, web hijacking, development, among other things.
 
 Programming Club is also dedicated to developing various applications that are beneficial for the campus junta, such as Puppy Love (during Valentine's week), Student Search, Linux Install fest, and promoting open-source software.
 
