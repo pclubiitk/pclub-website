@@ -1432,7 +1432,7 @@ The Adjusted Rand Index (ARI) measures the similarity between two clustering by 
 **Formula:**
 
 $$
-\text{ARI} = \frac{\text{RI} - \text{Expected\_RI}}{\max(\text{RI}) - \text{Expected\_RI}}
+\text{ARI} = \frac{\mathrm{RI} - \mathrm{RI}_{\text{expected}}}{\max(\mathrm{RI}) - \mathrm{RI}_{\text{expected}}}
 $$
 
 #### d. **Practical Guide to Evaluating Clusters**
