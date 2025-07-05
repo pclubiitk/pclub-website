@@ -2,7 +2,7 @@
 
 layout: post
 title: "Merkle Trees & its Application in VCS"
-date: 2025-05-30 19:30:00 +0530
+date: 2025-06-30 19:30:00 +0530
 authors: Saksham Agarwal, Yatharth Dangi
 tags:
 - Merkle Trees
