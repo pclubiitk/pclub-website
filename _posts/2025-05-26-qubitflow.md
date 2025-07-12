@@ -191,9 +191,9 @@ Implement Grover's Algo in qiskit.
    5. [From Factoring to Period-Finding, Writing the Quantum Program - Part 2](https://www.youtube.com/watch?v=dscRoTBPeso&list=PLOFEBzvs-VvrXTMy5Y2IqmSaUjfnhvBHR&index=12)
    6. [From Factoring to Period-Finding, Writing the Quantum Program - Part 3](https://www.youtube.com/watch?v=IFmkzWF-S2k&list=PLOFEBzvs-VvrXTMy5Y2IqmSaUjfnhvBHR&index=13)
 2. Theory from Nielsen Chuang:
-   1. [5.1 | The quantum Fourier transform](https://profmcruz.wordpress.com/wp-content/uploads/2017/08/quantum-computation-and-quantum-information-nielsen-chuang.pdf#%5B%7B%22num%22%3A1150%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22Fit%22%7D%5D)
-   2. [5.2 | Phase estimation](https://profmcruz.wordpress.com/wp-content/uploads/2017/08/quantum-computation-and-quantum-information-nielsen-chuang.pdf#%5B%7B%22num%22%3A1207%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22Fit%22%7D%5D)
-   3. [5.3 | Applications: order-finding and factoring](https://profmcruz.wordpress.com/wp-content/uploads/2017/08/quantum-computation-and-quantum-information-nielsen-chuang.pdf#%5B%7B%22num%22%3A1232%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22Fit%22%7D%5D)
+   1. [5.1: The quantum Fourier transform](https://profmcruz.wordpress.com/wp-content/uploads/2017/08/quantum-computation-and-quantum-information-nielsen-chuang.pdf#%5B%7B%22num%22%3A1150%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22Fit%22%7D%5D)
+   2. [5.2: Phase estimation](https://profmcruz.wordpress.com/wp-content/uploads/2017/08/quantum-computation-and-quantum-information-nielsen-chuang.pdf#%5B%7B%22num%22%3A1207%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22Fit%22%7D%5D)
+   3. [5.3: Applications: order-finding and factoring](https://profmcruz.wordpress.com/wp-content/uploads/2017/08/quantum-computation-and-quantum-information-nielsen-chuang.pdf#%5B%7B%22num%22%3A1232%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22Fit%22%7D%5D)
 
 
 ### Assignment 9
@@ -223,5 +223,5 @@ Once you're done with the first 5 weeks, go through [this video](https://www.you
 
 
 Project Mentors:
-- Advaith GS | advaithgs23@iitk.ac.in | +91 88009 25876
-- Himanshu Sharma | himans23@iitk.ac.in | +91 999963 3455
+Advaith GS | advaithgs23@iitk.ac.in | +91 88009 25876
+Himanshu Sharma | himans23@iitk.ac.in | +91 999963 3455
