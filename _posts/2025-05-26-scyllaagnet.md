@@ -209,10 +209,10 @@ Deploy a Scalable and Low-Latency Agentic Chatbot  in python using cutting edge 
 
 ### Building and structuring modules
 1. [How to design modular python projects](https://labex.io/tutorials/python-how-to-design-modular-python-projects-420186)
-2. https://hashedin.com/blog/designing-modules-in-python-ebook/
-3. https://www.youtube.com/watch?v=iCE1bDoit9Q&ab_channel=ArjanCodes
-4. https://www.youtube.com/watch?v=C7MRkqP5NRI&ab_channel=EuroPythonConference
-5. https://www.youtube.com/watch?v=vzTrLpxPF54&ab_channel=ArjanCodes
+2. [Designing Modules](https://hashedin.com/blog/designing-modules-in-python-ebook/)
+3. [ Why the Plugin Architecture Gives You CRAZY Flexibility ](https://www.youtube.com/watch?v=iCE1bDoit9Q&ab_channel=ArjanCodes)
+4. [Clean Architectures in Python](https://www.youtube.com/watch?v=C7MRkqP5NRI&ab_channel=EuroPythonConference)
+5. [Why Use Design Patterns When Python Has Functions](https://www.youtube.com/watch?v=vzTrLpxPF54&ab_channel=ArjanCodes)
 
 ### Software testing:
 1. [Unit, Integration and Functional Testing](https://www.headspin.io/blog/unit-integration-and-functional-testing-4-main-points-of-difference)
