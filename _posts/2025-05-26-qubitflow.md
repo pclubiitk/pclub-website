@@ -175,7 +175,7 @@ Implement Deutsch Jozsa Algorithm in Qiskit
 1. [3B1B Video on Grovers Algorithm](https://www.youtube.com/watch?v=RQWpF2Gb-gU&t=1912s) for intuitive and visual understanding
 2. [Overview of Grovers Algorithm](https://www.youtube.com/watch?v=EoH3JeqA55A)
 3. [Deep Dive and Query Complexity Analysis](https://www.youtube.com/watch?v=hnpjC8WQVrQ&t=1711s&ab_channel=Qiskit)
-4. Theory from Nielsen Chuang: [6| Quantum search algorithms](https://profmcruz.wordpress.com/wp-content/uploads/2017/08/quantum-computation-and-quantum-information-nielsen-chuang.pdf#%5B%7B%22num%22%3A1305%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22Fit%22%7D%5D)
+4. Theory from Nielsen Chuang: [6: Quantum search algorithms](https://profmcruz.wordpress.com/wp-content/uploads/2017/08/quantum-computation-and-quantum-information-nielsen-chuang.pdf#%5B%7B%22num%22%3A1305%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22Fit%22%7D%5D)
 5. [Grover’s Algorithm and Amplitude Amplification (Implementation)](https://qiskit-community.github.io/qiskit-algorithms/tutorials/06_grover.html)
 6. [Grover’s algorithm examples (Implementation)](https://qiskit-community.github.io/qiskit-algorithms/tutorials/07_grover_examples.html)
 
@@ -214,6 +214,7 @@ Once you're done with the first 5 weeks, go through [this video](https://www.you
 7. [Neural Networks](https://pclub.in/roadmap/2024/06/06/ml-roadmap/#id-Week5)
 
 ## Week 6 | Introduction to Quantum Machine Learning
+
 
 ## Week 7 | Kernel Method and Quantum SVCs
 
