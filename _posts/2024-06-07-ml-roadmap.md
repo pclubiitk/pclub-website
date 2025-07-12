@@ -302,7 +302,7 @@ As the name suggests, **_Semi Supervised learning_** lies somewhere between supe
 
 **_Reinforcement Learning algorithms_** form policies and learn via trial and error. Whether the policy is correct or wrong is determined via positive or negative reinforcements provided to the agent on completion of certain tasks (Similar to how you are appreciated when you get a great rank in JEE Advanced, but prolly scolded or beaten by your parents when you're caught consuming drugs; or you become happy when you get a text from a certain someone, but become dejected when you don't talk to them for a long time. Concept of reinforcement is derived from real life 🦝). This process can be discrete or continuous. For instance, building an agent to play games like Flappy Bird or Pokemon.
 
-For a better understanding of these classifications, refer to [this](https://www.geeksforgeeks.org/types-of-machine-learning/) article by GfG and [this](https://www.javatpoint.com/types-of-machine-learning) page by javapoint.
+For a better understanding of these classifications, refer to [this](https://www.geeksforgeeks.org/types-of-machine-learning/) article by GfG.
 
 Now that we have a high level idea of how the domain of Machine Learning looks like, let's start understanding some algorithms.
 
@@ -330,8 +330,7 @@ The hypothesis function is itself a function of the weights of the model. These 
 
 #### 🐼 Cost Functions
 
-But how do we ascertain whether our hypothesis function is good enough? That's the job of the cost function. It gives us a measure of how poor or how wrong the hypothesis function is performing in comparison to the ground truth. Here are some commonly used cost functions:
-https://www.javatpoint.com/cost-function-in-machine-learning
+But how do we ascertain whether our hypothesis function is good enough? That's the job of the cost function. It gives us a measure of how poor or how wrong the hypothesis function is performing in comparison to the ground truth. It is a measure of average error over the whole dataset. You might also come across the term loss function, if the cost function is the average error over the dataset, then understand loss function as the error that the cost function averages for each individual example. You can have a look at some commonly used loss functions [here](https://www.geeksforgeeks.org/ml-common-loss-functions/).
 
 Now, we have a function we need to minimize and a function (cost function) that we need to predict (hypothesis function). The Cost function usually draws a comparison between the actual result and the predicted result. Since the predicted result is obtained by puttin the values of the features in the hypothesis function, the cost function contains in it the hypotesis function. Moreover, since we are minimizing the cost function, it is intuitive to make its derivative zero in order to get the values for which minimum error (ie, minimum cost function) is achieved. This is done via an algorithm called Gradient Descent.
 
@@ -432,7 +431,7 @@ Data preprocessing involves transforming raw data into a format suitable for ana
 Important practices under Data Preprocessing include
 
 - Handling Missing Values: Missing data can introduce bias and reduce the accuracy of your machine learning models. Ignoring missing values can lead to misleading results because most algorithms are not designed to handle them. Properly addressing missing values ensures the integrity of your dataset and enhances the performance of your models. Follow [this](https://www.analyticsvidhya.com/blog/2021/10/handling-missing-value/) to understand how to do it.
-- Data Transformation: Most machine learning algorithms require numerical input. Categorical data needs to be converted into a numerical format to be processed by these algorithms. Encoding categorical variables allows the model to interpret and learn from the data correctly. For intro go through [this](https://www.akkio.com/post/data-transformation-in-machine-learning). Then you should read [this](https://www.geeksforgeeks.org/data-transformation-in-machine-learning/#google_vignette). Make sure to go through hyperlinks in the content of second link.
+- Data Transformation: Most machine learning algorithms require numerical input. Categorical data needs to be converted into a numerical format to be processed by these algorithms. Encoding categorical variables allows the model to interpret and learn from the data correctly. For intro go through [this](https://medium.com/aiskunks/categorical-data-encoding-techniques-d6296697a40f). Then you should read [this](https://www.geeksforgeeks.org/data-transformation-in-machine-learning/#google_vignette). Make sure to go through hyperlinks in the content of second link.
 
 <div id='id-Week3-Day4'/>
 
@@ -449,11 +448,11 @@ Bias and Variance are 2 particularly important metrics, used often in model eval
 - [https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229](https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229)
 
 If you don't understand certain sections, don't worry! You'll eventually develop an understanding as we progress through this journey.
-🐼 [Precision, Recall and F1 Score](https://towardsdatascience.com/a-look-at-precision-recall-and-f1-score-36b5fd0dd3ec)
+🐼 [Precision, Recall and F1 Score](https://towardsdatascience.com/precision-and-recall-a-comprehensive-guide-with-practical-examples-71d614e3fc43/)
 🐼 [ROC and AUC](https://www.youtube.com/watch?v=4jRBRDbJemM&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=8)
 🐼 [Entropy](https://www.youtube.com/watch?v=YtebGVx-Fxw&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=11)
 🐼 [Mutual Information](https://www.youtube.com/watch?v=eJIp_mgVLwE&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=12)
-🐼 [Odds](youtube.com/watch?v=ARfXDSkQf1Y&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=17) and [Log Odds](https://www.youtube.com/watch?v=8nm0G-1uJzA&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=18)
+🐼 [Odds](https://www.youtube.com/watch?v=ARfXDSkQf1Y&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=18)) and [Log Odds](https://www.youtube.com/watch?v=8nm0G-1uJzA&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=18)
 
 You can also go through the following articles for understanding more metrics:
 
@@ -582,7 +581,7 @@ Today's content is largely derived from [Lecture 5 of CS229](https://www.youtube
 
 #### 🐼 Generative v/s Discriminative Learning Algorithms
 
-The algorithms we've explored so far (Linear Regression, Logistic Regression) model $p(y|x;\theta)$ that is the conditional distribution of $y$ given $x$. These models try to learn mappings directly from the space of inputs $X$ to the labels are called discriminative learning algorithms. The alfgorithms which model $p(x|y)$ are called Generative Learning Algorithms. These Generative algorithms take a particular class label ($y$), and then learns how that class looks like ($x$) (essentially, $p(x|y)$). This when done iteratively helps the model to learn how the features of a given class look like.
+The algorithms we've explored so far (Linear Regression, Logistic Regression) model $p(y\mid x;\theta)$ that is the conditional distribution of $y$ given $x$. These models try to learn mappings directly from the space of inputs $X$ to the labels are called discriminative learning algorithms. The algorithms which model $p(x|y)$ are called Generative Learning Algorithms. These Generative algorithms take a particular class label ($y$), and then learns how that class looks like ($x$) (essentially, $p(x\mid y)$). This when done iteratively helps the model to learn how the features of a given class look like.
 
 #### 🐼 Bayes Rule and it's applications
 
@@ -601,7 +600,7 @@ $$
 
 #### 🐼 Gaussian Discriminant Analysis (GDA)
 
-We assume that $p(x|y)$ is distributed like the Multivariate Gaussian Distribution (A Multivariate form of the Bell Shaped Gaussian distribution). Refer to page 37 of [CS229 Notes](https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf). This means:
+We assume that $p(x\mid y)$ is distributed like the Multivariate Gaussian Distribution (A Multivariate form of the Bell Shaped Gaussian distribution). Refer to page 37 of [CS229 Notes](https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf). This means:
 
 $$
 y \sim Bernoulli(\phi)
@@ -640,7 +639,7 @@ Moreover, this [website maintained by Aman Chadha](https://aman.ai/) contains co
 
 There are several types of Naive Bayes classifiers, each suited for different types of data:
 
-1. **Gaussian Naive Bayes**: Assumes that the continuous features follow a Gaussian (normal) distribution.[Gaussian Naive Bayes video]()
+1. **Gaussian Naive Bayes**: Assumes that the continuous features follow a Gaussian (normal) distribution.[Gaussian Naive Bayes video](https://www.youtube.com/watch?v=H3EjCKtlVog)
 2. **Multinomial Naive Bayes**: Suitable for discrete data, such as word counts in text classification.[Multinomial Naive Bayes video](https://www.youtube.com/watch?v=O2L2Uv9pdDA)
 
 You can also go through these [Lecture Slides](https://www.cs.toronto.edu/~urtasun/courses/CSC411_Fall16/09_naive_bayes.pdf) after CS229 lecture notes if you find it difficult to comprehend.
@@ -678,9 +677,9 @@ In an essence, you recursively ask questions (if-else statements) until you reac
 
 If you analyze these questions and how a human would answer these, you'd conclude that the answer to these questions is related to how much "information" do we gain about the output when we get the answer to a particular question. How do we quantify "information" mathematically such that we can use this "information metric" to somehow construct this tree. Statisticians have tried to encapsulate information objectively via certain metrics like Entropy, Gini Impurity, Information Gain etc. Go through the following articles before proceeding.
 
-- [Entropy in Machine Learning](https://www.javatpoint.com/entropy-in-machine-learning)
-- [More on Entropy](https://www.analyticsvidhya.com/blog/2020/11/entropy-a-key-concept-for-all-data-science-beginners/)
+- [Entropy in Machine Learning](https://www.analyticsvidhya.com/blog/2020/11/entropy-a-key-concept-for-all-data-science-beginners/)
 - [Gini Index and Information Gain](https://medium.com/analytics-steps/understanding-the-gini-index-and-information-gain-in-decision-trees-ab4720518ba8)
+- [Gini Impurity and Entropy in Decision Tree](https://www.geeksforgeeks.org/machine-learning/gini-impurity-and-entropy-in-decision-tree-ml/)
 
 Moving on to how to build a decision tree, refer to the following:
 
@@ -701,7 +700,7 @@ You may refer to the following for help:
 - [https://machinelearningmastery.com/implement-decision-tree-algorithm-scratch-python/](https://machinelearningmastery.com/implement-decision-tree-algorithm-scratch-python/)
 - [https://towardsdatascience.com/implementing-a-decision-tree-from-scratch-f5358ff9c4bb](https://towardsdatascience.com/implementing-a-decision-tree-from-scratch-f5358ff9c4bb)
 - [https://www.kaggle.com/code/prashant111/decision-tree-classifier-tutorial](https://www.kaggle.com/code/prashant111/decision-tree-classifier-tutorial)
-- [https://towardsdatascience.com/an-exhaustive-guide-to-classification-using-decision-trees-8d472e77223f](https://towardsdatascience.com/an-exhaustive-guide-to-classification-using-decision-trees-8d472e77223f)
+- [https://towardsdatascience.com/decision-tree-classifier-explained-a-visual-guide-with-code-examples-for-beginners-7c863f06a71e/](https://towardsdatascience.com/decision-tree-classifier-explained-a-visual-guide-with-code-examples-for-beginners-7c863f06a71e/)
 
 The following video presents a great pipeline to implement A Classficiation Tree Model:
 [https://www.youtube.com/watch?v=q90UDEgYqeI&list=PLblh5JKOoLUKAtDViTvRGFpphEc24M-QH&index=5](https://www.youtube.com/watch?v=q90UDEgYqeI&list=PLblh5JKOoLUKAtDViTvRGFpphEc24M-QH&index=5)
@@ -827,7 +826,7 @@ At its core, an ANN is a system of classifier units which work together in multi
 The basic building block of a neural net is the **perceptron.** These are the "neurons" of our neural network.
 
 - [https://towardsdatascience.com/what-is-a-perceptron-basics-of-neural-networks-c4cfea20c590](https://towardsdatascience.com/what-is-a-perceptron-basics-of-neural-networks-c4cfea20c590)
-- [https://www.javatpoint.com/perceptron-in-machine-learning](https://www.javatpoint.com/perceptron-in-machine-learning)
+- [https://www.geeksforgeeks.org/machine-learning/what-is-perceptron-the-simplest-artificial-neural-network/](https://www.geeksforgeeks.org/machine-learning/what-is-perceptron-the-simplest-artificial-neural-network/)
 
 Do you see the similarity with logistic regression? What are the limitations of using the Perceptron Learning Algorithm? Do you think that Logistic regression is just a softer version of the Perceptron Learning Algorithm?
 
@@ -868,10 +867,8 @@ If you take specific values of the functions, and do some maniputlations to this
 - Moments: The log-partition function helps in calculating the moments (mean, variance, etc.) of the distribution.
 - Simplified Algorithms: The mathematical properties of exponential families enable the development of efficient algorithms for parameter estimation (e.g., Maximum Likelihood Estimation, Expectation-Maximization).
 
-CS229 lectures notes and lecture should be enough to understand exponential families. For a better understanding, refer to the following resources:
-
-- [Lecture Notes by Osvaldo Simeone](https://nms.kcl.ac.uk/osvaldo.simeone/ml4eng/Chapter_9.pdf)
-- [A (visual) Tutorial on Exponential Families by Marius Hobbhahn](https://www.mariushobbhahn.com/2021-06-10-ExpFam_tutorial/)
+CS229 lectures notes and lecture should be enough to understand exponential families. For a better understanding, refer to the following article:
+ [A (visual) Tutorial on Exponential Families by Marius Hobbhahn](https://www.mariushobbhahn.com/2021-06-10-ExpFam_tutorial/)
 
 <ul style="background-color: #470101">Sidenote: This Man <a href = "https://www.mariushobbhahn.com/aboutme/">Marius Hobbhahn</a> is an absolute legend who primarily works on Bayesian ML and has written pretty insightful blogs on the mathematical aspect of ML. Moreover, he's a pretty successful debater. Do check out this website for intrinsically interesting stuff 🦝🙃</ul>
 
@@ -883,7 +880,7 @@ Consider a classification or regression problem where we would like to predict t
 
 1. $y | x; θ$ ∼ Exponential Family($\eta$). I.e., given $x$ and $\theta$, the distribution of
    $y$ follows some exponential family distribution, with parameter $\eta$. This assumption manifests in linear regression as assuming that the error term $\epsilon$ has a gaussian distribution about 0 with $\sigma ^{2} = 1$.
-2. Given $x$, our goal is to predict the expected value of $T(y)$ given $x$. In most of our examples, we will have $T(y) = y$, so this means we would like the prediction $h(x)$ output by our learned hypothesis h to satisfy $h(x) = E[y|x]$.
+2. Given $x$, our goal is to predict the expected value of $T(y)$ given $x$. In most of our examples, we will have $T(y) = y$, so this means we would like the prediction $h(x)$ output by our learned hypothesis $h$ to satisfy $h(x) = \mathbb{E}[y \mid x]$.
 3. The natural parameter η and the inputs x are related linearly: $\eta = \theta ^{T}x$. This is a crucial assumption, and can't really be justified per se at this level. So let's just assume that this is a "Design Choice" which just works out pretty well.
 
 These three assumptions/design choices will allow us to derive a very elegant class of learning algorithms, namely GLMs, that have many desirable properties such as ease of learning. For understanding how Linear, Logistic and SoftMax Regression can be modelled as GLMs, jump to page 30 of [these notes](https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf). More on SoftMax in the next subsection
@@ -901,7 +898,7 @@ These three assumptions/design choices will allow us to derive a very elegant cl
 - If there are different classes their predicted values could range form $-\infty$ to $+\infty$ , what SoftMax does is it converts these values into probabilities, such that sum of all the probabilities is 1.
 - This help us understand which class has the highest probability, thus suggesting the object we are predicting for belongs to that class.
   **Resources:**
-- https://medium.com/@tpreethi/softmax-regression-93808c02e6ac
+- [https://medium.com/@tpreethi/softmax-regression-93808c02e6ac](https://medium.com/@tpreethi/softmax-regression-93808c02e6ac)
 - [Video by Andrew Ng](https://www.youtube.com/watch?v=LLux1SW--oM)
 
 Also, go through the SoftMax Regression Section of Generalized Linear Models to get a hang of how it has been derived.
@@ -927,7 +924,7 @@ Then, read these articles for better theoretical understanding:
 
 Refer to the following articles to get a feel of the mathematics under the hood.
 
-- [https://towardsdatascience.com/deriving-the-backpropagation-equations-from-scratch-part-1-343b300c585a](https://towardsdatascience.com/deriving-the-backpropagation-equations-from-scratch-part-1-343b300c585a)
+- [https://towardsdatascience.com/backpropagation-step-by-step-derivation-99ac8fbdcc28/](https://towardsdatascience.com/backpropagation-step-by-step-derivation-99ac8fbdcc28/)
 - [https://towardsdatascience.com/understanding-backpropagation-algorithm-7bb3aa2f95fd](https://towardsdatascience.com/understanding-backpropagation-algorithm-7bb3aa2f95fd)
 
 Lastly, go through CS229 [Lecture 11: Intro to Neural Networks](https://www.youtube.com/watch?v=MfIjxPh6Pys&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&index=11) and [Lecture 12: Backpropagation](https://www.youtube.com/watch?v=zUazLXZZA2U&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&index=12) which shall provide a better mathematical foundation.
@@ -989,7 +986,7 @@ Dedicate these two days to try to implement a neural network in python from scra
 
 You may train your model on any of the datasets given in the roadmap.
 
-[https://towardsdatascience.com/an-introduction-to-neural-networks-with-implementation-from-scratch-using-python-da4b6a45c05b](https://towardsdatascience.com/an-introduction-to-neural-networks-with-implementation-from-scratch-using-python-da4b6a45c05b)
+[https://www.youtube.com/watch?v=w8yWXqWQYmU&t=391s](https://www.youtube.com/watch?v=w8yWXqWQYmU&t=391s)
 
 <div id='id-Week6'/>
 
@@ -1149,7 +1146,6 @@ Explore more about these methods with these resources:
 - Understanding when and how to apply these methods can be tricky. Check out these detailed guides:
   - [**Feature Selection with Real and Categorical Data**](https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/)
   - [**Feature Selection Methods**](https://neptune.ai/blog/feature-selection-methods)
-  - [**Why, How, and When to Apply Feature Selection**](https://towardsdatascience.com/why-how-and-when-to-apply-feature-selection-e9c69adfabf2) on Towards Data Science.
 
 By integrating these techniques and resources into your workflow, you'll be well-equipped to handle even the largest and most complex datasets, transforming them into insightful, high-performing models. Happy feature selecting!
 
@@ -1340,13 +1336,13 @@ Hierarchical clustering builds a hierarchy of clusters. It can be divided into A
 - **Divisive:** Start with one cluster containing all data points and recursively split it into smaller clusters.
 
 🔍 **Deep Dive:**  
-Understand hierarchical clustering with this [**guide**](https://www.javatpoint.com/hierarchical-clustering-in-machine-learning).
+Understand hierarchical clustering with this [**guide**](https://medium.com/@sachinsoni600517/mastering-hierarchical-clustering-from-basic-to-advanced-5e770260bf93).
 
 #### b. **Visualizing Dendrograms**
 
 Dendrograms are tree-like diagrams that illustrate the arrangement of clusters produced by hierarchical clustering. They help to visualize the process and results of hierarchical clustering.
 
-![image alt](https://static.javatpoint.com/tutorial/machine-learning/images/hierarchical-clustering-in-machine-learning10.png)
+![image alt](https://media.geeksforgeeks.org/wp-content/uploads/20230425190545/download-(10).png)
 
 <div id='id-Week7-Day4'/>
 
@@ -1375,9 +1371,10 @@ Get practical experience by implementing DBSCAN in Python.
 
 🔍**Take a look at the documentation:**
 You can go through the sklearn documentation for a better insight of DBSCAN.
-https://scikit-learn.org/stable/auto_examples/cluster/plot_dbscan.html#sphx-glr-auto-examples-cluster-plot-dbscan-py
 
-https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html
+[https://scikit-learn.org/stable/auto_examples/cluster/plot_dbscan.html#sphx-glr-auto-examples-cluster-plot-dbscan-py](https://scikit-learn.org/stable/auto_examples/cluster/plot_dbscan.html#sphx-glr-auto-examples-cluster-plot-dbscan-py)
+
+[https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html)
 
 <div id='id-Week7-Day5'/>
 
@@ -1435,7 +1432,7 @@ The Adjusted Rand Index (ARI) measures the similarity between two clustering by 
 **Formula:**
 
 $$
-\text{ARI} = \frac{\text{RI} - \text{Expected\_RI}}{\max(\text{RI}) - \text{Expected\_RI}}
+\text{ARI} = \frac{\mathrm{RI} - \mathrm{RI}_{\text{expected}}}{\max(\mathrm{RI}) - \mathrm{RI}_{\text{expected}}}
 $$
 
 #### d. **Practical Guide to Evaluating Clusters**
@@ -1540,7 +1537,7 @@ Learn about UMAP and its effectiveness in data visualization [**here**](https://
    - **Practical Example:** Employ UMAP to visualize clusters in genetic data.
 
 🔍 **Explore Techniques in Practice:**
-Learn how to apply these dimensionality reduction techniques using Python and real datasets in this [**comprehensive guide**](https://towardsdatascience.com/dimensionality-reduction-for-visualizing-machine-learning-datasets-430c85105a8d).
+Learn how to apply these dimensionality reduction techniques using Python and real datasets in this [**comprehensive guide**](https://towardsdatascience.com/6-dimensionality-reduction-techniques-how-and-when-to-use-them-e4891c10b5db/).
 
 By the end of Day 6, you will have a thorough understanding of various dimensionality reduction techniques, how to implement them, and when to apply each method effectively. This knowledge will be crucial for handling high-dimensional data in unsupervised learning tasks. 🚀
 
@@ -1577,7 +1574,7 @@ Go to this link, download the dataset and get working!
 
 P.S. some features aren't as useful as others, so you may want to use feature selection
 
-[https://www.javatpoint.com/feature-selection-techniques-in-machine-learning](https://www.javatpoint.com/feature-selection-techniques-in-machine-learning).
+[https://www.geeksforgeeks.org/machine-learning/feature-selection-techniques-in-machine-learning/](https://www.geeksforgeeks.org/machine-learning/feature-selection-techniques-in-machine-learning/).
 
 Don't worry if your results aren't that good, this isn't really a task to be done in 1 day. It's basically to give you hands-on experience. Also, there are notebooks available on Kaggle for this problem given, you can take hints from there as well. There are many similar datasets available on Kaggle, you can try those out too! Also, as you learn more topics in ML, you will get to know how to further improve accuracy. So just dive in and make a (working) model.
 
@@ -1607,11 +1604,11 @@ The Machine Learning BOOM is going on and everyday new models and products are b
 
 1. Reinforcement Learning
 2. [Kolmogorov-Arnold Networks](https://arxiv.org/abs/2404.19756): For this you'd require an understanding of Kolmogorov-Arnold Representation Theorem, A little bits of high school mathematics and the use of SPLINES :)
-3. Liquid Neural Networks: [This Research Paper](https://arxiv.org/pdf/2006.0443) and [This Medium Article](https://medium.com/@hession520/liquid-neural-nets-lnns-32ce1bfb045a) are good enough to provide an intro to LNNs, post which you can build upon your own.
+3. Liquid Neural Networks: [This Research Paper](https://arxiv.org/pdf/2006.04439) and [This Medium Article](https://medium.com/@hession520/liquid-neural-nets-lnns-32ce1bfb045a) are good enough to provide an intro to LNNs, post which you can build upon your own.
 4. Spiking Neural Networks
 5. Audio Analysis with Machine Learning (Audio Machine Learning)
 
-For understanding Machine Learning from a Probabilistic and Theoretical perspective, you can go through this book: [Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/printings/ESLII_print12_toc.pdf) .
+For understanding Machine Learning from a Probabilistic and Theoretical perspective, you can go through this book: [Elements of Statistical Learning](https://www.sas.upenn.edu/~fdiebold/NoHesitations/BookAdvanced.pdf) .
 
 Machine Learning after this point largely gets divided into 2 segments: Computer Vision (The domain where you can differentiate Cute Raccoons 🦝 from Red Pandas ) and Natural Language Processing (wherein you can extract information from text; prolly analyze the sentiment of those texts and respond accordingly with a convincing response 🥰).
 
@@ -1628,6 +1625,6 @@ I'm assuming that if you've followed the whole roadmap and have at the end reach
 - Talin Gupta \| +91 85589 13121
 - Tejas Ahuja \| +91 87007 94886
 - Aarush Singh Kushwaha \| +91 96432 16563
-- Harshit Jaiswal | +91 97937 40831
+- Harshit Jaiswal \| +91 97937 40831
 - Himanshu Sharma \| +91 99996 33455
 - Kshitij Gupta \| +91 98976 05316
