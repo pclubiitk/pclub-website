@@ -581,7 +581,7 @@ Today's content is largely derived from [Lecture 5 of CS229](https://www.youtube
 
 #### 🐼 Generative v/s Discriminative Learning Algorithms
 
-The algorithms we've explored so far (Linear Regression, Logistic Regression) model $p(y\mid x;\theta)$ that is the conditional distribution of $y$ given $x$. These models try to learn mappings directly from the space of inputs $X$ to the labels are called discriminative learning algorithms. The algorithms which model $p(x|y)$ are called Generative Learning Algorithms. These Generative algorithms take a particular class label ($y$), and then learns how that class looks like ($x$) (essentially, $p(x\mid y)$). This when done iteratively helps the model to learn how the features of a given class look like.
+The algorithms we've explored so far (Linear Regression, Logistic Regression) model $p(y\mid x;\theta)$ that is the conditional distribution of $y$ given $x$. These models try to learn mappings directly from the space of inputs $X$ to the labels are called discriminative learning algorithms. The algorithms which model $p(x\mid y)$ are called Generative Learning Algorithms. These Generative algorithms take a particular class label ($y$), and then learns how that class looks like ($x$) ( essentially, $p(x\mid y)$ ). This when done iteratively helps the model to learn how the features of a given class look like.
 
 #### 🐼 Bayes Rule and it's applications
 
