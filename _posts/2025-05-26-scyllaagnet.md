@@ -232,11 +232,11 @@ Deploy a Scalable and Low-Latency Agentic Chatbot  in python using cutting edge 
 - [Docusaurus](https://docusaurus.io/)
 - [MKDocs](https://realpython.com/python-project-documentation-with-mkdocs/#step-4-prepare-your-documentation-with-mkdocs)
 
-### CI/CD
-1. (https://docs.python-guide.org/writing/structure/#structure-of-the-repository)
-2. (https://docs.python-guide.org/writing/tests/#tools)
-3. (https://py-pkgs.org/08-ci-cd.html)
-4. (https://docs.github.com/en/actions/how-tos/writing-workflows/building-and-testing/building-and-testing-python)
+### Refactoring and CI/CD
+1. [Structuring the Repo](https://docs.python-guide.org/writing/structure/#structure-of-the-repository)
+2. [Tests](https://docs.python-guide.org/writing/tests/#tools)
+3. [CI/CD for Python](https://py-pkgs.org/08-ci-cd.html)
+4. [Github Workflows CI/CD](https://docs.github.com/en/actions/how-tos/writing-workflows/building-and-testing/building-and-testing-python)
 
 ### Packaging and Deploying
 1. [Packaging](https://packaging.python.org/en/latest/flow/)
