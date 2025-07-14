@@ -431,7 +431,7 @@ Data preprocessing involves transforming raw data into a format suitable for ana
 Important practices under Data Preprocessing include
 
 - Handling Missing Values: Missing data can introduce bias and reduce the accuracy of your machine learning models. Ignoring missing values can lead to misleading results because most algorithms are not designed to handle them. Properly addressing missing values ensures the integrity of your dataset and enhances the performance of your models. Follow [this](https://www.analyticsvidhya.com/blog/2021/10/handling-missing-value/) to understand how to do it.
-- Data Transformation: Most machine learning algorithms require numerical input. Categorical data needs to be converted into a numerical format to be processed by these algorithms. Encoding categorical variables allows the model to interpret and learn from the data correctly. For intro go through [this](https://medium.com/aiskunks/categorical-data-encoding-techniques-d6296697a40f). Then you should read [this](https://www.geeksforgeeks.org/data-transformation-in-machine-learning/#google_vignette). Make sure to go through hyperlinks in the content of second link.
+- Data Transformation: Most machine learning algorithms require numerical input. Categorical data needs to be converted into a numerical format to be processed by these algorithms. Encoding categorical variables allows the model to interpret and learn from the data correctly. For intro go through [this](https://medium.com/aiskunks/categorical-data-encoding-techniques-d6296697a40f). Then you should read [this](https://www.geeksforgeeks.org/data-transformation-in-machine-learning/#google_vignette). Make sure to go through hyperlinks in the content of second link. Refer to [this](https://colab.research.google.com/drive/1sGtczOnHr0VEpy5vrwyZPLyhrRU09VB4?usp=sharing) notebook as well in order to get a hands on overview of how data preprocessing and feature engineering is done while working on a real dataset. 
 
 <div id='id-Week3-Day4'/>
 
@@ -581,7 +581,7 @@ Today's content is largely derived from [Lecture 5 of CS229](https://www.youtube
 
 #### 🐼 Generative v/s Discriminative Learning Algorithms
 
-The algorithms we've explored so far (Linear Regression, Logistic Regression) model $p(y\mid x;\theta)$ that is the conditional distribution of $y$ given $x$. These models try to learn mappings directly from the space of inputs $X$ to the labels are called discriminative learning algorithms. The algorithms which model $p(x|y)$ are called Generative Learning Algorithms. These Generative algorithms take a particular class label ($y$), and then learns how that class looks like ($x$) (essentially, $p(x\mid y)$). This when done iteratively helps the model to learn how the features of a given class look like.
+The algorithms we've explored so far (Linear Regression, Logistic Regression) model $p(y\mid x;\theta)$ that is the conditional distribution of $y$ given $x$. These models try to learn mappings directly from the space of inputs $X$ to the labels are called discriminative learning algorithms. The algorithms which model $p(x\mid y)$ are called Generative Learning Algorithms. These Generative algorithms take a particular class label ($y$), and then learns how that class looks like ($x$) ( essentially, $p(x\mid y)$ ). This when done iteratively helps the model to learn how the features of a given class look like.
 
 #### 🐼 Bayes Rule and it's applications
 
