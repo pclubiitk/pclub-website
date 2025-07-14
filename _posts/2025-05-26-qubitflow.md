@@ -103,7 +103,6 @@ Implement a Quantum Teleportation Circuit in Python using Qiskit.
 1. [Qiskit Backends](https://medium.com/qiskit/qiskit-backends-what-they-are-and-how-to-work-with-them-fb66b3bd0463)
 2. [IBM Backends Docs](https://quantum.cloud.ibm.com/docs/en/api/qiskit-ibm-runtime/ibm-backend)
 3. [Transpile against custom backends](https://quantum.cloud.ibm.com/docs/en/guides/custom-backend)
-4. 
 
 #### Simulators: Documentation and Theory
 1. [BasicProvider and BasicSimulator](https://quantum.cloud.ibm.com/docs/en/api/qiskit/providers_basic_provider)
@@ -215,13 +214,35 @@ Once you're done with the first 5 weeks, go through [this video](https://www.you
 
 ## Week 6 | Introduction to Quantum Machine Learning
 
+### Quantum Gradients
 
-## Week 7 | Kernel Method and Quantum SVCs
+First three resources are extremely important and enough to understand basics of Quantum Gradient:
+1. [Estimating Gradients and Higher-Order Derivatives on Quantum Hardware](https://www.youtube.com/watch?v=oM-WTddjNqA&t=135s&ab_channel=Qiskit)
+2. [Qiskit Algorithms Gradient Framework](https://qiskit-community.github.io/qiskit-algorithms/tutorials/12_gradients_framework.html)
+3. [Gradients Docs](https://qiskit-community.github.io/qiskit-algorithms/apidocs/qiskit_algorithms.gradients.html)
 
-## Week 8 | Quantum Convolutional Neural Networks 
+For a better understanding, you can also go through these resources: 
+4. [Review of Quantum Gradient Descent](https://physlab.org/wp-content/uploads/2023/04/QuantumGD_24100266.pdf)
+5. [Quantum natural gradient](https://pennylane.ai/qml/demos/tutorial_quantum_natural_gradient)
+6. [Quantum gradients with backpropagation](https://pennylane.ai/qml/demos/tutorial_backprop)
 
+(5) and (6) use the pennylane library, which has not been introduced to the mentees. So, they can just go through the theory (which is more than enough for understanding the theory of Quantum Gradients), or if interested go through the code (syntax is pretty intuitive).
+
+Additional Resources (Advanced):
+1. [Quantum Gates and Gradients](https://www.youtube.com/watch?v=cobp2Sf5f3o)
+2. [Paper: Estimating the gradient and higher-order derivatives on quantum hardware](https://arxiv.org/pdf/2008.06517)
+3. [Paper: Gradients of parameterized quantum gates using the parameter-shift rule and gate decomposition](https://arxiv.org/pdf/1905.13311)
+4. [Paper: Quantum Natural Gradient](https://arxiv.org/pdf/1909.02108)
+
+**Note:** All the contents in the resources are extracted from Papers given in Additional Resources 2, 3 and 4. Reading them would just provide you mathematical clarity of how and why things are done in a specific manner.
+
+### Paper Presentation
+1. [Classification with QNNs on Near Term Processors](https://arxiv.org/pdf/1802.06002)
+2. [Continuous Variable QNNs](https://arxiv.org/pdf/1806.06871)
+3. [Quantum K-Nearest Neighbour](https://arxiv.org/pdf/1409.3097)
+4. [Quantum K-Means](https://arxiv.org/pdf/1307.0411)
 
 
 Project Mentors:
-Advaith GS | advaithgs23@iitk.ac.in | +91 88009 25876
-Himanshu Sharma | himans23@iitk.ac.in | +91 999963 3455
+- Advaith GS | advaithgs23@iitk.ac.in | +91 88009 25876
+- Himanshu Sharma | himans23@iitk.ac.in | +91 999963 3455
