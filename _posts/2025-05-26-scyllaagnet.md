@@ -227,4 +227,20 @@ Deploy a Scalable and Low-Latency Agentic Chatbot  in python using cutting edge 
 4. [Trading Agents](https://arxiv.org/pdf/2412.20138)
 5. [Knowledge Augmented Generation](https://arxiv.org/pdf/2409.13731)
 
-## Week 8 | AI Dev
+## Week 8 and 9| Refining and Publishing Python Module
+### Documentation Website
+- [Docusaurus](https://docusaurus.io/)
+- [MKDocs](https://realpython.com/python-project-documentation-with-mkdocs/#step-4-prepare-your-documentation-with-mkdocs)
+
+### CI/CD
+1. (https://docs.python-guide.org/writing/structure/#structure-of-the-repository)
+2. (https://docs.python-guide.org/writing/tests/#tools)
+3. (https://py-pkgs.org/08-ci-cd.html)
+4. (https://docs.github.com/en/actions/how-tos/writing-workflows/building-and-testing/building-and-testing-python)
+
+### Packaging and Deploying
+1. [Packaging](https://packaging.python.org/en/latest/flow/)
+2. [Packaging: Building and Publishing](https://packaging.python.org/en/latest/guides/section-build-and-publish/)
+3. [Packaging: Hosting](https://packaging.python.org/en/latest/guides/section-hosting/)
+4. [Packaging: Discussion Pages](https://packaging.python.org/en/latest/discussions/)
+5. [Packaging: Specifications](https://packaging.python.org/en/latest/specifications/)
