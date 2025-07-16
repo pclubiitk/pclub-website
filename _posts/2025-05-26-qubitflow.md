@@ -19,6 +19,9 @@ image:
 # About the Project
 Introduction to Quantum Computing and building some Quantum Machine Learning Algorithms like QNNs, Quantum Regression and Classification, QSVCs, QCNNs.
 
+Interesting Channel: [MLO](https://www.youtube.com/@physicsowen/playlists)
+Has playlists on Quantum Physics, IBM Qiskit, QAOA, VQEs, Some Paper Discussions, QCOpt, QOSF, QML Theory, Pennylane, Cirq, Tensorflow Quantum, RL,Intro to QC and some Conference Videos
+
 # Resources
 ## Week 0 | Into the Quantum World
 1. Linear Algebra Refresher:  Videos 1-3, 9-11, 13-15 of 3B1B [Lin Alg Playlist](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
@@ -241,6 +244,26 @@ Additional Resources (Advanced):
 2. [Continuous Variable QNNs](https://arxiv.org/pdf/1806.06871)
 3. [Quantum K-Nearest Neighbour](https://arxiv.org/pdf/1409.3097)
 4. [Quantum K-Means](https://arxiv.org/pdf/1307.0411)
+
+### Variational Quantum Algorithms
+1. [Theoretical Introduction to Variational Quantum Eigensolvers](https://www.youtube.com/watch?v=TUFovZsBcW4&ab_channel=Qiskit)
+2. [Intro to Algorithms and VQE implementation using Qiskit Algorithms](https://qiskit-community.github.io/qiskit-algorithms/tutorials/01_algorithms_introduction.html)
+3. [Advanced VQE Options](https://qiskit-community.github.io/qiskit-algorithms/tutorials/02_vqe_advanced_options.html)
+4. [VQE with Qiskit Aer Primitives](https://qiskit-community.github.io/qiskit-algorithms/tutorials/03_vqe_simulation_with_noise.html)
+5. Variational Quantum Deflation (VQD) Algorithm
+   1. [Reference Paper](https://arxiv.org/pdf/1805.08138)
+   2. [API Reference](https://qiskit-community.github.io/qiskit-algorithms/stubs/qiskit_algorithms.VQD.html)
+   3. [Implementation using Qiskit Algorithms](https://qiskit-community.github.io/qiskit-algorithms/tutorials/04_vqd.html)
+6. [Testing a Variational Quantum Classifier on a real backend](https://github.com/qiskit-community/ibm-quantum-challenge-2024/blob/main/content/lab_4/lab-4.ipynb)
+
+Additional Reading: [Variational quantum algorithms](https://arxiv.org/pdf/2012.09265)
+
+### Assignment 10
+1. Implement a VQE, try out Advanced VQE Options and Variational Quantum Deflation Algorithms (references provided in the resources). 
+2. VQC
+   1. Implement a Variational Quantum Classifier as given in [Lab 4](https://github.com/qiskit-community/ibm-quantum-challenge-2024/blob/main/content/lab_4/lab-4.ipynb)
+   2. For the `birds_dataset.csv`, implement a classical classification algorithm
+   3. Compare and contrast the training speed and accuracy, inference speed and accuracy and other metrics for (2.1) and (2.2)  
 
 
 Project Mentors:
