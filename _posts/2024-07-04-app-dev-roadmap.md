@@ -103,8 +103,7 @@ For Flutter Packages, refer to pub official site
 
 ### Day 1 – Exploring and Installing Flutter
 
-The crucial first step in our journey is to set up our development environment. So go ahead and install Flutter SDK using the guide [Install Flutter](https://docs.flutter.dev/get-started/install).
-After installation, you need to test the setup. So follow these steps to Test a Sample App.You don’t need to worry about the files and the code, you will grasp it soon.
+The crucial first step in our journey is to set up our development environment. So go ahead and install Flutter SDK using the guide [Install Flutter](https://docs.flutter.dev/get-started/install). Or you can follow the [VS Code Intallation](https://youtu.be/1KidD72q87s?feature=shared) and [Android Studio Installation](https://youtu.be/mMeQhLGD-og?feature=shared). After installation, you need to test the setup. So follow these steps to Test a Sample App.You don’t need to worry about the files and the code, you will grasp it soon.
 
 - [Test drive - Flutter](https://flutter.dev/docs/get-started/test-drive)
 
@@ -158,7 +157,7 @@ Now if you are familiar with Classes and Objects in some other language, just go
 After grasping the basics, go through any one of these docs to learn particularly about OOP in Dart:
 
 - [Classes - Dart](https://dart.dev/language/classes)
-- [Dart Object-Oriented Concepts - Javatpoint](https://www.javatpoint.com/dart-object-oriented-concepts)
+- [Dart Object-Oriented Concepts](https://medium.com/@nehatanwar.dev/what-is-oops-in-dart-76828b894b79)
 
 Learning is incomplete without Application of Concepts. Try to solve the problem 1 and 2 given in this document [DART ASSIGNMENT](https://docs.google.com/document/d/1Q8FRvTydVIBgR7lptIuR_Xt6J_H49ld7rVjOudCNgwM/edit).
 (Optional) You are highly recommended to do the problem 3 also but not necessary.
@@ -219,6 +218,8 @@ We know that’s not enough to quench your thirst for adventure, so let us dive 
     Material Components Basics - II 	
   </a>
 
+Flutter gives you another upper hand through widgets like [MaterialApp](https://youtu.be/PNS2Jk7Yx8Y?feature=shared) and [Scaffold](https://youtu.be/gtxP_ck-jCc?feature=shared) — they’re like building blocks or LEGO pieces that let you quickly assemble beautiful, responsive apps with full control over structure and design.
+
 ## Week II (UI Design and State Management)
 
 If you survived the WidgeFlix, then let us step into week second where we’re diving into the world of UI design, covering everything from navigation, interactivity to animations, theming, responsiveness, and asset management.
@@ -237,7 +238,7 @@ Welcome to Day 1, where your app will navigate like navigating a dream within a 
   </a>
   <p> </p>
 
-Alternatively, check out this blog [Navigation and Routing](https://www.javatpoint.com/flutter-navigation-and-routing)  
+Alternatively, check out this blog [Navigation and Routing](https://remelehane.medium.com/introduction-to-navigation-and-routing-in-flutter-de72c3c09c11) 
 Or refer to the docs [Navigation and routing - Flutter](https://docs.flutter.dev/ui/navigation)
 
 Let us make our app interactive now. Check out these widgets first:
@@ -267,7 +268,7 @@ Further, if you are interested in the workings of these widgets, check this out.
 Check out these blogs to learn about snackbars and text fields:
 
 - [How to display a SnackBar in Flutter: A tutorial with examples - LogRocket Blog](https://blog.logrocket.com/how-to-display-and-customize-a-snackbar-in-flutter/)
-- [Flutter TextField - Javatpoint](https://www.javatpoint.com/flutter-textfield)
+- [Flutter TextField - Documentation](https://api.flutter.dev/flutter/material/TextField-class.html)
 
 You can also refer to the documentation for more on interactivity:
 
