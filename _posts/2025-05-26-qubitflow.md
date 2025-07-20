@@ -281,6 +281,7 @@ Implement the notebooks for:
 2. NN Classifier and Regressor
 3. Training a Quantum Model on a Real Dataset
 
+
 In all these 3 implementations:
 1. Interrupt training and save the model
 2. Load the model, continue training till the end 
@@ -301,6 +302,7 @@ Reference paper can be found [here](https://www.scirp.org/journal/PaperInformati
 
 ### Assignment 13
 Implement the QCNN Algorithm referenced in week 8 resources
+
 
 Project Mentors:
 - Advaith GS | advaithgs23@iitk.ac.in | +91 88009 25876
