@@ -281,28 +281,10 @@ Implement the notebooks for:
 2. NN Classifier and Regressor
 3. Training a Quantum Model on a Real Dataset
 
-
 In all these 3 implementations:
 1. Interrupt training and save the model
 2. Load the model, continue training till the end 
 3. Calculate the effective dimensions of the algorithms
-
-### Kernel Methods and Support Vector Classifiers
-1. [Quantum Kernel Machine Learning](https://qiskit-community.github.io/qiskit-machine-learning/tutorials/03_quantum_kernel.html)
-2. [Pegasos Quantum Support Vector Classifier](https://qiskit-community.github.io/qiskit-machine-learning/tutorials/07_pegasos_qsvc.html)
-3. [Quantum Kernel Training for Machine Learning Applications](https://qiskit-community.github.io/qiskit-machine-learning/tutorials/08_quantum_kernel_trainer.html)
-
-### Assignment 12
-Implement an algorithm for Prediction of Solar Irradiation Using Quantum Support Vector Machine Learning Algorithm.
-Reference paper can be found [here](https://www.scirp.org/journal/PaperInformation?paperID=72542)
-
-## Week 8 | Quantum Convolutional Neural Networks 
-1. [QCNN implementation using Qiskit ML](https://qiskit-community.github.io/qiskit-machine-learning/tutorials/11_quantum_convolutional_neural_networks.html)
-2. [QCNN Paper](https://arxiv.org/pdf/1810.03787)
-
-### Assignment 13
-Implement the QCNN Algorithm referenced in week 8 resources
-
 
 Project Mentors:
 - Advaith GS | advaithgs23@iitk.ac.in | +91 88009 25876
