@@ -26,9 +26,9 @@ Before beginning, understand that the week allocation and order of topics covere
 
 Moreover, try to chill out and enjoy the ride, for serious can sometimes be boring and pretty exhausting 🦝 :)
 
-Week 1 is basic python and libraries and week 2 covers basic mathematics, and the core fundamentals. Week 3 covers techniques important for improving ML pipelines. **Follow these 3 weeks in order.** 4th Week covers some of the most important algorithms, but they are not a prerequisite for week 4 (Intro to Neural Networks), so if you are too impatient to jump on the Neural Network and Deep Learning wagon, you can move to week 5 without completing week 4 (We'd recommend going the principled way tho). Moreover, week 7 (Unsupervised Learning) is pretty independent of all the weeks (except the first 3 weeks), so if you wish to explore Unsupervised Learning early, you can do that anytime. Week 6 covers some important topics like Optimization Algorithms, Feature Selection and Boosting Algorithms. You can go ahead with the first 2 subtopics without week 5, but Boosting Algorithms will require a strong understanding of Decision Trees so for that you'd have to go back to week 4. You can also cover Boosting Algorithms just after Ensemble Methods (Week 4, Day 4) if you're having fun learning about Decision Trees and wish to go deeper 🦝 (ik, this was a pathetic attempt at cracking tree pun; just bear with for this not-so-short journey).
+Week 1 is basic python and libraries and week 2 covers basic mathematics, and the core fundamentals. Week 3 covers techniques important for improving ML pipelines. **Follow these 3 weeks in order.** 4th Week covers some of the most important algorithms, but they are not a prerequisite for week 4 (Intro to Neural Networks), so if you are too impatient to jump on the Neural Network and Deep Learning wagon, you can move to week 5 without completing week 4 (We'd recommend going the principled way tho). Moreover, week 7 (Unsupervised Learning) is pretty independent of all the weeks (except the first 3 weeks), so if you wish to explore Unsupervised Learning early, you can do that anytime. Week 6 covers some important topics like Optimization Algorithms, Feature Selection and Boosting Algorithms. You can go ahead with the first 2 subtopics without week 5, but Boosting Algorithms will require a strong understanding of Decision Trees so for that you'd have to go back to week 4. You can also cover Boosting Algorithms just after Ensemble Methods (Week 4, Day 4) if you're having fun learning about Decision Trees and wish to go deeper 🦝 (ik, this was a pathetic attempt at cracking tree pun; just bear with for this not-so-short journey). Week 5 explores a probablistic interpretation of machine learning, which not only deepens one's understanding of why certain models are how they are, it also helps have a more deeper grasp to the math behind various models.
 
-Coming to Python Libraries, PyTorch and Tensorflow are the most famous for Deep Learning, and ScikitLearn for ML in general. You'd learn sklearn as and when you progress the weeks, but after completing week 5 and the first 5 days of week 6, you'd have to pick one framework from PyTorch or Tensorflow. You can chose any one of them and getting a hang of one will also make it easier to understand the other. Once you're done with one framework, you can start building projects, learning the other framework, or exploring other specialized domains like CV or NLP.
+Coming to Python Libraries, PyTorch and Tensorflow are the most famous for Deep Learning, and ScikitLearn for ML in general. You'd learn sklearn as and when you progress the weeks, but after completing week 6 and the first 5 days of week 7, you'd have to pick one framework from PyTorch or Tensorflow. You can chose any one of them and getting a hang of one will also make it easier to understand the other. Once you're done with one framework, you can start building projects, learning the other framework, or exploring other specialized domains like CV or NLP.
 
 One last tip before starting with your ML journey: **It's very easy to scam one's way through their ML journey by having a false sense of ML mastery**- by just copying code from Kaggle, GitHub or picking up models from modules directly. You can train an ML model in a single line using a scikitlearn function, but that does not quantify as "knowing" Machine Learning, but "using" a Machine Learning Model. One can only claim that they know Machine Learning if they understand the mathematics and logic behind the algorithm and process. Using modules and pre-trained models is efficient but doing that without knowledge is harmful. In a world where AI models like ChatGPT can help you code almost any ML problem effectively, having surface level awareness about existence of pre trained models and functions of various modules is just a waste of time and resources. At the same time, just theoretical knowledge does not help in solving real world problems. Stay balanced, optimize for understanding over a false sense of awareness and keep coding!
 
@@ -84,7 +84,7 @@ lmao, here are some memes (which you'd prolly understand by the end of this jour
 
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 6: Regularization ](#id-Week3-Day6)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 7: Probabilistic Interpretation and Locally Weighted Regression](#id-Week3-Day7)
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 7: Locally Weighted Regression](#id-Week3-Day7)
 
 #### 🦝 [Week 4 (Naive Bayes, Logistic Regression, Decision Trees)](#id-Week4)
 
@@ -102,43 +102,58 @@ lmao, here are some memes (which you'd prolly understand by the end of this jour
 
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 7: Kernel Methods](#id-Week4-Day7)
 
-#### 🦝 [Week 5 (Perceptron and Neural Networks)](#id-Week5)
+#### 🦝 [Week 5 (Probablistic Interpretations)](#id-Week5)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 1,2,3 - The perceptron and General Linear Models ](#id-Week5-Day1,2,3)
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 1 and 2 - Foundations of Probablistic ML ](#id-Week5-Day1,2)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 4: Neural Networks and Backpropagation](#id-Week5-Day4)
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 3 and 4: MLE and MAP](#id-Week5-Day3,4)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 5: Debugging ML Models and Errors](#id-Week5-Day5)
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 5: GLMs](#id-Week5-Day5)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 6,7: Implementing Neural Network](#id-Week5-Day6,7)
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 6 and 7: Gaussian and other Mixture Models](#id-Week5-Day6,7)
 
-#### 🦝 [Week 6 (Optimizations, Feature Selection, Boosting Algorithms and Tensorflow)](#id-Week6)
+#### 🦝 [Week 6 (Neural Networks)](#id-Week6)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 1 and 2: Optimization Algorithms](#id-Week6-Day1,2)
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 1: Introduction to Neural Networks](#id-Week6-Day1)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 3: Feature Selection Techniques](#id-Week6-Day3)
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 2: Backpropagation](#id-Week6-Day2)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 4 and 5: Boosting Algorithms](#id-Week6-Day4,5)
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 3: Debugging NNs](#id-Week6-Day3)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 6 and 7: Tensorflow](#id-Week6-Day6,7)
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 4 and 5: Implementing NNs from scratch](#id-Week6-Day4,5)
 
-#### 🦝 [Week 7 Mastering Clustering and Unsupervised Machine Learning](#id-Week7)
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 6: Bayesian DL](#id-Week6-Day6)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 1: Introduction](#id-Week7-Day1)
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 7: MC Dropouts](#id-Week6-Day7)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 2: K-Means Clustering](#id-Week7-Day2)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 3: Hierarchical Clustering](#id-Week7-Day3)
+#### 🦝 [Week 7 (Optimizations, Feature Selection, Boosting Algorithms and Tensorflow)](#id-Week6)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 4: Density-Based Clustering (DBSCAN)](#id-Week7-Day4)
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 1 and 2: Optimization Algorithms](#id-Week7-Day1,2)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 5: Evaluation Metrics](#id-Week7-Day5)
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 3: Feature Selection Techniques](#id-Week7-Day3)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 6: Dimensionality Reduction Techniques](#id-Week7-Day6)
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 4 and 5: Boosting Algorithms](#id-Week7-Day4,5)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 7: Project](#id-Week7-Day7)
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 6 and 7: Tensorflow](#id-Week7-Day6,7)
 
-### 🦝 [Week 8 (Tensorflow, PyTorch, Projects,)](#id-Week8)
+#### 🦝 [Week 8 Mastering Clustering and Unsupervised Machine Learning](#id-Week7)
+
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 1: Introduction](#id-Week8-Day1)
+
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 2: K-Means Clustering](#id-Week8-Day2)
+
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 3: Hierarchical Clustering](#id-Week8-Day3)
+
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 4: Density-Based Clustering (DBSCAN)](#id-Week8-Day4)
+
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 5: Evaluation Metrics](#id-Week8-Day5)
+
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 6: Dimensionality Reduction Techniques](#id-Week8-Day6)
+
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 7: Project](#id-Week8-Day7)
+
+### 🦝 [Week 9 (Tensorflow, PyTorch, Projects,)](#id-Week9)
 
 ---
 
@@ -510,10 +525,6 @@ If a target(output)-feature relationship is non linear, in that case linear regr
 
 In Locally weighted regression, if we want to predict the target (output value) for a given set of features (input vector), we try to fit our weights to minimize a loss function which a weighted loss function. This weight is determined by the proximity of a point to the given input vector. Since we are giving more weight to proximate point and the weight is exponential in nature with respect to distance, the likelihood of accuracy is less. Such type of learning algorithm is called a Parametric learning algorithm because the time required to make the prediction is proportional to the size of the training data.
 
-#### 🐼 Probabilistic Interpretation
-
-Have you other wondered why the Loss function we select is a **Mean Square Loss**? Why isn't this linear or cubic? You'd read at various places that this is to make it more computationally efficient, or to make the derivatives linear which makes things easy for us. This is correct but these are not the correct reasonings as to why Mean Square Loss is used, but these are just implications of using it. The correct reasoning is that when we use **Maximum Likelihood Estimation**. We chose the parameters (i.e. the weights) which maximize the Likelihood Function. Again, for mathematics and details, refer the video linked above.
-
 <div id='id-Week4'/>
 
 ## 🦝 Week 4 (Naive Bayes, Logistic Regression, Decision Trees)
@@ -799,42 +810,79 @@ Bonus: Check out [Lecture 7 of CS229](https://www.youtube.com/watch?v=8NYoQiRANp
 
 <div id='id-Week5'/>
 
-## 🦝 Week 5 (Perceptron and Neural Networks)
+## 🦝 Week 5 (Probablistic ML)
 
-_The next month of this roadmap will be devoted to Neural Networks and their applications._
 
-<div id='id-Week5-Day1,2,3'/>
+<div id='id-Week5-Day1,2'/>
 
-### 👾 Day 1,2,3 - The perceptron and General Linear Models <a name  = "Week5-Day1,2,3"></a>
+### 👾 Probablistic Interpretations <a name  = "id-Week5-Day1,2"></a>
 
 (lmao there's a specific reason why 3 days have been allotted to a topic which is not widely talked about, so just try to stick with me for a few days; post that you'll feel like a different person 🙃🦝)
 Content on of this week is largely derived from [the fourth lecture of CS229](https://www.youtube.com/watch?v=iZTeva0WSTQ&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&index=4), so you can constantly refer the video and the lecture notes for better understanding. Knowledge for Mathematical formulation of GLMs is recommended but not compulsory; it provides a great intuition behind similarity patterns in various ML algorithms and groups them under a larger class.
 
-#### 🐼 Perceptrons
+Let us shift the format for a short while just for this section. Probablistic models are some of the most widely used models, either directly or indirectly. A proper understanding of how such models work would be instrumental in expanding what you can do and learn in this field. One important factor to note is that almost all models can be interpreted using this approach, moreover some questions can be answered better when understood via this approach.
 
-<p align="center">
-<img src="https://i.ibb.co/j3j6zDM/image.png" width="400"/>
-<br>
-<em>Perceptron Model</em>
-</p>
-<br>
+Till now, you have only been exposed to deterministic models, which do not account for uncertainity, however when exploring undeterministic models, we must take into account randomness and error.
 
-The ultimate goal of Artificial Intelligence is to mimic the way the human brain works. The brain uses neurons and firing patterns between them to recognize complex relationships between objects. We aim to simulate just that. The algorithm for implementing such an "artificial brain" is called a neural network or an artificial neural network (ANN).
+A simple way to understand the key difference between the two would be via analysing linear regression over housing prices from the two approaches. A deterministic approach essentially says that for the same input features, the house price would be the same, say 100. A probabalistic way of thinking would be for the same features there is a 70% chance the price is between 90 and 120 and a 30% chance it is outside that range.
 
-At its core, an ANN is a system of classifier units which work together in multiple layers to learn complex decision boundaries.
 
-The basic building block of a neural net is the **perceptron.** These are the "neurons" of our neural network.
+Instead of outputting a single best answer, probabilistic models provide a distribution of possible answers with a probability of each being the right one. Due to the non-deterministic nature of such models, they can be used to handle uncertainities in data, and in general learn more about the data than from deterministic models. The [following post](https://stats.stackexchange.com/questions/499532/what-is-the-importance-of-probabilistic-machine-learning) explains why Probablistic ML is so important, much better than I can. However, even so PML is not directly relevant to modern day LLMs, however the design and architecture of such models is inherently probablistic. 
 
-- [https://towardsdatascience.com/what-is-a-perceptron-basics-of-neural-networks-c4cfea20c590](https://towardsdatascience.com/what-is-a-perceptron-basics-of-neural-networks-c4cfea20c590)
-- [https://www.geeksforgeeks.org/machine-learning/what-is-perceptron-the-simplest-artificial-neural-network/](https://www.geeksforgeeks.org/machine-learning/what-is-perceptron-the-simplest-artificial-neural-network/)
 
-Do you see the similarity with logistic regression? What are the limitations of using the Perceptron Learning Algorithm? Do you think that Logistic regression is just a softer version of the Perceptron Learning Algorithm?
+### 👾 Day 1 & 2: Foundations of Probablistic ML
 
-You'd notice that there is a fundamental similarity between the update functions of linear regression, logistric regression as well as the perceptron; with the only difference being in the hypothesis function part of the update. What does this signify? Is there a deeper correlation or is this just a coincidence? Let's explore further.
+Before getting into the ML part, it is necessary for you to be comfortable with probability and statistics. To make sure you are comfortable with probability and statistics, you may read from [Ch3 DL Book](https://www.deeplearningbook.org/contents/prob.html).  At this stage, you should probably be comfortable with a heavier (as in more theoretical) to read (heavier by the number of pages), in particular sections 2.1.1 to 2.6.4. [PML1](https://probml.github.io/pml-book/book1.html). However this is completely optional as the main objective is covered in the first one anyway.
+
+This is also a good time to brush up on some math, if you hadn't earlier, since it will be imperative to your understanding, you may refer to the resources given on Probability and Statistics in the roadmap. Do not skip this part since it is important and without having a strong grasp, the week can prove quite challenging.
+
+Also to cover some basic PML techniques, and get a feel for why all that reading was necessary read Sections 5.5 to 5.7.1 from [Ch5 DL Book](https://www.deeplearningbook.org/contents/ml.html). 
+
+
+Note that in probablistic ML, we almost always assume the distribution of the output (Gaussian for Linear Regression, Bernoulli for Logistic and so on) beforehand and then proceed furthur.
+
+<div id='id-Week5-Day3,4'/>
+
+### 👾 Day 3 and 4: MLE and MAPs
+
+As we proceed, it would be a good idea to introduce yourself to the type of math involved in PML as well as learn some tools used in almost every model when interpreted probablistically, two simple yet important topics for this are Maximum Likelihood Estimation and Maximum a Posteriori. These are fundamental tools which you will use in various models when optimising parameters.
+
+Here are some lectures from CS771 by Piyush Rai on [MLE](https://www.youtube.com/watch?v=-MdztfETffM), and [MAP](https://www.youtube.com/watch?v=K5hIHELU7UE)
+
+Focus on the way of thinking and the approaches used in these lectures, since this will help you understand topics such as GLMs much better.
+
+This is just basic and kind of background information and thus is very important. Take it slow and make sure you digest the information imparted properly, since this will be a strong building block furthur ahead.
+
+Building upon MAPs and MLEs, we will get into a probablistic approach towards logistic and linear regression now. [Here](https://mlu-explain.github.io/logistic-regression/) is an excellent resource to get the gist of logistic regresion. Building upon the previous two lectures, here are two more on [Probablistic Linear Regression](https://www.youtube.com/watch?v=SueIXjVpG9U) and [Logistic Regression](https://www.youtube.com/watch?v=Xcu3V04X6bs) (in order).
+
+
+
+<div id='id-Week5-Day5'/>
+
+### 👾 Day 5: Generalised Linear Models (GLMs) 
+
+We urge you to notice the fact that in both cases of linear and logistic regression we are minimizing the same loss function to optimise the parameters, regardless of approaching the problem through a deterministic or probablistic approach.
+
+This is not a universal fact and you will NOT get the same result for every model. In fact following the above example, linear regression and logistic regression belong to a very special class of models called GLMs.
+
+Before delving into GLMs, it is important to understand something called exponential families, A good resource for which can be found [here](https://www.youtube.com/watch?v=xwM9XcnQ4Us). If you are in the mood for some reading, sections 3.4 - 3.5 from [PML1](https://probml.github.io/pml-book/book1.html) won't bore you.
+
+We now explore GLMs, you may refer to [this](https://www.youtube.com/watch?v=WNE1B2aU60w) and [this](https://www.youtube.com/watch?v=SqN-qlQOM5A), it is a good idea to think of this concept as something which helps you relate outcomes to a predictor using linear combinations, an appropriate probability distribution and a function to link the two. Piyush Rai's notes on the same are also quite handy and should be referred, along with Ch12 from [PML1](https://probml.github.io/pml-book/book1.html).
 
 #### 🐼 Exponential Families
 
 For understanding exponential families, we'd have to understand basic probability distributions (which we covered in the second week) and the probabilistic interpretation of linear regression (refer the probabilstic interpretation of this [video lecture](https://www.youtube.com/watch?v=het9HFqo1TQ&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&index=4) for a refresher)
+
+
+
+Consider a classification or regression problem where we would like to predict the value of some random variable y as a function of $x$. To derive a GLM for this problem, we will make the following three assumptions about the conditional distribution of y given x and about our model:
+
+1. $y | x; θ$ ∼ Exponential Family($\eta$). I.e., given $x$ and $\theta$, the distribution of
+   $y$ follows some exponential family distribution, with parameter $\eta$. This assumption manifests in linear regression as assuming that the error term $\epsilon$ has a gaussian distribution about 0 with $\sigma ^{2} = 1$.
+2. Given $x$, our goal is to predict the expected value of $T(y)$ given $x$. In most of our examples, we will have $T(y) = y$, so this means we would like the prediction $h(x)$ output by our learned hypothesis $h$ to satisfy $h(x) = \mathbb{E}[y \mid x]$.
+3. The natural parameter η and the inputs x are related linearly: $\eta = \theta ^{T}x$. This is a crucial assumption, and can't really be justified per se at this level. So let's just assume that this is a "Design Choice" which just works out pretty well.
+
+These three assumptions/design choices will allow us to derive a very elegant class of learning algorithms, namely GLMs, that have many desirable properties such as ease of learning. For understanding how Linear, Logistic and SoftMax Regression can be modelled as GLMs, jump to page 30 of [these notes](https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf). More on SoftMax in the next subsection
 
 - A refresher on probability distributions:[Probability Distribution Function For Machine Learning](https://www.enjoymathematics.com/blog/probability-distribution-function-for-machine-learning)
 - Bonus Material:[Medium Article on Prob Distributioins for ML and DL](https://jonathan-hui.medium.com/probability-distributions-in-machine-learning-deep-learning-b0203de88bdf)
@@ -872,18 +920,6 @@ CS229 lectures notes and lecture should be enough to understand exponential fami
 
 <ul style="background-color: #470101">Sidenote: This Man <a href = "https://www.mariushobbhahn.com/aboutme/">Marius Hobbhahn</a> is an absolute legend who primarily works on Bayesian ML and has written pretty insightful blogs on the mathematical aspect of ML. Moreover, he's a pretty successful debater. Do check out this website for intrinsically interesting stuff 🦝🙃</ul>
 
-#### 🐼 Generalized Linear Models
-
-If you've made this section, first of all, _Congratulations!_, secondly it will be pretty simple for you to understand GLMs as they are just a way to model and apply exponential families. You'd have realized that Machine Learning is just abut finding a function/model which gives an approximately correct output when you input vector containing certain features; and modelling the same requires assuming some form of probability distribution because the world is largely how probabilities manifest (Quantum Mechanics ahem ahem 👾☠️👾). The way we _DESIGN_ this model and make _assumptions_ largely dictates the accuracy of this model. Let's talk more about this Design Philosophy, and Design Choices.
-
-Consider a classification or regression problem where we would like to predict the value of some random variable y as a function of $x$. To derive a GLM for this problem, we will make the following three assumptions about the conditional distribution of y given x and about our model:
-
-1. $y | x; θ$ ∼ Exponential Family($\eta$). I.e., given $x$ and $\theta$, the distribution of
-   $y$ follows some exponential family distribution, with parameter $\eta$. This assumption manifests in linear regression as assuming that the error term $\epsilon$ has a gaussian distribution about 0 with $\sigma ^{2} = 1$.
-2. Given $x$, our goal is to predict the expected value of $T(y)$ given $x$. In most of our examples, we will have $T(y) = y$, so this means we would like the prediction $h(x)$ output by our learned hypothesis $h$ to satisfy $h(x) = \mathbb{E}[y \mid x]$.
-3. The natural parameter η and the inputs x are related linearly: $\eta = \theta ^{T}x$. This is a crucial assumption, and can't really be justified per se at this level. So let's just assume that this is a "Design Choice" which just works out pretty well.
-
-These three assumptions/design choices will allow us to derive a very elegant class of learning algorithms, namely GLMs, that have many desirable properties such as ease of learning. For understanding how Linear, Logistic and SoftMax Regression can be modelled as GLMs, jump to page 30 of [these notes](https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf). More on SoftMax in the next subsection
 
 #### 🐼 SoftMax Regression
 
@@ -903,9 +939,25 @@ These three assumptions/design choices will allow us to derive a very elegant cl
 
 Also, go through the SoftMax Regression Section of Generalized Linear Models to get a hang of how it has been derived.
 
-<div id='id-Week5-Day4'/>
+<div id='id-Week5-Day6,7'/>
 
-### 👾 Day 4: Introduction to Neural Networks and Backpropagation <a name  = "Week5-Day4"></a>
+### 👾 Day 6 and 7: Gaussian and other Mixture Models <a name  = "Week5-Day6,7"></a>
+
+Let's talk about clustering unlabelled data for sometime, you may or may not have heard about some methods of clustering such as hierarchial clustering or K-mean clustering, these are methods to cluster data points which can be easily separated into clusters, however sometimes it is possible for data to have overlapping clusters, in this case we evaluate the probability of each point belonging to a cluster and say that it belongs to multiple of them. This task can be accomplished by something called a Mixture Model.
+
+It is advisable to go through the Expectation Maximisation (EM) algorithm to find the Maximum Likelihood of parameters when dealing with data, since the methods ahead will require you to know this as a prerequisite. You may refer to [this](https://www.youtube.com/watch?v=3zbAsgCf1Sw) and [this lecture by Andrew Ng](https://www.youtube.com/watch?v=rVfZHWTwXSA)
+
+
+A good example of a Mixture Model is a Gaussian Mixture Model or GMM. GMMs use multiple normal distributions to model data and assign clusters to the data, this way each data point now belongs to multiple clusters but with a certain probability. Refer to [this](https://www.youtube.com/watch?v=C7jhwN6H9LU) for a good overview of the model and [this](https://math.stackexchange.com/questions/377576/how-gaussian-mixture-models-work) to understand the math behind it in some depth.
+
+It is important to note that Gaussian Mixture models are just a starting point towards understanding mixture models, you may also look into [Hidden Markov Models (HMMs)](https://www.youtube.com/watch?v=RWkHJnFj5rY), a special type of dynamic mixture model which change over time. It is used to model sequential data.
+
+
+<div id='id-Week6'/>
+
+## 🦝 Week 6 (Neural Networks)
+
+### 👾 Day 1: Introduction to Neural Networks <a name  = "Week6-Day1"></a>
 
 <p align="center">
 <img src="https://i.ibb.co/g3fR3Z0/image.png" width="600"/>
@@ -914,24 +966,56 @@ Also, go through the SoftMax Regression Section of Generalized Linear Models to 
 </p>
 <br>
 
-If you've understood the perceptron, and the basic idea behind Machine Learning, understanding Neural Networks is not really a big deal. Firstly, for an introduction, watch the videos by 3Blue1Brown on [Introduction to Neural Networks](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi), [Gradient Descent in Neural Networks](https://www.youtube.com/watch?v=IHZwWFHWa-w&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=3), [Backpropagation Intuition](https://www.youtube.com/watch?v=Ilg3gGewQ5U&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=3) and [Backpropagating Calculus](https://www.youtube.com/watch?v=Ilg3gGewQ5U&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=4).
+#### 🐼 Perceptrons
+
+<p align="center">
+<img src="https://i.ibb.co/j3j6zDM/image.png" width="400"/>
+<br>
+<em>Perceptron Model</em>
+</p>
+<br>
+
+The ultimate goal of Artificial Intelligence is to mimic the way the human brain works. The brain uses neurons and firing patterns between them to recognize complex relationships between objects. We aim to simulate just that. The algorithm for implementing such an "artificial brain" is called a neural network or an artificial neural network (ANN).
+
+At its core, an ANN is a system of classifier units which work together in multiple layers to learn complex decision boundaries.
+
+The basic building block of a neural net is the **perceptron.** These are the "neurons" of our neural network.
+
+- [https://towardsdatascience.com/what-is-a-perceptron-basics-of-neural-networks-c4cfea20c590](https://towardsdatascience.com/what-is-a-perceptron-basics-of-neural-networks-c4cfea20c590)
+- [https://www.geeksforgeeks.org/machine-learning/what-is-perceptron-the-simplest-artificial-neural-network/](https://www.geeksforgeeks.org/machine-learning/what-is-perceptron-the-simplest-artificial-neural-network/)
+
+Do you see the similarity with logistic regression? What are the limitations of using the Perceptron Learning Algorithm? Do you think that Logistic regression is just a softer version of the Perceptron Learning Algorithm?
+
+If you've understood the perceptron, and the basic idea behind Machine Learning, understanding Neural Networks is not really a big deal. Firstly, for an introduction, watch the videos by 3Blue1Brown on [Introduction to Neural Networks](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi), [Gradient Descent in Neural Networks](https://www.youtube.com/watch?v=IHZwWFHWa-w&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=3)
 
 Then, read these articles for better theoretical understanding:
 
 - [https://medium.com/deep-learning-demystified/introduction-to-neural-networks-part-1-e13f132c6d7e](https://medium.com/deep-learning-demystified/introduction-to-neural-networks-part-1-e13f132c6d7e)
 - [https://medium.com/ravenprotocol/everything-you-need-to-know-about-neural-networks-6fcc7a15cb4](https://medium.com/ravenprotocol/everything-you-need-to-know-about-neural-networks-6fcc7a15cb4)
-- [https://machinelearningmastery.com/difference-between-backpropagation-and-stochastic-gradient-descent/](https://machinelearningmastery.com/difference-between-backpropagation-and-stochastic-gradient-descent/)
+
+
+Lastly, go through CS229 [Lecture 11: Intro to Neural Networks](https://www.youtube.com/watch?v=MfIjxPh6Pys&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&index=11)
+
+<div id='id-Week6-Day2'/>
+
+### 👾 Day 2: Backpropagation <a name  = "Week6-Day3"></a>
+
+Yesterday should have given you a brief overview of the building blocks, basic functioning and structure of Neural Networks, before we proceed with NNs furthur it would be beneficial to spend some more time on backpropagation. The concept although not very difficult once you understand it, stands to be the backbone of Deep Learning. All Neural Networks use backpropagation to optimise their weights and biases and hence a thorogh understanding of the same is essential, refer to the following for a more in depth explanation
+[Backpropagation Intuition](https://www.youtube.com/watch?v=Ilg3gGewQ5U&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=3) and [Backpropagating Calculus](https://www.youtube.com/watch?v=Ilg3gGewQ5U&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=4).
 
 Refer to the following articles to get a feel of the mathematics under the hood.
 
 - [https://towardsdatascience.com/backpropagation-step-by-step-derivation-99ac8fbdcc28/](https://towardsdatascience.com/backpropagation-step-by-step-derivation-99ac8fbdcc28/)
 - [https://towardsdatascience.com/understanding-backpropagation-algorithm-7bb3aa2f95fd](https://towardsdatascience.com/understanding-backpropagation-algorithm-7bb3aa2f95fd)
 
-Lastly, go through CS229 [Lecture 11: Intro to Neural Networks](https://www.youtube.com/watch?v=MfIjxPh6Pys&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&index=11) and [Lecture 12: Backpropagation](https://www.youtube.com/watch?v=zUazLXZZA2U&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&index=12) which shall provide a better mathematical foundation.
+ [Lecture 12: Backpropagation](https://www.youtube.com/watch?v=zUazLXZZA2U&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&index=12) which shall provide a better mathematical foundation and is an excellent resource to truly grasp the concept.
 
-<div id='id-Week5-Day5'/>
+One common question many people have is deciding how back propagation differs from Stochastic Gradient Descent, the answer to which can be found
+[here](https://machinelearningmastery.com/difference-between-backpropagation-and-stochastic-gradient-descent/).
 
-### 👾 Day 5: Debugging ML Models and Errors <a name  = "Week5-Day5"></a>
+<div id='id-Week6-Day3'/>
+
+### 👾 Day 3: Debugging ML Models and Errors <a name  = "Week6-Day3"></a>
 
 Once again, like the first 3 days the content for this week is largely derived from [CS229 lecture 13](https://www.youtube.com/watch?v=ORrStCArmP4&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&index=14), and the same will be the base resource for the day.
 
@@ -978,9 +1062,9 @@ a) $J(\theta_A) <= J(\theta_B)$: This means that the optimization algorithm succ
 
 This is a theoretical overview of some of the commonly used diagnostics. For more detailed examples and workflows, go through the video linked in the beginning of the section.
 
-<div id='id-Week5-Day6,7'/>
+<div id='id-Week6-Day4,5'/>
 
-### 👾 Day 6, 7: Implement a Neural Network from Scratch <a name  = "Week5-Day6,7"></a>
+### 👾 Day 4, 5: Implement a Neural Network from Scratch <a name  = "Week6-Day4,5"></a>
 
 Dedicate these two days to try to implement a neural network in python from scratch. Try to have one input, one hidden, and one output layer.
 
@@ -988,13 +1072,27 @@ You may train your model on any of the datasets given in the roadmap.
 
 [https://www.youtube.com/watch?v=w8yWXqWQYmU&t=391s](https://www.youtube.com/watch?v=w8yWXqWQYmU&t=391s)
 
-<div id='id-Week6'/>
 
-## 🦝 Week 6 (Optimizations, Feature Selection, Boosting Algorithms and Tensorflow)
+<div id='id-Week6-Day6'/>
 
-<div id='id-Week6-Day1,2'/>
+### 👾 Day 6: Bayesian DL <a name  = "Week6-Day6"></a>
 
-### 👾 Day 1, 2: Optimization Algorithms <a name  = "Week6-Day1,2"></a>
+Now in a standard Neural Network the weights are just numbers, but in the bayesian regime, we have a technique in which we treat each of the weights as a probability distribution of its own. This makes models aware of its own uncertainities. This is the core idea behind **Bayesian Deep Learning**. Refer to the following excellent article on the topic to gain understanding of what it is [Introductin to Bayesian Deep Learning](https://jorisbaan.nl/2021/03/02/introduction-to-bayesian-deep-learning.html). 
+
+
+<div id='id-Week6-Day7'/>
+
+### 👾 Day 7: Monte Carlo Dropouts <a name  = "Week6-Day7"></a>
+
+Although we understand how to build Neural Networks, it is hard to quantify the uncertainity of it. Without knowing the uncertainity of a model, implementing it in a real world pipeline can potentially be catastrophic. One approach to quantify it is the Monte Carlo Dropout, which you can learn more about from the following article, [Monte Carlo Dropout: A Practical Guide](https://medium.com/@ciaranbench/monte-carlo-dropout-a-practical-guide-4b4dc18014b5)
+
+<div id='id-Week7'/>
+
+## 🦝 Week 7 (Optimizations, Feature Selection, Boosting Algorithms and Tensorflow)
+
+<div id='id-Week7-Day1,2'/>
+
+### 👾 Day 1, 2: Optimization Algorithms <a name  = "Week7-Day1,2"></a>
 
 #### 🐼 Problems with Vanilla Gradient Descent
 
@@ -1095,9 +1193,9 @@ For a detailed explanation of how Adam works, and its visualization refer to [th
 
 For a summary and comparison of the important optimizers, refer to [this](https://www.youtube.com/watch?v=7m8f0hP8Fzo&t=426s) and [this](https://www.youtube.com/watch?v=NE88eqLngkg&t=196s)
 
-<div id='id-Week6-Day3'/>
+<div id='id-Week7-Day3'/>
 
-### 👾 Day 3: Feature Selection Techniques <a name  = "Week6-Day3"></a>
+### 👾 Day 3: Feature Selection Techniques <a name  = "Week7-Day3"></a>
 
 Feature selection is a crucial process that helps in choosing the most important features from your dataset, reducing the feature space while preserving the essential information. This not only speeds up your algorithms by reducing dimensionality but also enhances prediction accuracy. Imagine dealing with a dataset having hundreds of columns – without feature selection, it would be a computational nightmare!
 
@@ -1149,7 +1247,7 @@ Explore more about these methods with these resources:
 
 By integrating these techniques and resources into your workflow, you'll be well-equipped to handle even the largest and most complex datasets, transforming them into insightful, high-performing models. Happy feature selecting!
 
-<div id='id-Week6-Day4,5'/>
+<div id='id-Week7-Day4,5'/>
 
 ### 👾 Day 4, 5: Boosting Algorithms
 
@@ -1244,9 +1342,9 @@ Go through the following videos for understanding XGBoost Algorithm:
 
 After these 5 videos, you'd have a strong grasp over XGBoost, hence over Boosting algorithms in general. Post completion, I highly recommend you to watch [CS229 Lecture 10](https://www.youtube.com/watch?v=wr9gUr-eWdA&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&index=12), as Dr Raphael Townshend very brilliantly explain the mathematical formulations of Decision Trees, Random Forests and Boosting Algorithms. This shall also act as a revision video for all the contents we have covered so far regarding Trees and Boosting. Don't forget to refer the [lecture notes](https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf) as well.
 
-<div id='id-Week6-Day6,7'/>
+<div id='id-Week7-Day6,7'/>
 
-### 👾 Day 6, 7: TensorFlow <a name  = "Week6-Day6,7"></a>
+### 👾 Day 6, 7: TensorFlow <a name  = "Week7-Day6,7"></a>
 
 We will now start building models. For this, we are going to use Tensorflow. It enables us to implement various models that you have learned about in previous weeks.
 
@@ -1274,13 +1372,13 @@ You can have a brief overview of the various features keras provides.
 
 Go through the above tutorial. There are various subsections for keras basics, loading data, and so on. These will give you an idea on how to use keras and also how to build a model, process data and so on. You can see the Distributed Training section if you have time, but do go through other sections.
 
-<div id='id-Week7'/>
+<div id='id-Week8'/>
 
 ## 🦝 Week 7: Mastering Clustering and Unsupervised Machine Learning
 
-<div id='id-Week7-Day1'/>
+<div id='id-Week8-Day1'/>
 
-### 👾 DAY 1: Introduction to Unsupervised Learning and Clustering <a name  = "Week7-Day1"></a>
+### 👾 DAY 1: Introduction to Unsupervised Learning and Clustering <a name  = "Week8-Day1"></a>
 
 #### a. **Unsupervised Learning: Discovering Hidden Patterns**
 
@@ -1296,9 +1394,9 @@ Clustering is a fundamental unsupervised learning technique used to group simila
 🔍 **Discover Clustering:**  
 Dive into clustering basics with [**this guide**](https://towardsdatascience.com/overview-of-clustering-algorithms-27e979e3724d).
 
-<div id='id-Week7-Day2'/>
+<div id='id-Week8-Day2'/>
 
-### 👾 DAY 2: K-Means Clustering <a name  = "Week7-Day2"></a>
+### 👾 DAY 2: K-Means Clustering <a name  = "Week8-Day2"></a>
 
 #### a. **Understanding K-Means Clustering**
 
@@ -1322,9 +1420,9 @@ Get hands-on experience by implementing K-Means clustering in Python.
 🔍 **Follow Along with Code:**  
 Check out this step-by-step tutorial on K-Means implementation [**here**](https://realpython.com/k-means-clustering-python/).
 
-<div id='id-Week7-Day3'/>
+<div id='id-Week8-Day3'/>
 
-### 👾 DAY 3: Hierarchical Clustering <a name  = "Week7-Day3"></a>
+### 👾 DAY 3: Hierarchical Clustering <a name  = "Week8-Day3"></a>
 
 #### a. **Hierarchical Clustering: Building Nested Clusters**
 
@@ -1344,9 +1442,9 @@ Dendrograms are tree-like diagrams that illustrate the arrangement of clusters p
 
 ![image alt](https://media.geeksforgeeks.org/wp-content/uploads/20230425190545/download-(10).png)
 
-<div id='id-Week7-Day4'/>
+<div id='id-Week8-Day4'/>
 
-### 👾 DAY 4: Density-Based Clustering (DBSCAN) <a name  = "Week7-Day4"></a>
+### 👾 DAY 4: Density-Based Clustering (DBSCAN) <a name  = "Week8-Day4"></a>
 
 ![image alt](https://cdn.analyticsvidhya.com/wp-content/uploads/2020/03/db7-1.png)
 ![image alt](https://cdn.analyticsvidhya.com/wp-content/uploads/2020/03/db6-e1584577503359.png)
@@ -1376,9 +1474,9 @@ You can go through the sklearn documentation for a better insight of DBSCAN.
 
 [https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html)
 
-<div id='id-Week7-Day5'/>
+<div id='id-Week8-Day5'/>
 
-### 👾 DAY 5: Evaluation Metrics for Clustering <a name  = "Week7-Day5"></a>
+### 👾 DAY 5: Evaluation Metrics for Clustering <a name  = "Week8-Day5"></a>
 
 Clustering is only useful if we can evaluate the quality of the clusters it produces. This day will focus on understanding and using various metrics to assess clustering performance. These metrics help us determine how well our clustering algorithms are grouping similar data points and separating dissimilar ones.
 
@@ -1462,9 +1560,9 @@ Visualization is a powerful tool for interpreting and presenting clustering resu
 - **Heatmaps**: Visualize distance matrices or similarity matrices.
 - **Dendrograms**: Illustrate the hierarchical clustering process.
 
-<div id='id-Week7-Day6'/>
+<div id='id-Week8-Day6'/>
 
-### 👾 DAY 6: Dimensionality Reduction Techniques <a name  = "Week7-Day6"></a>
+### 👾 DAY 6: Dimensionality Reduction Techniques <a name  = "Week8-Day6"></a>
 
 Dimensionality reduction is crucial in unsupervised learning as it helps in simplifying models, reducing computation time, and mitigating the curse of dimensionality. This day will focus on understanding and applying different techniques for reducing the number of features in a dataset while preserving as much information as possible.
 
@@ -1541,9 +1639,9 @@ Learn how to apply these dimensionality reduction techniques using Python and re
 
 By the end of Day 6, you will have a thorough understanding of various dimensionality reduction techniques, how to implement them, and when to apply each method effectively. This knowledge will be crucial for handling high-dimensional data in unsupervised learning tasks. 🚀
 
-<div id='id-Week7-Day7'/>
+<div id='id-Week8-Day7'/>
 
-### 👾 DAY 7: Practical Applications and Project Work <a name  = "Week7-Day7"></a>
+### 👾 DAY 7: Practical Applications and Project Work <a name  = "Week8-Day7"></a>
 
 #### a. **Applying Clustering to Real-World Data**
 
@@ -1561,8 +1659,9 @@ Check out this customer segmentation project [**here**](https://www.kaggle.com/c
 
 By following this week, you'll gain a strong foundation in clustering and unsupervised learning, empowering you to uncover hidden patterns and insights in your data. Happy clustering! 🚀
 
-<div id='id-Week8'/>
-## 🦝 Week 8 and beyond (Tensorflow, PyTorch, Projects)
+<div id='id-Week9'/>
+
+## 🦝 Week 9 and beyond (Tensorflow, PyTorch, Projects)
 
 ### 👾 TensorFlow Project
 
@@ -1628,3 +1727,4 @@ I'm assuming that if you've followed the whole roadmap and have at the end reach
 - Harshit Jaiswal \| +91 97937 40831
 - Himanshu Sharma \| +91 99996 33455
 - Kshitij Gupta \| +91 98976 05316
+- Pradyumn Vikram \| +91 95608 02773
