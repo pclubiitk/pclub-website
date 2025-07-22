@@ -286,6 +286,17 @@ In all these 3 implementations:
 2. Load the model, continue training till the end 
 3. Calculate the effective dimensions of the algorithms
 
+
+### Kernel Methods and Support Vector Classifiers
+1. [Quantum Kernel Machine Learning](https://qiskit-community.github.io/qiskit-machine-learning/tutorials/03_quantum_kernel.html)
+2. [Pegasos Quantum Support Vector Classifier](https://qiskit-community.github.io/qiskit-machine-learning/tutorials/07_pegasos_qsvc.html)
+3. [Quantum Kernel Training for Machine Learning Applications](https://qiskit-community.github.io/qiskit-machine-learning/tutorials/08_quantum_kernel_trainer.html)
+
+### Assignment 12
+Implement an algorithm for Prediction of Solar Irradiation Using Quantum Support Vector Machine Learning Algorithm.
+Reference paper can be found [here](https://www.scirp.org/journal/PaperInformation?paperID=72542)
+
+
 Project Mentors:
 - Advaith GS | advaithgs23@iitk.ac.in | +91 88009 25876
 - Himanshu Sharma | himans23@iitk.ac.in | +91 999963 3455
