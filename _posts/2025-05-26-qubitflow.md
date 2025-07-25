@@ -297,6 +297,14 @@ Implement an algorithm for Prediction of Solar Irradiation Using Quantum Support
 Reference paper can be found [here](https://www.scirp.org/journal/PaperInformation?paperID=72542)
 
 
+## Week 8 | Quantum Convolutional Neural Networks 
+1. [QCNN implementation using Qiskit ML](https://qiskit-community.github.io/qiskit-machine-learning/tutorials/11_quantum_convolutional_neural_networks.html)
+2. [QCNN Paper](https://arxiv.org/pdf/1810.03787)
+
+### Assignment 13
+Implement the QCNN Algorithm referenced in week 8 resources
+
+
 Project Mentors:
 - Advaith GS | advaithgs23@iitk.ac.in | +91 88009 25876
 - Himanshu Sharma | himans23@iitk.ac.in | +91 999963 3455
