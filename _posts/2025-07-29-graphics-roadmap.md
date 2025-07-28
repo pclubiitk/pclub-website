@@ -21,9 +21,9 @@ Graphics programming deals with the generation and manipulation of images and mo
 
 From [wikipedia](https://en.wikipedia.org/wiki/Computer_graphics),
 
-> Some topics in computer graphics include user interface design, sprite graphics, raster graphics, rendering, ray tracing, geometry processing, computer animation, vector graphics, 3D modeling, shaders, GPU design, implicit surfaces, visualization, scientific computing, image processing, computational photography, scientific visualization, computational geometry and computer vision, among others. The overall methodology depends heavily on the underlying sciences of geometry, optics, physics, and perception.
+    Some topics in computer graphics include user interface design, sprite graphics, raster graphics, rendering, ray tracing, geometry processing, computer animation, vector graphics, 3D modeling, shaders, GPU design, implicit surfaces, visualization, scientific computing, image processing, computational photography, scientific visualization, computational geometry and computer vision, among others. The overall methodology depends heavily on the underlying sciences of geometry, optics, physics, and perception.
 
-Proficiency in graphics programming requires a strong understanding of foundational concepts and the ability to adapt and implement existing algorithms on new data structures and hardware architectures. Graphics programming also requires lot of tacit knowledge and is better working in teams.
+Proficiency in graphics programming requires a strong understanding of foundational concepts and the ability to adapt and implement existing algorithms on new data structures and hardware architectures. Graphics programming also requires a lot of tacit knowledge and is better working in teams.
 
 ## Table of Contents
 
@@ -56,20 +56,23 @@ Proficiency in graphics programming requires a strong understanding of foundatio
      [16) Procedural Generation](#id-Procedural-Generation)  
 #### [Further Resources](#id-Further-Resources)
 
----
 
 <div id='id-Prerequisites'></div>
 ## Prerequisites
 
 A strong foundation in specific mathematical and programming disciplines is required for proficiency in computer graphics. Weaknesses in these areas will manifest as persistent, hard-to-debug problems.
 
-1)  Linear Algebra: This field of mathematics provides the tools to represent and manipulate 3D points, directions, and transformations. For computer graphics, it is essential to build a strong intuition for the geometric effects of its operations. For example, it is crucial to understand how a dot product indicates the angle between two vectors, or how a matrix multiplication can rotate and scale an object. This intuitive grasp is fundamental for correctly building and debugging 3D transformations. A comprehensive theoretical introduction is available via Gilbert Strang's materials. For a practical approach focused on graphics, the sections related to vectors, matrices, and transformations in Fundamentals of Computer Graphics (HDMD) are essential. A strong command of the following topics is critical:
-         - Vectors: Operations including addition, subtraction, dot products, and cross products are used for representing positions, directions, and surface orientations.
-         - Matrices: Particularly 4x4 matrices are the standard tool for all geometric transformations. A thorough understanding of matrix multiplication and its non-commutative nature is fundamental.
-         - Transformations: The concepts of translation, rotation, scaling, and projection, and their representation as matrices.
+1)  Linear Algebra: This field of mathematics provides the tools to represent and manipulate 3D points, directions, and transformations. For computer graphics, it is essential to build a strong intuition for the geometric effects of its operations. For example, it is crucial to understand how a dot product indicates the angle between two vectors, or how a matrix multiplication can rotate and scale an object. This intuitive grasp is fundamental for correctly building and debugging 3D transformations. A comprehensive theoretical introduction is available via Gilbert Strang's materials. For a practical approach focused on graphics, the sections related to vectors, matrices, and transformations in Fundamentals of Computer Graphics (HDMD) are essential. A strong command of the following topics is critical:-
+
+ - Vectors: Operations including addition, subtraction, dot products, and cross products are used for representing positions, directions, and surface orientations.
+ - Matrices: Particularly 4x4 matrices are the standard tool for all geometric transformations. A thorough understanding of matrix multiplication and its non-commutative nature is fundamental.
+ - Transformations: The concepts of translation, rotation, scaling, and projection, and their representation as matrices.
+
 2) Programming Language Proficiency (C++/Rust): Modern graphics APIs are primarily accessed through low-level systems languages. Beyond language syntax, proficiency in debugging is paramount. Graphics bugs are rarely clean crashes; they are often silent, visual errors—a black screen, a corrupted texture, a flickering polygon. Familiarity with debugging tools and methodologies is a prerequisite for making any meaningful progress.
-         - C++: The long-standing industry standard. A good starting point is [The Cherno's C++ Series on YouTube](https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb); completing the first 48 videos provides a solid practical foundation for graphics work.
-         - Rust: A modern alternative with strong safety guarantees that prevent entire classes of common bugs. A complete understanding of the concepts in [the official Rust book](https://doc.rust-lang.org/book/) is necessary. After reading, it is recommended to complete the [rustlings exercises](https://github.com/rust-lang/rustlings) to solidify understanding. For crate recommendations, see [blessed.rs](https://blessed.rs/crates).
+
+- C++: The long-standing industry standard. A good starting point is [The Cherno's C++ Series on YouTube](https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb); completing the first 48 videos provides a solid practical foundation for graphics work.
+
+- Rust: A modern alternative with strong safety guarantees that prevent entire classes of common bugs. A complete understanding of the concepts in [the official Rust book](https://doc.rust-lang.org/book/) is necessary. After reading, it is recommended to complete the [rustlings exercises](https://github.com/rust-lang/rustlings) to solidify understanding. For crate recommendations, see [blessed.rs](https://blessed.rs/crates).
 
 <div id='id-Graphics-Pipeline'></div>
 ## Graphics Pipeline
@@ -160,7 +163,7 @@ The intuition of path tracing is to abandon the "painting shapes" approach and i
 
 This project introduces a physically-based approach to rendering that simulates how light actually works. The core idea is to trace the path of light rays recursively. For each pixel, a ray is sent from the camera into the scene. When it hits an object, it bounces off in a new direction, and this process repeats. The final color of the pixel is determined by accumulating the light gathered along this entire path, resulting in highly realistic global illumination, soft shadows, and reflections.
 
-A lot of software rasterisers tend to be raytraced, but another subset of raytraced programs are pathtracers which keep following the path of light throughout. A good motivation to pathtracer is this [video](https://www.youtube.com/watch?v=gsZiJeaMO48) until about 10:00. Similiarly, I'd recommend following the Sebastian Lague video to implement your own pathtracer and you could read the [Ray Tracing in A Weekend](https://raytracing.github.io/) to understand how you could potentially design the codebase.
+A lot of software rasterisers tend to be raytraced, but another subset of raytraced programs are pathtracers which keep following the path of light throughout. A good motivation to pathtracer is this [video](https://www.youtube.com/watch?v=gsZiJeaMO48) until about 10:00. Similarly, I'd recommend following the Sebastian Lague video to implement your own pathtracer and you could read the [Ray Tracing in A Weekend](https://raytracing.github.io/) to understand how you could potentially design the codebase.
 
 <div id='id-GPU-APIs'></div>
 ### 2) GPU APIs
@@ -212,8 +215,9 @@ Shaders make modern graphics programmable. They are programs that run directly o
 Shaders are programs that run on the GPU, allowing for programmable control over different stages of the rendering pipeline.
  - Vertex Shaders: Process individual vertices, typically performing transformations.
  - Fragment (or Pixel) Shaders: Determine the color of individual pixels/fragments.
- - Geometry Shaders: Can create or modify primitives whcih are later processed.
+ - Geometry Shaders: Can create or modify primitives which are later processed.
  - Compute Shaders: For general-purpose computation on the GPU (GPGPU).
+
 You might need to pick a shading language like GLSL (for OpenGL/Vulkan), HLSL (for DirectX), MSL (for Metal), or WGSL (for wGPU). A newly emerging API is [Slang](https://shader-slang.org/) which compiles to others easily and is very similiar to HLSL. It supports all features of HLSL and builds and allows transpiling to any lower API. Certain API, webGPU especially requires disabling certain safety features though, although it is equivalent to using unsafe.
 
 <div id='id-Texturing'></div>
@@ -447,4 +451,6 @@ Procedural generation is the algorithmic creation of data. This field encompasse
 
 <br>
 
-- Austin Shijo \| @austins24
+**Contributors**
+
+Austin Shijo \| @austins24
