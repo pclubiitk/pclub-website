@@ -173,7 +173,7 @@ Imagine a single pine tree, represented in the computer as a list of thousands o
 The display screen, however, is just a flat grid of pixels.
 A systematic process is required to bridge this gap: first, to mathematically project the 3D tree onto the 2D screen as if a camera were taking its picture, and second, to determine precisely which pixels on the grid are covered by each of the tree's projected 2D triangles.
 
-A particular idea for solving this is to approach it methodically, like an painting canvas pixel-wise individually.
+A particular idea for solving this is to approach it methodically, like painting a canvas pixel-wise individually.
 This approach, known as rasterization, involves taking each 3D triangle from the model, "flattening" it into a 2D shape in screen space, and then systematically scanning the pixel grid to "fill in" the area it covers using a scanline algorithm, which iterates row-by-row across the triangle's projection.
 By building a software rasteriser, one implements this entire logical pipeline from scratch on the CPU.
 This process forces a deep understanding of concepts like barycentric coordinates (the mathematical tool for interpolating data across a triangle's surface) and clipping (the logic for handling triangles that are only partially on-screen).
@@ -181,10 +181,10 @@ This process forces a deep understanding of concepts like barycentric coordinate
 This project teaches the classic method of rendering 3D scenes, which forms the basis of most real-time graphics.
 You will manually implement the pipeline that takes 3D vertices, projects them into 2D space, and fills in the resulting pixels on the screen.
 
-A software rasteriser process geometry and renders the output to screen, as raster data(image/, buffer data).
+A software rasteriser processes geometry and renders the output to screen, as raster data.
 Without a subgroup being explicitly mentioned, if a software is called software rasteriser, it tends to be a cheap and resource efficient rasteriser which heavily approximates physical reality by clever techniques.
 During its development, you'll likely encounter and implement basic lighting and shading models such as Ambient, Diffuse, and Specular (like Phong or Blinn-Phong) to give surfaces a sense of depth and interaction with light.
-Writing a software rasteriser motivates the neccesity for GPU based APIs like openGL, vulkan, Metal, directX and webGPU.
+Writing a software rasteriser motivates the necessity for GPU based APIs like OpenGL, Vulkan, Metal, directX and webGPU.
 Ideally, it's better to implement features by thinking from first principles and I'd recommend Sebastian Lague for the same, and look around for algorithms from wikipedia or from HDMD book (see Links section).
 Another comprehensive source is the [Tiny Renderer Wiki](https://github.com/ssloy/tinyrenderer/wiki/Lesson-0:-getting-started).
 
@@ -244,27 +244,27 @@ It's an essential resource for understanding the "why" behind API design and per
 -   OpenGL: Old, cross-platform API.
 A good starting point is [LearnOpenGL](https://learnopengl.com/).
 It provides comprehensive tutorials from basic setup to advanced techniques.
-openGL is likely a good starting choice but is already deprecated in macOS and is only supported via a translation layer.
+OpenGL is likely a good starting choice but is already deprecated in macOS and is only supported via a translation layer.
 -   Vulkan: A more low-level, explicit API offering more control over the GPU, but with a steeper learning curve.
 The official [Vulkan Tutorial](https://vulkan-tutorial.com/) and [vulkano](https://vulkano.rs/) for Rust users are good resources.
-Vulkan generally tends to be more hard-core and is really hard to write manually.
+Vulkan generally tends to be more hardcore and is really hard to write manually.
 It was never implemented for macOS and instead depends on translation layers like moltenVK.
 -   Metal: Apple's graphics API for macOS and iOS.
 Apple's own [Metal documentation](https://developer.apple.com/metal/) are the primary resources.
 Only works for macOS.
 -   WebGPU: An emerging API aiming to bring modern graphics capabilities to the web.
 The [WebGPU specification](https://gpuweb.github.io/gpuweb/) and [sotrh's learn-wgpu tutorial](https://www.google.com/search?q=https://github.com/sotrh/learn-wgpu%3E) are recommended.
-The rust implementation of webGPU, wGPU is the most natural option to use webGPU.
+The rust implementation of webGPU, wgpu is the most natural option to use webGPU.
 
 Understanding the rendering pipeline concept is important when working with these APIs.
-Most APIs abstract this pipeline, but knowing the stages (vertex processing, rasterization, fragment processing, etc.) helps in understanding how graphics are generated and the earlier written projects/techniques motivate the usecase.
+Most APIs abstract this pipeline, but knowing the stages (vertex processing, rasterization, fragment processing, etc.) helps in understanding how graphics are generated and the earlier written projects/techniques motivate the use case.
 
 While it might seem verbose to write hundreds of lines of code just to draw a triangle, this verbosity stems from the direct control these APIs provide.
 High-level abstractions like UI toolkits are convenient, but they are built for general-purpose cases and can introduce performance bottlenecks.
 For example, a generic toolkit might not efficiently batch draw calls; it could end up telling the GPU to draw each button, icon, and text label as a separate operation.
 This constant back and forth between the CPU and GPU, along with frequent state changes (like swapping shaders or textures for different elements), creates significant overhead.
 
-In a high-performance application like the Zed editor, writing custom renderer allows batching all compatible UI elements into a single draw call and implement custom techniques like SDF-based text rendering, which requires direct control over shaders and data pipelines.
+In a high-performance application like the Zed editor, writing a custom renderer allows batching all compatible UI elements into a single draw call and implement custom techniques like SDF-based text rendering, which requires direct control over shaders and data pipelines.
 This is a level of optimization a generic toolkit cannot provide.
 Their approach is detailed in their blog post, [videogame](https://zed.dev/blog/videogame).
 
@@ -326,8 +326,8 @@ Shaders are programs that run on the GPU, allowing for programmable control over
  - Geometry Shaders: Can create or modify primitives which are later processed.
  - Compute Shaders: For general-purpose computation on the GPU (GPGPU).
 
-You might need to pick a shading language like GLSL (for OpenGL/Vulkan), HLSL (for DirectX), MSL (for Metal), or WGSL (for wGPU).
-A newly emerging API is [Slang](https://shader-slang.org/) which compiles to others easily and is very similiar to HLSL.
+You might need to pick a shading language like GLSL (for OpenGL/Vulkan), HLSL (for DirectX), MSL (for Metal), or WGSL (for wgpu).
+A newly emerging API is [Slang](https://shader-slang.org/) which compiles to others easily and is very similar to HLSL.
 It supports all features of HLSL and builds and allows transpiling to any lower API.
 Certain API, webGPU especially requires disabling certain safety features though, although it is equivalent to using unsafe.
 
@@ -383,7 +383,7 @@ These topics build on the core concepts to solve more complex problems in geomet
 <br>
 
 When using a vector graphics tool like Inkscape or Photoshop to draw a path, a user needs to create an editable, perfectly smooth curve.
-Representing this curve with a series of tiny straight lines (a polygonal chain) called polyline would appear jagged at high magnification and would be difficult for the user to manipulate intuitively and precisely.
+Representing this curve with a series of tiny straight lines (a polygonal chain) called a polyline would appear jagged at high magnification and would be difficult for the user to manipulate intuitively and precisely.
 A mathematical representation for smooth curves that is both efficient to store and easy to edit is required.
 
 The intuition is to define a curve not by the points that lie on it, but by a set of control points that guide its shape.
@@ -463,7 +463,7 @@ This section focuses on techniques for generating images at interactive frame ra
 The essential resource here is the book [Real-Time Rendering](http://www.realtimerendering.com/).
 This book is less of a step-by-step tutorial and more of a "second reading".
 Once you've learned a concept from another resource, you can read this book to see how it can be implemented, optimized, and pushed to its limits for performance.
-It covers of state-of-the-art methods and the clever hacks used to make things run fast.
+It covers state-of-the-art methods and the clever hacks used to make things run fast.
 As you may have noticed, graphics books repeat the same basics endlessly; get used to it.
 This book is where you go for the material that comes after the basics.
 Alternatively, the book can also be used as a replacement for HDMD.
@@ -524,7 +524,7 @@ Resources:
  - The [Post Processing chapter on LearnOpenGL](https://learnopengl.com/Advanced-OpenGL/Post-Processing) provides a practical implementation guide.
  - [The Cherno's video on Bloom](https://www.youtube.com/watch?v=tI70-HIc5ro) explains the concept and implementation.
  - [John Hable's blog post](http://filmicworlds.com/blog/filmic-tonemapping-operators/) is a classic resource on filmic tone mapping.
- - [Acerola](https://www.youtube.com/@Acerola_t) has several high quality video introducing many post-processing techniques.
+ - [Acerola](https://www.youtube.com/@Acerola_t) has several high-quality video introducing many post-processing techniques.
 
 <div id='id-Anti-Aliasing'></div>
 ### 11) Anti-Aliasing
@@ -584,7 +584,7 @@ The focus shifts entirely from performance to physical correctness, as exemplifi
 This is the domain of film and visualization, where visual quality and physical accuracy are the only priority, and performance is secondary.
 The goal is to solve the Rendering Equation, which describes the physics of light.
 
-Alternatively, it is also used to "bake" in higher quality render into a interactive low quality renders.
+Alternatively, it is also used to "bake" higher quality render into a interactive low quality renders.
 
 <br>
 <p align="center">
@@ -737,7 +737,7 @@ Papers and courses from SIGGRAPH are a goldmine of information, often available 
  - Graphics Programming Weekly: A newsletter by [Jendrik Illner (Graphics Programming Weekly)](https://www.jendrikillner.com/tags/weekly/), can help keep you updated with new developments.
  - Graphics Debugging Tools: Proficiency with a tool like RenderDoc or NVIDIA Nsight is not optional.
 These tools allow for the capture and frame-by-frame dissection of a graphics application, which is essential for debugging visual artifacts.
- - Youtube channels: There are plenty of channels which offer open ended theoritical exploration of topics such as [Sebastian Lague](https://www.youtube.com/@SebastianLague), [acerola](https://www.youtube.com/@Acerola_t).
+ - YouTube channels: There are plenty of channels which offer open-ended theoritical exploration of topics such as [Sebastian Lague](https://www.youtube.com/@SebastianLague), [acerola](https://www.youtube.com/@Acerola_t).
 
 
 <br>
