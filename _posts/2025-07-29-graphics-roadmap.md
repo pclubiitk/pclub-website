@@ -22,7 +22,7 @@ Its primary applications include rendering visuals for movies and games, as well
 At a high level, the field is often split into two domains: real-time graphics, where performance is critical and images must be generated in milliseconds (e.g., for games and simulations), and offline graphics, where photorealism is the primary goal and render times can be hours or days (e.g., for film and architectural visualization).
 This roadmap will build the foundations for both, starting with the principles that govern real-time rendering.
 
-From [wikipedia](https://en.wikipedia.org/wiki/Computer_graphics),
+From [Wikipedia](https://en.wikipedia.org/wiki/Computer_graphics),
 
     Some topics in computer graphics include user interface design, sprite graphics, raster graphics, rendering, ray tracing, geometry processing, computer animation, vector graphics, 3D modeling, shaders, GPU design, implicit surfaces, visualization, scientific computing, image processing, computational photography, scientific visualization, computational geometry and computer vision, among others. The overall methodology depends heavily on the underlying sciences of geometry, optics, physics, and perception.
 
@@ -185,7 +185,7 @@ A software rasteriser processes geometry and renders the output to screen, as ra
 Without a subgroup being explicitly mentioned, if a software is called software rasteriser, it tends to be a cheap and resource efficient rasteriser which heavily approximates physical reality by clever techniques.
 During its development, you'll likely encounter and implement basic lighting and shading models such as Ambient, Diffuse, and Specular (like Phong or Blinn-Phong) to give surfaces a sense of depth and interaction with light.
 Writing a software rasteriser motivates the necessity for GPU based APIs like OpenGL, Vulkan, Metal, directX and webGPU.
-Ideally, it's better to implement features by thinking from first principles and I'd recommend Sebastian Lague for the same, and look around for algorithms from wikipedia or from HDMD book (see Links section).
+Ideally, it's better to implement features by thinking from first principles and I'd recommend Sebastian Lague for the same, and look around for algorithms from Wikipedia or from HDMD book (see Links section).
 Another comprehensive source is the [Tiny Renderer Wiki](https://github.com/ssloy/tinyrenderer/wiki/Lesson-0:-getting-started).
 
 <div id='id-Pathtracer'></div>
@@ -217,7 +217,7 @@ When it hits an object, it bounces off in a new direction, and this process repe
 The final color of the pixel is determined by accumulating the light gathered along this entire path, resulting in highly realistic global illumination, soft shadows, and reflections.
 
 A lot of software rasterisers tend to be raytraced, but another subset of raytraced programs are pathtracers which keep following the path of light throughout.
-A good motivation to pathtracer is this [video](https://www.youtube.com/watch?v=gsZiJeaMO48) until about 10:00.
+A good motivation for pathtracer is this [video](https://www.youtube.com/watch?v=gsZiJeaMO48) until about 10:35.
 Similarly, I'd recommend following the Sebastian Lague video to implement your own pathtracer and you could read the [Ray Tracing in A Weekend](https://raytracing.github.io/) to understand how you could potentially design the codebase.
 
 <div id='id-GPU-APIs'></div>
@@ -250,7 +250,7 @@ The official [Vulkan Tutorial](https://vulkan-tutorial.com/) and [vulkano](https
 Vulkan generally tends to be more hardcore and is really hard to write manually.
 It was never implemented for macOS and instead depends on translation layers like moltenVK.
 -   Metal: Apple's graphics API for macOS and iOS.
-Apple's own [Metal documentation](https://developer.apple.com/metal/) are the primary resources.
+Apple's own [Metal documentation](https://developer.apple.com/metal/) is the primary resource.
 Only works for macOS.
 -   WebGPU: An emerging API aiming to bring modern graphics capabilities to the web.
 The [WebGPU specification](https://gpuweb.github.io/gpuweb/) and [sotrh's learn-wgpu tutorial](https://www.google.com/search?q=https://github.com/sotrh/learn-wgpu%3E) are recommended.
