@@ -198,26 +198,26 @@ Connect with the infosec community, build your team, participate in events, ctfs
 
 #### Secretaries:
 
-- Abhinav Raj
+- Abhinav Raj  
   8969868737
-- Ashish Gautam
+- Ashish Gautam  
   8955774719
-- Ketan Agarwal
+- Ketan Agarwal  
   9610407327
-- Shivam Sah
+- Shivam Sah  
   9315060115
-- Vishu Khare
+- Vishu Khare  
   8368600051
 
 
 #### Legends:
 
-- Aayush Anand
+- Aayush Anand  
   8851070814
-- Aryan Mahesh Gupta
+- Aryan Mahesh Gupta  
   8376860515
-- Harshit Tomar
+- Harshit Tomar  
   9891341130
-- Rishi Divya Kirti
+- Rishi Divya Kirti  
   9153938374
 
