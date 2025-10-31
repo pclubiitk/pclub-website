@@ -744,4 +744,4 @@ These tools allow for the capture and frame-by-frame dissection of a graphics ap
 
 **Contributors**
 
-Austin Shijo \| +91 8946061070
+- Austin Shijo \| +91 8946061070

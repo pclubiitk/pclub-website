@@ -18,35 +18,34 @@ image:
 ## Table of Contents
 
 #### [Concurrency and Parallelism](#id-ConcurrencyandParallelism)
-&nbsp;&nbsp;&nbsp;&nbsp;[Why concurrency?](#id-Whyconcurrency)
-&nbsp;&nbsp;&nbsp;&nbsp;[Why this guide?](#id-Whythisguide)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[How to follow?](#id-Howtofollow)
+     [Why concurrency?](#id-Whyconcurrency)  
+     [Why this guide?](#id-Whythisguide)  
+     [How to follow?](#id-Howtofollow)  
 #### [The Basics](#id-TheBasics)
-&nbsp;&nbsp;&nbsp;&nbsp;[Assignment 1 (a)](#id-Assignment1a)
-#### [Managing Threads](#id-ManagingThreads)
-&nbsp;&nbsp;&nbsp;&nbsp;[Assignment 1 (b)](#id-Assignment1b)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Excercise 1](#id-Excercise1)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Commentary on the solution](#id-Commentaryonthesolution)
+     [Assignment 1 (a)](#id-Assignment1a)  
+#### [Managing Threads](#id-ManagingThreads)  
+     [Assignment 1 (b)](#id-Assignment1b)  
+     [Excercise 1](#id-Excercise1)  
+     [Commentary on the solution](#id-Commentaryonthesolution)  
 #### [Sharing Data Between Threads](#id-SharingDataBetweenThreads)
-&nbsp;&nbsp;&nbsp;&nbsp;[Part 1](#id-Part1)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Mini Task (Fix for Dispatcher Problem)](#id-MiniTaskFixforDispatcherProblem)
-&nbsp;&nbsp;&nbsp;&nbsp;[Assignment 1 (c)](#id-Assignment1c)
-&nbsp;&nbsp;&nbsp;&nbsp;[Part 2](#id-Part2)
-&nbsp;&nbsp;&nbsp;&nbsp;[Assignment 1 (d)](#id-Assignment1d)
-&nbsp;&nbsp;&nbsp;&nbsp;[Excercise 2 (Bank Account)](#id-Excercise2BankAccount)
-&nbsp;&nbsp;&nbsp;&nbsp;[Excercise 3 (Many Readers One Writer)](#id-Excercise3ManyReadersOneWriter)
+     [Part 1](#id-Part1)  
+     [Mini Task (Fix for Dispatcher Problem)](#id-MiniTaskFixforDispatcherProblem)  
+     [Assignment 1 (c)](#id-Assignment1c)  
+     [Part 2](#id-Part2)  
+     [Assignment 1 (d)](#id-Assignment1d)  
+     [Excercise 2 (Bank Account)](#id-Excercise2BankAccount)  
+     [Excercise 3 (Many Readers One Writer)](#id-Excercise3ManyReadersOneWriter)  
 #### [Synchronizing Concurrent Operations](#id-SynchronizingConcurrentOperations)
-&nbsp;&nbsp;&nbsp;&nbsp;[Part 1: Waiting using condition variables](#id-Part1Waitingusingconditionvariables)
-&nbsp;&nbsp;&nbsp;&nbsp;[Assignment 1 (e)](#id-Assignment1e)
-&nbsp;&nbsp;&nbsp;&nbsp;[Part 2: Futures, Promises and Asynchronous Tasks](#id-Part2FuturesPromisesandAsynchronousTasks)
-&nbsp;&nbsp;&nbsp;&nbsp;[Excercise 4: Parallel Calculator](#id-Excercise4ParallelCalculator)
-&nbsp;&nbsp;&nbsp;&nbsp;[Assignment 1 (f)](#id-Assignment1f)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Remarks](#id-Remarks)
+     [Part 1: Waiting using condition variables](#id-Part1Waitingusingconditionvariables)  
+     [Assignment 1 (e)](#id-Assignment1e)  
+     [Part 2: Futures, Promises and Asynchronous Tasks](#id-Part2FuturesPromisesandAsynchronousTasks)  
+     [Excercise 4: Parallel Calculator](#id-Excercise4ParallelCalculator)  
+     [Assignment 1 (f)](#id-Assignment1f)  
+     [Remarks](#id-Remarks)  
 #### [Concurrency and Parallelism in the Wider World](#id-ConcurrencyandParallelismintheWiderWorld)
-&nbsp;&nbsp;&nbsp;&nbsp;[Multi-threading in Python](#id-Multi-threadinginPython)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Numba and JIT](#id-NumbaandJIT)
-&nbsp;&nbsp;&nbsp;&nbsp;[Parallel Processing on the GPU](#id-ParallelProcessingontheGPU)
-
+     [Multi-threading in Python](#id-Multi-threadinginPython)  
+     [Numba and JIT](#id-NumbaandJIT)  
+     [Parallel Processing on the GPU](#id-ParallelProcessingontheGPU)  
 
 
 
@@ -473,4 +472,4 @@ The dominant frameworks as of now for GPGPU are NVIDIA's CUDA and OpenCL. If you
 
 **Contributors**
 
-Shivansh Jaiswal | +91 9971104638
+- Shivansh Jaiswal \| +91 9971104638
