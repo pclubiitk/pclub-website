@@ -2,19 +2,24 @@
 layout: post
 title: "Web3 Roadmap"
 date: 2025-11-01
-author: Austin Shijo
-website: https://github.com/mTvare6
+author: singu
 category: Roadmap
 tags:
   - roadmap
   - web3
   - blockchain
   - cryptocurrency
+  - bitcoin
+  - ethereum
+  - iitkpclub
+  - filecoin
+  - ipfs 
+  - rust
 categories:
   - roadmap
 hidden: true
 image:
-  url: /images/ml-roadmap/web3-roadmap.jpg
+  url: /images/web3-roadmap/web3fnl.png
 ---
 
 # Web3 Roadmap
@@ -425,11 +430,11 @@ Inspect your freshly minted NTF on [Sepolia Etherscan](https://sepolia.etherscan
 Now let’s move to the most widely used purpose of a blockchain, its Digital Finance or DeFi. Blockchain technology has enabled permissionless networks that can be used by anyone, where built-in economic incentives ensure that network services can be maintained indefinitely without the aid of any individual company or central authority. Isn’t it great? This means that there is no third party lurking around our transaction and we are no longer dependent on them to verify it. But there is a downside to everything; Volatility is one of them and also you have to maintain your own records for tax purposes. Regulations can vary from region to region. NFTs are also used in DeFi, they can be used as collateral while taking a digital loan.
 [Here](https://www.investopedia.com/decentralized-finance-defi-5113835#:~:text=Decentralized%20finance%2C%20or%20DeFi%2C%20uses,enables%20the%20development%20of%20applications) is a blog to better understand DeFi.
 
-### Day 6: Zero Knowledge Proofs (optional)
+### Day 6: Zero Knowledge Proofs 
 
 Zero-Knowledge Proofs (ZKPs) are cryptographic techniques that let someone prove the truth of a statement without revealing any underlying information, enabling both privacy and security in verification. ZKPs are foundational for Web3 applications, such as [Polygon ID](https://polygon.technology/blog/introducing-polygon-id-zero-knowledge-own-your-identity-for-web3), which empower users to own and control their digital identities without exposing sensitive data. Learn more on zk-proofs [here](https://www.youtube.com/watch?v=_MYpZQVZdiM)
 
-### Day 7: Stablecoins (optional)
+### Day 7: Stablecoins 
 Stablecoins are digital currencies designed to maintain a stable value by being pegged to traditional assets like the US dollar, offering the benefits of cryptocurrency (speed, security, programmability) without the volatility that makes Bitcoin and Ethereum unsuitable for everyday payments. Unlike volatile cryptocurrencies, stablecoins serve as reliable mediums of exchange and stores of value, enabling efficient cross-border payments, DeFi applications, and providing financial access to unbanked populations worldwide.
 
 **Key Types of Stablecoins:**
@@ -702,6 +707,9 @@ some tools and extra stuff I personally used/know
 - [CREATE3](https://github.com/ZeframLou/create3-factory?utm_source=substack&utm_medium=email#readme) — Deploy contract with same address to all blockchains
 - [Cryptohack](https://cryptohack.org) — Learn modern Cryptography 
 
+**Contributors**
 
+- Anany Rai \| +91 9870401439
+- Arnab Dutta \| +91 900775913
 
 
