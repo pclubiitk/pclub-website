@@ -36,7 +36,7 @@ image:
      [Network Models and Architecture](#id-NetworkModelsandArchitecture)  
      [OSI (Open Systems Interconnection) Model](#id-OSIOpenSystemsInterconnectionModel)  
      [TCP/IP Model](#id-TCPIPModel)  
-     [Protocols (by layer)](#id-Protocolsbylayer)
+     [Protocols (by layer)](#id-Protocolsbylayer)  
      [Advanced Network Programming Concepts](#id-AdvancedNetworkProgrammingConcepts)  
      [Blocking and Non-Blocking I/O](#id-BlockingandNon-BlockingIO)  
      [Concurrency Models](#id-ConcurrencyModels)  
@@ -83,15 +83,12 @@ Make sure to interlace studying theory and tutorials with making some simple pro
 This is relevant if you're using C++. The book and website mentioned above for the basics of C++ should also cover this. Apart from this, make projects in C++ and those will inevitably need OOP concepts.
 
 <div id='id-STL'></div>
+
 ### STL
 STL is an important tool for C++ programmers as it implements a lot of useful data structures and algorithms.
 
-Again, if you're following the book or website then this will probably be covered. Otherwise, to get familiar with STL you can watch this:
-- [Complete C++ STL in 1 Video | Time Complexity and Notes](https://www.youtube.com/watch?v=RRVYpIET_RU) 
-OR read this:
-- [The Complete Practical Guide to C++ STL(Standard Template Library) | by Abhishek Rathore | Medium](https://abhiarrathore.medium.com/the-magic-of-c-stl-standard-template-library-e910f43379ea)
-
-(Taken from the CP roadmap). Rather than having an extensive knowledge it's important to be familiar with the available data structures and how to apply them since you'll need those quite often in software development.
+Again, if you're following the book or website then this will probably be covered. Otherwise, to get familiar with STL you can watch this [Complete C++ STL in 1 Video](https://www.youtube.com/watch?v=RRVYpIET_RU) or read [The Complete Practical Guide to C++ STL(Standard Template Library)](https://abhiarrathore.medium.com/the-magic-of-c-stl-standard-template-library-e910f43379ea).
+Rather than having an extensive knowledge it's important to be familiar with the available data structures and how to apply them since you'll need those quite often in software development.
 
 <div id='id-Concurrency'></div>
 ## Concurrency
@@ -111,9 +108,9 @@ This section deals with how to build compilers and interpreters. By the end of i
 The input to a compiler is the source code, which is simply a raw list of characters. This is too low level to make sense of so we first extract **tokens** from a raw string - this process is called **lexing/lexical analysis**.
 
 - [This chapter](https://craftinginterpreters.com/scanning.html) of the Crafting Interpreters book focuses on building a lexer for the Lox programming language implemented in the book.
-- [LLVM's Kaleidoscope tutorial on writing a lexer.](https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/LangImpl01.html)
-- This is a tutorial on writing a parser. The first part involves making a lexer: https://lisperator.net/pltut/parser/
-- [OPTIONAL]: A formal grammar is a way to describe the syntax (grammar) of a language. If discrete mathematics interests you, you can read about this here: https://suchanek.name/work/teaching/topics/formal-grammars/ 
+- [LLVM's Kaleidoscope tutorial](https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/LangImpl01.html) on writing a lexer.
+- [This tutorial](https://lisperator.net/pltut/parser/) on writing a parser involves making a lexer.
+- [Format Grammar](https://suchanek.name/work/teaching/topics/formal-grammars/): A formal grammar is a way to describe the syntax (grammar) of a language. Involves fair bit of discrete mathematics.
 
 <div id='id-Parsing'></div>
 ### Parsing
@@ -131,9 +128,9 @@ Try to make a mathematical expression parser which takes an input string such as
 Look into the [Shunting Yard algorithm](https://en.wikipedia.org/wiki/Shunting_yard_algorithm) and [Reverse Polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation). But since our goal is to make a compiler/interpreter, try doing it that way.
 
 <div id='id-VariablesConditionsandMore'></div>
+
 ### Variables, Conditions and More
-Now we'll move on to the more interesting stuff. But first, to get an idea of what the architecture of a compiler looks like and how you may go about designing one, read the top answer here:
-https://softwareengineering.stackexchange.com/questions/165543/how-to-write-a-very-basic-compiler
+Now we'll move on to the more interesting stuff. But first, to get an idea of what the architecture of a compiler looks like and how you may go about designing one, read the top answer [here](https://softwareengineering.stackexchange.com/questions/165543/how-to-write-a-very-basic-compiler)
 
 - [Crafting Interpreters](https://craftinginterpreters.com/): A great introductory book. It teaches most of the fundamental concepts that we've covered and eventually develops an interpreter for a toy programming language.
 
