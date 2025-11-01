@@ -1,7 +1,23 @@
 ---
-title: RL Guide
-
+layout: post
+title: "Reinforcement Learning Roadmap 🦝"
+date: 2025-11-01
+author: Pclub
+website: https://github.com/life-iitk
+category: Roadmap
+tags:
+  - roadmap
+  - rl
+  - reinforcement learning
+  - ml
+categories:
+  - roadmap
+hidden: true
+image:
+  url: /images/ml-roadmap/rl-roadmap.jpg
 ---
+
+
 
 # RL Guide
 Welcome to the Reinforcement Learning (RL) Roadmap with Programming Club IITK! Get ready for a hands on, curiosity driven deep dive into how intelligent agents learn to make decisions. This roadmap is crafted to provide you with both a solid theoretical basis and ample practical experience, tailored for newcomers and enthusiasts eager to build real RL intuition.
@@ -957,4 +973,6 @@ Here are advanced project suggestions for Week 3:
 * [OpenAI Gym](https://gymnasium.farama.org) - Standard environment suite for testing RL algorithms
 * [Stable Baselines3](https://stable-baselines3.readthedocs.io/en/master/) - High-quality implementations of modern RL algorithms
 
-
+**Contributors**
+- Harsh Malgatte \| +91 7385840159
+- Shreyansh Rastogi \| +91 7459094300
