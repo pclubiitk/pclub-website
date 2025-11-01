@@ -25,7 +25,7 @@ image:
      [Assignment 1 (a)](#id-Assignment1a)  
 #### [Managing Threads](#id-ManagingThreads)  
      [Assignment 1 (b)](#id-Assignment1b)  
-     [Excercise 1](#id-Excercise1)  
+     [Exercise 1](#id-Exercise1)  
      [Commentary on the solution](#id-Commentaryonthesolution)  
 #### [Sharing Data Between Threads](#id-SharingDataBetweenThreads)
      [Part 1](#id-Part1)  
@@ -33,13 +33,13 @@ image:
      [Assignment 1 (c)](#id-Assignment1c)  
      [Part 2](#id-Part2)  
      [Assignment 1 (d)](#id-Assignment1d)  
-     [Excercise 2 (Bank Account)](#id-Excercise2BankAccount)  
-     [Excercise 3 (Many Readers One Writer)](#id-Excercise3ManyReadersOneWriter)  
+     [Exercise 2 (Bank Account)](#id-Exercise2BankAccount)  
+     [Exercise 3 (Many Readers One Writer)](#id-Exercise3ManyReadersOneWriter)  
 #### [Synchronizing Concurrent Operations](#id-SynchronizingConcurrentOperations)
      [Part 1: Waiting using condition variables](#id-Part1Waitingusingconditionvariables)  
      [Assignment 1 (e)](#id-Assignment1e)  
-     [Part 2: Futures, Promises and Asynchronous Tasks](#id-Part2FuturesPromisesandAsynchronousTasks)  
-     [Excercise 4: Parallel Calculator](#id-Excercise4ParallelCalculator)  
+     [Part 2: Futures, Promises, and Asynchronous Tasks](#id-Part2FuturesPromisesandAsynchronousTasks)  
+     [Exercise 4: Parallel Calculator](#id-Exercise4ParallelCalculator)  
      [Assignment 1 (f)](#id-Assignment1f)  
      [Remarks](#id-Remarks)  
 #### [Concurrency and Parallelism in the Wider World](#id-ConcurrencyandParallelismintheWiderWorld)
@@ -52,13 +52,13 @@ image:
 <div id='id-ConcurrencyandParallelism'></div>
 # Concurrency and Parallelism
 
-The main resource we are following is **C++ Concurrency in Action** (Referred as CCIA) by Anthony Williams. It is expected, that after going through this guide in its entirety you will be able to look at new design patterns and concepts in concurrency and understand the "Why?"s of what is happening with a lot less friction. You'll learn the core knowledge required to design and build concurrent applications.
+The main resource we are following is **C++ Concurrency in Action** (referred as CCIA) by Anthony Williams. It is expected that after going through this guide in its entirety you will be able to look at new design patterns and concepts in concurrency and understand the "Why?"s of what is happening with a lot less friction. You'll learn the core knowledge required to design and build concurrent applications.
 
-IMPORTANT: If you think you are really stuck at a certain point, and not able to understand something, you are free to contact the person who wrote this guide!
+IMPORTANT: If you think you are really stuck at a certain point, and are not able to understand something, free to contact the person who wrote this guide!
 
 <div id='id-Whyconcurrency'></div>
 ## Why concurrency? 
-Nowadays, almost every system is multi-core, and exploiting the pre-existing compute is one of they key skills out there that one can learn.
+Nowadays, almost every system is multi-core, and exploiting the pre-existing compute power is one of the key skills out there that one can learn.
 
 One thing which catches everyone's attention is HFT, and this skill is very valuable to such firms. Gaming studios require it for building high performance game engines. In general, processing large amounts of data, or handling a lot of operations requires you to make your code more efficient, and utilise resources which it has available already.
 
@@ -66,16 +66,15 @@ One thing which catches everyone's attention is HFT, and this skill is very valu
 ## Why this guide?
 As it presently stands, you won't find any resource on the internet which follows such a pattern. And it isn't without reason. It is generally assumed that someone dealing with concurrency is already capable of designing applications by themselves, and mostly the focus is on design patterns and other choices. 
 
-As it presently stands, most resources on concurrency lack excercises, assuming the reader to be familiar with writing utilities and applications in C++. However, we are assuming the contrary. We assume that you know how to write basic applications, and have a decent idea about the STL. We focus on giving you sufficient code-examples, and a birdseye view of how concurrency is used in real utilities that you might use frequently.
+As it presently stands, most resources on concurrency lack exercises, assuming the reader to be familiar with writing utilities and applications in C++. However, we are assuming the contrary. We assume that you know how to write basic applications, and have a decent idea about the STL. We focus on giving you sufficient code-examples, and a birdseye view of how concurrency is used in real utilities that you might use frequently.
 
-> Although we recommend learning concurrency in C++, there is an exceptional resource by Anton Zhiyanov in Go language for learning concurrency (for experienced Go programmers), whose philosphy (of using examples) I have tried to replicate, alas, in a very limited fashion due to time and format restrictions. [Here](https://antonz.org/go-concurrency/) is the link if you wish to use it.
+> Although we recommend learning concurrency in C++, there is an exceptional resource by Anton Zhiyanov in Go language for learning concurrency (for experienced Go programmers), whose philosophy (of using examples) I have tried to replicate, alas, in a very limited fashion due to time and format restrictions. [Here](https://antonz.org/go-concurrency/) is the link if you wish to use it.
 
 <div id='id-Howtofollow'></div>
 ### How to follow?
-[//]: <> (TODO: Re-write or Remove)
 A pretty important pre-requisite is to be familiar with C++ to a certain degree. Whether you are familiar enough or not can be tested by Assignment 1 of this guide. If you are not, then here are some resources for learning C++ itself.
 
-If you got time on your hands and are interested in this stuff, read and do everything mentioned, if not more! If you wish to build a good understanding of multi-threading and concurrency, but a little bit short on time, and want to just understand how to use concurrency, skip the reading assignments marked optional, and if you somehow are even busier, then you may skip the project (not recommended though, this is they key aspect of the guide), but still, do all the other assignments. 
+If you got time on your hands and are interested in this stuff, read and do everything mentioned, if not more! If you wish to build a good understanding of multi-threading and concurrency, but a little bit short on time, and want to just understand how to use concurrency, skip the reading assignments marked optional, and if you somehow are even busier, then you may skip the project (not recommended though, as this is they the key aspect of the guide), but still, do all the other assignments. 
 
 Having established the "Why"s let us start!
 <div id='id-TheBasics'></div>
@@ -86,15 +85,15 @@ Having established the "Why"s let us start!
 - CCIA: Chapter 1, Sections 1.1 to 1.4. *Optional*: 1.3.
 
 <ins>Helpful Videos:</ins> 
-- [On Processes](https://www.youtube.com/watch?v=LDhoD4IVElk) (Can skip, not that relevant to concurrency, but you'll gain understanding on CPU instructions on a lower level)
+- [On Processes](https://www.youtube.com/watch?v=LDhoD4IVElk) (Can skip, not that relevant to concurrency, but you'll gain an understanding on CPU instructions on a lower level)
 - [Why Are Threads Needed in Single Core Processors](https://www.youtube.com/watch?v=M9HHWFp84f0)
 - [Threads on Multicore Processors](https://www.youtube.com/watch?v=5sw9XJokAqw) (Can skip, already explained nicely in reading assignment, watch if not clear) 
 
-Explores different methods of concurrency, single-threading and multi-threading, and discusses why should one use concurrency and establishes that the main motivation behind using it is either separation of concerns or performance. 
+This section explores different methods of concurrency, single-threading and multi-threading, and discusses why should one use concurrency and establishes that the main motivation behind using it is either separation of concerns or performance. 
 
-Here's an experiment you can try. Build and run the code in the [given file](https://github.com/sjais1337/concurrency/blob/master/tests/time_comparison.cpp). If you wish to look at the code, you may, but at this stage you don't have to, but essentially the task is to sum the first billion natural numbers, by using a simple for loop.
+Here's an experiment you can try. Build and run the code in the [given file](https://github.com/sjais1337/concurrency/blob/master/tests/time_comparison.cpp). If you wish to look at the code, you may, but at this stage you don't have to. But essentially the task is to sum the first billion natural numbers, by using a simple for loop.
 
-Considering that most of you will be having at most 16 threads, all even multiples of threads have been added till 16 so you can notice the pattern yourself! Once you run it, you'll find results similar to this (assuming you have a 16 threaded CPU, the results would be similar to mine, however try running it yourself). 
+Considering that most of you will be having at most 16 threads, all even multiples of threads have been added up to 16 so you can notice the pattern yourself! Once you run it, you'll find results similar to this (assuming you have a 16 threaded CPU, the results would be similar to mine, however try running it yourself). 
 
 ```
 Available threads 16
@@ -118,7 +117,7 @@ Available threads 16
 (1024 Threads) Average time over 15 runs: 115.011 ms
 (4096 Threads) Average time over 15 runs: 142.688 ms
 ```
-Can you infer why do you see the results that you see here?
+Can you infer why you see the results that you see here?
 
 <div id='id-Assignment1a'></div>
 ## Assignment 1 (a)
@@ -139,9 +138,9 @@ OPTIONS:
   -h, --help              Display this help message.
 ```
 
-Refer to our code [here](https://github.com/sjais1337/concurrency/blob/master/assignment1) if you face difficulties making it, but make sure you do not just copy-paste stuff.
+Refer to our code [here](https://github.com/sjais1337/concurrency/blob/master/assignment1) if you face difficulties, but make sure you do not just copy-paste stuff.
 
-For benchmarking our tool, we will need two separate data-sets, generated using this [utility_small](https://github.com/sjais1337/concurrency/blob/master/dataset/generator_small.cpp) which creates multiple small files, and [utility_large](https://github.com/sjais1337/concurrency/blob/master/dataset/generator_large.cpp). which creates multiple large files. This is to standardize the testing. Both the utilites use subsets of different lengths from 10,000 most used words on google dataset.
+For benchmarking our tool, we will need two separate data-sets, generated using this [utility_small](https://github.com/sjais1337/concurrency/blob/master/dataset/generator_small.cpp) which creates multiple small files, and [utility_large](https://github.com/sjais1337/concurrency/blob/master/dataset/generator_large.cpp) which creates multiple large files. This is to standardize the testing. Both the utilities use subsets of different lengths from the 10,000 most-used words on google dataset.
 
 Note: In case your computer has a weaker CPU, you may want to reduce the file size in the larger utility (by default, 8 files of size 500MB), and the number of files (I used 8, I suggest using less than 8 for reasons you'll understand later). 
 
@@ -152,7 +151,7 @@ Note: In case your computer has a weaker CPU, you may want to reduce the file si
 - CCIA: Sections 2.1.1 - 2.1.3 => [Using .join() practically](https://www.youtube.com/watch?v=wXBcwHwIt_I) => Section 2.1.4, 2.2, 2.3
  
 
-Joining threads is mostly for coordination, not necessirily parallelism or efficiency. There is a difference between referencing to a member function in a struct, and referencing to a free function. The name of a free-function decays to a pointer to the function, whereas the name of a member function does not strictly decay to it's pointer, since it is not well-defined without the object it is assosciated with, however `&` can be used to get the address of the member function.
+Joining threads is mostly for coordination, not necessarily parallelism or efficiency. There is a difference between referencing a member function in a struct, and referencing a free function. The name of a free-function decays to a pointer to the function, whereas the name of a member function does not strictly decay to it's pointer, since it is not well-defined without the object it is associated with, however `&` can be used to get the address of the member function.
 
 <div id='id-Assignment1b'></div>
 ## Assignment 1 (b)
@@ -201,31 +200,31 @@ However, there are a couple of problems with this. In one of my runs, the output
 --- Processed 2.txt in 506.959 ms. ---
 Finished processing files in 507.347 ms.
 ```
-Can you figure why is that? In the next chapter you'll learn about ways to fix this issue. 
+Can you figure out why? In the next chapter you'll learn about ways to fix this issue. 
 
 <ins>Reading/Watching Assignment:</ins> (In order as mentioned) 
 - CCIA: Section 2.4, 2.5
 
-Once done reading, and with the assignment, spend some time revising the listings, and make sure you understand things at least to a certain degree. The excercise given isn't tough, but uses every topic you have learnt till now, and will be a longer problem. I recommend you play around with the *Listings* in the book as the book suggests, which can be found [here](https://github.com/anthonywilliams/ccia_code_samples).
+Once done reading, and with the assignment, spend some time revising the listings, and make sure you understand things at least to a certain degree. The exercise given isn't tough, but uses every topic you have learnt till now, and will be a longer problem. I recommend you play around with the *Listings* in the book as the book suggests, which can be found [here](https://github.com/anthonywilliams/ccia_code_samples).
 
 
 [Solution](https://github.com/sjais1337/concurrency/tree/master/assignment1_b)
 
-<div id='id-Excercise1'></div>
-### Excercise 1
-A *Central Dispatcher* recieves a continuous stream of unique *Delivery Orders*. These orders cannot be duplicated. The Dispatcher sends the orders to another centre, let's say the *Post Office*. The Post Office is supposed to find (let's say create) an available *Driver* (thread basically), assign the order to the driver, and then return the driver back to the Central Dispatcher, and the driver is then added back to the ready-to-go fleet (the thread should be free after delivery). The drivers all work in parallel. 
+<div id='id-Exercise1'></div>
+### Exercise 1
+A *Central Dispatcher* receives a continuous stream of unique *Delivery Orders*. These orders cannot be duplicated. The Dispatcher sends the orders to another centre, let's say the *Post Office*. The Post Office is supposed to find (let's say create) an available *Driver* (thread basically), assign the order to the driver, and then return the driver back to the Central Dispatcher, and the driver is then added back to the ready-to-go fleet (the thread should be free after delivery). The drivers all work in parallel. 
 
 Upon finishing its work, each driver must return a one-line summary of their work in a central logbook, and it is written as soon as the driver finishes its work. You do not have to worry as of now about the conflicts between drivers when they are entering their work in the logbook. This is a known flaw, and you'll fix this in the next chapter.
 
 **Technical Requirements/Design Pattern**
 1. struct `DeliveryOrder` - Contains `order_id`, `destination` and a method `execute` which returns the log. You may simulate the work using any function you like, I suggest, you just let the program sleep for a few (random number of) milliseconds (google how to put a thread to sleep for this). The log can just return that the delivery was completed.  
-2. class `Driver` - This will be your thread manager, which manages a *single* thread. The driver should be moveable, but not copyable (unique_ptr). Implement the relevant safegaurds. The constructor takes the `DeliverOrder` and *reference* to `logBook`. You must directly invoke the `execute` method of `DeliveryOrder`. The destructor must also make sure that the thread has been properly shutdown. You should also make sure that your Driver object is moveable (this is a crucial part, think about what makes an object moveable, HINT: If a variable contains the Driver object, and you do `var = Driver(order, book)`, what is a necessary condition for this to go smoothly?)
+2. class `Driver` - This will be your thread manager, which manages a *single* thread. The driver should be movable, but not copyable (unique_ptr). Implement the relevant safeguards. The constructor takes the `DeliverOrder` and *reference* to `logBook`. You must directly invoke the `execute` method of `DeliveryOrder`. The destructor must also make sure that the thread has been properly shutdown. You should also make sure that your Driver object is movable (this is a crucial part, think about what makes an object movable, HINT: If a variable contains the Driver object, and you do `var = Driver(order, book)`, what is a necessary condition for this to go smoothly?)
 3. `create_driver` - Or `find_driver`. You do you. Helper function to create a driver, kinda optional.
 4. `main` (Dispatcher) - The logbook is a vector of `std::string`. The fleet of drivers should be in `std::vector<Driver>`. Use good practices to initiate these strings. Find the optimal number of drivers (section 2.4), or just hardcode it your choice. Create a loop to create and add the drivers to your vector. The `main` function should wait for all the tasks to be completed. After which, print the contents of the logbook.
 
-**BONUS**: As of now, the Driver is moveable, but you don't really use it's moving capability much. Try running your code without the Driver being moveable. Also, think of how you can put the moveability of it into practice.
+**BONUS**: As of now, the Driver is movable, but you don't really use it's moving capability much. Try running your code without the Driver being movable. Also, think of how you can put the moveability of it into practice.
 
-**Expected Output**: Depending on how you actually write your logs, it will look different. But the output should likely be different everytime you run it, and end with a `Segmentation fault (core dumped)` error. Think about why do you get the error that you get here, and fix the segmentation fault too. Here is the output in one of my runs.
+**Expected Output**: Depending on how you actually write your logs, it will look different. But the output should likely be different everytime you run it, and end with a `Segmentation fault (core dumped)` error. Think about why you get the error that you get here, and fix the segmentation fault too. Here is the output in one of my runs.
 
 ```
 Starting Program...
@@ -248,51 +247,51 @@ Creating driver for order Creating driver for order 7.
 Segmentation fault (core dumped)
 ```
 
-[Solution](https://github.com/sjais1337/concurrency/blob/master/excercises/excercise1.cpp)
+[Solution](https://github.com/sjais1337/concurrency/blob/master/exercises/exercise1.cpp)
 
 <div id='id-Commentaryonthesolution'></div>
 ### Commentary on the solution
-I'll start by saying, the reason for using random times is a surprise for you, for the later sections. Next, re-iterating the design choices. The driver class initializes the thread and has its destructor called upon whenever the class is going out of scope. To revise, first the main function reaches its closing brace, after which the `drivers` vector is being cleaned. Since each individual entry of the `drivers` vector is an instance of the `Driver` class, it's destructor is called, which joins the thread into the main function, causing it to wait for the completion of the thread. This kind of resource acquisiton pattern which handles the resource without you having to do anything is known as RAII (Resouce Acquisiton is Initialization). 
+I'll start by saying, the reason for using random times is a surprise for you in later sections. Next, reiterating the design choices. The driver class initializes the thread and has its destructor called upon whenever the class is going out of scope. To revise, first the main function reaches its closing brace, after which the `drivers` vector is being cleaned. Since each individual entry of the `drivers` vector is an instance of the `Driver` class, it's destructor is called, which joins the thread into the main function, causing it to wait for the completion of the thread. This kind of resource acquisition pattern that handles the resource without you having to do anything is known as RAII (Resouce Acquisition is Initialization). 
 
 > As a sidenote, anyone who has worked with rust before probably understands RAII already. Rust heavily utilises the RAII design pattern to manage memory, file handles, network connections and of course, threads. Rust also ensures that each resource has only a single owner, which makes it memory safe by default. These checks have to be added in C++ as and where needed (spoiler alert, they're not needed everywhere). 
 
-Next, we have made the threads (which in this case are `Drivers`) moveable, by defining `Driver(Driver&&)` (the move constructor) and deleting `Driver(const Driver&)` (the copy constructor). It is necessary to make them moveable, since a vector either needs the stored data type to be moveable or copyable by the standard, since during resizing, or invocation of methods like emplace_back, the data present in the vector needs to be moved, [CPP Ref](https://en.cppreference.com/w/cpp/named_req/MoveInsertable). Here are some videos for the constructors in case you are not familiar with them [Default Constructor](https://www.youtube.com/watch?v=FXhALMsHwEY), [(Wiki) Copy Constructor](http://en.wikipedia.org/wiki/Copy_constructor_(C%2B%2B)), and just look up the move constructor somewhere. 
+Next, we have made the threads (which in this case are `Drivers`) movable, by defining `Driver(Driver&&)` (the move constructor) and deleting `Driver(const Driver&)` (the copy constructor). It is necessary to make them movable, since a vector either needs the stored data type to be movable or copyable by the standard, since during resizing, or invocation of methods like emplace_back, the data present in the vector needs to be moved, [CPP Ref](https://en.cppreference.com/w/cpp/named_req/MoveInsertable). Here are some videos for the constructors in case you are not familiar with them [Default Constructor](https://www.youtube.com/watch?v=FXhALMsHwEY), [(Wiki) Copy Constructor](http://en.wikipedia.org/wiki/Copy_constructor_(C%2B%2B)), and just look up the move constructor somewhere. 
 
 Another important feature that we have used here are lambda function. People who have used Python before might find this familiar, although it is a tad bit more complicated than the one you possibly know from Python. Here is a video for [Lambdas](https://www.youtube.com/watch?v=mWgmBBz0y8c) and I would recommend going through the [CPP Ref](https://en.cppreference.com/w/cpp/language/lambda.html) for the same, (if you have not heard of function pointers before, it might be beneficial to watch this video before the one for lambdas, [Function Pointers](https://www.youtube.com/watch?v=p4sDgQ-jao4&)). It was not necessary to use lambdas in this particular problem, and it could have been done without lambdas too, which should be sufficiently easy to figure out, although there is something tricky going on with the `logbook` if you do it.   
 
-I mention about an optional design pattern, which is the use of the `friend` declaration. In the given scenario, the constructor itself has been made private! This means that you cannot call it from any given function. Only specific functions, which are a "friend" of the Class can call it's constructor, which in this case is `find_driver`. This kind of a design pattern is known as "Factory Patterns". This is completely optional for now, but is a interesting design pattern to know. The reason it has been used here is, it has the effect of verbosity, and keeps the program safe. The more important reason is that such patterns are very important in programs in which you are constantly delegating tasks to other functions to manage them safely, a strong example of which is a threadpool, which we will be exploring in later sections. Lastly, if you have any questions about the `make_unique` usage, just google it but it basically prevents memory leaks, and wraps the newly created object in a unique pointer.
+I mention an optional design pattern, which is the use of the `friend` declaration. In the given scenario, the constructor itself has been made private! This means that you cannot call it from any given function. Only specific functions, which are a "friend" of the Class can call its constructor, which in this case is `find_driver`. This kind of a design pattern is known as "Factory Patterns". This is completely optional for now, but is an interesting design pattern to know. The reason it has been used here is, it adds verbosity for clarity and keeps the program safe. The more important reason is that such patterns are very important in programs in which you are constantly delegating tasks to other functions to manage them safely, a strong example of which is a threadpool, which we will be exploring in later sections. Lastly, if you have any questions about the `make_unique` usage, just google it but it basically prevents memory leaks, and wraps the newly created object in a unique pointer.
 
 <div id='id-SharingDataBetweenThreads'></div>
 # Sharing Data Between Threads 
 
 <div id='id-Part1'></div>
 ## Part 1
-In this section we will start first by solving the race conditions you might have encountered in the previous sections. Later we will build up on the grep tool by developing more sophisticated logging tools.
+In this section we will start first by solving the race conditions you might have encountered in the previous sections. Later we will build upon the grep tool by developing more sophisticated logging tools.
 
 <ins>Reading/Watching Assignment (In Order): </ins>
-- [[YT] On Sharing of Data](https://www.youtube.com/watch?v=7ENFeb-J75k) => [Race Conditions Overview](https://www.baeldung.com/cs/race-conditions) => CCIA: Section 3.1 to 3.2.3 => [[YT] Mutexes on Low Level](https://www.youtube.com/watch?v=1tZhmTnk-vc) (Answers how multiple threads accessing a mutex isn't a race condition in itself) => [[YT] Data Race & Mutex (Optional)](https://www.youtube.com/watch?v=3ZxZPeXPaM4)
+- [[YT] On Sharing of Data](https://www.youtube.com/watch?v=7ENFeb-J75k) => [Race Conditions Overview](https://www.baeldung.com/cs/race-conditions) => CCIA: Section 3.1 to 3.2.3 => [[YT] Mutexes on Low Level](https://www.youtube.com/watch?v=1tZhmTnk-vc) (Answers how multiple threads accessing a mutex isn't itself a race condition) => [[YT] Data Race & Mutex (Optional)](https://www.youtube.com/watch?v=3ZxZPeXPaM4)
 
-The bug you must have encountered previously, while attempting the grep problem is also an example of a race condition, albeit not that severe. Notice how the bug isn't easily replicable. Similarly, the issue with the Dispatcher problem is another example of a race condition, with higher severity. The output you get in each of these programs feels essentially random, and irreproducible. This is one of the main reasons why is it so hard to diagnose race conditions and fix them. Thus you should always make sure that your data structures must have protection mechanisms, predominantly, _mutexes_, standing for mutually exclusive. 
+The bug you must have encountered previously, while attempting the grep problem is also an example of a race condition, albeit not that severe. Notice how the bug isn't easily reproducable. Similarly, the issue with the Dispatcher problem is another example of a race condition, with higher severity. The output you get in each of these programs feels essentially random, and irreproducible. This is one of the main reasons why it is so hard to diagnose race conditions and fix them. Thus you should always make sure that your data structures must have protection mechanisms, predominantly, _mutexes_(standing for mutually exclusive).
 
 <div id='id-MiniTaskFixforDispatcherProblem'></div>
 ### Mini Task (Fix for Dispatcher Problem)
-As you probably must have figured out in the earlier assignment that the `Segmentation Fault` originated from multiple threads trying to call `push_back` on the `logbook` vector simultaneously. Take appropriate steps to fix this. To do this, there are two possible paths you can explore. You can either create two mutexes, one for the output and one for the input, or create a single shared mutex. For this problem, you should do it using a shared mutex, and also explore the advantages/disadvantages of either approach.
+As you probably figured out in the earlier assignment that the `Segmentation Fault` originated from multiple threads trying to call `push_back` on the `logbook` vector simultaneously. Take appropriate steps to fix this. To do this, there are two possible paths you can explore. You can either create two mutexes, one for the output and one for the input, or create a single shared mutex. For this problem, you should do it using a shared mutex, and also explore the advantages/disadvantages of either approach.
 
-[Solution](https://github.com/sjais1337/concurrency/blob/master/excercises/excercise1_v2.cpp) 
+[Solution](https://github.com/sjais1337/concurrency/blob/master/exercises/exercise1_v2.cpp) 
 
 <div id='id-Assignment1c'></div>
 ## Assignment 1 (c)
 First you should do some preliminary tasks to get used to mutexes. 
 
-1. Fix Garbled Output: Create a shared mutex to protect the out stream, and use a lock gaurd to make the processed file message atomic.
-2. Data Aggregation: Implement the optional feature from earlier, i.e. count the total number of occurrences found accross all the files. Create a shared integer containing that number and also protect it using a mutex. While updating the total count across files, first lock the data thread, then before outputting the number of occurrences in the file processed, lock the output mutex. A thread should lock the mutex after processing a file, and add the count of the number of occurrences from a single file to the total count.
+1. Fix Garbled Output: Create a shared mutex to protect the out stream, and use a lock guard to make the processed file message atomic.
+2. Data Aggregation: Implement the optional feature from earlier, i.e. count the total number of occurrences found across all the files. Create a shared integer containing that number and protect it using a mutex. While updating the total count across files, first lock the data thread, then before outputting the number of occurrences in the file processed, lock the output mutex. A thread should lock the mutex after processing a file, and add the count of the number of occurrences from a single file to the total count.
 
-Now we will aim to demonstrate a new type of bug that can be created. We will do this by adding a "Status Reporting" feature. This feature will run in it's own thread, and periodically fire up reporting the total number of matches found thus far. This is particularly simple to do, and here's the outline of how you will have to do it.
+Now we will aim to demonstrate a new type of bug that can be created. We will do this by adding a "Status Reporting" feature. This feature will run in its own thread, and periodically fire up reporting the total number of matches found thus far. This is particularly simple to do, and here's the outline of how you will have to do it.
 
 1. Create a new thread in `main` which runs a status reporting loop.
 2. Inside of this loop, the thread should
     - Lock the mutex controlling the output stream to print a message which reports the progress.
-    - Lock the mutex controlling the number of matches, reading the `total_matches` andd printing its value.
+    - Lock the mutex controlling the number of matches, reading the `total_matches` and printing its value.
     - Sleep for 100ms.
   
 
@@ -308,36 +307,36 @@ You will notice that the program you have made sometimes runs to completion, but
 
 In this section, we will solve the deadlock problem faced in the previous part, solve some inefficiencies, only stopping for processes for which it is necessary to stop. For the status reporting from part 1, 
 
-As you must have figured out after reading about deadlocks, the reason that your program hangs in some iterations is because it enters a "Dead Lock", which occurs when two or more threads are blocked forever, each waiting for a resource held by another thread in the cycle. 
+As you must have figured out after reading about deadlocks, the reason that your program hangs in some iterations is because it enters a deadlock, which occurs when two or more threads are blocked forever, each waiting for a resource held by another thread in the cycle. 
 
-In our particular case, worker thread might lock the mutex gaurding the result, and then try to lock the outstream mutex, whereas the new status thread that is running might try to lock out the outstream mutex and lock the then lock the mutex gaurding the result. If the timing is right, both the threads are waiting for the other one and neither can proceed, freezing the program. This wouldn't happen if the order of locking the mutexes was same in both the threads.
+In our particular case, worker thread might lock the mutex guarding the result, and then try to lock the outstream mutex, whereas the new status thread that is running might try to lock out the outstream mutex and lock the then lock the mutex guarding the result. If the timing is right, both the threads are waiting for the other one and neither can proceed, freezing the program. This wouldn't happen if the order of locking the mutexes was the same in both the threads.
 
-Moreover, many threads access the `total_matches`, but the status reporting thread access it pretty frequently, atleast for large files which take multiple seconds to process. We used 100ms as the interval but if the interval was lesser, then the number of times it is accessed would also increase. A standard mutex prevents the status thread from reading the value from it if another thread is also reading it, which is one of the causes of bottleneck. This problem is solved by using a `shared_mutex`. Since for readers a lock doesn't matter, a shared lock allows multiple threads to acquire the shared lock simultaneously. 
+Moreover, many threads access the `total_matches`, but the status reporting thread access it pretty frequently, at least for large files which take multiple seconds to process. We used 100ms as the interval but if the interval was less then the number of times it is accessed would also increase. A standard mutex prevents the status thread from reading the value from it if another thread is also reading it, which is one of the causes of the bottleneck. This problem is solved by using a `shared_mutex`. Since for readers a lock doesn't matter, a shared lock allows multiple threads to acquire the shared lock simultaneously. 
 
 <div id='id-Assignment1d'></div>
 ## Assignment 1 (d)
-In this assignment we will simply fix the deadlock and create a thread safe logger.
+In this assignment we will simply fix the deadlock and create a thread-safe logger.
 1. Fixing the Deadlock: If you thought through the previous assignment thoroughly, and read the present section, one solution should be obvious, which is, to keep the order of locking consistent (I intentionally instructed you to do it otherwise). We are trying to move towards a decoupled IO and processing paradigm. We will implement a thread-safe Logger, which will handle its own mutex for the output, eliminating the need to maintain a separate mutex.
 2. Thread-Safe Logger: The Logger class centralizes the I/O. You should use `call_once`, so as the class is initiated just once even if multiple threads request it. Use an internal mutex, to prevent garbled output.
-3. Status Reporter: Since this just needs read access, and it need not be exclusive, a `shared_mutex` is perfect for this use case. Weigh out the difference between each of them.
+3. Status Reporter: Since this just needs read access, and it need not be exclusive, a `shared_mutex` is perfect for this use case. Weigh the difference between each of them.
 
 
 [Solution](https://github.com/sjais1337/concurrency/tree/master/assignment1_d)
-<div id='id-Excercise2BankAccount'></div>
-## Excercise 2 (Bank Account)
-A bank has multiple accounts. When making deposits and withdrawing money from a bank account, unsafe data structures can cause significant issues in keeping monetary accounts safe. In this excercise, you'll be simulating this exact scenario. You will model a `Account` class, and implement a `transfer` function. You will also have to implement thread safe methods for `withdraw` and `deposit` within the account class.
+<div id='id-Exercise2BankAccount'></div>
+## Exercise 2 (Bank Account)
+A bank has multiple accounts. When making deposits and withdrawing money from a bank account, unsafe data structures can cause significant issues in keeping monetary accounts safe. In this exercise, you'll be simulating this exact scenario. You will model an `Account` class, and implement a `transfer` function. You will also have to implement thread safe methods for `withdraw` and `deposit` within the account class.
 
 Although you are free to implement it however you like, here's a possible template which you can use to implement it, if you are unsure. However, regardless of how you do it, the `main` function should be implemented as mentioned.
 
 **Design Pattern**
 1. class `Account` - Should contain a balance, a mutex to protect the balance and thread safe methods `deposit` and `withdraw` to perform the mentioned, and a `checkBalance` method.
 2. function `transfer` - This function should lock both the accounts during transfer. You should decide the order of operations yourself. 
-3. function `main` - Create two `Account` instances `a` & `b`, and launch two threads. The first thread repeatedly transfers amount `10.0` from `a` to `b` and the second one does vice versa. 
+3. function `main` - Create two `Account` instances `a` & `b`, and launch two threads. The first thread repeatedly transfers an amount of `10.0` from `a` to `b` and the second one does the reverse. 
 
-If you are able to implement thread-safe methods which run clearly without fail, then well and good. Otherwise, try to fix the bugs in the partial solution given in the GitHub repository.
-<div id='id-Excercise3ManyReadersOneWriter'></div>
-## Excercise 3 (Many Readers One Writer)
-This problem mostly mirrors the grep tool in some sense. This excercise is to build a settings manager, which will load stuff from a configuration file and follow a pretty similar chain of events, i.e. load settings, read settings and update settings. I suppose you can see the parallel clearly.
+If you are able to implement thread-safe methods which run clearly without fail, then that's well and good. Otherwise, try to fix the bugs in the partial solution given in the GitHub repository.
+<div id='id-Exercise3ManyReadersOneWriter'></div>
+## Exercise 3 (Many Readers One Writer)
+This problem mostly mirrors the grep tool in some sense. This exercise is to build a settings manager, which will load stuff from a configuration file and follow a pretty similar chain of events, i.e. load settings, read settings and update settings. I suppose you can see the parallel clearly.
 
 **Design Pattern**
 1. class `Settings` - It should contain a `map<string, string>`, should be protected by an appropriate mutex, and handle one-time initialization. It should implement the following member functions:
@@ -348,10 +347,10 @@ This problem mostly mirrors the grep tool in some sense. This excercise is to bu
 
 **BONUS:** Although this will suffice for most operations, in large applications you want to squeeze out the most degree of parallelism you can. While a thread is reading, the writer thread will be blocked. The amount of time a lock is being held can be reduced pretty heavily. Figure out the order of operations which minimizes this time, and implement it. Even better if you can test this!
 
-No solution is provided for this excercise in the GitHub repo due to its simplicity. 
+No solution is provided for this exercise in the GitHub repo due to its simplicity. 
 <div id='id-SynchronizingConcurrentOperations'></div>
 # Synchronizing Concurrent Operations
-So far our operations have been really simple. If you watched the Computerphile video on Multithreading Code, we basically have just covered what they explained in that single video. Gaurding a resource using a lock, and unlocking it when necessary. In it's essence, that's what it is all about. Just gaurding data. But our interactions have been really simple. This section introduces the tools required for more sophisticated coordination, such as waiting for specific conditions and getting back results from background tasks.
+So far our operations have been really simple. If you watched the Computerphile video on Multithreading Code, we basically have just covered what they explained in that single video. Guarding a resource using a lock, and unlocking it when necessary. In it's essence, that's what it is all about. Just guarding data. But our interactions have been really simple. This section introduces the tools required for more sophisticated coordination, such as waiting for specific conditions and getting back results from background tasks.
 
 <div id='id-Part1Waitingusingconditionvariables'></div>
 ## Part 1: Waiting using condition variables
@@ -365,7 +364,7 @@ If one thread needs to wait for another thread to complete a specific task, then
 ## Assignment 1 (e)
 So far in our `grep` tool, every worker is responsible for printing its results directly to the console, even though the thread-safe logger manages the mutexes, there still remains a performance bottleneck. Writing to I/O stream is a slow operation, and while writing holds locks preventing other threads from doing anything. 
 
-We will now decouple the file processing from the logging completely. In our producer consumer pattern, the worker threads will be producers which find matches and put them into a shared work queue. Another thread, which is the consumer thread will then pull the results from this shared work queue, handling the outputs. This implies we never have to wait for the console.
+We will now decouple the file processing from the logging completely. In our producer consumer pattern, the worker threads will be producers that which find matches and put them into a shared work queue. Another thread, which is the consumer thread will then pull the results from this shared work queue, handling the outputs. This implies we never have to wait for the console.
 
 This is a significant change in design patterns, thus we will ditch the entirety of our previous code, and work with new one from now. The last part of the grep tool, that is Assignment 1 (f), which is your capstone project, shall be built on top of this one.
 
@@ -382,9 +381,9 @@ This is a significant change in design patterns, thus we will ditch the entirety
 
 Asynchronous tasks are a more modern way of handling concurrency, by just communicating that this task needs to be done, and getting the result back when it is finished. This is a higher-level way to handle these scenarios using futures and promises, almost like the future is a receipt and you've been made a promise by someone that they'll eventually deliver the product you have the receipt for.
 
-<div id='id-Excercise4ParallelCalculator'></div>
-## Excercise 4: Parallel Calculator
-Before attempting the final assignment, it is highly recommended to attempt this excercise. This is a simple task to get acquainted with `std::async`, `std::promise`, `std::future`.
+<div id='id-Exercise4ParallelCalculator'></div>
+## Exercise 4: Parallel Calculator
+Before attempting the final assignment, it is highly recommended to attempt this exercise. This is a simple task to get acquainted with `std::async`, `std::promise`, `std::future`.
 
 **Part A**
 Write a simple function, say `square` which takes in the input, sleeps for 1 second and then returns the square of the input. In the `main` function, create a `vector<future<int>>`. Fill it with 5 future vectors by using `async(square, i)`. After launching, create another loop to iterate over the futures, and call `.get()` to get the result and add it to a total. Use `chrono` to time your operations.
@@ -392,7 +391,7 @@ Write a simple function, say `square` which takes in the input, sleeps for 1 sec
 **Part B**
 Create a new function, say `promise_worker(promise<int> p, int input)`, in which if the input is negative, don't allow it, else perform a calculation, and use `p.set_value()` with the result. In the main function, create a `promise<int>`, get it's future, launch a thread with the worker, and pass in the promise (focus!). 
 
-No solution is being provided for this excercise either, since it is pretty fundamental, and should be doable.
+No solution is being provided for this exercise either, since it is pretty fundamental, and should be doable.
 
 <div id='id-Assignment1f'></div>
 ## Assignment 1 (f)
@@ -402,11 +401,18 @@ The goal of this task is to parallelize the search within a single large file. I
 > Notice a subtlety here. The word chunks you generate by just splicing texts might split exactly at the boundary of some word. Moreover, what happens when you are searching for non-alphanumeric characters. How would you handle this splitting issue for those? 
 2. `worker` - since we are dealing with very large files here, splicing the text into multiple chunks and storing them would require just as much space in memory as the file itself, which might not be possible.
 
+<div id='id-BeyondLocks'></div>
+## Beyond Locks
+
+This guide has focused on lock-based concurrency (using `std::mutex`, `std::shared_mutex`, etc.). This is the most common, robust, and safest way to handle complex data structures. However, for simple, individual variables (like a counter, a flag, or a pointer), using a mutex is often heavyweight, causing unnecessary thread contention.
+
+For these specific cases, C++ provides `std::atomic<T>`. An atomic variable guarantees that its operations (like `load()`, `store()`, `fetch_add()`) are "atomic"—they cannot be torn apart by the CPU and will be completed indivisibly without being interrupted by another thread. This allows for lock-free programming, which can be significantly faster in high-performance scenarios (like in drivers, game engines, or HFT systems) because it avoids the kernel-level overhead of a mutex.
+
 <div id='id-Remarks'></div>
 ### Remarks
-This marks the end of concurrency and parallelism in C++. Although this covers a significant portion of the basics of concurrency, this is not where it ends. If you notice CCIA, then we are basically ending on the 4th chapter itself. However, if you want to continue with the book further, I'll just link one talk ([C++ atomics, from basic to advanced. What do they really do](https://www.youtube.com/watch?v=ZQFzMfHIxng)) which can possibly help you atleast push a bit further. Further iterations of this guide in the near future will extend it to more advanced and specialised portions of the text which are deemed viable to be put in a guide-like format, and those which will benefit from assignments and excercises. 
+This marks the end of concurrency and parallelism in C++. Although this covers a significant portion of the basics of concurrency, this is not where it ends. If you notice CCIA, then we are basically ending on the 4th chapter itself. However, if you want to continue with the book further, I'll just link one talk ([C++ atomics, from basic to advanced. What do they really do](https://www.youtube.com/watch?v=ZQFzMfHIxng)) which can possibly help you atleast push a bit further. Further iterations of this guide in the near future will extend it to more advanced and specialised portions of the text which are deemed viable to be put in a guide-like format, and those which will benefit from assignments and exercises. 
 
-Having learnt parallelism and concurrency to a decent level, you might want to challenge yourself. After all, these assignments and excercises in this chapter were based completely on the basics, and barely required thinking yourself. If you do want to take on some challenge, then I recommend you solve some problems from the book [The Modern C++ Challenge](https://github.com/PacktPublishing/The-Modern-Cpp-Challenge), which have some good problems on concurrency for you to explore.  The following sections aim to explore how concurrency and parallelism is managed in other lanuages, and how is it different from what you have learnt in C++ (although the present iterations just has Python). 
+Having learnt parallelism and concurrency to a decent level, you might want to challenge yourself. After all, these assignments and exercises in this chapter were based completely on the basics, and barely required thinking yourself. If you do want to take on some challenge, then I recommend you solve some problems from the book [The Modern C++ Challenge](https://github.com/PacktPublishing/The-Modern-Cpp-Challenge), which have some good problems on concurrency for you to explore.  The following sections aim to explore how concurrency and parallelism is managed in other languages, and how is it different from what you have learnt in C++ (although the present iterations just has Python). 
 
 I strongly encourage you to keep reading the text, watch conferences from CppCon, and most importantly build projects which require you to think, not just in terms of concurrency but overall.
 
@@ -473,3 +479,4 @@ The dominant frameworks as of now for GPGPU are NVIDIA's CUDA and OpenCL. If you
 **Contributors**
 
 - Shivansh Jaiswal \| +91 9971104638
+- Austin Shijo \| +91 8946061070
