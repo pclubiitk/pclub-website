@@ -710,6 +710,6 @@ some tools and extra stuff I personally used/know
 **Contributors**
 
 - Anany Rai \| +91 9870401439
-- Arnab Dutta \| +91 900775913
+- Arnab Datta \| +91 900775913
 
 

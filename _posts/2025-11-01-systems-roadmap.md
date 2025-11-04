@@ -320,4 +320,4 @@ Unix Network Programming, Volume 1: The Sockets Networking API by W. Richard Ste
 
 - Austin Shijo \| +91 8946061070
 - Shivansh Jaiswal \| +91 9971104638
-- Sujal Satish Montangi \| +91 7349439500
+- Sujal Satish Motagi \| +91 7349439500
