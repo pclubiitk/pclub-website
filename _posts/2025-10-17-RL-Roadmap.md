@@ -34,53 +34,50 @@ Welcome to the Reinforcement Learning (RL) Roadmap with Programming Club IITK! G
 
 No matter which week you’re in, don’t hesitate to experiment! Document your learning, reflect frequently, and seek deeper understanding rather than shortcuts. Happy learning!
 
-## Contents of the Guide
+## Table of Contents
 
-<details>
-<summary> <strong>Week 1: The Foundations - Bandits and Basic RL</strong></summary>
+####� [Week 1: The Foundations — Bandits and Basic RL](#id-Week1)
 
-* **Day 1:** [Introduction to Reinforcement Learning](#week1-day1)
-* **Day 2:** [The Multi-Armed Bandit Problem - Learning from Choices](#week1-day2)
-* **Day 3:** [Action-Value Methods & ε-Greedy Exploration](#week1-day3)
-* **Day 4:** [Advanced Action Selection: UCB & Optimistic Initialization](#week1-day4)
-* **Day 5:** [Gradient Bandit Algorithms](#week1-day5)
-* **Day 6:** [Contextual Bandits](#week1-day6)
+&nbsp;&nbsp;&nbsp;&nbsp; 👾�[Day 1: Introduction to Reinforcement Learning](#id-Week1-Day1)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾�[Day 2: The Multi-Armed Bandit Problem — Learning from Choices](#id-Week1-Day2)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 3: Action-Value Methods & ε-Greedy Exploration](#id-Week1-Day3)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 4: Advanced Action Selection — UCB & Optimistic Initialization](#id-Week1-Day4)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 5: Gradient Bandit Algorithms](#id-Week1-Day5)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 6: Contextual Bandits](#id-Week1-Day6)  
 
-</details>
+---
 
-<details>
-<summary> <strong>Week 2: From Bandits to Full reinforecement  learning</strong></summary>
+####� [Week 2: From Bandits to Full Reinforcement Learning](#id-Week2)
 
-* **Day 1:** [Markov Decision Processes (MDPs) & Bellman Equations](#week2-day1)
-* **Day 2:** [Dynamic Programming](#week2-day2)
-* **Day 3:** [Monte Carlo Methods: Learning from Episodes](#week2-day3)
-* **Day 4:** [Temporal-Difference Learning](#week2-day4)
-* **Day 5:** [Comparing DP, MC, and TD Methods](#week2-day5)
-* **Day 6:** [Mini-Project 1: Solving a Gridworld](#week2-day6)
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 1: Markov Decision Processes (MDPs) & Bellman Equations](#id-Week2-Day1)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 2: Dynamic Programming](#id-Week2-Day2)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 3: Monte Carlo Methods — Learning from Episodes](#id-Week2-Day3)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 4: Temporal-Difference Learning](#id-Week2-Day4)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 5: Comparing DP, MC, and TD Methods](#id-Week2-Day5)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 6: Mini-Project 1 — Solving a Gridworld](#id-Week2-Day6)  
 
-</details>
+---
 
-<details><summary> <strong>Week 3: Model Free Methods</strong></summary>
-	
-* Day 1: [Q-Learning Deep Dive](#week3-day1)
-* Day 2: [SARSA vs Q-Learning](#week3-day2)
-* Day 3: [Policy Gradient Methods](#week3-day3)
-* Day 4: [Actor-Critic Basics](#week3-day4)
-* Day 5: [Hyperparameter Tuning](#week3-day5)
-* Day 6: [Linear Function Approximation](#week3-day6)
-	
-</details>
+####  [Week 3: Model-Free Methods](#id-Week3)
 
-<details><summary> <strong>Week 4: Deep RL and Advanced Algorithms</strong></summary>
+&nbsp;&nbsp;&nbsp;&nbsp; 👾�[Day 1: Q-Learning Deep Dive](#id-Week3-Day1)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 2: SARSA vs Q-Learning](#id-Week3-Day2)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 3: Policy Gradient Methods](#id-Week3-Day3)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 4: Actor-Critic Basics](#id-Week3-Day4)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 5: Hyperparameter Tuning](#id-Week3-Day5)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾�[Day 6: Linear Function Approximation](#id-Week3-Day6)  
 
-* Day 1: [Deep Q-Networks (DQN)](#week4-day1)
-* Day 2: [DQN Improvements](#week4-day2)
-* Day 3: [Policy Optimization](#week4-day3)
-* Day 4: [Continuous Action Spaces](#week4-day4)
-* Day 5: [Exploration Strategies](#week4-day5)
-* Day 6: [Mini Project](#week4-day6)
-	
-</details>
+---
+
+####  [Week 4: Deep RL and Advanced Algorithms](#id-Week4)
+
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 1: Deep Q-Networks (DQN)](#id-Week4-Day1)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 2: DQN Improvements](#id-Week4-Day2)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 3: Policy Optimization](#id-Week4-Day3)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 4: Continuous Action Spaces](#id-Week4-Day4)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾�[Day 5: Exploration Strategies](#id-Week4-Day5)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 6: Mini Project](#id-Week4-Day6)  
+
 
 
 
