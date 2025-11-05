@@ -36,10 +36,10 @@ No matter which week you’re in, don’t hesitate to experiment! Document your 
 
 ## Table of Contents
 
-####� [Week 1: The Foundations — Bandits and Basic RL](#id-Week1)
+#### [Week 1: The Foundations — Bandits and Basic RL](#id-Week1)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾�[Day 1: Introduction to Reinforcement Learning](#id-Week1-Day1)  
-&nbsp;&nbsp;&nbsp;&nbsp; 👾�[Day 2: The Multi-Armed Bandit Problem — Learning from Choices](#id-Week1-Day2)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 1: Introduction to Reinforcement Learning](#id-Week1-Day1)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 2: The Multi-Armed Bandit Problem — Learning from Choices](#id-Week1-Day2)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 3: Action-Value Methods & ε-Greedy Exploration](#id-Week1-Day3)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 4: Advanced Action Selection — UCB & Optimistic Initialization](#id-Week1-Day4)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 5: Gradient Bandit Algorithms](#id-Week1-Day5)  
@@ -47,7 +47,7 @@ No matter which week you’re in, don’t hesitate to experiment! Document your 
 
 ---
 
-####� [Week 2: From Bandits to Full Reinforcement Learning](#id-Week2)
+#### [Week 2: From Bandits to Full Reinforcement Learning](#id-Week2)
 
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 1: Markov Decision Processes (MDPs) & Bellman Equations](#id-Week2-Day1)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 2: Dynamic Programming](#id-Week2-Day2)  
@@ -60,12 +60,12 @@ No matter which week you’re in, don’t hesitate to experiment! Document your 
 
 ####  [Week 3: Model-Free Methods](#id-Week3)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾�[Day 1: Q-Learning Deep Dive](#id-Week3-Day1)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 1: Q-Learning Deep Dive](#id-Week3-Day1)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 2: SARSA vs Q-Learning](#id-Week3-Day2)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 3: Policy Gradient Methods](#id-Week3-Day3)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 4: Actor-Critic Basics](#id-Week3-Day4)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 5: Hyperparameter Tuning](#id-Week3-Day5)  
-&nbsp;&nbsp;&nbsp;&nbsp; 👾�[Day 6: Linear Function Approximation](#id-Week3-Day6)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 6: Linear Function Approximation](#id-Week3-Day6)  
 
 ---
 
@@ -75,7 +75,7 @@ No matter which week you’re in, don’t hesitate to experiment! Document your 
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 2: DQN Improvements](#id-Week4-Day2)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 3: Policy Optimization](#id-Week4-Day3)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 4: Continuous Action Spaces](#id-Week4-Day4)  
-&nbsp;&nbsp;&nbsp;&nbsp; 👾�[Day 5: Exploration Strategies](#id-Week4-Day5)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 5: Exploration Strategies](#id-Week4-Day5)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 6: Mini Project](#id-Week4-Day6)  
 
 
