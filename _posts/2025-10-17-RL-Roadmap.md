@@ -426,15 +426,15 @@ Instead of waiting for the final return $G_t$, TD updates its estimate $V(S_t)$ 
 
 * **The TD Error ($\delta_t$):** The learning signal in TD is the difference between the TD target and our current estimate.
   
-    $$
-    \delta_t = R_{t+1} + \gamma V(S_{t+1}) - V(S_t)
-    $$
+  $$
+  \delta_t = R_{t+1} + \gamma V(S_{t+1}) - V(S_t)
+  $$
   
-    The **TD(0)** update rule uses this error to nudge the value of the current state:
+  The **TD(0)** update rule uses this error to nudge the value of the current state:
   
-    $$
-    V(S_t) \leftarrow V(S_t) + \alpha \cdot \delta_t
-    $$
+  $$
+  V(S_t) \leftarrow V(S_t) + \alpha \cdot \delta_t
+  $$
 
 This allows the agent to learn from every single step.
 
