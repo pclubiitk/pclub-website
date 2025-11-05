@@ -83,10 +83,10 @@ No matter which week you’re in, don’t hesitate to experiment! Document your 
 
 
 
-<a id = "id-week1"></a>
+<a id = "id-Week1"></a>
 # 🦝 Week 1: RL Basics and Bandits
 
-<a id="week1-day1"></a>
+<a id="id-Week1-Day1"></a>
 ### Day 1: Introduction to Reinforcement Learning
 The idea that we learn by interacting with the world around us feels obvious. Think about an infant exploring its surroundings, reaching out, touching things, making sounds. No one is explicitly teaching every action, yet the child learns cause and effect. Some actions bring smiles and attention, while others bring discomfort or no response. Through these interactions, the child figures out what works to achieve certain goals.
 
@@ -131,7 +131,7 @@ Finally, if you want a solid reference to guide you throughout your learning jou
 
 ***
 
-<a id="week1-day2"></a>
+<a id="id-Week1-Day2"></a>
 ### Day 2: The Multi-Armed Bandit Problem - Learning from Choices 
 
 Imagine you walk into a casino with 10 slot machines lined up. Each one hides an unknown probability of giving you a payout. You have only 100 coins. Every pull of a lever costs one coin.
@@ -161,7 +161,7 @@ For a deeper read (just the intuition and examples, no need to worry about math 
 
 ***
 
-<a id="week1-day3"></a>
+<a id="id-Week1-Day3"></a>
 ### Day 3: Action-Value Methods & ε-Greedy Exploration
 Imagine you’re playing a new game, and you’re not sure which moves score the most points. How do you figure it out? 
 For that, we’ll explore methods for estimating action values and using them to choose actions intelligently.
@@ -226,7 +226,7 @@ $$
 
 ***
 
-<a id="week1-day4"></a>
+<a id="id-Week1-Day4"></a>
 ### Day 4: Advanced Action Selection
 
 The exploration in ε-greedy is "blind." It wastes time trying obviously suboptimal arms and can't prioritize actions that are promising but uncertain. Today, we'll explore smarter ways to explore.
@@ -255,7 +255,7 @@ The square root term is an "uncertainty bonus." It's large for actions that have
 
 ***
 
-<a id="week1-day5"></a>
+<a id="id-Week1-Day5"></a>
 ### Day 5: Gradient Bandit Algorithms
 
 So far, we've focused on methods that estimate the *value* of actions. But what if we could learn a *preference* for each action directly? This shifts us from action-value methods to **policy-based methods**, where we learn a parameterized policy directly.
@@ -281,7 +281,7 @@ Here, $\overline{R}_t$ is the **average of all rewards** up to time $t$, which s
 
 ***
 
-<a id="week1-day6"></a>
+<a id="id-Week1-Day6"></a>
 ### Day 6: Contextual Bandits
 
 We've only considered **nonassociative tasks**, where we try to find the single best action overall. But what if the best action depends on the situation?This is the **contextual bandit** problem, a crucial step toward the full reinforcement learning problem.
