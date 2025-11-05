@@ -837,28 +837,25 @@ Agents like DDPG and TD3 are great at executing a known strategy, but without a 
 **Classic Exploration Strategies (for Discrete Actions):**
 These methods are foundational and work best in environments with a limited set of distinct actions (like "left," "right," "up," "down").
 
-* **ε-Greedy (Epsilon-Greedy)**
-  With probability ε, the agent chooses a random action (explores). With probability 1-ε, it chooses the best-known action (exploits).
-  
+* **ε-Greedy (Epsilon-Greedy)**  
+  With probability ε, the agent chooses a random action (explores). With probability 1−ε, it chooses the best-known action (exploits).
+
   **Reading:**
-  
   * [Optimizing Decision-Making in AI: Fine-Tuning the Epsilon-Greedy Algorithm for Enhanced Performance](https://medium.com/operations-research-bit/optimizing-decision-making-in-ai-fine-tuning-the-epsilon-greedy-algorithm-for-enhanced-performance-ea61e86d6f1d)
-  * [ Epsilon greedy algorithm](https://www.youtube.com/watch?v=EjYEsbg95x0)
-<br>
-* **Softmax (Boltzmann) Exploration**
+  * [Epsilon greedy algorithm](https://www.youtube.com/watch?v=EjYEsbg95x0)
+
+* **Softmax (Boltzmann) Exploration**  
   Actions are chosen based on a probability distribution derived from their Q-values. Higher-value actions have a higher probability of being selected, but no action has a zero probability. A "temperature" parameter controls the randomness: high temperatures lead to more random choices (more exploration), while low temperatures make the agent greedier.
-  
+
   **Reading:**
-  
   * [Boltzmann Exploration Done Right](https://proceedings.neurips.cc/paper_files/paper/2017/file/b299ad862b6f12cb57679f0538eca514-Paper.pdf)
   * [What is softmax action selection in RL?](https://zilliz.com/ai-faq/what-is-softmax-action-selection-in-rl)
   * [An Alternative Softmax Operator for Reinforcement Learning](https://www.youtube.com/watch?v=wVBQGKMX974)
- <br>
-* **Upper Confidence Bound (UCB)**
+
+* **Upper Confidence Bound (UCB)**  
   This strategy chooses actions based on both their estimated reward and the uncertainty of that estimate. It adds a "bonus" to actions that haven't been tried often, making them more attractive. The core formula balances the average reward with an exploration term that shrinks as an action is selected more frequently.
-  
+
   **Reading:**
-  
   * [Know all About Upper Confidence Bound Algorithm in Reinforcement Learning](https://www.turing.com/kb/guide-on-upper-confidence-bound-algorithm-in-reinforced-learning)
   * [Upper Confidence Bound UCB Algorithm](https://www.youtube.com/watch?v=s6UHInwoqb0)
  
