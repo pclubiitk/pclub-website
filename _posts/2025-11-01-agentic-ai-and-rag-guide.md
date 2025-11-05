@@ -14,7 +14,7 @@ categories:
   - roadmap
 hidden: true
 image:
-  url: /images/agentic-ai-and-rag-guide/agentic.png
+  url: /images/agentic-ai-and-rag-guide/agentic.jpg
 ---
 
 # Guide: RAG & Agentic AI
@@ -33,19 +33,20 @@ By the end, you'll see how RAG and agents can be combined into Agentic RAG, wher
 
 | Module | Topic |
 |:---:|---|
-| **1** | **Foundations: Why Retrieval-Augmented Generation (RAG)?** |
-| **2** | **The RAG Pipeline: A Step-by-Step Breakdown** |
-| **3** | **Advanced RAG Architectures & Techniques** |
-| **4** | **The Next Leap: Introduction to Agentic AI** |
-| **5** | **The Anatomy of an AI Agent (Brain, Tools, Memory)** |
-| **6** | **How Agents Think, Reason, and Act** |
-| **7** | **Tools Deep Dive: The Mechanics of Function Calling** |
-| **8** | **Advanced Memory Systems & Implementation** |
-| **9** | **Agentic RAG: Giving Your Agent Expert Knowledge** |
-| **10**| **Evaluation, Production Deployment & Safety** |
+| **1** | **[Foundations: Why Retrieval-Augmented Generation (RAG)?](#id-1)** |
+| **2** | **[The RAG Pipeline: A Step-by-Step Breakdown](#id-2)** |
+| **3** | **[Advanced RAG Architectures & Techniques](#id-3)** |
+| **4** | **[The Next Leap: Introduction to Agentic AI](#id-4)** |
+| **5** | **[The Anatomy of an AI Agent (Brain, Tools, Memory)](#id-5)** |
+| **6** | **[How Agents Think, Reason, and Act](#id-6)** |
+| **7** | **[Tools Deep Dive: The Mechanics of Function Calling](#id-7)** |
+| **8** | **[Advanced Memory Systems & Implementation](#id-8)** |
+| **9** | **[Agentic RAG: Giving Your Agent Expert Knowledge](#id-9)** |
+| **10**| **[Evaluation, Production Deployment & Safety](#id-10)** |
 
 -----
 
+<div id='id-1'/>
 ## **Module 1: Foundations: Why Retrieval-Augmented Generation (RAG)?**
 
 ### **The Problem: The LLM's "Snapshot" Memory**
@@ -75,6 +76,7 @@ This architecture allows the LLM to access domain-specific, private, and real-ti
 
 -----
 
+<div id='id-2'/>
 ## **Module 2: The RAG Pipeline: A Step-by-Step Breakdown**
 
 Now that we understand *why* RAG is necessary, let's dissect the process to understand how it's implemented. The entire workflow, from raw documents to a final answer, can be visualized as a two-stage process: an offline "Indexing" stage and an online "Retrieval & Generation" stage.
@@ -108,6 +110,7 @@ Finally, we combine the retrieved text chunks with the original query to create 
 
 -----
 
+<div id='id-3'/>
 ## **Module 3: Advanced RAG Architectures & Techniques**
 
 While the basic RAG pipeline works, it isn't always enough. Real-world data is messy and user queries can be vague. The following diagram provides a summary of various optimization techniques used to build more robust systems.
@@ -161,6 +164,7 @@ graph TD
 
 -----
 
+<div id='id-4'/>
 ## **Module 4: The Next Leap: Introduction to Agentic AI**
 
 We've established that RAG gives LLMs access to external knowledge. However, the AI is still a passive conversationalist. It can *tell* you the weather based on a document, but it can't *check the live weather forecast* or *book you a ride* if it's raining.
@@ -187,6 +191,7 @@ Every true AI agent is defined by a set of core capabilities that enable its aut
 
 -----
 
+<div id='id-5'/>
 ## **Module 5: The Anatomy of an AI Agent (Brain, Tools, Memory)**
 
 An agent is a system composed of several components. Thinking of it as having a brain, hands, and memory is useful.
@@ -221,6 +226,7 @@ We will explore how to build and manage these memory systems in detail in Module
 
 -----
 
+<div id='id-6'/>
 ## **Module 6: How Agents Think, Reason, and Act**
 
 Understanding how agents reason is crucial to building effective systems. Agents use various reasoning patterns, from simple step-by-step thinking to complex collaborative problem-solving. Each pattern serves different purposes and can be combined for sophisticated cognitive architectures.
@@ -398,6 +404,7 @@ Learning: "For future calls to this tool, I will always convert relative dates i
 
 -----
 
+<div id='id-7'/>
 ## **Module 7: Tools Deep Dive: The Mechanics of Function Calling**
 
 Now that we understand how agents reason, let's explore the core mechanism that allows them to act: **Tools**. Before an agent can use a tool, it needs a "user manual." An LLM can't read Python code directly, so we must provide it with a clear, structured description of what a tool does, what inputs it needs, and what format to use. This process is called **Function Calling** or **Tool Use**.
@@ -481,11 +488,11 @@ The Agent Runtime sees the tool call, parses it, and calls the actual `get_weath
 
 While you can build this system from scratch, most developers use a framework to handle the complexities of schema generation, prompt management, and response parsing.
 
-| Framework | Tool Definition | Pros | Cons | 
+| Framework | Tool Definition | Pros | Cons |
 |---|---|---|---|
 | **OpenAI Function Calling**| JSON schema in API call | Fast, reliable, native | Vendor lock-in |
 | **LangChain Tools** | Python decorators (`@tool`)| Easy, framework-agnostic, many pre-builts | Extra abstraction layer |
-| **Anthropic Tool Use** | XML-based schema | Structured output | Limited model support | Claude-based applications |
+| **Anthropic Tool Use** | XML-based schema | Structured output | Limited model support |
 | **Custom Implementation** | Manual prompt engineering | Full control | More development work |
 
 ### **Assignment: Build Your First Agent**
@@ -559,6 +566,7 @@ When giving your agent tools, here are some practical resources:
 
 -----
 
+<div id='id-8'/>
 ## **Module 8: Advanced Memory Systems & Implementation**
 
 We briefly introduced memory in Module 5. Now, let's explore how to implement a persistent memory that allows an agent to learn across conversations.
@@ -630,6 +638,7 @@ You can then wrap these `memory.add` and `memory.search` functions as tools for 
 
 -----
 
+<div id='id-9'/>
 ## **Module 9: Agentic RAG: Giving Your Agent Expert Knowledge**
 
 We've covered RAG and we've covered Agents. Now, let's combine them. Agentic RAG is a paradigm where agents don't just passively receive information but intelligently interact with knowledge bases to solve complex problems.
@@ -690,6 +699,7 @@ This architecture creates resilient agents that can tackle ambiguous research ta
 
 -----
 
+<div id='id-10'/>
 ## **Module 10: Evaluation, Production Deployment & Safety**
 
 Building a working agent is only the beginning. To create a reliable and responsible application, you must focus on evaluation, deployment, and safety.
