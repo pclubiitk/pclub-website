@@ -299,12 +299,12 @@ This is different from the full RL problem because here, an action only affects 
 
 ***
 
-<a id="week2"></a>
+<a id="id-Week2"></a>
 # 🦝 Week 2: From Bandits to Full Reinforcement Learning
 
 This week, we move beyond single-step decisions and into the world of sequential prob=ems, where an action affects not only the immediate reward but also all future situations. We'll formalize this problem using Markov Decision Processes and explore the three fundamental approaches to solving it: Dynamic Programming, Monte Carlo, and Temporal-Difference Learning.
 
-<a id="week2-day1"></a>
+<a id="id-Week2-Day1"></a>
 ### Day 1: MDPs & Bellman Equations
 
 We're now moving from single-step bandits to **sequential decision problems**, where an action has long-term consequences. To do this, we need a formal framework.
@@ -360,7 +360,7 @@ In simple terms, the value of where you are is the expected immediate reward you
 
 ***
 
-<a id="week2-day2"></a>
+<a id="id-Week2-Day2"></a>
 ### Day 2: Dynamic Programming
 
 Yesterday we formalized our problem as a Markov Decision Process (MDP). Today, we'll learn how to *solve* it. **Dynamic Programming (DP)** is a collection of algorithms that can compute the optimal policy, given a perfect model of the environment.
@@ -402,7 +402,7 @@ DP provides the theoretical foundation for reinforcement learning and is guarant
 
 ***
 
-<a id="week2-day3"></a>
+<a id="id-Week2-Day3"></a>
 ### Day 3: Monte Carlo Methods
 
 Yesterday, we saw that Dynamic Programming can find the optimal policy if we have a perfect model of the environment. But what if we don't have that model? This is where **model-free** reinforcement learning begins.
@@ -450,7 +450,7 @@ This process, called **on-policy** Monte Carlo control, repeats, with the policy
 
 ***
 
-<a id="week2-day4"></a>
+<a id="id-Week2-Day4"></a>
 ### Day 4: Temporal-Difference Learning
 
 So far, we've seen two extremes: DP (needs a model) and MC (must wait for an episode to end). **Temporal-Difference (TD) Learning** combines the best of both.
@@ -505,7 +505,7 @@ When we use TD for control, we learn action-values ($Q(s,a)$). This leads to two
 
 ***
 
-<a id="week2-day5"></a>
+<a id="id-Week2-Day5"></a>
 ### Day 5: Comparing DP, MC, and TD Methods
 
 Over the last few days, we've introduced the three foundational pillars for solving MDPs. Today, we'll consolidate our understanding by directly comparing them.
@@ -561,7 +561,7 @@ Essentially, TD learning is the sweet spot that combines the model-free sampling
 
 ***
 
-<a id="week2-day6"></a>
+<a id="id-Week2-Day6"></a>
 ### Day 6: Mini-Project: Escape the Gridworld!
 
 Use this day to apply the concepts you've learned so far in a hands-on project.
@@ -582,10 +582,10 @@ Design and solve a simple gridworld environment. The goal is to train an agent t
 
 
 
-<a id="week3"></a>
+<a id="id-Week3"></a>
 # 🦝 Week 3: Model-Free Methods
 
-<a id = "week3-day1"></a>
+<a id = "id-Week3-Day1"></a>
 ### Day 1: Q-Learning Deep Dive
 Q-learning is a fundamental algorithm in model-free reinforcement learning (RL). Unlike model-based methods, it does not require knowledge of the environment’s dynamics. Instead, the agent learns purely through trial-and-error interactions with the environment.
 
@@ -604,7 +604,7 @@ Resources:
 <!-- Q-Learning algorithm in detail
 Learn about exploration vs. exploitation and epsilon-greedy strategies -->
 
-<a id = "week3-day2"></a>
+<a id = "id-Week3-Day2"></a>
 ### Day 2: SARSA vs Q-Learning
 Although SARSA and Q-learning are both temporal-difference (TD) learning methods used in reinforcement learning, they differ in how they update the action-value function. Both algorithms aim to estimate the optimal policy, but the way they handle the next action distinguishes them:
 
@@ -629,7 +629,7 @@ To get a deeper understanding of their behavior, similarities, differences, and 
 <!-- Compare on-policy (SARSA) and off-policy (Q-Learning) methods
 Understand their similarities and differences     -->
 
-<a id = "week3-day3"></a>
+<a id = "id-Week3-Day3"></a>
 ### Day 3: Policy Gradient Methods
 Till now we've studied how a RL model chooses how good an action is and chooses the best. Now, instead of estimating these values, it'll directly learn how to act.
 
@@ -642,7 +642,7 @@ Go through the following resources to learn about policy gradient methods:
 <!-- Introduction to policy gradients
 Study the REINFORCE algorithm -->
 
-<a id = "week3-day4"></a>
+<a id = "id-Week3-Day4"></a>
 ### Day 4: Actor-Critic Basics
 Actor–critic methods are TD methods that have a separate memory structure to explicitly represent the policy independent of the value function. The policy structure is known as the actor, because it is used to select actions, and the estimated value function is known as the critic, because it criticizes the actions
 made by the actor.
@@ -653,7 +653,7 @@ Resources:
 <!-- Learn the basics of actor-critic methods
 Understand how policy and value functions are combined -->
 
-<a id = "week3-day5"></a>
+<a id = "id-Week3-Day5"></a>
 ### Day 5: Hyperparameter Tuning
 Hyperparameters are external parameters set before the training begins. Learning rate α, discount factor γ, exploration rate 𝜖, number of episodes, etc, are some of the common hyperparameters in RL models.
 
@@ -666,7 +666,7 @@ There are three major optimization methods used in tuning RL hyperparameters. Th
 
 Watch this [video](https://www.youtube.com/watch?v=nMubTWJGgiU&ab_channel=DigiKey) to learn how to implement hyperparameter optimization in RL models using Meta's Ax.
 
-<a id = "week3-day6"></a>
+<a id = "id-Week3-Day6"></a>
 ### Day 6: Linear Function Approximation
 Before diving into Deep Q-Networks (DQNs) in the upcoming Week-4, it’s important to understand Linear Function Approximation (LFA). This is one of the simplest yet powerful approaches to approximate value functions in Reinforcement Learning.
 In RL, the state space can often be enormous or continuous. Take chess for example, where the number of possible states is estimated to be around 10<sup>47</sup>. Storing a value for each state is clearly impossible. This explosion of possibilities is termed as the **Curse of Dimensionality** – as the number of state variables grows, the total number of states grows exponentially.
@@ -709,7 +709,7 @@ You can refer to the following resources for a deeper dive into LFA:
 - [Repo for implementing SARSA with LFA](https://github.com/LucasAlegre/linear-rl)
 
 
-<a id = "week4"></a>
+<a id = "id-Week4"></a>
 # 🦝 Week 4: Deep RL & Advanced Algorithms
 
 We'll be integrating Q-learning with deep neural networks this week. So, for obvious reasons, you'll need to know about neural networks and some other basics of machine learning. So, for those who are new to these terms, here are a few resources that will be helpful to get started:
@@ -717,7 +717,7 @@ We'll be integrating Q-learning with deep neural networks this week. So, for obv
 - [Neural Networks and Backpropogation(Week-6: Days 1,2)](https://pclub.in/roadmap/2024/06/06/ml-roadmap/#id-Week6-Day1).
 - [Optimization Algorithms(Week-7: Days 1,2)](https://pclub.in/roadmap/2024/06/06/ml-roadmap/#id-Week7-Day1,2)
 
-<a id = "week4-day1"></a>
+<a id = "id-Week4-Day1"></a>
 ### Day 1: Deep Q-Networks (DQN)
 Deep Q-Networks revolutionized reinforcement learning by combining Q-learning with deep neural networks, enabling agents to handle high-dimensional state spaces like raw pixel inputs. DQN uses a convolutional neural network that takes raw state observations as input and outputs Q-values for each possible action.
 
@@ -738,7 +738,7 @@ To brush up your neural network concepts, refer to [Week6](https://pclub.in/road
 * Applications in Atari games and robotics
 
 
-<a id = "week4-day2"></a>
+<a id = "id-Week4-Day2"></a>
 ### Day 2: DQN Improvements
 Deep Q-Networks (DQN) represented a breakthrough in reinforcement learning, but several fundamental problems emerged that led to the development of improved variants.
 
@@ -776,7 +776,7 @@ Uses two separate "brains" - one picks the action, the other judges it. This pre
 
 The Implementations of DDQN, Dueling DQN and PER can be found [here](https://github.com/cyoon1729/deep-Q-networks).
 
-<a id = "week4-day3"></a>
+<a id = "id-Week4-Day3"></a>
 ### Day 3: Policy Optimization
 While DQN improvements—Double DQN, Dueling DQN, and Prioritized Experience Replay significantly enhanced the stability and efficiency of value based learning, they still operate within fundamental constraints that limit their real-world applicability. These methods remain bound to discrete action spaces and continue learning policies indirectly through value function approximation.
 
@@ -849,7 +849,7 @@ where r(θ) = π_new(a|s) / π_old(a|s)*
 
 Implementations of both PPO and TRPO can be found [here](https://github.com/Khrylx/PyTorch-RL)
 
-<a id = "week4-day4"></a>
+<a id = "id-Week4-Day4"></a>
 ### Day 4: Continuous Action Spaces
 Policies like PPO and TRPO work when you have a limited number of clear choices (like "turn left," "turn right," "go straight").But in real life, many problems need smooth, precise control.
 
@@ -882,7 +882,7 @@ TD3 addresses DDPG's brittleness with three critical improvements:
 * [OpenAI Spinning Up: Twin Delayed DDPG](https://spinningup.openai.com/en/latest/algorithms/td3.html) - Detailed breakdown of TD3's three key improvements over DDPG
 * [Twin-Delayed DDPG (TD3) with Bipedal Walker](https://github.com/ChienTeLee/td3_bipedal_walker) -  Practical implementation of TD3
 
-<a id = "week4-day5"></a>
+<a id = "id-Week4-Day5"></a>
 ### Day 5: Exploration Strategies
 So far, we've built agents that can learn optimal actions. But how does an agent discover these actions in the first place? This is the core of the [exploration vs. exploitation dilemma](https://www.youtube.com/watch?v=Fhe9zKmTyBY&t=7s). Should the agent exploit its current knowledge to get high rewards, or should it explore new, untried actions that might lead to even better rewards in the long run?
 
@@ -946,7 +946,7 @@ Random Stochastic Mazes](https://www.ai.rug.nl/~mwiering/GROUP/ARTICLES/Explorat
 
 
 
-<a id = "week4-day6"></a>
+<a id = "id-Week4-Day6"></a>
 ### Day 6: Mini Project
 Here are advanced project suggestions for Week 3:
 
@@ -971,5 +971,5 @@ Here are advanced project suggestions for Week 3:
 * [Stable Baselines3](https://stable-baselines3.readthedocs.io/en/master/) - High-quality implementations of modern RL algorithms
 
 **Contributors**
-- Harsh Malgatte \| +91 7385840159
-- Shreyansh Rastogi \| +91 7459094300
+- Harsh Malgatte \| +91 73858 40159
+- Shreyansh Rastogi \| +91 74590 94300
