@@ -446,9 +446,9 @@ When we use TD for control, we learn action-values $Q(s,a)$. This leads to two o
 
 * **Q-Learning (Off-Policy):** Q-Learning is an **off-policy** algorithm. It learns the value of the *optimal* policy, regardless of what exploratory actions the agent takes. Its update target uses the *best possible action* from the next state, represented by the $\max$ operator .
   
-  $$
-  Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha [R_{t+1} + \gamma \max_a Q(S_{t+1}, a) - Q(S_t, A_t)]
-  $$
+$$
+Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha [R_{t+1} + \gamma \max_a Q(S_{t+1}, a) - Q(S_t, A_t)]
+$$
 
 #### Key Characteristics of TD Learning
 
