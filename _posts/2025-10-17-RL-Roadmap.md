@@ -83,7 +83,7 @@ No matter which week you’re in, don’t hesitate to experiment! Document your 
 
 
 
-<a id = "week1"></a>
+<a id = "id-week1"></a>
 # 🦝 Week 1: RL Basics and Bandits
 
 <a id="week1-day1"></a>
