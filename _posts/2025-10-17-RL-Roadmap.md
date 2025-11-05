@@ -152,6 +152,7 @@ For that, we’ll explore methods for estimating action values and using them to
 
 **Key Idea:**
 For each action $a$:
+
 $$
 Q(a) \approx \mathbb{E}[R \mid A = a]
 $$
@@ -168,9 +169,11 @@ So $Q(a)$ is basically our guess of the average reward if we keep taking action 
 
 #### Estimating Action Values
 The simplest estimate is the **sample average**:
+
 $$
 Q_n(a) = \frac{\sum_{i=1}^{N_n(a)} R_i}{N_n(a)}
 $$
+
 Where:
 * $Q_n(a)$: The estimated value of action $a$ after $n$ steps.
 * $R_i$: The reward received on the $i$-th time action $a$ was chosen.
@@ -185,7 +188,6 @@ Where:
   * With probability $ε$: pick a random action (explore).
 				
 **Read:** [Sutton & Barto, Section 2.3](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)				
-
 #### Incremental Update
 Recomputing averages from scratch is costly. Use an incremental formula:  
 
@@ -199,7 +201,9 @@ $$
 Q_{n+1} = Q_n + \alpha(R_n - Q_n), \; 0 < \alpha \le 1
 $$
 
-**General RL pattern:** $$
+**General RL pattern:** 
+
+$$
 \text{New Estimate} \leftarrow \text{Old Estimate} + \text{Step Size} \times (\text{Target} - \text{Old Estimate})
 $$
 
@@ -222,9 +226,11 @@ However, this strategy is not well-suited for non-stationary settings because th
 
 #### Upper Confidence Bound (UCB)
 UCB addresses the shortcomings of ε-greedy by exploring intelligently.It chooses actions based on both their estimated value and the uncertainty in that estimate.
+
 $$
 A_t = \arg\max_a \left[ Q_t(a) + c \sqrt{\frac{\ln t}{N_t(a)}} \right]
 $$
+
 Here:
 * $Q_t(a)$: Current estimate of the action's value.
 * $N_t(a)$: How many times action $a$ has been chosen.
@@ -242,6 +248,7 @@ So far, we've focused on methods that estimate the *value* of actions. But what 
 
 **Key Idea:**
 Instead of learning action values, we learn a numerical preference $H_t(a)$ for each action.These preferences are converted into action probabilities using a softmax distribution:
+
 $$
 \pi_t(a) = \text{Pr}\{A_t=a\} \doteq \frac{e^{H_t(a)}}{\sum_{b=1}^{k}e^{H_t(b)}}
 $$
@@ -249,9 +256,9 @@ $$
 **Updating Preferences with Stochastic Gradient Ascent:**
 We update these preferences using the reward signal. The update rules are:
 * **For the action taken, $A_t$**:
-    $H_{t+1}(A_t) \doteq H_t(A_t) + \alpha(R_t - \overline{R}_t)(1 - \pi_t(A_t))$
+  $H_{t+1}(A_t) \doteq H_t(A_t) + \alpha(R_t - \overline{R}_t)(1 - \pi_t(A_t))$
 * **For all other actions $a \neq A_t$**:
-    $H_{t+1}(a) \doteq H_t(a) - \alpha(R_t - \overline{R}_t)\pi_t(a)$
+  $H_{t+1}(a) \doteq H_t(a) - \alpha(R_t - \overline{R}_t)\pi_t(a)$
 
 Here, $\overline{R}_t$ is the **average of all rewards** up to time $t$, which serves as a **baseline**.
 * If the reward $R_t$ is **higher than the baseline**, the preference for taking $A_t$ is increased.
@@ -317,9 +324,11 @@ To solve an MDP, we need to figure out how "good" each state is. We do this by l
 * **Action-Value Function ($q_\pi(s, a)$):** Expected return from taking action $a$ in state $s$, then following policy $\pi$.
 
 These value functions follow a recursive relationship known as the **Bellman Expectation Equation**:
+
 $$
 v_\pi(s) = \sum_{a} \pi(a|s) \sum_{s', r} p(s', r | s, a) [r + \gamma v_\pi(s')]
 $$
+
 In simple terms, the value of where you are is the expected immediate reward you get, plus the discounted value of where you're likely to end up next. This equation is the foundation for almost all RL algorithms.
 
 **Resources:**
@@ -437,9 +446,9 @@ When we use TD for control, we learn action-values ($Q(s,a)$). This leads to two
 
 * **Q-Learning (Off-Policy):** Q-Learning is an **off-policy** algorithm. It learns the value of the *optimal* policy, regardless of what exploratory actions the agent takes. Its update target uses the *best possible action* from the next state, represented by the $\max$ operator .
   
-    $$
-    Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha [R_{t+1} + \gamma \max_a Q(S_{t+1}, a) - Q(S_t, A_t)]
-    $$
+  $$
+  Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha [R_{t+1} + \gamma \max_a Q(S_{t+1}, a) - Q(S_t, A_t)]
+  $$
 
 #### Key Characteristics of TD Learning
 
@@ -541,14 +550,17 @@ Although SARSA and Q-learning are both temporal-difference (TD) learning methods
 
 **Q-learning (off-policy):**
 
-$$ Q(s, a) \leftarrow Q(s, a) + \alpha \left[ r + \gamma \max_{a'} Q(s', a') - Q(s, a) \right] $$
+$$ 
+Q(s, a) \leftarrow Q(s, a) + \alpha \left[ r + \gamma \max_{a'} Q(s', a') - Q(s, a) \right] 
+$$
 
 Here, the update rule uses the maximum future action-value regardless of the agent’s current policy. This makes Q-learning an off-policy method, since it learns the optimal greedy policy while potentially following a different exploratory policy during training.
 
 **SARSA (on-policy):**
 
-$$ Q(s, a) \leftarrow Q(s, a) + \alpha \left[ r + \gamma Q(s', a') - Q(s, a) \right] $$
-
+$$ 
+Q(s, a) \leftarrow Q(s, a) + \alpha \left[ r + \gamma Q(s', a') - Q(s, a) \right] 
+$$
 
 In contrast, SARSA updates its value based on the actual action chosen by the current policy in the next state. This makes it an on-policy method, where learning is tied to the agent’s own behavior, including exploration.
 
