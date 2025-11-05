@@ -305,7 +305,7 @@ An MDP is the mathematical framework for reinforcement learning. It's a Markov P
 An MDP is formally defined by a tuple containing:
 * $\mathcal{S}$: A set of states.
 * $\mathcal{A}$: A set of actions.
-* $p(s', r | s, a)$: The probability of transitioning to state $s'$ with reward $r$, from state $s$ and action $a$.
+* $p(s', r \mid s, a)$: The probability of transitioning to state $s'$ with reward $r$, from state $s$ and action $a$.
 * $\gamma$: The discount factor, which determines the value of future rewards.
 
 **Read:** [Sutton & Barto, Section 3.6](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
@@ -416,10 +416,13 @@ Instead of waiting for the final return $G_t$, TD updates its estimate $V(S_t)$ 
 * **The TD Target:** This is an estimated return formed after one step: the immediate reward plus the *estimated value* of the next state: $R_{t+1} + \gamma V(S_{t+1})$ . 
 
 * **The TD Error ($\delta_t$):** The learning signal in TD is the difference between the TD target and our current estimate.
+  
     $$
     \delta_t = R_{t+1} + \gamma V(S_{t+1}) - V(S_t)
     $$
+  
     The **TD(0)** update rule uses this error to nudge the value of the current state:
+  
     $$
     V(S_t) \leftarrow V(S_t) + \alpha \cdot \delta_t
     $$
@@ -433,6 +436,7 @@ When we use TD for control, we learn action-values ($Q(s,a)$). This leads to two
 * **Sarsa (On-Policy):** Sarsa learns the value of the policy the agent is *currently following*. Its name comes from the quintuple of experience it uses: $(S_t, A_t, R_{t+1}, S_{t+1}, A_{t+1})$. It's "on-policy" because its update target depends on the action $A_{t+1}$ that the policy *actually* chooses next . 
 
 * **Q-Learning (Off-Policy):** Q-Learning is an **off-policy** algorithm. It learns the value of the *optimal* policy, regardless of what exploratory actions the agent takes. Its update target uses the *best possible action* from the next state, represented by the $\max$ operator .
+  
     $$
     Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha [R_{t+1} + \gamma \max_a Q(S_{t+1}, a) - Q(S_t, A_t)]
     $$
@@ -470,7 +474,7 @@ This dimension describes how far into the future an algorithm looks to get its u
 
 This dimension describes whether an algorithm considers all possibilities or just one.
 
-* **Full Backups (Model-Based):** **DP** methods use **full backups**. They average over every possible next state and reward according to a model of the environment ($p(s', r | s, a)$). This is why DP requires a model .
+* **Full Backups (Model-Based):** **DP** methods use **full backups**. They average over every possible next state and reward according to a model of the environment ($p(s', r \mid s, a)$). This is why DP requires a model .
 
 * **Sample Backups (Model-Free):** **MC** and **TD** methods use **sample backups**. They learn from a single, observed trajectory of experience and don't need a model .
 
@@ -617,14 +621,17 @@ Here, $\theta$ is the weight vector (the parameters we learn), $\phi(s)$ is the 
 
 #### Stochastic Gradient Descent (SGD) Update
 Using the SGD update rule, we minimize the mean squared error between the predicted value and the target:  
+
 $$
 J(\theta) = \frac{1}{2} \big( v(s) - \hat{v}(s; \theta) \big)^2
 $$
 
 and update the weights as:
+
 $$
 \theta \leftarrow \theta + \alpha \big( v(s) - \hat{v}(s; \theta) \big) \phi(s)
 $$
+
 where $\alpha$ is the learning rate and $v(s)$ is the target (either the actual return or a bootstrapped value estimate).
 For those unfamiliar with the SGD update rule, you can refer to the SGD update rule section in the [ML Roadmap](https://pclub.in/roadmap/2024/06/06/ml-roadmap/).
 
@@ -822,12 +829,14 @@ These methods are foundational and work best in environments with a limited set 
   **Reading:**
   * [Optimizing Decision-Making in AI: Fine-Tuning the Epsilon-Greedy Algorithm for Enhanced Performance](https://medium.com/operations-research-bit/optimizing-decision-making-in-ai-fine-tuning-the-epsilon-greedy-algorithm-for-enhanced-performance-ea61e86d6f1d)
   * [ Epsilon greedy algorithm](https://www.youtube.com/watch?v=EjYEsbg95x0)
+<br>
 * **Softmax (Boltzmann) Exploration**
   Actions are chosen based on a probability distribution derived from their Q-values. Higher-value actions have a higher probability of being selected, but no action has a zero probability. A "temperature" parameter controls the randomness: high temperatures lead to more random choices (more exploration), while low temperatures make the agent greedier.  
   **Reading:**
   * [Boltzmann Exploration Done Right](https://proceedings.neurips.cc/paper_files/paper/2017/file/b299ad862b6f12cb57679f0538eca514-Paper.pdf)
   * [What is softmax action selection in RL?](https://zilliz.com/ai-faq/what-is-softmax-action-selection-in-rl)
   * [An Alternative Softmax Operator for Reinforcement Learning](https://www.youtube.com/watch?v=wVBQGKMX974)
+ <br>
 * **Upper Confidence Bound (UCB)**
   This strategy chooses actions based on both their estimated reward and the uncertainty of that estimate. It adds a "bonus" to actions that haven't been tried often, making them more attractive. The core formula balances the average reward with an exploration term that shrinks as an action is selected more frequently.
   **Reading:**
