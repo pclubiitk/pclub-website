@@ -320,8 +320,8 @@ An MDP is formally defined by a tuple containing:
 #### 3. Value Functions & The Bellman Equation
 To solve an MDP, we need to figure out how "good" each state is. We do this by learning **value functions**, which estimate the expected future return.
 
-* **State-Value Function:** ($v_\pi(s)$) Expected return from state $s$ while following policy $\pi$.
-* **Action-Value Function:** ($q_\pi(s, a)$) Expected return from taking action $a$ in state $s$, then following policy $\pi$.
+* **State-Value Function:** $v_\pi(s)$ Expected return from state $s$ while following policy $\pi$.
+* **Action-Value Function:** $q_\pi(s, a)$ Expected return from taking action $a$ in state $s$, then following policy $\pi$.
 
 These value functions follow a recursive relationship known as the **Bellman Expectation Equation**:
 
