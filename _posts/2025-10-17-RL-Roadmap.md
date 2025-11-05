@@ -426,21 +426,21 @@ Instead of waiting for the final return $G_t$, TD updates its estimate $V(S_t)$ 
 
 * **The TD Error ($\delta_t$):** The learning signal in TD is the difference between the TD target and our current estimate.
   
-  $$
-  \delta_t = R_{t+1} + \gamma V(S_{t+1}) - V(S_t)
-  $$
+$$
+\delta_t = R_{t+1} + \gamma V(S_{t+1}) - V(S_t)
+$$
   
-  The **TD(0)** update rule uses this error to nudge the value of the current state:
+The **TD(0)** update rule uses this error to nudge the value of the current state:
   
-  $$
-  V(S_t) \leftarrow V(S_t) + \alpha \cdot \delta_t
-  $$
+$$
+V(S_t) \leftarrow V(S_t) + \alpha \cdot \delta_t
+$$
 
 This allows the agent to learn from every single step.
 
 #### TD Control: Sarsa vs. Q-Learning
 
-When we use TD for control, we learn action-values ($Q(s,a)$). This leads to two of the most famous algorithms in RL.
+When we use TD for control, we learn action-values $Q(s,a)$. This leads to two of the most famous algorithms in RL.
 
 * **Sarsa (On-Policy):** Sarsa learns the value of the policy the agent is *currently following*. Its name comes from the quintuple of experience it uses: $(S_t, A_t, R_{t+1}, S_{t+1}, A_{t+1})$. It's "on-policy" because its update target depends on the action $A_{t+1}$ that the policy *actually* chooses next . 
 
