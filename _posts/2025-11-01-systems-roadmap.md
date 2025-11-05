@@ -96,6 +96,8 @@ In any software, seemingly multiple tasks happen at the same time. Dealing with 
 
 Initially, a general idea of how concurrent systems work is enough. You should go through the talk mentioned, but before it, to get an idea of what a _thread_ is, what a _process_ is, etc. For this, properly go through multiple answers AND comments (always a good practice with Stack Exchange) in the following thread ;) on stackexchange [What is the difference between a process and a thread?](https://stackoverflow.com/questions/200469/what-is-the-difference-between-a-process-and-a-thread). For a decently complete, C++ specific implementation of concurrency, and concurrent systems, refer to Chapter 13 of A Tour of C++, titled Concurrency.  We *highly recommend* the following talk to get an idea of when to use concurrency, [CppCon 2017: Ansel Sermersheim “Multithreading is the answer. What is the question? ](https://www.youtube.com/watch?v=GNw3RXr-VJk&t=2614s&ab_channel=CppCon).
 
+To read more on concurrency, check out the [concurrency roadmap](https://pclub.in/roadmap/2025/10/31/concurrency-roadmap/).
+
 
 <div id='id-CompilersandInterpreters'></div>
 ## Compilers and Interpreters
@@ -319,5 +321,7 @@ Unix Network Programming, Volume 1: The Sockets Networking API by W. Richard Ste
 **Contributors**
 
 - Austin Shijo \| +91 8946061070
+- Ketan \| +91 9610407327
+- Shivam Sah \| +91 9315060115
 - Shivansh Jaiswal \| +91 9971104638
 - Sujal Satish Motagi \| +91 7349439500
