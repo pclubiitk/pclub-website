@@ -36,18 +36,16 @@ No matter which week you’re in, don’t hesitate to experiment! Document your 
 
 ## Table of Contents
 
-####� [Week 1: The Foundations — Bandits and Basic RL](#id-Week1)
+#### [Week 1: The Foundations — Bandits and Basic RL](#id-Week1)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾�[Day 1: Introduction to Reinforcement Learning](#id-Week1-Day1)  
-&nbsp;&nbsp;&nbsp;&nbsp; 👾�[Day 2: The Multi-Armed Bandit Problem — Learning from Choices](#id-Week1-Day2)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 1: Introduction to Reinforcement Learning](#id-Week1-Day1)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 2: The Multi-Armed Bandit Problem — Learning from Choices](#id-Week1-Day2)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 3: Action-Value Methods & ε-Greedy Exploration](#id-Week1-Day3)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 4: Advanced Action Selection — UCB & Optimistic Initialization](#id-Week1-Day4)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 5: Gradient Bandit Algorithms](#id-Week1-Day5)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 6: Contextual Bandits](#id-Week1-Day6)  
 
----
-
-####� [Week 2: From Bandits to Full Reinforcement Learning](#id-Week2)
+#### [Week 2: From Bandits to Full Reinforcement Learning](#id-Week2)
 
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 1: Markov Decision Processes (MDPs) & Bellman Equations](#id-Week2-Day1)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 2: Dynamic Programming](#id-Week2-Day2)  
@@ -56,18 +54,14 @@ No matter which week you’re in, don’t hesitate to experiment! Document your 
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 5: Comparing DP, MC, and TD Methods](#id-Week2-Day5)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 6: Mini-Project 1 — Solving a Gridworld](#id-Week2-Day6)  
 
----
-
 ####  [Week 3: Model-Free Methods](#id-Week3)
 
-&nbsp;&nbsp;&nbsp;&nbsp; 👾�[Day 1: Q-Learning Deep Dive](#id-Week3-Day1)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 1: Q-Learning Deep Dive](#id-Week3-Day1)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 2: SARSA vs Q-Learning](#id-Week3-Day2)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 3: Policy Gradient Methods](#id-Week3-Day3)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 4: Actor-Critic Basics](#id-Week3-Day4)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 5: Hyperparameter Tuning](#id-Week3-Day5)  
-&nbsp;&nbsp;&nbsp;&nbsp; 👾�[Day 6: Linear Function Approximation](#id-Week3-Day6)  
-
----
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 6: Linear Function Approximation](#id-Week3-Day6)  
 
 ####  [Week 4: Deep RL and Advanced Algorithms](#id-Week4)
 
@@ -75,18 +69,14 @@ No matter which week you’re in, don’t hesitate to experiment! Document your 
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 2: DQN Improvements](#id-Week4-Day2)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 3: Policy Optimization](#id-Week4-Day3)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 4: Continuous Action Spaces](#id-Week4-Day4)  
-&nbsp;&nbsp;&nbsp;&nbsp; 👾�[Day 5: Exploration Strategies](#id-Week4-Day5)  
+&nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 5: Exploration Strategies](#id-Week4-Day5)  
 &nbsp;&nbsp;&nbsp;&nbsp; 👾 [Day 6: Mini Project](#id-Week4-Day6)  
 
 
-
-
-
-
-<a id = "week1"></a>
+<a id = "id-Week1"></a>
 # 🦝 Week 1: RL Basics and Bandits
 
-<a id="week1-day1"></a>
+<a id="id-Week1-Day1"></a>
 ### Day 1: Introduction to Reinforcement Learning
 The idea that we learn by interacting with the world around us feels obvious. Think about an infant exploring its surroundings, reaching out, touching things, making sounds. No one is explicitly teaching every action, yet the child learns cause and effect. Some actions bring smiles and attention, while others bring discomfort or no response. Through these interactions, the child figures out what works to achieve certain goals.
 
@@ -113,8 +103,6 @@ It doesn't just aim for one quick delivery; its goal is to maximize success in t
 
 What’s remarkable is that no one hands the robot a map or the correct answers. It learns by doing, by interacting with its environment, observing the outcomes, and adjusting its strategy based on experience. This ability to discover effective behavior through trial and error, driven by rewards and penalties, is the essence of reinforcement learning.
 
-
-
 Now that you understand the core idea of reinforcement learning, the best way to deepen your understanding is to see it in action and start with simple problems before tackling complex ones.
 
 **Watch RL in Action**
@@ -129,9 +117,7 @@ After that, reinforce your understanding by reading this [GeeksforGeeks article]
 
 Finally, if you want a solid reference to guide you throughout your learning journey, dive into *Chapter 1* of [Reinforcement Learning: An Introduction by Sutton & Barto](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf?utm_source=chatgpt.com). This book is considered the gold standard for RL and will provide the depth you need once you’ve grasped the basics.
 
-***
-
-<a id="week1-day2"></a>
+<a id="id-Week1-Day2"></a>
 ### Day 2: The Multi-Armed Bandit Problem - Learning from Choices 
 
 Imagine you walk into a casino with 10 slot machines lined up. Each one hides an unknown probability of giving you a payout. You have only 100 coins. Every pull of a lever costs one coin.
@@ -159,15 +145,14 @@ Here's a cool video:
 For a deeper read (just the intuition and examples, no need to worry about math yet):
 [Sutton & Barto, Reinforcement Learning: An Introduction, Chapter 2.1 – The Multi-Armed Bandit Problem](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
 
-***
-
-<a id="week1-day3"></a>
+<a id="id-Week1-Day3"></a>
 ### Day 3: Action-Value Methods & ε-Greedy Exploration
 Imagine you’re playing a new game, and you’re not sure which moves score the most points. How do you figure it out? 
 For that, we’ll explore methods for estimating action values and using them to choose actions intelligently.
 
 **Key Idea:**
 For each action $a$:
+
 $$
 Q(a) \approx \mathbb{E}[R \mid A = a]
 $$
@@ -184,9 +169,11 @@ So $Q(a)$ is basically our guess of the average reward if we keep taking action 
 
 #### Estimating Action Values
 The simplest estimate is the **sample average**:
+
 $$
 Q_n(a) = \frac{\sum_{i=1}^{N_n(a)} R_i}{N_n(a)}
 $$
+
 Where:
 * $Q_n(a)$: The estimated value of action $a$ after $n$ steps.
 * $R_i$: The reward received on the $i$-th time action $a$ was chosen.
@@ -201,7 +188,6 @@ Where:
   * With probability $ε$: pick a random action (explore).
 				
 **Read:** [Sutton & Barto, Section 2.3](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)				
-
 #### Incremental Update
 Recomputing averages from scratch is costly. Use an incremental formula:  
 
@@ -215,7 +201,9 @@ $$
 Q_{n+1} = Q_n + \alpha(R_n - Q_n), \; 0 < \alpha \le 1
 $$
 
-**General RL pattern:** $$
+**General RL pattern:** 
+
+$$
 \text{New Estimate} \leftarrow \text{Old Estimate} + \text{Step Size} \times (\text{Target} - \text{Old Estimate})
 $$
 
@@ -224,9 +212,7 @@ $$
 **Implementation:**
 [Notebook](https://colab.research.google.com/drive/1ajO-ihEcnCcZdNIN6zaJIKOoo2wCId0B?usp=sharing) with all the above implemented.
 
-***
-
-<a id="week1-day4"></a>
+<a id="id-Week1-Day4"></a>
 ### Day 4: Advanced Action Selection
 
 The exploration in ε-greedy is "blind." It wastes time trying obviously suboptimal arms and can't prioritize actions that are promising but uncertain. Today, we'll explore smarter ways to explore.
@@ -240,9 +226,11 @@ However, this strategy is not well-suited for non-stationary settings because th
 
 #### Upper Confidence Bound (UCB)
 UCB addresses the shortcomings of ε-greedy by exploring intelligently.It chooses actions based on both their estimated value and the uncertainty in that estimate.
+
 $$
 A_t = \arg\max_a \left[ Q_t(a) + c \sqrt{\frac{\ln t}{N_t(a)}} \right]
 $$
+
 Here:
 * $Q_t(a)$: Current estimate of the action's value.
 * $N_t(a)$: How many times action $a$ has been chosen.
@@ -253,15 +241,14 @@ The square root term is an "uncertainty bonus." It's large for actions that have
 
 **Read:** [Sutton & Barto, Section 2.6](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
 
-***
-
-<a id="week1-day5"></a>
+<a id="id-Week1-Day5"></a>
 ### Day 5: Gradient Bandit Algorithms
 
 So far, we've focused on methods that estimate the *value* of actions. But what if we could learn a *preference* for each action directly? This shifts us from action-value methods to **policy-based methods**, where we learn a parameterized policy directly.
 
 **Key Idea:**
 Instead of learning action values, we learn a numerical preference $H_t(a)$ for each action.These preferences are converted into action probabilities using a softmax distribution:
+
 $$
 \pi_t(a) = \text{Pr}\{A_t=a\} \doteq \frac{e^{H_t(a)}}{\sum_{b=1}^{k}e^{H_t(b)}}
 $$
@@ -269,9 +256,9 @@ $$
 **Updating Preferences with Stochastic Gradient Ascent:**
 We update these preferences using the reward signal. The update rules are:
 * **For the action taken, $A_t$**:
-    $H_{t+1}(A_t) \doteq H_t(A_t) + \alpha(R_t - \overline{R}_t)(1 - \pi_t(A_t))$
+  $H_{t+1}(A_t) \doteq H_t(A_t) + \alpha(R_t - \overline{R}_t)(1 - \pi_t(A_t))$
 * **For all other actions $a \neq A_t$**:
-    $H_{t+1}(a) \doteq H_t(a) - \alpha(R_t - \overline{R}_t)\pi_t(a)$
+  $H_{t+1}(a) \doteq H_t(a) - \alpha(R_t - \overline{R}_t)\pi_t(a)$
 
 Here, $\overline{R}_t$ is the **average of all rewards** up to time $t$, which serves as a **baseline**.
 * If the reward $R_t$ is **higher than the baseline**, the preference for taking $A_t$ is increased.
@@ -279,9 +266,7 @@ Here, $\overline{R}_t$ is the **average of all rewards** up to time $t$, which s
 
 **Read:** [Sutton & Barto, Section 2.7](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
 
-***
-
-<a id="week1-day6"></a>
+<a id="id-Week1-Day6"></a>
 ### Day 6: Contextual Bandits
 
 We've only considered **nonassociative tasks**, where we try to find the single best action overall. But what if the best action depends on the situation?This is the **contextual bandit** problem, a crucial step toward the full reinforcement learning problem.
@@ -297,14 +282,12 @@ This is different from the full RL problem because here, an action only affects 
 
 **Read:** [Sutton & Barto, Section 2.8](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
 
-***
-
-<a id="week2"></a>
+<a id="id-Week2"></a>
 # 🦝 Week 2: From Bandits to Full Reinforcement Learning
 
 This week, we move beyond single-step decisions and into the world of sequential prob=ems, where an action affects not only the immediate reward but also all future situations. We'll formalize this problem using Markov Decision Processes and explore the three fundamental approaches to solving it: Dynamic Programming, Monte Carlo, and Temporal-Difference Learning.
 
-<a id="week2-day1"></a>
+<a id="id-Week2-Day1"></a>
 ### Day 1: MDPs & Bellman Equations
 
 We're now moving from single-step bandits to **sequential decision problems**, where an action has long-term consequences. To do this, we need a formal framework.
@@ -313,8 +296,6 @@ Today, we'll introduce the core concepts that define this framework: the **agent
 
 **For a full background on these foundational concepts, please read sections 3.1-3.4 in the Sutton & Barto text.**
 * **Read:** [Sutton & Barto, Sections 3.1-3.4](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
-
----
 
 #### 1. The Markov Property
 The key assumption that makes sequential problems solvable is the **Markov property**.
@@ -325,31 +306,29 @@ The key assumption that makes sequential problems solvable is the **Markov prope
 **Read:** [Sutton & Barto, Section 3.5](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
 **Watch for better understanding:** [Markov Property](https://www.youtube.com/watch?v=1meaW5GxUbY)
 
----
-
 #### 2. Markov Decision Processes (MDPs)
 An MDP is the mathematical framework for reinforcement learning. It's a Markov Process with the addition of **actions** (choices) and **rewards** (goals).
 
 An MDP is formally defined by a tuple containing:
 * $\mathcal{S}$: A set of states.
 * $\mathcal{A}$: A set of actions.
-* $p(s', r | s, a)$: The probability of transitioning to state $s'$ with reward $r$, from state $s$ and action $a$.
+* $p(s', r \mid s, a)$: The probability of transitioning to state $s'$ with reward $r$, from state $s$ and action $a$.
 * $\gamma$: The discount factor, which determines the value of future rewards.
 
 **Read:** [Sutton & Barto, Section 3.6](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
 
----
-
 #### 3. Value Functions & The Bellman Equation
 To solve an MDP, we need to figure out how "good" each state is. We do this by learning **value functions**, which estimate the expected future return.
 
-* **State-Value Function ($v_\pi(s)$):** Expected return from state $s$ while following policy $\pi$.
-* **Action-Value Function ($q_\pi(s, a)$):** Expected return from taking action $a$ in state $s$, then following policy $\pi$.
+* **State-Value Function $v_\pi(s)$ :** Expected return from state $s$ while following policy $\pi$.
+* **Action-Value Function $q_\pi(s,a)$ :** Expected return from taking action $a$ in state $s$, then following policy $\pi$.
 
 These value functions follow a recursive relationship known as the **Bellman Expectation Equation**:
+
 $$
 v_\pi(s) = \sum_{a} \pi(a|s) \sum_{s', r} p(s', r | s, a) [r + \gamma v_\pi(s')]
 $$
+
 In simple terms, the value of where you are is the expected immediate reward you get, plus the discounted value of where you're likely to end up next. This equation is the foundation for almost all RL algorithms.
 
 **Resources:**
@@ -358,16 +337,12 @@ In simple terms, the value of where you are is the expected immediate reward you
 * **Read:** [GeeksforGeeks: MDPs](https://www.geeksforgeeks.org/machine-learning/markov-decision-process/)
 * **Read:** [GeeksforGeeks: Bellman Equation](https://www.geeksforgeeks.org/machine-learning/bellman-equation/)
 
-***
-
-<a id="week2-day2"></a>
+<a id="id-Week2-Day2"></a>
 ### Day 2: Dynamic Programming
 
 Yesterday we formalized our problem as a Markov Decision Process (MDP). Today, we'll learn how to *solve* it. **Dynamic Programming (DP)** is a collection of algorithms that can compute the optimal policy, given a perfect model of the environment.
 
 The core idea of DP is to turn the Bellman equations we learned about into update rules to progressively find the optimal value functions.
-
----
 
 #### The Core Idea: Generalized Policy Iteration (GPI)
 
@@ -378,8 +353,6 @@ Almost all reinforcement learning algorithms, including DP, follow a general pat
 
 These two processes are repeated, interacting until they converge to a single joint solution: the optimal policy and the optimal value function, where neither can be improved further .
 
----
-
 #### The Main Algorithms
 
 There are two classic DP algorithms that implement GPI:
@@ -387,8 +360,6 @@ There are two classic DP algorithms that implement GPI:
 * **Policy Iteration:** This algorithm performs the full GPI dance. It alternates between completing a full **Policy Evaluation** step and then performing a **Policy Improvement** step. This process is repeated until the policy is stable .
 
 * **Value Iteration:** This is a more streamlined approach. Instead of waiting for the value function to fully converge, Value Iteration performs just *one* backup for each state before improving the policy. It combines the two steps of GPI by directly using the Bellman Optimality Equation as its update rule .
-
----
 
 #### Why DP Matters & Its Limitations
 
@@ -400,16 +371,12 @@ DP provides the theoretical foundation for reinforcement learning and is guarant
 * **Watch:** For a great visual and conceptual overview of Dynamic Programming, watch this [video by Google DeepMind](https://www.youtube.com/watch?v=Nd1-UUMVfz4).
 * **Read:** For those following the book, read Chapter 3 for MDPs and Chapter 4 for DP from [here](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf).
 
-***
-
-<a id="week2-day3"></a>
+<a id="id-Week2-Day3"></a>
 ### Day 3: Monte Carlo Methods
 
 Yesterday, we saw that Dynamic Programming can find the optimal policy if we have a perfect model of the environment. But what if we don't have that model? This is where **model-free** reinforcement learning begins.
 
 **Monte Carlo (MC) methods** are our first approach to learning without a model. The idea is simple: we learn the value of states by running many complete episodes and simply averaging the returns we get . To figure out the average time it takes to get home, just drive home many times and calculate the average. That's the essence of Monte Carlo.
-
----
 
 #### Monte Carlo Prediction
 
@@ -422,8 +389,6 @@ The first step is learning to predict the value function, $v_\pi(s)$, for a give
 
 * **First-Visit vs. Every-Visit:** **First-visit MC** averages returns from only the *first* time a state is visited in an episode, while **every-visit MC** averages returns from *every* visit . 
 
----
-
 #### Monte Carlo Control
 
 Our real goal is to find the optimal policy. To do this in a model-free world, we must learn **action-values**, $q_\pi(s, a)$, because they tell us how good an action is without needing a model to look ahead . We follow the same GPI pattern as before:
@@ -432,8 +397,6 @@ Our real goal is to find the optimal policy. To do this in a model-free world, w
 2.  **Policy Improvement:** Improve the policy by making it more greedy with respect to our updated action-value estimates (e.g., using an $\epsilon$-greedy strategy).
 
 This process, called **on-policy** Monte Carlo control, repeats, with the policy and action-value estimates gradually improving each other.
-
----
 
 #### Key Characteristics of Monte Carlo
 
@@ -448,16 +411,12 @@ This process, called **on-policy** Monte Carlo control, repeats, with the policy
 * **Read (Summary):** [Monte Carlo Policy Evaluation – GeeksforGeeks](https://www.geeksforgeeks.org/machine-learning/monte-carlo-policy-evaluation/)
 * **Read (Deep Dive):** [Sutton & Barto, Chapter 5 - Monte Carlo Methods](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
 
-***
-
-<a id="week2-day4"></a>
+<a id="id-Week2-Day4"></a>
 ### Day 4: Temporal-Difference Learning
 
 So far, we've seen two extremes: DP (needs a model) and MC (must wait for an episode to end). **Temporal-Difference (TD) Learning** combines the best of both.
 
 TD learning is a **model-free** method, like MC, that learns from raw experience. But, like DP, it updates its estimates based on other learned estimates. This elegant idea of learning a "guess from a guess" is called **bootstrapping** and is central to modern reinforcement learning .
-
----
 
 #### TD Prediction and the TD Error
 
@@ -466,30 +425,30 @@ Instead of waiting for the final return $G_t$, TD updates its estimate $V(S_t)$ 
 * **The TD Target:** This is an estimated return formed after one step: the immediate reward plus the *estimated value* of the next state: $R_{t+1} + \gamma V(S_{t+1})$ . 
 
 * **The TD Error ($\delta_t$):** The learning signal in TD is the difference between the TD target and our current estimate.
-    $$
-    \delta_t = R_{t+1} + \gamma V(S_{t+1}) - V(S_t)
-    $$
-    The **TD(0)** update rule uses this error to nudge the value of the current state:
-    $$
-    V(S_t) \leftarrow V(S_t) + \alpha \cdot \delta_t
-    $$
+  
+$$
+\delta_t = R_{t+1} + \gamma V(S_{t+1}) - V(S_t)
+$$
+  
+The **TD(0)** update rule uses this error to nudge the value of the current state:
+  
+$$
+V(S_t) \leftarrow V(S_t) + \alpha \cdot \delta_t
+$$
 
 This allows the agent to learn from every single step.
 
----
-
 #### TD Control: Sarsa vs. Q-Learning
 
-When we use TD for control, we learn action-values ($Q(s,a)$). This leads to two of the most famous algorithms in RL.
+When we use TD for control, we learn action-values $Q(s,a)$. This leads to two of the most famous algorithms in RL.
 
 * **Sarsa (On-Policy):** Sarsa learns the value of the policy the agent is *currently following*. Its name comes from the quintuple of experience it uses: $(S_t, A_t, R_{t+1}, S_{t+1}, A_{t+1})$. It's "on-policy" because its update target depends on the action $A_{t+1}$ that the policy *actually* chooses next . 
 
 * **Q-Learning (Off-Policy):** Q-Learning is an **off-policy** algorithm. It learns the value of the *optimal* policy, regardless of what exploratory actions the agent takes. Its update target uses the *best possible action* from the next state, represented by the $\max$ operator .
-    $$
-    Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha [R_{t+1} + \gamma \max_a Q(S_{t+1}, a) - Q(S_t, A_t)]
-    $$
-
----
+  
+$$
+Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha [R_{t+1} + \gamma \max_a Q(S_{t+1}, a) - Q(S_t, A_t)]
+$$
 
 #### Key Characteristics of TD Learning
 
@@ -503,14 +462,10 @@ When we use TD for control, we learn action-values ($Q(s,a)$). This leads to two
 * **Read (Sarsa):** [SARSA Algorithm: article by UpGrad](https://www.upgrad.com/tutorials/ai-ml/machine-learning-tutorial/sarsa-in-machine-learning/)
 * **Read (Deep Dive):** [Sutton & Barto, Chapter 6 - Temporal-Difference Learning](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
 
-***
-
-<a id="week2-day5"></a>
+<a id="id-Week2-Day5"></a>
 ### Day 5: Comparing DP, MC, and TD Methods
 
 Over the last few days, we've introduced the three foundational pillars for solving MDPs. Today, we'll consolidate our understanding by directly comparing them.
-
----
 
 #### The Two Key Dimensions of Difference
 
@@ -528,11 +483,9 @@ This dimension describes how far into the future an algorithm looks to get its u
 
 This dimension describes whether an algorithm considers all possibilities or just one.
 
-* **Full Backups (Model-Based):** **DP** methods use **full backups**. They average over every possible next state and reward according to a model of the environment ($p(s', r | s, a)$). This is why DP requires a model .
+* **Full Backups (Model-Based):** **DP** methods use **full backups**. They average over every possible next state and reward according to a model of the environment $p(s', r \mid s, a)$. This is why DP requires a model .
 
 * **Sample Backups (Model-Free):** **MC** and **TD** methods use **sample backups**. They learn from a single, observed trajectory of experience and don't need a model .
-
----
 
 #### The Unified View: A Summary Table
 
@@ -546,7 +499,6 @@ This table summarizes the core trade-offs:
 
 Essentially, TD learning is the sweet spot that combines the model-free sampling of Monte Carlo with the step-by-step bootstrapping of Dynamic Programming.
 
----
 
 #### Practical Takeaways
 
@@ -559,9 +511,7 @@ Essentially, TD learning is the sweet spot that combines the model-free sampling
 * **Watch:** [UCL/DeepMind - RL Lecture 4 - Model-Free Prediction](https://www.youtube.com/watch?v=PnHCvfgC_ZA&list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ&index=4) (This video provides a great comparison of MC and TD).
 * **Read:** Review the summary sections of Chapters 4, 5, and 6 in the Sutton & Barto text.
 
-***
-
-<a id="week2-day6"></a>
+<a id="id-Week2-Day6"></a>
 ### Day 6: Mini-Project: Escape the Gridworld!
 
 Use this day to apply the concepts you've learned so far in a hands-on project.
@@ -573,19 +523,10 @@ Design and solve a simple gridworld environment. The goal is to train an agent t
 * **Implementation:** Code a simple agent that can solve this environment using one of the model-free methods you've learned (e.g., Q-Learning or Sarsa). Watch how the agent's path improves as it learns.
 * **Key Learning:** This project helps you grasp how value functions are updated in a structured environment and how a policy evolves from random to optimal. This is a crucial step before tackling more complex problems.
 
-
-
-
-
-
-
-
-
-
-<a id="week3"></a>
+<a id="id-Week3"></a>
 # 🦝 Week 3: Model-Free Methods
 
-<a id = "week3-day1"></a>
+<a id = "id-Week3-Day1"></a>
 ### Day 1: Q-Learning Deep Dive
 Q-learning is a fundamental algorithm in model-free reinforcement learning (RL). Unlike model-based methods, it does not require knowledge of the environment’s dynamics. Instead, the agent learns purely through trial-and-error interactions with the environment.
 
@@ -600,24 +541,26 @@ Resources:
 * [Learning Q-learning using a GridWorld Example](https://medium.com/@goldengrisha/a-beginners-guide-to-q-learning-understanding-with-a-simple-gridworld-example-2b6736e7e2c9).
 * [Chapter 6 Section 6.5](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf) from Sutton and Barto.
 
-
 <!-- Q-Learning algorithm in detail
 Learn about exploration vs. exploitation and epsilon-greedy strategies -->
 
-<a id = "week3-day2"></a>
+<a id = "id-Week3-Day2"></a>
 ### Day 2: SARSA vs Q-Learning
 Although SARSA and Q-learning are both temporal-difference (TD) learning methods used in reinforcement learning, they differ in how they update the action-value function. Both algorithms aim to estimate the optimal policy, but the way they handle the next action distinguishes them:
 
 **Q-learning (off-policy):**
 
-$$ Q(s, a) \leftarrow Q(s, a) + \alpha \left[ r + \gamma \max_{a'} Q(s', a') - Q(s, a) \right] $$
+$$ 
+Q(s, a) \leftarrow Q(s, a) + \alpha \left[ r + \gamma \max_{a'} Q(s', a') - Q(s, a) \right] 
+$$
 
 Here, the update rule uses the maximum future action-value regardless of the agent’s current policy. This makes Q-learning an off-policy method, since it learns the optimal greedy policy while potentially following a different exploratory policy during training.
 
 **SARSA (on-policy):**
 
-$$ Q(s, a) \leftarrow Q(s, a) + \alpha \left[ r + \gamma Q(s', a') - Q(s, a) \right] $$
-
+$$ 
+Q(s, a) \leftarrow Q(s, a) + \alpha \left[ r + \gamma Q(s', a') - Q(s, a) \right] 
+$$
 
 In contrast, SARSA updates its value based on the actual action chosen by the current policy in the next state. This makes it an on-policy method, where learning is tied to the agent’s own behavior, including exploration.
 
@@ -629,7 +572,7 @@ To get a deeper understanding of their behavior, similarities, differences, and 
 <!-- Compare on-policy (SARSA) and off-policy (Q-Learning) methods
 Understand their similarities and differences     -->
 
-<a id = "week3-day3"></a>
+<a id = "id-Week3-Day3"></a>
 ### Day 3: Policy Gradient Methods
 Till now we've studied how a RL model chooses how good an action is and chooses the best. Now, instead of estimating these values, it'll directly learn how to act.
 
@@ -642,7 +585,7 @@ Go through the following resources to learn about policy gradient methods:
 <!-- Introduction to policy gradients
 Study the REINFORCE algorithm -->
 
-<a id = "week3-day4"></a>
+<a id = "id-Week3-Day4"></a>
 ### Day 4: Actor-Critic Basics
 Actor–critic methods are TD methods that have a separate memory structure to explicitly represent the policy independent of the value function. The policy structure is known as the actor, because it is used to select actions, and the estimated value function is known as the critic, because it criticizes the actions
 made by the actor.
@@ -653,7 +596,7 @@ Resources:
 <!-- Learn the basics of actor-critic methods
 Understand how policy and value functions are combined -->
 
-<a id = "week3-day5"></a>
+<a id = "id-Week3-Day5"></a>
 ### Day 5: Hyperparameter Tuning
 Hyperparameters are external parameters set before the training begins. Learning rate α, discount factor γ, exploration rate 𝜖, number of episodes, etc, are some of the common hyperparameters in RL models.
 
@@ -666,7 +609,7 @@ There are three major optimization methods used in tuning RL hyperparameters. Th
 
 Watch this [video](https://www.youtube.com/watch?v=nMubTWJGgiU&ab_channel=DigiKey) to learn how to implement hyperparameter optimization in RL models using Meta's Ax.
 
-<a id = "week3-day6"></a>
+<a id = "id-Week3-Day6"></a>
 ### Day 6: Linear Function Approximation
 Before diving into Deep Q-Networks (DQNs) in the upcoming Week-4, it’s important to understand Linear Function Approximation (LFA). This is one of the simplest yet powerful approaches to approximate value functions in Reinforcement Learning.
 In RL, the state space can often be enormous or continuous. Take chess for example, where the number of possible states is estimated to be around 10<sup>47</sup>. Storing a value for each state is clearly impossible. This explosion of possibilities is termed as the **Curse of Dimensionality** – as the number of state variables grows, the total number of states grows exponentially.
@@ -690,14 +633,17 @@ Here, $\theta$ is the weight vector (the parameters we learn), $\phi(s)$ is the 
 
 #### Stochastic Gradient Descent (SGD) Update
 Using the SGD update rule, we minimize the mean squared error between the predicted value and the target:  
+
 $$
 J(\theta) = \frac{1}{2} \big( v(s) - \hat{v}(s; \theta) \big)^2
 $$
 
 and update the weights as:
+
 $$
 \theta \leftarrow \theta + \alpha \big( v(s) - \hat{v}(s; \theta) \big) \phi(s)
 $$
+
 where $\alpha$ is the learning rate and $v(s)$ is the target (either the actual return or a bootstrapped value estimate).
 For those unfamiliar with the SGD update rule, you can refer to the SGD update rule section in the [ML Roadmap](https://pclub.in/roadmap/2024/06/06/ml-roadmap/).
 
@@ -709,7 +655,7 @@ You can refer to the following resources for a deeper dive into LFA:
 - [Repo for implementing SARSA with LFA](https://github.com/LucasAlegre/linear-rl)
 
 
-<a id = "week4"></a>
+<a id = "id-Week4"></a>
 # 🦝 Week 4: Deep RL & Advanced Algorithms
 
 We'll be integrating Q-learning with deep neural networks this week. So, for obvious reasons, you'll need to know about neural networks and some other basics of machine learning. So, for those who are new to these terms, here are a few resources that will be helpful to get started:
@@ -717,7 +663,7 @@ We'll be integrating Q-learning with deep neural networks this week. So, for obv
 - [Neural Networks and Backpropogation(Week-6: Days 1,2)](https://pclub.in/roadmap/2024/06/06/ml-roadmap/#id-Week6-Day1).
 - [Optimization Algorithms(Week-7: Days 1,2)](https://pclub.in/roadmap/2024/06/06/ml-roadmap/#id-Week7-Day1,2)
 
-<a id = "week4-day1"></a>
+<a id = "id-Week4-Day1"></a>
 ### Day 1: Deep Q-Networks (DQN)
 Deep Q-Networks revolutionized reinforcement learning by combining Q-learning with deep neural networks, enabling agents to handle high-dimensional state spaces like raw pixel inputs. DQN uses a convolutional neural network that takes raw state observations as input and outputs Q-values for each possible action.
 
@@ -737,8 +683,7 @@ To brush up your neural network concepts, refer to [Week6](https://pclub.in/road
 * Target networks to reduce correlation
 * Applications in Atari games and robotics
 
-
-<a id = "week4-day2"></a>
+<a id = "id-Week4-Day2"></a>
 ### Day 2: DQN Improvements
 Deep Q-Networks (DQN) represented a breakthrough in reinforcement learning, but several fundamental problems emerged that led to the development of improved variants.
 
@@ -776,7 +721,7 @@ Uses two separate "brains" - one picks the action, the other judges it. This pre
 
 The Implementations of DDQN, Dueling DQN and PER can be found [here](https://github.com/cyoon1729/deep-Q-networks).
 
-<a id = "week4-day3"></a>
+<a id = "id-Week4-Day3"></a>
 ### Day 3: Policy Optimization
 While DQN improvements—Double DQN, Dueling DQN, and Prioritized Experience Replay significantly enhanced the stability and efficiency of value based learning, they still operate within fundamental constraints that limit their real-world applicability. These methods remain bound to discrete action spaces and continue learning policies indirectly through value function approximation.
 
@@ -849,7 +794,7 @@ where r(θ) = π_new(a|s) / π_old(a|s)*
 
 Implementations of both PPO and TRPO can be found [here](https://github.com/Khrylx/PyTorch-RL)
 
-<a id = "week4-day4"></a>
+<a id = "id-Week4-Day4"></a>
 ### Day 4: Continuous Action Spaces
 Policies like PPO and TRPO work when you have a limited number of clear choices (like "turn left," "turn right," "go straight").But in real life, many problems need smooth, precise control.
 
@@ -882,7 +827,7 @@ TD3 addresses DDPG's brittleness with three critical improvements:
 * [OpenAI Spinning Up: Twin Delayed DDPG](https://spinningup.openai.com/en/latest/algorithms/td3.html) - Detailed breakdown of TD3's three key improvements over DDPG
 * [Twin-Delayed DDPG (TD3) with Bipedal Walker](https://github.com/ChienTeLee/td3_bipedal_walker) -  Practical implementation of TD3
 
-<a id = "week4-day5"></a>
+<a id = "id-Week4-Day5"></a>
 ### Day 5: Exploration Strategies
 So far, we've built agents that can learn optimal actions. But how does an agent discover these actions in the first place? This is the core of the [exploration vs. exploitation dilemma](https://www.youtube.com/watch?v=Fhe9zKmTyBY&t=7s). Should the agent exploit its current knowledge to get high rewards, or should it explore new, untried actions that might lead to even better rewards in the long run?
 
@@ -891,19 +836,25 @@ Agents like DDPG and TD3 are great at executing a known strategy, but without a 
 
 **Classic Exploration Strategies (for Discrete Actions):**
 These methods are foundational and work best in environments with a limited set of distinct actions (like "left," "right," "up," "down").
-* **ε-Greedy (Epsilon-Greedy)**
-  With probability ε, the agent chooses a random action (explores). With probability 1-ε, it chooses the best-known action (exploits).
+
+* **ε-Greedy (Epsilon-Greedy)**  
+  With probability ε, the agent chooses a random action (explores). With probability 1−ε, it chooses the best-known action (exploits).
+
   **Reading:**
   * [Optimizing Decision-Making in AI: Fine-Tuning the Epsilon-Greedy Algorithm for Enhanced Performance](https://medium.com/operations-research-bit/optimizing-decision-making-in-ai-fine-tuning-the-epsilon-greedy-algorithm-for-enhanced-performance-ea61e86d6f1d)
-  * [ Epsilon greedy algorithm](https://www.youtube.com/watch?v=EjYEsbg95x0)
-* **Softmax (Boltzmann) Exploration**
-  Actions are chosen based on a probability distribution derived from their Q-values. Higher-value actions have a higher probability of being selected, but no action has a zero probability. A "temperature" parameter controls the randomness: high temperatures lead to more random choices (more exploration), while low temperatures make the agent greedier.  
+  * [Epsilon greedy algorithm](https://www.youtube.com/watch?v=EjYEsbg95x0)
+
+* **Softmax (Boltzmann) Exploration**  
+  Actions are chosen based on a probability distribution derived from their Q-values. Higher-value actions have a higher probability of being selected, but no action has a zero probability. A "temperature" parameter controls the randomness: high temperatures lead to more random choices (more exploration), while low temperatures make the agent greedier.
+
   **Reading:**
   * [Boltzmann Exploration Done Right](https://proceedings.neurips.cc/paper_files/paper/2017/file/b299ad862b6f12cb57679f0538eca514-Paper.pdf)
   * [What is softmax action selection in RL?](https://zilliz.com/ai-faq/what-is-softmax-action-selection-in-rl)
   * [An Alternative Softmax Operator for Reinforcement Learning](https://www.youtube.com/watch?v=wVBQGKMX974)
-* **Upper Confidence Bound (UCB)**
+
+* **Upper Confidence Bound (UCB)**  
   This strategy chooses actions based on both their estimated reward and the uncertainty of that estimate. It adds a "bonus" to actions that haven't been tried often, making them more attractive. The core formula balances the average reward with an exploration term that shrinks as an action is selected more frequently.
+
   **Reading:**
   * [Know all About Upper Confidence Bound Algorithm in Reinforcement Learning](https://www.turing.com/kb/guide-on-upper-confidence-bound-algorithm-in-reinforced-learning)
   * [Upper Confidence Bound UCB Algorithm](https://www.youtube.com/watch?v=s6UHInwoqb0)
@@ -943,10 +894,7 @@ Maximum Entropy](https://arxiv.org/pdf/2412.03800)
 Random Stochastic Mazes](https://www.ai.rug.nl/~mwiering/GROUP/ARTICLES/Exploration_QLearning.pdf)
 * [Entropy-based tuning approach for Q-learning in an unstructured environment](https://www.sciencedirect.com/science/article/pii/S0921889025000107)
 
-
-
-
-<a id = "week4-day6"></a>
+<a id = "id-Week4-Day6"></a>
 ### Day 6: Mini Project
 Here are advanced project suggestions for Week 3:
 
@@ -971,5 +919,5 @@ Here are advanced project suggestions for Week 3:
 * [Stable Baselines3](https://stable-baselines3.readthedocs.io/en/master/) - High-quality implementations of modern RL algorithms
 
 **Contributors**
-- Harsh Malgatte \| +91 7385840159
-- Shreyansh Rastogi \| +91 7459094300
+- Harsh Malgatte \| +91 73858 40159
+- Shreyansh Rastogi \| +91 74590 94300
