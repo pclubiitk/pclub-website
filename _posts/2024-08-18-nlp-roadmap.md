@@ -817,7 +817,7 @@ Spend the next 2 days understanding the architecture and working of different la
 
 ### Understanding the Architecture of Transformers:
 - [This is a great video](https://www.youtube.com/watch?v=4Bdc55j80l8) explaining the transformer architecture in great detail.
-- [Vissual explanation](https://www.youtube.com/watch?v=eMlx5fFNoYc) of how attention works
+- [Visual explanation](https://www.youtube.com/watch?v=eMlx5fFNoYc) of how attention works
 - [Transformers in Machine Learning](https://towardsdatascience.com/transformers-explained-visually-part-1-overview-of-functionality-95a6dd460452/)
 
 <a id="week4day6"></a>
