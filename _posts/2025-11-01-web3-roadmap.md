@@ -256,11 +256,15 @@ Welcome to Ethereum, the blockchain that’s basically a global supercomputer wi
 ### Day 1:
 Smart contracts allow participants to transact with each other without a trusted central authority. A sender must sign transactions and spend Ether, Ethereum’s native cryptocurrency, as a cost of processing transactions on the network.
 
-Check this now: [Intro to Ethereum | ethereum.org](https://ethereum.org/en/developers/docs/intro-to-ethereum/), [Vitalik Buterin Describing Ethereum](https://www.youtube.com/watch?v=TDGq4aeevgY)
+- Check this now: [Intro to Ethereum](https://ethereum.org/en/developers/docs/intro-to-ethereum)
+- here -> [Vitalik Buterin Describing Ethereum ](https://www.youtube.com/watch?v=TDGq4aeevgY)
 
-Ethereum was conceived in 2013 by programmer Vitalik Buterin when he released the Ethereum Whitepaper [(Ethereum Whitepaper | ethereum.org).](https://ethereum.org/en/whitepaper/)
+Ethereum was conceived in 2013 by programmer Vitalik Buterin when he released the Ethereum Whitepaper 
+[(Ethereum Whitepaper](https://ethereum.org/en/whitepaper)
 
-In 2014, the development work began and was crowdfunded, and the network went live on 30th July 2015. Ethereum currently runs on the Proof of Stake(PoS) consensus mechanism post “The Merge” which shifted Ethereum from Proof of Work(PoW) to Proof of Stake. Read more about the merge here: [The Merge | ethereum.org](https://ethereum.org/en/upgrades/merge/#:~:text=by%20~99.95%25.-,What%20was%20The%20Merge%3F,be%20secured%20using%20staked%20ETH.). The Merge marked the end of proof-of-work for Ethereum and started the era of a more sustainable, eco-friendly Ethereum. Ethereum's energy consumption dropped by an estimated 99.95%, making Ethereum a green blockchain.
+In 2014, the development work began and was crowdfunded, and the network went live on 30th July 2015. Ethereum currently runs on the Proof of Stake(PoS) consensus mechanism post “The Merge” which shifted Ethereum from Proof of Work(PoW) to Proof of Stake. Read more about the merge here: 
+[The Merge ](https://ethereum.org/en/upgrades/merge/#:~:text=by%20~99.95%25.-,What%20was%20The%20Merge%3F,be%20secured%20using%20staked%20ETH) 
+The Merge marked the end of proof-of-work for Ethereum and started the era of a more sustainable, eco-friendly Ethereum. Ethereum's energy consumption dropped by an estimated 99.95%, making Ethereum a green blockchain.
 
 ### Day 2:
 [Smart contracts](https://www.vationventures.com/glossary/smart-contracts-definition-explanation-and-use-cases) are the fundamental building blocks of [Ethereum applications](https://ethereum.org/en/dapps/). Nick Szabo coined the term “smart contract”. In 1994, he wrote [an introduction to the concept](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html) and, in 1996, [an exploration of what smart contracts could do.](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html)
@@ -284,12 +288,13 @@ The Ethereum Virtual Machine (EVM) is the core computational engine of the Ether
 
 When a smart contract is deployed or called, its code is run not just on a single computer but simultaneously across thousands of distributed nodes worldwide that participate in the Ethereum network. Each node independently executes the contract, and all nodes must reach consensus—that is, they must agree on the result of every computation and transaction. This consensus process ensures the global Ethereum ledger remains synchronized, accurate, and tamper-resistant, even in a decentralized, trustless system.
 Read about the Ethereum Virtual Machine:
-- [Ethereum Virtual Machine (EVM) | ethereum.org](https://ethereum.org/en/developers/docs/evm/)
+- [Ethereum Virtual Machine (EVM)](https://ethereum.org/en/developers/docs/evm)
 - [Ethereum Virtual Machine (Solidity Documentation)](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
 
 
 ### Day 4:
-To operate efficiently and fairly, Ethereum uses the concept of [gas](https://ethereum.org/en/developers/docs/gas/). Gas is a unit that measures the computational work required to perform operations within the EVM, such as executing a contract function, storing data, or deploying a new smart contract. Every operation has a fixed gas cost, and users pay for gas in Ether (ETH), Ethereum’s native cryptocurrency. [Gas fees](https://etherscan.io/gastracker) serve multiple essential purposes: they reward miners or validators for processing and verifying transactions, encourage efficient code (since more computationally expensive operations cost more), and protect the network from spam or abuse by making attacks financially costly.
+To operate efficiently and fairly, Ethereum uses the concept of [gas](https://ethereum.org/en/developers/docs/gas). Gas is a unit that measures the computational work required to perform operations within the EVM, such as executing a contract function, storing data, or deploying a new smart contract. Every operation has a fixed gas cost, and users pay for gas in Ether (ETH), Ethereum’s native cryptocurrency.
+ [Gas fees](https://etherscan.io/gastracker) serve multiple essential purposes: they reward miners or validators for processing and verifying transactions, encourage efficient code (since more computationally expensive operations cost more), and protect the network from spam or abuse by making attacks financially costly.
 
 Importantly, deploying a new smart contract on Ethereum requires a transaction—and is typically far more expensive in terms of gas than a simple ETH transfer. This is because contract deployment involves storing bytecode and initial data on the blockchain, a resource-intensive operation.
 
