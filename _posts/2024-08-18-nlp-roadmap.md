@@ -61,19 +61,17 @@ Remember , small efforts everyday culminate in making a huge impact. Hence don't
 
 ## RoadMap Skeleton
 
- <details><summary> <strong>Week 1: Text Preprocessing and Embedding Techniques</strong></summary>
-    
+ <strong>Week 1: Text Preprocessing and Embedding Techniques</strong>
+
 - [Day1: Overview](#week1day1)
 - [Day2: Text Preprocessing, Normalization, Regular Expressions, and Edit Distance](#week1day2)
-- [Day3: Diving into Text Representation Techniques(BoW,TF-IDF,CBoW)
-](#week1day3)
+- [Day3: Diving into Text Representation Techniques (BoW, TF-IDF, CBoW)](#week1day3)
 - [Day4: Diving into One-Hot Encoding and Word Embeddings](#week1day4)
 - [Day5: Unlocking the Power of Pretrained Embeddings](#week1day5)
 - [Day6: Understanding Sentiment Classification](#week1day6)
 - [Day7: Mini-Projects](#week1day7)
-    
-</details>
-<details> <summary><strong>Week 2: RNNs, LSTMs and Sequence Modeling</strong></summary>
+
+<strong>Week 2: RNNs, LSTMs and Sequence Modeling</strong>
 
 - [Day1&2: Understanding RNNs](#week2day1)
 - [Day3: Implementing RNNs from scratch](#week2day3)
@@ -82,8 +80,7 @@ Remember , small efforts everyday culminate in making a huge impact. Hence don't
 - [Day6: Implementing LSTMs from scratch ](#week2day6)
 - [Day7: RNNs and LSTMs veriations](#week2day7)
 
-</details>
-<details> <summary><strong>Week 3: GRUs and Language Modelling</strong></summary>
+<strong>Week 3: GRUs and Language Modelling</strong>
     
 - [Day1 and 2 : Understanding GRUs](#week3day1)
 - [Day2: Implementing GRUs](#week3day2)
@@ -92,8 +89,8 @@ Remember , small efforts everyday culminate in making a huge impact. Hence don't
 - [Day4&5: N-Gram Language Models](#week3day4)
 - [Day6: Seq2Seq](#week3day6)
 - [Day7: Beam Search decoding  ](#week3day7)
-</details>
-<details> <summary><strong>Week 4: Attention like that of transformers </strong></summary>
+
+<strong>Week 4: Attention like that of transformers </strong>
 
 - [Day1: Why we need attention and how does it work?](#week4day1)
 - [Day2: Self Attention](#week4day2)
@@ -103,33 +100,28 @@ Remember , small efforts everyday culminate in making a huge impact. Hence don't
 - [Day5:Transformer Network](#week4day5)
 - [Day6&7: Implementing your 1st transformer](#week4day6)
 
-</details>
 
-<details><summary> <strong>Week 5: Deep dive into Transformer Models and Intro to LLMs</strong></summary>
+
+<strong>Week 5: Deep dive into Transformer Models and Intro to LLMs</strong>
     
 - [Day1: What do Transformers do ?](#week5day1)
 - [Day2: Encoder Decoder Models](#week5day2)
-- [Day3: Encoder Only models](#week5day3)
-- [Day4: Decoder only models
-](#week5day4)
-- [Day5: Comparing architectures ](#week5day5)
-- [Day6: Optimization on base transformers](#week5day6)
+- [Day3: Encoder Only and Decoder Only models](#week5day3)
+- [Day4: Comparing architectures](#week5day4)
+- [Day5: Optimization on base transformers ](#week5day5)
+- [Day6: Intro to LLMs](#week5day6)
     
-</details>
-<details> <summary><strong>Week 6: Large Language Models (LLMs) and Fine-Tuning</strong></summary>
+<strong>Week 6: Large Language Models (LLMs) and Fine-Tuning</strong>
 
-- [Day1: Introduction to LLMs](#week6day1)
-- [Day2: Understanding, Visualizing and Building LLMs](#week6day2)
-- [Day3: Transfer Learning in NLP
-](#week6day3)
+- [Day1: Understanding, Visualizing and Building LLMs](#week6day1)
+- [Day2:Transfer Learning in NLP](#week6day2)
+- [Day3: Foundations of Training and Fine-Tuning LLMs](#week6day3)
 - [Day4&5: Training and Fine Tuning LLMs](#week6day4)
 - [Day6: Evaluating LLMs](#week6day6)
 - [Day7: Multilingual NLP – Breaking Language Barriers](#week6day7)
 
-</details>
 
-<details> 
-  <summary><strong>Week 7: Advanced Reinforcement Learning Techniques for NLP & Large Language Models</strong></summary>
+<strong>Week 7: Advanced Reinforcement Learning Techniques for NLP & Large Language Models</strong>
 
 - [Day1: RLHF & RLAIF](#week7day1)
 - [Day2: GRFO and efficient RL fine tuning](#week7day2)
@@ -139,10 +131,9 @@ Remember , small efforts everyday culminate in making a huge impact. Hence don't
 - [Day5: Multi-Agent and Cooperative RL for Language Models](#week7day5)
 - [Day6: Reasoning Expansion, Prolonged RL, and the Future of RL for NLP](#week7day6)
 
-</details>
 
 
-<details> <summary><strong>Week 8: Speech and Multimodal NLP</strong></summary>
+<strong>Week 8: Speech and Multimodal NLP</strong>
 
 - [Day1:  Introduction to Speech & Multimodality](#week8day1)
 - [Day2: TTS – Text Analysis Module](#week8day2)
@@ -151,10 +142,9 @@ Remember , small efforts everyday culminate in making a huge impact. Hence don't
 - [Day4: TTS – Neural Vocoders](#week8day4)
 - [Day5: latest Trends in TTS](#week8day5)
 - [Day6&7: Mini Project – Build a TTS Pipeline](#week8day6)
-</details>
 
-<details><summary> <strong>Week 9 : Speech-to-Text & Cross-Modal NLP</strong></summary>
-    
+<strong>Week 9 : Speech-to-Text & Cross-Modal NLP</strong>
+
 - [Day1: Introduction to ASR](#week9day1)
 - [Day2&3: Whisper and wav2vec – Multilingual ASR](#week9day2)
 - [Day4: Deep Learning Approaches + Comparing ASR Models
@@ -163,35 +153,43 @@ Remember , small efforts everyday culminate in making a huge impact. Hence don't
 - [Day6: Multimodel Architecture and APIs](#week9day6)
 - [Day7: Mini Project – ASR or Cross-Modal App](#week9day7)
     
-</details>
+
     
 ---
 <a id="week1"></a>
 # 🦝 Week 1: NLP Intro Pack and Sentiments
 
-```mermaid
-graph TD
+![Graph1](/images/nlp-roadmap/graph.png)
 
-A[Overview] 
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: "default",
+    flowchart: { useMaxWidth: true, curve: "linear" },
+    themeVariables: { fontSize: "22px" }
+  });
+</script>
 
-A --> D[Steps in NLP and how we perform them]
-D --> E[Text Input and Data Collection]
-D --> F[Text Preprocessing]
-D --> G[Text Representation]
-G --> H[Text Representation Techniques]
-H --> I[One Hot Encoding, BoW, TF-IDF, etc.]
-I --> J[Detail of One Hot Encoding]
+<style>
+  .mermaid-container {
+    width: 100%;
+    overflow: visible;
+  }
 
-D --> K[Feature Extraction: Patter-n Detection]
-D --> L[Model Selection and        Training]
-L --> M[How to Improve the NLP Model]
-M --> N[Using pretrained Embeddings: FastText, Glove, etc.]
-N --> O[Understanding Sentiment Classification]
+  .mermaid-container pre {
+    margin: 0;
+    padding: 0;
+  }
 
-E --> P[Model Deployment and Inference]
-E --> Q[Iterations and Improvements]
-
-```
+  .mermaid-container svg {
+    width: 100%;
+    height: auto;
+    transform: scale(5);
+    transform-origin: top left;
+    display: block;
+  }
+</style>
 
 ## 👾<span id="week1day1">Day 1: Overview</span>
 First of all, check out this amazing playlist by TensorFlow to get a crisp idea of what we are going to do this week. It’s packed with insightful videos that will lay a solid foundation for your NLP journey!
@@ -311,15 +309,21 @@ Benefits:
 **Performance**: Often leads to better model performance due to the high-quality, contextual word representations.
 **Transfer Learning**: Facilitates transfer learning, where knowledge from one task (like language modeling) can be applied to another (like sentiment analysis).
 #### b. Popular Pretrained Embeddings and How to Use Them
+
+
 ### [Word2Vec](https://www.youtube.com/watch?v=UqRCEmrv1gQ&t=5s)
 - For a really good explantion you can watch the [working of word2vec](https://www.youtube.com/watch?v=8rXD5-xhemo)
 - Description: Word2Vec models come in two flavors – Continuous Bag of Words (CBOW) and Skip-gram. Both capture word relationships effectively.
 - How to Use: Available via libraries like Gensim. Simply load the pretrained model and start using the embeddings in your projects.
 - The original Word2Vec project by google can be found [here](https://code.google.com/archive/p/word2vec/)
+
+
 ### [GloVe](https://towardsdatascience.com/glove-research-paper-explained-4f5b78b68f89/)(Global Vectors for Word Representation)
 - **Description**: GloVe embeddings are generated by aggregating global word-word co-occurrence statistics from a corpus. It can help in dealing with languages for which the word2vec and glove fail as they are trained mainly for english.
 - **How to Use**: Pretrained GloVe vectors can be downloaded and integrated into your models using libraries like Gensim or directly via NumPy.
 - The original stanford project of glove can be found [here](https://nlp.stanford.edu/projects/glove/)
+
+
 ### [FastText](https://fasttext.cc/)
 **Description**: Unlike Word2Vec and GloVe, FastText considers subword information, making it effective for morphologically rich languages and rare words.
 
@@ -363,8 +367,9 @@ Cons: Require significant computational resources and large amounts of data.
 
 #### **[Here](https://medium.com/@robdelacruz/sentiment-analysis-using-natural-language-processing-nlp-3c12b77a73ec) is the link of a really good article to learn the techniques of sentiment classification and write code for it .**
 
-** Watch and Learn: Sentiment Analysis in Action
-For a detailed walkthrough on sentiment analysis using NLP techniques, check out this comprehensive video tutorial:**
+#### Watch and Learn: Sentiment Analysis in Action
+For a detailed walkthrough on sentiment analysis using NLP techniques, check out this comprehensive video tutorial
+
 
 Sentiment Analysis Video
 
@@ -432,14 +437,8 @@ Remember, practice makes perfect. The more you experiment with different dataset
 
 # 🦝 WEEK-2 : Sequence Models, RNNs, LSTMs
 
-```mermaid
-graph TD
-    A[Exploring Deep Learning  Models] --> B[Sequence Models, RNNs,  LSTMs and how are they    useful in NLP]
-    B --> C[Understanding RNNs]
-    C --> D[Implementing RNN from   scratch]
-    C --> E[Understanding LSTMs]
-    E --> F[Implementing LSTM from  scratch]
-```
+![Graph1](/images/nlp-roadmap/DeepLearning.png)
+
 
 ## Prelimnary knowledge:
 A neural network is a type of artificial intelligence model that maps the structure and function of the human brain to learn from data and make decisions or predictions. It consists of interconnected layers of nodes, or "neurons," which process information and adjust "weights"(or simply parameters) on their connections to identify patterns and solve complex problems, making them useful for tasks like image recognition, language translation, and predictive analytics.
@@ -457,20 +456,10 @@ Here's when LSMT comes in to save the day . LSTMs provide a solution to the long
 
 <a id="week2day1"></a>
 ## 👾 Day 1 and 2: Understanding RNNs
-```mermaid
-graph TD
-    A["Learning RNNs"] -->  C["RNNs are building blocks    for bigger models"]
-    C -->  E["Uses sequential or time series data"]
-    E --> F["Applications"]
-    F --> F1["Language Translation"]
-    F --> F2["NLP tasks"]
-    F --> F3["Speech Recognition"]
-    F --> F4["Image Captioning"]
-    F1 --> G["Google Translate"]
-    F3 --> G1["Siri, Voice Search"]
-   
 
-```
+![Graph2](/images/nlp-roadmap/RNN.png)
+
+
 Here's the link to the research paper of the model : [Research Paper of RNNs](https://arxiv.org/pdf/1912.05911)
 
 
@@ -480,46 +469,44 @@ As stated above, a **recurrent neural network (RNN)** is a type of **artificial 
 
 For understanding RNNs and their implementation in tensorflow, go through the following links:
 
-- https://www.geeksforgeeks.org/introduction-to-recurrent-neural-network/
-- https://www.analyticsvidhya.com/blog/2022/03/a-brief-overview-of-recurrent-neural-networks-rnn/
+- [Introduction to Recurrent Neural Network - GeeksforGeeks](https://www.geeksforgeeks.org/introduction-to-recurrent-neural-network/)
+- [A Brief Overview of Recurrent Neural Networks - Analytics Vidhya](https://www.analyticsvidhya.com/blog/2022/03/a-brief-overview-of-recurrent-neural-networks-rnn/)
 
-This RNN cheatsheet by Stanford shall come in handy for revision .
+[This RNN cheatsheet by Stanford shall come in handy for revision .](https://web.stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)
 
 While talking about RNNs and LSTMs , context refers memory of past inputs that helps in interpreting the current input correctly.
 
 <a id="week2day3"></a>
 ## 👾 Day 3: Implementing RNN from scratch
-To truly understand RNNs, you must understand how to implement them from scratch. Use your knowledge to implement them in python, and use the following link as a reference if you get stuck: https://towardsdatascience.com/recurrent-neural-networks-rnns-3f06d7653a85
+To truly understand RNNs, you must understand how to implement them from scratch. Use your knowledge to implement them in python, and use the following link as a reference if you get stuck: [https://towardsdatascience.com/recurrent-neural-networks-rnns-3f06d7653a85](https://towardsdatascience.com/recurrent-neural-networks-rnns-3f06d7653a85)
 
 You can also refer to the following notebooks:
 
-- RNN Implementation using Keras
-- RNN from scratch Kaggle notebook
+- [RNN Implementation using Keras](https://victorzhou.com/blog/keras-rnn-tutorial/)
+- [RNN from scratch Kaggle notebook](https://www.kaggle.com/code/fareselmenshawii/rnn-from-scratch)
 
 <a id="week2day4"></a>
 ## 👾 Day 4 and 5: Understanding LSTMs
 
 [Research paper for LSMTs](https://arxiv.org/pdf/1909.09586)
 
+RNNs suffer from issues like **vanishing** and **exploding gradients**. To understand these problems in more detail, check out this article:  
+- [Let's Understand the Problems with Recurrent Neural Networks - Analytics Vidhya](https://www.analyticsvidhya.com/blog/2021/07/lets-understand-the-problems-with-recurrent-neural-networks/)
 
-RNNs show multiple issues like Vanishing and Exploding gradient descent. To understand these issues better, follow the link: 
-https://www.analyticsvidhya.com/blog/2021/07/lets-understand-the-problems-with-recurrent-neural-networks/
+These issues are largely addressed by **Long Short-Term Memory (LSTM) models**, which efficiently maintain both short-term and long-term context, while also providing mechanisms to forget information that is no longer needed.
 
-These issues are largely solved by Long Short Term Memory Models, which efficiently maintain short term as well as long term context, along with having an added functionality to eliminate information or memory if it’s no longer required.
+For a deeper understanding of LSTMs, this article is highly recommended:  
+- [A Deep Dive into LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) (includes excellent visualizations)
 
-This article is recommended as it provides an in-depth understanding of usually hard-to-understand LSTMs.
-
-You can refer to this article as well for better visualizations.
 
 <a id="week2day6"></a>
 ## 👾 Day 6: Implementing an LSTM from scratch
-Use the knowledge gained to implement an LSTM from scratch. You can refer to the following articles if you face issues in implementing it: https://medium.com/@CallMeTwitch/building-a-neural-network-zoo-from-scratch-the-long-short-term-memory-network-1cec5cf31b7
+Use the knowledge gained to implement an LSTM from scratch. You can refer to the following articles if you face issues in implementing it: [https://medium.com/@CallMeTwitch/building-a-neural-network-zoo-from-scratch-the-long-short-term-memory-network-1cec5cf31b7](https://medium.com/@CallMeTwitch/building-a-neural-network-zoo-from-scratch-the-long-short-term-memory-network-1cec5cf31b7)
 
 You can also refer to the following notebooks:
 
-- LSTM implementation from scratch
-- LSTM implementatin using PyTorch
-- LSTM Implemention on IMDB sentiment analysis dataset
+- [LSTM implementation from scratch](https://codingowen.github.io/projects/lstm_from_scratch/)
+- [LSTM implementatin using PyTorch](https://docs.pytorch.org/docs/stable/generated/torch.nn.LSTM.html)
 
 <a id="week2day7"></a>
 ## 👾 Day 7: RNN and LSTM Variations
@@ -551,32 +538,70 @@ Stack multiple RNN layers to learn more complex representations, allowing the mo
 
 ---
 # 🦝 WEEK-3 : GRUs and Language Models
-```mermaid
+
+
+<div class="mermaid-container" style="text-align: center;">
+  <pre class="mermaid">
 graph TD
   A[ Understanding GRUs]
-    B[ Implementing GRUs]
-    C[ Statistical Language Model-ing]
-    D[ N-Gram Language Models]
-    E[ Seq2Seq Models]
-    F[ Beam Search Decoding]
+  B[ Implementing GRUs]
+  C[ Statistical Language Model-ing]
+  D[ N-Gram Language Models]
+  E[ Seq2Seq Models]
+  F[ Beam Search Decoding]
 
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-```
-  
+  A --> B
+  B --> C
+  C --> D
+  D --> E
+  E --> F
+  </pre>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: "default",
+    flowchart: { useMaxWidth: true, curve: "linear" },
+    themeVariables: { fontSize: "16px" }
+  });
+</script>
+
+<style>
+  .mermaid-container {
+    width: 100%;
+    overflow: visible;
+    text-align: center;
+  }
+
+  .mermaid-container pre {
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+  }
+
+  .mermaid-container svg {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+</style>
+
+
+
 <a id="week3day1"></a>
 ## 👾 Day 1 and 2: Understanding GRUs
 Gated Recurrent Unit (GRU) is a type of recurrent neural network (RNN) that was introduced as a simpler alternative to Long Short-Term Memory (LSTM) networks. Like LSTM, GRU can process sequential data such as text, speech, and time-series data. Go through the following articles for better understanding:
-- https://www.geeksforgeeks.org/gated-recurrent-unit-networks/
-- https://www.analyticsvidhya.com/blog/2021/03/introduction-to-gated-recurrent-unit-gru/
+- [https://www.geeksforgeeks.org/gated-recurrent-unit-networks/](https://www.geeksforgeeks.org/gated-recurrent-unit-networks/)
+- [https://www.analyticsvidhya.com/blog/2021/03/introduction-to-gated-recurrent-unit-gru/](https://www.analyticsvidhya.com/blog/2021/03/introduction-to-gated-recurrent-unit-gru/)
 
 <a id="week3day2"></a>
 ## 👾 Day 2: Implementing GRUs
 To gain better understanding of GRUs, let's implement it from scratch. Use the following link for reference:
-https://d2l.ai/chapter_recurrent-modern/gru.html
+[https://d2l.ai/chapter_recurrent-modern/gru.html](https://d2l.ai/chapter_recurrent-modern/gru.html)
 
 You can also refer to the following repositories/notebooks:
 - [GRU implementation using Tensorflow](https://github.com/d2l-ai/d2l-tensorflow-colab/blob/master/chapter_recurrent-modern/gru.ipynb)
@@ -588,11 +613,11 @@ You can also refer to the following repositories/notebooks:
 <a id="week3day3"></a>
 ## 👾 Day 3: Statistical Language Modeling
 In NLP, a language model is a probability distribution over strings on an alphabet. Statistical Language Modeling, or Language Modeling and LM for short, is the development of probabilistic models that are able to predict the next word in the sequence given the words that precede it. For a deeper understanding, go through the following resources:
-- https://www.youtube.com/watch?v=6P2z9PDRWTw
-- https://www.engati.com/glossary/statistical-language-modeling
+- [https://www.youtube.com/watch?v=6P2z9PDRWTw](https://www.youtube.com/watch?v=6P2z9PDRWTw)
+- [https://www.engati.com/glossary/statistical-language-modeling](https://www.engati.com/glossary/statistical-language-modeling)
 - [History of SLMs](https://www.cs.cmu.edu/~roni/papers/survey-slm-IEEE-PROC-0004.pdf)
 
-Here's a paper covering SLM in depth https://www.cs.cmu.edu/~roni/papers/survey-slm-IEEE-PROC-0004.pdf
+Here's a paper covering SLM in depth [Link](https://www.cs.cmu.edu/~roni/papers/survey-slm-IEEE-PROC-0004.pdf)
 <a id="week3day4"></a>
 ## 👾 Day 4 and 5: N-Gram Language Models
 Now that we've understood SLMs, let's take a look into an example of a Language Model: N-Gram. Go through the following resources:
@@ -605,9 +630,12 @@ Now that we've understood SLMs, let's take a look into an example of a Language 
 Seq2Seq model or Sequence-to-Sequence model, is a machine learning architecture designed for tasks involving sequential data. It takes an input sequence, processes it, and generates an output sequence. The architecture consists of two fundamental components: an encoder and a decoder. This Encoder-Decoder Architecture is also used in Transformers which we shall study later. Go through these resources for understading Seq2Seq better:
 - [Intro to Seq2Seq](https://www.analyticsvidhya.com/blog/2020/08/a-simple-introduction-to-sequence-to-sequence-models/)
 - [Implementation in Keras](https://blog.keras.io/a-ten-minute-introduction-to-sequence-to-sequence-learning-in-keras.html)
-```mermaid
+
+
+<div class="mermaid-container">
+  <pre class="mermaid">
 graph TD
-    A["Input Sequence"] --> B["Encoder RNN"]
+  A["Input Sequence"] --> B["Encoder RNN"]
     B --> C["Context / Hidden State"]
     C --> D["Decoder RNN"]
     D --> E["Output Sequence"]
@@ -620,8 +648,43 @@ graph TD
         D
     end
    
-    
-```
+  </pre>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: "default",
+    flowchart: { useMaxWidth: true, curve: "linear" },
+    themeVariables: { fontSize: "16px" }
+  });
+</script>
+
+<style>
+  
+  .mermaid-container {
+    width: 100%;
+    overflow: visible; 
+  }
+
+  
+  .mermaid-container pre {
+    margin: 0;
+    padding: 0;
+  }
+
+ 
+  .mermaid-container svg {
+    width: 100%;  
+    height: auto; 
+    transform: scale(1); 
+    transform-origin: top left;
+    display: block;
+  }
+</style>
+
+---
 
 
 <a id="week3day7"></a>
@@ -633,20 +696,11 @@ Beam search is an algorithm used in many NLP and speech recognition models as a 
 ---
 
 
-# 🦝 Week-4 : Attention Like That of Transformers ;)
-```mermaid
-graph TD
-    A[Need of Attention in          Sequence Models]
-    B[Self and Cross Attention]
-    C[Transformer Network and Architecture]
-    D[Multi Head Attention]
-    E[Implementing your first      transformer]
+# 🦝 Week-4 : Attention Like That of Transformers ;
 
-    A --> B
-    A --> C
-    A --> D
-    C --> E
-```
+![Graph1](/images/nlp-roadmap/Attention.png)
+
+
 Attention mechanisms help models focus on relevant parts of input data.
 
 Here's the link for the paper which introduced the transformer model [Attention is all you need](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)
@@ -695,6 +749,8 @@ You may refer to these sources too
 
 - [A Visual Guide to Using Attention in RNNs](https://www.youtube.com/watch?v=PSs6nxngL6k)
 - [See this great video by StatQuest to answer these question.](https://www.analyticsvidhya.com/blog/2020/08/a-simple-introduction-to-sequence-to-sequence-models/)
+
+
 ## TYPES OF ATTENTION MECHANISMS
 
 
@@ -720,7 +776,7 @@ Captures long-range dependencies directly (no information decay over distance).
 Multi-head attention is a powerful extension of self-attention that allows the model to jointly attend to information from different representation subspaces at different positions. Here's a comprehensive breakdown:
 
 
-Instead of performing a single attention function, multi-head attention runs multiple parallel attention heads** (typically 8-16).Each head learns different attention patterns (e.g., syntactic, semantic, positional relationships).
+Instead of performing a single attention function, multi-head attention runs multiple parallel attention heads (typically 8-16).Each head learns different attention patterns (e.g., syntactic, semantic, positional relationships).
 Combines results from all heads to form the final output.
 
 Why it works:
@@ -761,7 +817,7 @@ Spend the next 2 days understanding the architecture and working of different la
 
 ### Understanding the Architecture of Transformers:
 - [This is a great video](https://www.youtube.com/watch?v=4Bdc55j80l8) explaining the transformer architecture in great detail.
-- [Vissual explanation](https://www.youtube.com/watch?v=eMlx5fFNoYc) of how attention works
+- [Visual explanation](https://www.youtube.com/watch?v=eMlx5fFNoYc) of how attention works
 - [Transformers in Machine Learning](https://towardsdatascience.com/transformers-explained-visually-part-1-overview-of-functionality-95a6dd460452/)
 
 <a id="week4day6"></a>
@@ -779,14 +835,14 @@ You can skip topics like Multi-GPU Training,Hardware and Schedule. Feel free to 
 # 🦝 Week 5: Deep dive into Transformer Models and Intro to LLMs
 
 
+This week will give you an in-depth dive into the various types of transformers, and later we'll begin with LLMs.
 
-This week will give you an in-depth dive into the various types of transformers and later we'll begin with LLMs
+### Core Resources
 
-###  Core Resources
-| Type | Link |
-|------|------|
-|  Video | [Intro to Encoder Decoder Models](https://www.youtube.com/watch?v=L8HKweZIOmg) |
-|  Blog | [What are Encoder Decoder Models?](https://www.ibm.com/think/topics/encoder-decoder-model) |
+| Type  | Link |
+|-------|------|
+| Video | [Intro to Encoder-Decoder Models](https://www.youtube.com/watch?v=L8HKweZIOmg) |
+| Blog  | [What are Encoder-Decoder Models?](https://www.ibm.com/think/topics/encoder-decoder-model) |
 
 
 
@@ -794,10 +850,10 @@ This week will give you an in-depth dive into the various types of transformers 
 ## 👾Day 1: What do Transformers do?
 Transformers are the current state-of-the-art type of model for dealing with sequences. Perhaps the most prominent application of these models is in text processing tasks, and the most prominent of these is machine translation. In fact, transformers and their conceptual progeny have infiltrated just about every benchmark leaderboard in natural language processing (NLP), from question answering to grammar correction.
 
-
-```mermaid
+<div class="mermaid-container">
+  <pre class="mermaid">
 flowchart TD
-    subgraph Inputs [Input Variables]
+  subgraph Inputs [Input Variables]
         direction LR
         Xi[Xi]
         Xj[Xj]
@@ -813,11 +869,48 @@ flowchart TD
     end
 
     Inputs --> Process --> Outputs
-```
+   
+  </pre>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: "default",
+    flowchart: { useMaxWidth: true, curve: "linear" },
+    themeVariables: { fontSize: "16px" }
+  });
+</script>
+
+<style>
+  
+  .mermaid-container {
+    width: 100%;
+    overflow: visible; 
+  }
+
+  
+  .mermaid-container pre {
+    margin: 0;
+    padding: 0;
+  }
+
+ 
+  .mermaid-container svg {
+    width: 100%;  
+    height: auto;    
+     transform: scale(1); 
+    transform-origin: top left;
+    display: block;
+  }
+</style>
+
+---
 
 Here the transformer is represented as a black box. An entire sequence of (x’s in the diagram) is parsed simultaneously in feed-forward manner, producing a transformed output tensor. In this diagram the output sequence is more concise than the input sequence. For practical NLP tasks, word order and sentence length may vary substantially.
 
-Here's a deep dive into the architecture of transformers  https://www.exxactcorp.com/blog/Deep-Learning/a-deep-dive-into-the-transformer-architecture-the-development-of-transformer-models
+Here's a deep dive into the architecture of transformers  [https://www.exxactcorp.com/blog/Deep-Learning/a-deep-dive-into-the-transformer-architecture-the-development-of-transformer-models](https://www.exxactcorp.com/blog/Deep-Learning/a-deep-dive-into-the-transformer-architecture-the-development-of-transformer-models)
 
 Transformers revolutionized sequence-to-sequence tasks like language translation by using the multi-head attention mechanism instead of recurrent neural networks (RNNs). It processes data in parallel, allowing for more efficient training and handling of long-range dependencies in sequences, overcoming limitations of RNNs.
 
@@ -856,7 +949,7 @@ These models only use the decoder part of the Transformer architecture. They are
 - Language Modeling
 
 You can refer to this amazing article talking about encoders and decoders in detail:
-https://magazine.sebastianraschka.com/p/understanding-encoder-and-decoder
+[https://magazine.sebastianraschka.com/p/understanding-encoder-and-decoder](https://magazine.sebastianraschka.com/p/understanding-encoder-and-decoder)
 
 <a id="week5day4"></a>
 ## 👾 Day 4: Comparing Architectures
@@ -867,7 +960,7 @@ Decoder-only models are typically applied to open-ended generative tasks, includ
 [![Screenshot 2025-08-20 233558](https://hackmd.io/_uploads/SJ560YXYxe.png)
 ](https://)
 
-Here's another article about comparing the various tansformer forms https://aiml.com/compare-the-different-transformer-based-model-architectures/
+Here's another article about comparing the various tansformer forms [https://aiml.com/compare-the-different-transformer-based-model-architectures/](https://aiml.com/compare-the-different-transformer-based-model-architectures/)
 
 <a id="week5day5"></a>
 ## 👾 Day 5: Optimization for Transformers
@@ -894,23 +987,25 @@ SSMs are a family of models designed to predict how systems evolve over time, tr
 
 Go through the articles mentioned below to get an in depth synopsis of SSMs and the optimizations in transformers .
 
-https://huggingface.co/blog/ProCreations/transformers-are-getting-old
+[https://huggingface.co/blog/ProCreations/transformers-are-getting-old](https://huggingface.co/blog/ProCreations/transformers-are-getting-old)
 
-https://www.ibm.com/think/topics/state-space-model
+[https://www.ibm.com/think/topics/state-space-model](https://www.ibm.com/think/topics/state-space-model)
 
 <a id="week5day6"></a>
 ## 👾 Day 6: Introduction to LLMs
 - Understand LLM fundamentals
 - Compare open-source vs proprietary models
 
-###  Core Resources
-| Type | Link |
-|------|------|
-|  Video | [Intro to LLMs](https://www.youtube.com/watch?v=iR2O2GPbB0E) |
-|  Blog | [What are LLMs?](https://www.spiceworks.com/tech/artificial-intelligence/articles/what-is-llm/) |
-| Analysis | [Open-source vs Proprietary](https://deepchecks.com/open-source-vs-proprietary-llms-when-to-use/)
+### Core Resources
 
-Some private LLMs include ones by Google, OpenAI, Cohere etc. and public ones include the open-source LLMs (lot of which can be found at https://huggingface.co/models).
+| Type     | Link |
+|----------|------|
+| Video    | [Intro to LLMs](https://www.youtube.com/watch?v=iR2O2GPbB0E) |
+| Blog     | [What are LLMs?](https://www.spiceworks.com/tech/artificial-intelligence/articles/what-is-llm/) |
+| Analysis | [Open-source vs Proprietary](https://deepchecks.com/open-source-vs-proprietary-llms-when-to-use/) |
+
+
+Some private LLMs include ones by Google, OpenAI, Cohere etc. and public ones include the open-source LLMs (lot of which can be found at [https://huggingface.co/models](https://huggingface.co/models)).
 
 # 🦝 Week 6: Large Language Models and Fine Tuning
 
@@ -921,32 +1016,25 @@ Some private LLMs include ones by Google, OpenAI, Cohere etc. and public ones in
 
 **Deconstruct GPT architecture and implement a minimal LLM**
 
-```mermaid
-flowchart LR
-    A[Tokenization] --> B[Embedding Layer]
-    B --> C[Transformer Blocks]
-    C --> D[Output Head]
-    style A stroke:#ff9f43,stroke-width:4px
-    style D stroke:#0abde3,stroke-width:4px
-```
+![Graph1](/images/nlp-roadmap/IntroLLMs.png)
 
-Intuitive explanation of GPT-2: https://jalammar.github.io/illustrated-gpt2/
+Intuitive explanation of GPT-2: [https://jalammar.github.io/illustrated-gpt2/](https://jalammar.github.io/illustrated-gpt2/)
 
-3D visualisation of inside of LLM: https://bbycroft.net/llm 
+3D visualisation of inside of LLM: [https://bbycroft.net/llm](https://bbycroft.net/llm)
 This will offer a unique perspective on how data flows and is processed within the model, enhancing your understanding of its architecture.
 
 A great resource is the video [Build Your Own GPT](https://www.youtube.com/watch?v=kCc8FmEb1nY) along with the accompanying GitHub repository [nanoGPT](https://github.com/karpathy/nanoGPT/tree/master). This tutorial teaches you how to implement your own LLM from scratch!
 #### BERT
 Go through this [research paper](https://arxiv.org/pdf/1810.04805) to get a good understanding of BERT. Some more great resources:
 * [Bert 101 by Hugging Face](https://huggingface.co/blog/bert-101)
-* https://www.kaggle.com/code/ratan123/in-depth-guide-to-google-s-bert
+* [https://www.kaggle.com/code/ratan123/in-depth-guide-to-google-s-bert](https://www.kaggle.com/code/ratan123/in-depth-guide-to-google-s-bert)
 * [What Does BERT Look At? An Analysis of BERT’s Attention](https://nlp.stanford.edu/pubs/clark2019what.pdf)
 * [Investigating BERT’s Knowledge of Language: Five Analysis Methods with NPIs](https://arxiv.org/pdf/1909.02597)
  
 **Knowledge Distillation**: Knowledge Distillation is a pivotal technique in modern Natural Language Processing (NLP) that involves training a smaller "student" model using the outputs of a larger "teacher" model. This process helps in creating models that are more efficient for deployment without significant loss of performance. Below are some essential resources and papers that explore this technique, particularly in the context of BERT and its variations.
 * [Small and Practical BERT Models for Sequence Labeling](https://arxiv.org/pdf/1909.00100) : This paper discusses techniques to create smaller and more practical BERT models tailored for sequence labeling tasks.
 * [TinyBert](https://arxiv.org/abs/1909.10351)
-* [DistilBert](https://arxiv.org/abs/1910.01108), another great resource: https://medium.com/huggingface/distilbert-8cf3380435b5
+* [DistilBert](https://arxiv.org/abs/1910.01108), another great resource: [https://medium.com/huggingface/distilbert-8cf3380435b5](https://medium.com/huggingface/distilbert-8cf3380435b5)
 
 More Resources on BERT Variants and Optimizations:
 * [RoBERTa: A Robustly Optimized BERT Pretraining Approach](https://arxiv.org/pdf/1907.11692.pdf)
@@ -955,7 +1043,7 @@ RoBERTa improves upon the original BERT model by optimizing the pretraining proc
 * [ALBERT: A Lite BERT for Self-supervised Learning of Language Representations](https://arxiv.org/abs/1909.11942)
 ALBERT introduces parameter reduction techniques to create a lighter version of BERT. By sharing parameters across layers and reducing the size of the hidden layers, ALBERT achieves high performance with fewer resources.
 
-Comparison between BERT, GPT and BART: https://medium.com/@reyhaneh.esmailbeigi/bert-gpt-and-bart-a-short-comparison-5d6a57175fca
+Comparison between BERT, GPT and BART: [https://medium.com/@reyhaneh.esmailbeigi/bert-gpt-and-bart-a-short-comparison-5d6a57175fca](https://medium.com/@reyhaneh.esmailbeigi/bert-gpt-and-bart-a-short-comparison-5d6a57175fca)
 
 <a id="week6day2"></a>
 ## 👾 Day 2: Transfer Learning in NLP
@@ -981,7 +1069,7 @@ This requires much less data and computing power than training from scratch.
 
 <a id="week6day3"></a>
 ## 👾 Day 3: Foundations of Training and Fine-Tuning LLMs
-Novice’s LLM Training Guide: https://rentry.org/llm-training provides a comprehensive introduction to LLM Training covering concepts to consider while fine-tuning of LLMs. This is a good starting point to understand what happens “under the hood” during training.
+Novice’s LLM Training Guide: [https://rentry.org/llm-training](https://rentry.org/llm-training) provides a comprehensive introduction to LLM Training covering concepts to consider while fine-tuning of LLMs. This is a good starting point to understand what happens “under the hood” during training.
 
 **One of the most important component of fine-tuning of LLMs is using quality datasets.** This directly affects the quality of the model in the following ways:
 - High-quality, well-structured data → better generalization and fewer hallucinations.
@@ -991,7 +1079,7 @@ Go through the following articles :
 - [Generating a clinical instruction dataset in poruguese](https://solano-todeschini.medium.com/generating-a-clinical-instruction-dataset-in-portuguese-with-langchain-and-gpt-4-6ee9abfa41ae)
 - [Finetuning Datasets](https://finetunedb.com/blog/finetuning-datasets-explained/)
 
-Pretraining a GPT-2 model from scratch: https://huggingface.co/learn/nlp-course/chapter7/6?fw=pt
+Pretraining a GPT-2 model from scratch: [https://huggingface.co/learn/nlp-course/chapter7/6?fw=pt](https://huggingface.co/learn/nlp-course/chapter7/6?fw=pt)
 Although this is rarely done due to computational costs, but it'll help you understand the core functionalities.
 
 **Keeping up with the latest datasets is crucial for effective fine-tuning**. The field of LLM fine-tuning evolves quickly. New instruction datasets appear frequently, and using trending, well-tested ones is crucial. This [GitHub repository](https://github.com/Zjh-819/LLMDataHub) provides a curated list of trending instruction fine-tuning datasets .
@@ -1002,7 +1090,7 @@ Although this is rarely done due to computational costs, but it'll help you unde
 
 Prompts act like instructions for the model. Effective use of prompt templates can significantly enhance the performance of LLMs. [This article](https://solano-todeschini.medium.com/generating-a-clinical-instruction-dataset-in-portuguese-with-langchain-and-gpt-4-6ee9abfa41ae) from Hugging Face explains how to create and use prompt templates to guide model responses.
 
-Prompt Engineering Guide: https://www.promptingguide.ai/ provides a great list of prompt techniques
+Prompt Engineering Guide: [https://www.promptingguide.ai/](https://www.promptingguide.ai/) provides a great list of prompt techniques
 
 [Finetuning Llama 2 in Colab](https://mlabonne.github.io/blog/posts/Fine_Tune_Your_Own_Llama_2_Model_in_a_Colab_Notebook.html) demonstrates how large models can be trained on cloud GPUs step by step, even without expensive hardware.
 
@@ -1037,16 +1125,16 @@ For an in-depth study, here are the research papers presenting LoRA and QLoRA:
 
 Evaluating LLMs is just as important as building them. But this is where the challenge lies -- unlike traditional ML Models with clear accuracy metrics, language generation needs specialized evaluation methods to judge fluency and usefulness. Here are a few such methods:
 
-**BLEU**: BLEU (Bilingual Evaluation Understudy) compares a machine-generated text to one or more human-generated reference texts and assigns a score based on how similar the machine-generated text is to the reference texts. More on BLEU metric and its flaws: https://towardsdatascience.com/evaluating-text-output-in-nlp-bleu-at-your-own-risk-e8609665a213
+**BLEU**: BLEU (Bilingual Evaluation Understudy) compares a machine-generated text to one or more human-generated reference texts and assigns a score based on how similar the machine-generated text is to the reference texts. More on BLEU metric and its flaws: [https://towardsdatascience.com/evaluating-text-output-in-nlp-bleu-at-your-own-risk-e8609665a213](https://towardsdatascience.com/evaluating-text-output-in-nlp-bleu-at-your-own-risk-e8609665a213)
 
-**Perplexity**: BLEU evaluates text generation quality against human references, while with Perplexity, we try to evaluate the similarity between the token (probably sentences) distribution generated by the model and the one in the test data. More on Perplexity: https://huggingface.co/docs/transformers/perplexity
+**Perplexity**: BLEU evaluates text generation quality against human references, while with Perplexity, we try to evaluate the similarity between the token (probably sentences) distribution generated by the model and the one in the test data. More on Perplexity: [https://huggingface.co/docs/transformers/perplexity](https://huggingface.co/docs/transformers/perplexity)
 
 **ROUGE**: ROUGE (Recall-Oriented Understudy for Gisting Evaluation) is another set of metrics used for automatic summarization and machine translation. Unlike BLEU, which focuses on precision, ROUGE is all about recall. It measures the number of n-grams (or word sequences) in the machine-generated summary that also appear in the human-generated reference summaries.
 
 - ROUGE-N: Compares n-grams. For example, ROUGE-1 looks at unigrams (single words), while ROUGE-2 looks at bigrams (pairs of words).
 - ROUGE-L: Focuses on the longest common subsequence (LCS) between the machine summary and the reference, which accounts for sentence-level structure.
 
-Survey on Evaluation of LLMs: https://arxiv.org/abs/2307.03109 is a very comprehensive research paper on evaluation of LLMs and definitely a recommended read!
+Survey on Evaluation of LLMs: [https://arxiv.org/abs/2307.03109](https://arxiv.org/abs/2307.03109) is a very comprehensive research paper on evaluation of LLMs and definitely a recommended read!
 
 <a id="week6day7"></a>
 ## 👾 Day 7: Multilingual NLP – Breaking Language Barriers
@@ -1077,6 +1165,8 @@ Now we will specifically see what models are used for which tasks:
 **Models:** 
 - **NLLB (No Language Left Behind)** → supports 200+ languages, focusing on low-resource. 
 - **mT5** → multilingual encoder-decoder trained on Colossal Clean Crawled Corpus (C4) in 100+ languages. 
+
+
 **Resources:** 
 - [Meta AI: NLLB-200](https://ai.meta.com/research/no-language-left-behind/) 
 - [HuggingFace mT5 Docs](https://huggingface.co/docs/transformers/model_doc/mt5) 
@@ -1089,6 +1179,8 @@ Now we will specifically see what models are used for which tasks:
 **Models:** 
 - **XLM-R (Cross-lingual RoBERTa)** → strong in cross-lingual QA tasks. 
 - **mBERT** → original multilingual BERT, trained on 104 languages. 
+
+
 **Resources:** 
 - [XLM-R Paper (Facebook AI)](https://arxiv.org/abs/1911.02116) 
 - [SQuAD-style Cross-lingual QA Benchmarks](https://github.com/facebookresearch/MLQA) 
@@ -1100,7 +1192,9 @@ Now we will specifically see what models are used for which tasks:
 **How it’s solved:** Use **shared multilingual embeddings** so queries and documents from different languages map to the same semantic space. 
 **Models:** 
 - **LaBSE (Language-agnostic BERT Sentence Embeddings)** → strong embeddings for 100+ languages. 
-- **mUSE (Multilingual Universal Sentence Encoder)**. 
+- **mUSE (Multilingual Universal Sentence Encoder)**.
+
+
 **Resources:** 
 - [Google Research: LaBSE](https://arxiv.org/abs/2007.01852)
 - [TF Hub: Multilingual USE](https://tfhub.dev/google/universal-sentence-encoder-multilingual/3)
@@ -1109,10 +1203,14 @@ Now we will specifically see what models are used for which tasks:
 
 ### Named Entity Recognition (NER) Across Languages 
 **Problem:** Extract entities (people, places, orgs) in multiple languages with different scripts. 
-**How it’s solved:** Use **multilingual transformer encoders** fine-tuned for NER, leveraging **character-level embeddings** for scripts like Devanagari, Arabic. 
+**How it’s solved:** Use **multilingual transformer encoders** fine-tuned for NER, leveraging **character-level embeddings** for scripts like Devanagari, Arabic.
+
+
 **Models:** 
 - **XLM-R** → strong baseline for multilingual NER. 
 - **Polyglot-NER** → library covering 40+ languages. 
+
+
 **Resources:** 
 - [Polyglot-NER GitHub](https://github.com/aboSamoor/polyglot) 
 - [Multilingual NER Benchmarks (WikiAnn)](https://elisa-ie.github.io/wikiann/) 
@@ -1122,26 +1220,31 @@ Now we will specifically see what models are used for which tasks:
 ### Multilingual Sentiment Analysis & Summarization 
 **Problem:** Can we detect emotions or generate summaries across languages? 
 **How it’s solved:** Fine-tuning **multilingual seq2seq models** (like mBART, mT5) on sentiment/summarization datasets. 
+
 **Models:** 
 - **mBART-50** → pretrained for multilingual seq2seq tasks (summarization, translation). 
 - **BLOOM** → open-access multilingual language model (46 languages). 
+
+
 **Resources:** 
 - [mBART HuggingFace](https://huggingface.co/facebook/mbart-large-50) 
 - [BLOOM BigScience](https://huggingface.co/bigscience/bloom) 
 
----
 
 ### Code-Switching Handling 
 **Problem:** In many regions (India, Africa), people mix languages: “I like programming, though bugs like me jyda!” 
 **How it’s solved:** Training **multilingual models on code-switched corpora** or synthetic data generation. 
+
+
 **Models:** 
 - **SeamlessM4T (Meta)** → handles speech + text, multilingual + code-switching. 
 - **Whisper (OpenAI)** → robust ASR that works well with mixed-language speech. 
+
+
 **Resources:** 
 - [SeamlessM4T (Meta AI)](https://ai.meta.com/blog/seamless-m4t/) 
 - [Whisper GitHub](https://github.com/openai/whisper) 
 
----
 ### Recent Trends (2024–25):
 - Massive multilingual pretraining (200+ languages, e.g., NLLB v2)
 - Zero-shot and few-shot multilingual tasks
@@ -1154,15 +1257,13 @@ Some more resources to learn more about Multilingual NLP:
 - [FastDataScience: Multilingual NLP](https://fastdatascience.com/natural-language-processing/multilingual-natural-language-processing/) 
 - [LinkedIn: Multilingual Language Models](https://www.linkedin.com/pulse/multilingual-language-model-everything)
 
+# 🦝 Week 7: Advanced Reinforcement Learning Techniques for NLP & Large Language Models 
 
 
----
-
-# 🦝 Week 7: Advanced Reinforcement Learning Techniques for NLP & Large Language Models <a id='week6'></a>
-
-```mermaid
-graph TD
-    A[Intro to LLMs] --> B[ GPT Architecture]
+<div class="mermaid-container">
+  <pre class="mermaid">
+  graph TD
+A[Intro to LLMs] --> B[ GPT Architecture]
     A --> C[ BERT & Variants]
 
     B --> D[ Transfer Learning in NLP]
@@ -1173,9 +1274,43 @@ graph TD
     E --> F[ Evaluating LLMs]
     E --> G[ Multilingual NLP]
 
-   
+  </pre>
+</div>
 
-```
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: "default",
+    flowchart: { useMaxWidth: true, curve: "linear" },
+    themeVariables: { fontSize: "16px" }
+  });
+</script>
+
+<style>
+  
+  .mermaid-container {
+    width: 100%;
+    overflow: visible;
+  }
+
+  
+  .mermaid-container pre {
+    margin: 0;
+    padding: 0;
+  }
+
+ 
+  .mermaid-container svg {
+    width: 100%;  
+    height: auto; 
+    transform: scale(1); 
+    transform-origin: top left;
+    display: block;
+  }
+</style>
+
+---
 
 <a id="week7day1"></a>
 ## 👾 Day 1: RLHF & RLAIF <a id='week6day1'></a>
@@ -1293,7 +1428,7 @@ Multi-agent RL (MARL) extends beyond single-model optimization, focusing on coll
   - [Survey: LLM-based Multi-Agent RL](https://arxiv.org/abs/2405.11106)
 - **Blogs:**
   - [What is a multi-agent system?](https://www.ibm.com/think/topics/multiagent-system)
- - **Videos:**
+- **Videos:**
   - [How to Build a Multi Agent AI System](https://www.youtube.com/watch?v=gUrENDkPw_k&t=1s)- *Nicholas Renotte shows you how to create a team of agents that can work together to complete tasks using AI prompting techniques*
 
 <a id="week7day6"></a>
@@ -1327,11 +1462,10 @@ Recent research shows that reinforcement learning, when scaled and properly desi
    - [ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large Language Models](https://www.youtube.com/watch?v=ifkxJfT9AWU) - *Paper Discussion*
  
  
- # 🦝 Week 8: Speech and Multimodal NLP
+# 🦝 Week 8 : Speech and Multimodal NLP
 
 The next two weeks covers how NLP extends beyond text to handle **speech** and **multimodal inputs** (e.g., combining audio, text, and vision). This week focuses on **Text-to-Speech (TTS)** — a field that lets machines **"speak"** like humans, using deep learning to turn written sentences into expressive audio. We’ll learn the pipeline end-to-end and build a working mini-project.
 
----
 
 <a id="week8day1"></a>
 ##  👾 Day 1: Introduction to Speech & Multimodality
@@ -1350,8 +1484,6 @@ By the end of today, you’ll understand what it means to "go beyond text" and h
 
  **Get hands on speech generation [here](https://cloud.google.com/text-to-speech)**.
  
----
-
 <a id="week8day2"></a>
 ## 👾 Day 2 : TTS – Text Analysis Module
 
@@ -1408,7 +1540,6 @@ For example, [WaveNet](https://en.wikipedia.org/wiki/WaveNet) uses [autoregressi
 **See detail about HiFi-Gan** [**here**](https://ai-scholar.tech/en/articles/speech-synthesis%2Fhifi-gan)
 [See](https://arxiv.org/abs/2112.03099) benchmarking framework comparing vocoder performance and trade‑offs (quality, latency, generalization) across multiple models in a unified setup.
 
----
 <a id="week8day5"></a>
 ## 👾 Day 5 : Latest Trends in TTS (2024–25)
 
@@ -1416,7 +1547,6 @@ We now explore how modern TTS systems are evolving beyond just "reading text alo
 
 Cutting-edge systems now synthesize speech that reflects emotion, adapts to new speakers with minimal data, and handles multilingual or code-switched inputs — all while keeping latency low enough for real-time interaction.
 
----
 ### Key Focuses:
 - **Expressive and Emotional TTS**
   Models now capture subtle emotions like joy, sadness, urgency, or sarcasm — crucial for human–AI interaction in assistants, games, or therapy bots. [See more](https://www.microsoft.com/en-us/research/wp-content/uploads/2024/12/SLT2024__EmoCtrlTTS.pdf).
@@ -1433,8 +1563,6 @@ Cutting-edge systems now synthesize speech that reflects emotion, adapts to new 
 - **Real-time Edge Deployment**
   Efficient neural vocoders (like HiFi-GAN and LPCNet) allow TTS on low-powered devices without a GPU, unlocking accessibility for mobile and embedded applications.
 
----
-
 ###  Low-Resource & Personalized TTS
 
 Adaptation to low-resource settings is a growing research frontier. This includes building TTS systems for underrepresented languages, dialects, or speaker groups where data is sparse.
@@ -1448,12 +1576,9 @@ Adaptation to low-resource settings is a growing research frontier. This include
 - **Speaker Adaptation:**
   Personalize TTS to user voice, accent, or speaking style with minimal training time and resources.
 
----
 
  This article, discusses Speech Recognition and its application of it by implementing a Speech to Text and Text to Speech Model with Python.[Analytics Vidhya Guide](https://www.analyticsvidhya.com/blog/2022/01/an-end-to-end-guide-on-converting-text-to-speech-and-speech-to-text/)
 Article on recent trends [here](https://www.mdpi.com/2079-9292/13/9/1726).
-
----
 
 <a id="week8day6"></a>
 ## 👾 Day  6 & 7 : Mini Project – Build a TTS Pipeline
@@ -1477,9 +1602,6 @@ In these two days, you'll put everything you've learned into practice by buildin
 - [TTS Model Comparison Paper](https://arxiv.org/abs/2306.03476)
 
 
-
-
----
 # 🦝 Week 9: Speech-to-Text & Cross-Modal NLP
 
 This week explores how machines convert spoken language into written text using Automatic Speech Recognition (ASR) systems and how modern AI models fuse speech, text, and visual inputs to build more intelligent, human-like agents. We’ll cover key models like Whisper, wav2vec, and GPT-4o, and dive into practical applications such as transcription, voice-controlled assistants, and multimodal chatbots.
@@ -1491,11 +1613,10 @@ You’ll gain both theoretical and hands-on understanding of:
 - Cross-modal model architectures
 - Real-world multimodal applications and tools
 
----
 <a id="week9day1"></a>
 ## 👾 Day 1: Introduction to ASR
 
-Today, we begin exploring [**Automatic Speech Recognition (ASR)**](https://www.assemblyai.com/blog/what-is-asr)—the technology that converts spoken language into text. ASR powers everything from virtual assistants like Siri and Alexa to automated subtitles on YouTube and real-time transcription services. Understanding the basic workflow of ASR helps set the stage for upcoming days.
+Today, we begin exploring [**Automatic Speech Recognition (ASR)**](https://www.assemblyai.com/blog/what-is-asr) —the technology that converts spoken language into text. ASR powers everything from virtual assistants like Siri and Alexa to automated subtitles on YouTube and real-time transcription services. Understanding the basic workflow of ASR helps set the stage for upcoming days.
 
 ASR involves capturing speech, preprocessing the audio, extracting features, and finally decoding it into text using language and acoustic models. It's not just about recognition—challenges like background noise, speaker variability, accents, and domain-specific vocabularies make ASR a rich and evolving research area.
 
@@ -1517,18 +1638,15 @@ See a nice course on ASR [here](https://apxml.com/courses/applied-speech-recogni
 
 ### Some more Resources:
 
-
----
 - End to end ASR: 
-  - https://arxiv.org/abs/2303.03329
+  - [https://arxiv.org/abs/2303.03329](https://arxiv.org/abs/2303.03329)
 - See more on advance deep learning approach:
-  - https://arxiv.org/abs/2403.01255
-  - https://www.sciencedirect.com/science/article/pii/S1566253524002008
-  - https://huggingface.co/tasks/automatic-speech-recognition
+  - [https://arxiv.org/abs/2403.01255](https://arxiv.org/abs/2403.01255)
+  - [https://www.sciencedirect.com/science/article/pii/S1566253524002008](https://www.sciencedirect.com/science/article/pii/S1566253524002008)
+  - [https://huggingface.co/tasks/automatic-speech-recognition](https://huggingface.co/tasks/automatic-speech-recognition)
 - N-GRAMM models
-  - https://web.stanford.edu/~jurafsky/slp3/3.pdf
+  - [https://web.stanford.edu/~jurafsky/slp3/3.pdf](https://web.stanford.edu/~jurafsky/slp3/3.pdf)
 
----
 
 <a id="week9day2"></a>
 ## 👾 Day 2 & 3: Whisper and wav2vec – Multilingual ASR
@@ -1555,10 +1673,10 @@ You can experiment with different Whisper model sizes (`tiny`, `base`, `small`, 
 
 
  [Whisper GitHub](https://github.com/openai/whisper) 
- [Whisper Overview](https://openai.com/research/whisper) 
- [Multilingual speech data you can use to test or fine-tune models](https://commonvoice.mozilla.org/en/datasets)
 
----
+ [Whisper Overview](https://openai.com/research/whisper) 
+
+ [Multilingual speech data you can use to test or fine-tune models](https://commonvoice.mozilla.org/en/datasets)
 
 ###  ASR with wav2vec 2.0
 **wav2vec 2.0** is a self-supervised model by Meta AI. Instead of relying on labeled data, it learns powerful **speech representations** directly from raw audio. It’s pre-trained using contrastive loss, where the model distinguishes real future audio segments from fake ones.
@@ -1574,11 +1692,10 @@ wav2vec 2.0 has a **convolutional encoder** that processes raw waveform and a **
 
 
  [HF wav2vec2 Docs](https://huggingface.co/docs/transformers/model_doc/wav2vec2) 
+
  [Wav2Vec2 Research Paper](https://arxiv.org/abs/2006.11477) 
+
  [Fine-tuning for Audio Classification with Transformers](https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/audio_classification.ipynb)
-
-
----
 
 
 ### Intro to Deep Learning Approaches to ASR:
@@ -1592,13 +1709,12 @@ Modern ASR models have evolved beyond traditional HMM-GMM pipelines into fully n
 
  [Automatic speech recognition using advanced deep learning approaches: A survey](https://www.sciencedirect.com/science/article/pii/S1566253524002008)
 
----
+
 <a id="week9day4"></a>
 ## 👾 Day 4 : Deep Learning Approaches + Comparing ASR Models
 
 Today, we consolidate our understanding of deep learning architectures used in ASR and compare the performance, trade-offs, and design choices across prominent systems like **Whisper**, **wav2vec 2.0**, and **DeepSpeech**.
 
----
 
 ### Deep Learning Approaches to ASR
 
@@ -1623,16 +1739,19 @@ Modern ASR has moved from traditional HMM-GMM based systems to powerful **end-to
 
 
  [Automatic Speech Recognition using Advanced Deep Learning Approaches](https://arxiv.org/abs/2403.01255)
- [Overview of end-to-end speech recognition](https://iopscience.iop.org/article/10.1088/1742-6596/1187/5/052068/pdf) 
+
+ [Overview of end-to-end speech recognition](https://iopscience.iop.org/article/10.1088/1742-6596/1187/5/052068/pdf)
+
  [Sequence Modeling With CTC](https://distill.pub/2017/ctc/) 
+
   [Automatic speech recognition using advanced deep learning approaches: A survey](https://www.sciencedirect.com/science/article/pii/S1566253524002008)
+
 
 A book on ASR by Deep learning approach [Automatic Speech Recognition :A Deep Learning Approach](https://davidhason.com/wp-content/uploads/2023/12/Automatic-Speech-Recognition-A-Deep-Learning-Approach-Dong-Yu-Li-Deng-auth.-z-lib.org_.pdf)
 
----
 
 ### Comparing ASR Models
----
+
 We now compare three leading deep learning-based ASR models—each with different trade-offs in **latency, architecture, and accuracy**.
 
 | Model         | Architecture           | Inference Style | Strengths                               | Weaknesses                  |
@@ -1641,7 +1760,6 @@ We now compare three leading deep learning-based ASR models—each with differen
 | **wav2vec 2.0** | Transformer + CTC      | Offline/Fast     | Self-supervised, high accuracy           | Needs language-specific tuning |
 | **Whisper**     | Encoder-Decoder (RNN-T) | Offline          | Multilingual, robust to noise, translation support | Slower inference, heavy compute |
 
----
 
 ###  Decoding Strategies
 
@@ -1653,17 +1771,14 @@ We now compare three leading deep learning-based ASR models—each with differen
 #### -> Language model integration – boost decoding by guiding it with prior linguistic knowledge.
 External language models (like n-gram or Transformers) can be combined with ASR outputs to refine decoding. The LM helps ensure the generated text is syntactically and semantically plausible, especially in noisy or low-resource scenarios.
 
-
----
-
 ### Use case and the Model:
-| Use Case             | Preferred Model   | Reason                    |
-|----------------------|-------------------|---------------------------|
-| Real-time captioning | wav2vec (small)   | Faster decoding           |
-| Batch transcription  | Whisper / wav2vec | High accuracy             |
-| Noisy environments   | Whisper           | Trained on noisy data     |
 
----
+| Use Case             | Preferred Model   | Reason                    |
+|----------------------|------------------|---------------------------|
+| Real-time captioning | wav2vec (small)  | Faster decoding           |
+| Batch transcription  | Whisper / wav2vec| High accuracy             |
+| Noisy environments   | Whisper          | Trained on noisy data     |
+
 
 ### Different models here:
 
@@ -1673,11 +1788,6 @@ External language models (like n-gram or Transformers) can be combined with ASR 
 -  [The Illustrated CTC (Distill)](https://distill.pub/2017/ctc/)
 -  [ESPnet Toolkit](https://github.com/espnet/espnet)
 -  [HuggingFace ASR Models](https://huggingface.co/models?pipeline_tag=automatic-speech-recognition)
-
-
----
-
-
 
 
 <a id="week9day5"></a>
@@ -1716,30 +1826,20 @@ Now we will explore the evolution of [multimodal systems](https://introtodeeplea
 
  [Intro to Cross-Modal AI](https://spotintelligence.com/2023/12/19/multimodal-nlp-ai/)
 
----
 <a id="week9day6"></a>
 ## 👾 Day 6: Multimodal Architectures & APIs
 
 Dive into the architectures and systems enabling multimodal learning. These models leverage shared embeddings or transformer blocks that process diverse modalities together (e.g., text and images).
 
 **Topics:**
-- **CLIP** (OpenAI): Learns joint embeddings of images and text for vision-language tasks.
-  https://openai.com/index/clip/
-  https://arxiv.org/pdf/2103.00020
-- **Flamingo** (DeepMind): Visual-language model designed for few-shot image and video understanding.
-  https://arxiv.org/abs/2204.14198
-- **GPT-4o and Gemini**: Models trained to accept and reason across image, text, and audio inputs.
-  https://platform.openai.com/docs/overview
-  https://deepmind.google/models/gemini/
-- **Speech-to-text-to-image** pipelines: Use ASR to convert speech to text, then trigger vision-based tasks (e.g., retrieve an image).
-  https://runwayml.com/research/gen-2
+- **CLIP** (OpenAI): Learns joint embeddings of images and text for vision-language tasks : [https://openai.com/index/clip/](https://openai.com/index/clip/) , [https://arxiv.org/pdf/2103.00020](https://arxiv.org/pdf/2103.00020)
+- **Flamingo** (DeepMind): Visual-language model designed for few-shot image and video understanding : [https://arxiv.org/abs/2204.14198]( https://arxiv.org/abs/2204.14198)
+- **GPT-4o and Gemini**: Models trained to accept and reason across image, text, and audio inputs : [https://platform.openai.com/docs/overview](https://platform.openai.com/docs/overview) , [https://deepmind.google/models/gemini/](https://deepmind.google/models/gemini/)
+- **Speech-to-text-to-image** pipelines: Use ASR to convert speech to text, then trigger vision-based tasks (e.g., retrieve an image) :  [https://runwayml.com/research/gen-2](https://runwayml.com/research/gen-2)
 - **Cross-modal grounding**: Aligning elements across modalities (e.g., linking words to image regions).
-  https://arxiv.org/abs/2301.12597
-  https://arxiv.org/abs/2205.06230
+  [https://arxiv.org/abs/2301.12597](https://arxiv.org/abs/2301.12597) ,  [https://arxiv.org/abs/2205.06230](https://arxiv.org/abs/2205.06230) , [Multimodal Learning PDF (MIT)](https://introtodeeplearning.com/2017/lectures/Multimodal%20learning.pdf)
 
- [Multimodal Learning PDF (MIT)](https://introtodeeplearning.com/2017/lectures/Multimodal%20learning.pdf)
 
----
 <a id="week9day7"></a>
 ## 👾Day 7 and further: Mini Project – ASR or Cross-Modal App
 
@@ -1759,8 +1859,8 @@ Apply what you’ve learned by building either a robust ASR system or an entry-l
 - [MiniGPT-4 GitHub (Multimodal Chatbot)](https://github.com/Vision-CAIR/MiniGPT-4)
 - [Gradio: Build UIs easily for voice/image/chat interactions.](https://www.gradio.app/)
 - [OpenAI API Docs](https://platform.openai.com/docs/overview)
-- https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html
----
+- [https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html)
+
 
 NLP is wide , so hold tight to your coffee mugs and until then..
 ## Happy Coding :) 
