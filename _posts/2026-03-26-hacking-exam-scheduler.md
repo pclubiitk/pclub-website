@@ -2,7 +2,7 @@
 
 layout: post
 title: "Hacking IITK Exam Scheduler"
-date: 2025-03-26 19:30:00 +0530
+date: 2026-03-26 19:30:00 +0530
 authors: Siddhesh Mande
 tags:
 - IITK
