@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "Hacking IITK Exam Scheduler"
+title: "Exploiting IITK Exam Scheduler"
 date: 2026-03-26 19:30:00 +0530
 authors: Siddhesh Mande
 tags:
@@ -12,13 +12,14 @@ image:
   url: /images/programming-code-lang.jpg
 ---
 
-# Hacking the IITK Exam Scheduler to Steal User Credentials
+# Exploiting the IITK Exam Scheduler to Steal User Credentials
 
-Have you ever looked at a simple college portal and thought, "Could I hack this?" 
+Have you ever looked at a simple college portal and thought, "Could I hack this?"
 
 If you've spent any time around web security, you've probably heard that "user input is dangerous." It sounds a bit overused, until you see just how far a single unsanitized parameter can go. In this case, all it took was a roll number field to turn a harmless exam scheduler into a phishing delivery system.
 
 # Understanding the Attack Surface
+
 At its core, web hacking is the art of making a web application do something it wasn't meant to do. A general workflow is as follows:
 
 1. User provides input (a search term, a password, clicking a button).
@@ -28,13 +29,15 @@ At its core, web hacking is the art of making a web application do something it 
 Most hacking happens when the server trusts the user input a little too much.
 
 ### HTML Injection vs. XSS
+
 You'll hear these terms a lot. Here’s the difference:
 
 - HTML Injection: This is when you can "inject" your own HTML tags into a page. If you can make a word bold or create a new `<div>`, you've found an injection point.
 
-- Cross-Site Scripting (XSS): This is a much more dangerous form of HTML injection. It’s when you inject `<script>` tags to execute JavaScript in another user's browser. JavaScript can be used to steal cookies, capture keystrokes, or redirect users. 
+- Cross-Site Scripting (XSS): This is a much more dangerous form of HTML injection. It’s when you inject `<script>` tags to execute JavaScript in another user's browser. JavaScript can be used to steal cookies, capture keystrokes, or redirect users.
 
 ### The Defense: Content Security Policy (CSP)
+
 Modern websites use a Content Security Policy (CSP) as a safety net. It defines rules that allow only some specific authorized sources to run JavaScript. Even if a hacker manages to inject a script, a well-configured CSP prevents the browser from running it.
 
 Modern frameworks like React have built-in protections (like auto-escaping), but they aren't bulletproof. Developers must still follow safe practices, like manual input sanitization.
@@ -55,6 +58,7 @@ Boom. We have an HTML injection here.
 Before we proceed, note that all this happens only on the "client" side, that is, only on the browser where these tags were injected. No other users would be affected, so the attacker's goal is to find a way to deliver these automatically into a victim's session.
 
 Next, I tried to escalate it to XSS with the classic payload:
+
 - `<script>alert(1)</script>` (pop an alert to check if JavaScript executes) and nothing happened...
 
 The headers revealed why:
@@ -62,7 +66,7 @@ The headers revealed why:
 `content-security-policy:
 script-src 'self';`
 
-Remember the CSP I mentioned earlier? It allows only the JavaScript coming from the server to run, effectively blocking our inline script. No XSS then. 
+Remember the CSP I mentioned earlier? It allows only the JavaScript coming from the server to run, effectively blocking our inline script. No XSS then.
 
 > [This game](https://xss-game.appspot.com/) is a fun way to practice XSS, protecting against it and bypassing weak defenses.
 
@@ -77,6 +81,7 @@ Instead of trying to force the browser to execute malicious code, I could simply
 With HTML injection already confirmed, it became possible to insert arbitrary interface elements into the page. That includes forms. And forms, by design, collect and transmit user data.
 
 ### The Payload
+
 So I crafted a simple payload: a fake login prompt embedded directly into the page.
 
 ```HTML
@@ -92,6 +97,7 @@ So I crafted a simple payload: a fake login prompt embedded directly into the pa
 The code is not really that sophisticated. It doesn’t rely on JavaScript, doesn’t attempt to bypass CSP, and doesn’t exploit any browser quirks. It simply leverages the trust users place in the interface they see.
 
 ### The Transmission
+
 Of course, injecting HTML isn’t useful unless it can be delivered to a victim. By analyzing the network traffic, I discovered that upon submitting the roll number, a request is sent with the roll number as the parameter:
 `http://172.26.131.10/examscheduler/personal_schedule.php?rollno=250630`
 
@@ -113,6 +119,7 @@ The application trusted user input enough to reflect it without sanitization. Th
 Each of these elements on its own might not seem critical. Together, they create a seamless exploitation path.
 
 # Fixes
+
  **The vulnerability was reported and has been addressed by the web security team.**
 
 Input validation now restricts special characters, and the parameter is properly constrained. These are straightforward changes, but they highlight an important lesson: even simple validation can prevent entire classes of attacks.
@@ -125,6 +132,6 @@ The best exploits don’t always require advanced zero-days or massive payloads.
 
 But this is just the tip of the iceberg—hacking involves many other subdomains and hundreds of types of vulnerabilities waiting to be exploited. Maybe a new one is dropping as you read this...
 
-Stay alert, stay ethical, and happy hacking! 
+Stay alert, stay ethical, and happy hacking!
 
 Author: Siddhesh Mande
