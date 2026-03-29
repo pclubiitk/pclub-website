@@ -130,7 +130,7 @@ This wasn’t about breaking encryption or bypassing authentication systems. It 
 
 The best exploits don’t always require advanced zero-days or massive payloads. Often, they just exploit a subtle logic gap and the inherent trust users place in a legitimate domain. Sometimes, all it takes is a single URL.
 
-But this is just the tip of the iceberg—hacking involves many other subdomains and hundreds of types of vulnerabilities waiting to be exploited. Maybe a new one is dropping as you read this...
+But this is just the tip of the iceberg. Hacking involves many other subdomains and hundreds of types of vulnerabilities waiting to be exploited. Maybe a new one is dropping as you read this...
 
 Stay alert, stay ethical, and happy hacking!
 
