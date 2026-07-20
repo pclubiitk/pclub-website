@@ -2,7 +2,7 @@
 layout: post
 title: "Demystifying GPU Computing"
 date: 2026-07-14 22:30:00 +05:30
-author: Arnab Datta
+author: Arnab Datta & Pradyumn Vikram
 tags:
 - GPU
 - Edge-Computing
@@ -279,4 +279,4 @@ For builders, that means:
 If you’re into robots, drones, or smart devices, edge GPUs like the Jetson Nano aren’t just another board. 
 They’re the missing piece that lets your ideas leave the simulator and survive the real world.
 
-Author: Arnab Datta
+Author: Arnab Datta & Pradyumn Vikram
