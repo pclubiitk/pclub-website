@@ -63,7 +63,6 @@ Having discussed the WHAT & WHY question about Spiking Neural Networks, let's no
 <div style="text-align: center;">
   <img src="/images/SNN/snn-3.png" alt="Neuron">
 </div>
-=
 
 Spikes are brief, discrete events in time, characterized by their binary nature, they are primary information carriers in SNNs. Spikes in SNNs refer to events when a particular neuron fires, i.e., allows data to be transmitted to its next neuron, it is these discrete spikes that give SNNs their distinct and unique nature.
 ### 3.2) Neuron- The LIF model
@@ -202,3 +201,4 @@ One of the major drawbacks of SNNs is their inability to leverage traditional co
 
 Another drawback of SNNs is the difficulty to train them. Traditional training algorithms like backpropagation, widely used in ANNs, are less effective for the discrete, non-differentiable nature of spikes. Researchers are actively exploring alternative training methods, such as surrogate gradient approaches, to overcome this limitation.
 
+#### _Author: Suyash Kumar
