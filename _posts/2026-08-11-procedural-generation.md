@@ -4,13 +4,13 @@ title: "Procedural Generation: Algorithms for Infinite Worlds"
 date: 2026-08-11 
 author: Austin Shijo & Sujal Satish Motagi
 tags:
-- procedural-generation⁠
-- terrain-generation  
-- perlin-noise 
-- fractal-brownian-motion 
-- splines ⁠
-- signed-distance-fields  
-- gpu-programming 
+- procedural-generation
+- terrain-generation
+- perlin-noise
+- fractal-brownian-motion
+- splines
+- signed-distance-fields
+
 categories:
 - events
 image:
