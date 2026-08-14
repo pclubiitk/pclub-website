@@ -4,6 +4,7 @@ title: "Procedural Generation: Algorithms for Infinite Worlds"
 date: 2026-08-11 
 author: Austin Shijo & Sujal Satish Motagi
 tags:
+- graphics
 - procedural-generation
 - terrain-generation
 - perlin-noise
