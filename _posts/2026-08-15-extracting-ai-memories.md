@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Extracting AI Memories"
 date: 2026-07-15
 draft: false
