@@ -7,6 +7,8 @@ Author: Shantanu Maurya(M3oW)
 tags: ["Machine Learning", "Offensive AI", "Python"]
 categories: ["Security Research"]
 summary: "How I extracted raw training data from an LLM and why you should care!"
+image:
+  url: /images/blog/extracting-ai-memories/cover.png
 ---
 
 Usually, people think that hacking AI means jailbreaking or bypassing its security guardrails, but in this blog, I did something interesting. Instead of hacking AI, I made it spit out its training data!
