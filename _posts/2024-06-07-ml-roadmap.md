@@ -387,7 +387,7 @@ Go through [this](https://towardsdatascience.com/linear-regression-detailed-view
 
 This would be a good time to program Linear Regression from scratch by only using Numpy, Pandas and MatPlotLib. Before that, in order to structure your code effectively, it is imporant to understand Object Oriented Programming, which you can learn from [here](https://www.datacamp.com/tutorial/python-oop-tutorial). Once you've gone through OOPs, you are ready to code your own linear regression model. Use [this](https://www.kaggle.com/datasets/harrimansaragih/dummy-advertising-and-sales-data) dataset for training and testing the model.
 
-Follow [this](https://www.dataspoof.info/post/everything-that-you-should-know-about-linear-regression-in-python/) article to understand the implementation using various libraries. If you are further interested, you may see _Statistics, 11th Edition_ by Robert S. Witte, Chapter 7.
+Follow [this](https://www.dataspoof.in/post/mastering-linear-regression-in-python/) article to understand the implementation using various libraries. If you are further interested, you may see _Statistics, 11th Edition_ by Robert S. Witte, Chapter 7.
 
 For those who are curious to delve into the intricacies and maths behind LR and GS, you can watch [this](https://youtu.be/4b4MUYve_U8?si=0baDG_bJF8gW_FeF) video by Andrew NG (Highly Recommended).
 
