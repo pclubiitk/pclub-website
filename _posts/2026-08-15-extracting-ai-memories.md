@@ -3,7 +3,7 @@ layout: post
 title: "Extracting AI Memories"
 date: 2026-07-15
 draft: false
-Author: Shantanu Maurya(M3oW)
+author: Shantanu Maurya(M3oW)
 tags: ["Machine Learning", "Offensive AI", "Python"]
 categories: ["Security Research"]
 summary: "How I extracted raw training data from an LLM and why you should care!"
@@ -127,7 +127,7 @@ $$
 For every position \(t\), the model looks at all tokens before it:
 
 $$
-s_{<t} = (s_1, s_2, \ldots, s_{t-1})
+s_{< t} = (s_1, s_2, \ldots, s_{t-1})
 $$
 
 and produces logits:
@@ -141,7 +141,7 @@ where \(V\) is the model's vocabulary.
 The logits are converted into next-token probabilities using softmax:
 
 $$
-p_t = \operatorname{softmax}(z_t)
+p_t = \mathrm{softmax}(z_t)
 $$
 
 The entropy at position \(t\) is:
