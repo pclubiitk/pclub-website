@@ -149,4 +149,4 @@ This leaves us with a world which only needs to exist when it is being used, and
 
 
 **Authors**:
-Austin Shijo & Sujal Satish Montagi
+Austin Shijo & Sujal Satish Motagi
