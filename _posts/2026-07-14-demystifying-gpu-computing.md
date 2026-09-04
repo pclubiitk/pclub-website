@@ -279,4 +279,4 @@ For builders, that means:
 If you’re into robots, drones, or smart devices, edge GPUs like the Jetson Nano aren’t just another board. 
 They’re the missing piece that lets your ideas leave the simulator and survive the real world.
 
-Author: Arnab Datta & Pradyumn Vikram
+Authors: Arnab Datta & Pradyumn Vikram
