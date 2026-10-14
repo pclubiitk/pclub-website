@@ -221,6 +221,7 @@ This problem is a classic candidate for a **Monte Carlo algorithm**.
 
 Let the answer be $G$. By definition, $G$ divides at least $\frac{n}{2}$ numbers in the array.
 If we pick one number $x$ uniformly at random from the array $a$, what is the probability that $x$ is divisible by $G$?
+
 $$P(x \text{ is a multiple of } G) \ge \frac{n/2}{n} = \frac{1}{2}$$
 
 This means if we pick a random number, there is a **50% chance** that the optimal answer $G$ is a divisor of this chosen number.
@@ -260,7 +261,7 @@ We iterate through the sorted divisors. For every divisor $D[i]$, and every larg
 * If $D[j]$ is a multiple of $D[i]$ (i.e., `divs[j] % divs[i] == 0`), then every number that yielded a GCD of $D[j]$ is **also** divisible by $D[i]$.
 * We add `div_counts[j]` to `div_counts[i]`.
 
-This runs in $O(|D|^2)$. Since $|D|$ is usually small, this is very fast.
+This runs in $O(\vert D \vert^2)$. Since $\vert D \vert$ is usually small, this is very fast.
 
 #### 5. Update Answer
 After aggregation, if `div_counts[i] * 2 >= n`, then $D[i]$ is a valid candidate for Ghd. We maximize our result.
@@ -269,7 +270,7 @@ After aggregation, if `div_counts[i] * 2 >= n`, then $D[i]$ is a valid candidate
 The complexity per iteration is:
 $$O(N \cdot \log(\text{MaxVal}) + |D|^2)$$
 * $N \cdot \log(\text{MaxVal})$ comes from calculating GCD with every element.
-* $|D|^2$ comes from the nested loop to aggregate divisor counts.
+* $\vert D \vert^2$ comes from the nested loop to aggregate divisor counts.
 
 With $K$ iterations (where $K \approx 10$), the total time is well within the limits for $N=10^6$.
 
